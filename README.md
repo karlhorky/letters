@@ -68,4 +68,8 @@ I have always wanted to write, and once I did, this was all I ended up having to
 
 [Suicide](arbitrary-folder/suicide.md)
 
+[That Morning](arbitrary-folder/that-morning.md)
+
 [Uncertainty](arbitrary-folder/uncertainty.md)
+
+[Yoga](arbitrary-folder/yoga.md)
