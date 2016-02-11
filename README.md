@@ -70,6 +70,8 @@ I have always wanted to write, and once I did, this was all I ended up having to
 
 [That Morning](arbitrary-folder/that-morning.md)
 
+[Troubles](arbitrary-folder/troubles.md)
+
 [Uncertainty](arbitrary-folder/uncertainty.md)
 
 [Yoga](arbitrary-folder/yoga.md)
