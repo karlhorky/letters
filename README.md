@@ -32,6 +32,8 @@ I have always wanted to write, and once I did, this was all I ended up having to
 
 [Dying](arbitrary-folder/dying.md)
 
+[Fun](arbitrary-folder/fun.md)
+
 [Government](arbitrary-folder/government.md)
 
 [Hijos](arbitrary-folder/hijos.md)
