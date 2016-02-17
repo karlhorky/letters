@@ -28,6 +28,8 @@ I have always wanted to write, and once I did, this was all I ended up having to
 
 [Cover Letter](arbitrary-folder/cover-letter.md)
 
+[Dear Psycho](arbitrary-folder/dear-psycho.md)
+
 [Disappointment](arbitrary-folder/disappointment.md)
 
 [Dog Poop](arbitrary-folder/dog-poop.md)
