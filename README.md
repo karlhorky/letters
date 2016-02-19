@@ -68,6 +68,8 @@ I have always wanted to write, and once I did, this was all I ended up having to
 
 [Scratching](arbitrary-folder/scratching.md)
 
+[Sickness](arbitrary-folder/sickness.md)
+
 [Special Books](arbitrary-folder/special-books.md)
 
 [Springtime for Hitler](arbitrary-folder/springtime-for-hitler.md)
