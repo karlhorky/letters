@@ -9,7 +9,7 @@ I have always wanted to write, and once I did, this was all I ended up having to
 ## The Ones Worth Reading
 [Government](arbitrary-folder/government.md)
 
-[I Am Definitely a Millennial](arbitrary-folder/i-am-definitely-a-millennial)
+[I Am Definitely a Millennial](arbitrary-folder/i-am-definitely-a-millennial.md)
 
 [I Forgot](arbitrary-folder/i-forgot.md)
 
