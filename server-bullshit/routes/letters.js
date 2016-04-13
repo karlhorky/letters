@@ -2,6 +2,7 @@ var _        = require('lodash');
 var express  = require('express');
 var fs       = require('fs');
 var marked   = require('marked');
+var markdown = require('nunjucks-markdown');
 var nunjucks = require('nunjucks');
 var path     = require('path');
 var router   = express.Router();
@@ -76,6 +77,12 @@ function indexPosts(dirpath) {
 //   });
 //   return _runQuery(query);
 // }
+
+// var parsedResponse = marked(body);
+//       console.log(parsedResponse);
+//       res.render('letter.html', { 
+//         title: 'Letters',
+//         letter: parsedResponse
 
 indexPosts(pathToLetters);
 // console.log(process.env.PATH)
