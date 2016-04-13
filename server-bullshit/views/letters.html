@@ -4,8 +4,8 @@
   <h1>{{ title }}</h1>
   <ol>
     {% for letterTitle in letterTitles %}
-      <a href="letters/{{ letterTitle }}">
-        <li>{{ letterTitle }}</li>
+      <a href="letters/{{ letterTitle.shorturl }}">
+        <li>{{ letterTitle.shorturl }}</li>
       </a>
     {% endfor %}
   </ol>

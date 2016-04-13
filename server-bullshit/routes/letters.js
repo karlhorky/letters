@@ -1,85 +1,109 @@
 var _        = require('lodash');
 var express  = require('express');
-var http     = require('http');
+var fs       = require('fs');
 var marked   = require('marked');
 var nunjucks = require('nunjucks');
-var request  = require('request');
+var path     = require('path');
 var router   = express.Router();
 
 var numberOfLetters = 0;
 var lettersResponse = {};
 var letterTitles = [];
+var pathToLetters = "/Users/hholmes/Library/Mobile\ Documents/27N4MQEA55~pro~writer/Documents/Letters/arbitrary-folder";
+var postIndex = {};
+var allPosts = [];
 
-function getRandomInt(min, max) {
-  return Math.floor(Math.random() * (max - min)) + min;
+// function getRandomInt(min, max) {
+//   return Math.floor(Math.random() * (max - min)) + min;
+// }
+
+// nconf.argv().env('_').file({
+//   file: path.join(__dirname, '../config/config.json')
+// });
+
+function indexPosts(dirpath) {
+
+  var files = fs.readdirSync(dirpath);
+  files.forEach(file => {
+    if(!file.match(/\.md$/)) {
+      return;
+    }
+
+    var contents = fs.readFileSync(path.join(dirpath, file));
+    var post = Object.assign(contents);
+
+    // Infer the URL from the filename
+    post.shorturl = file.match(/(.*)\.md$/)[1];
+
+    postIndex[post.shorturl] = post;
+    allPosts.push(post);
+  });
 }
 
-function makeCall () {
-  // here we make a call using request module
-  request.get({
-    uri: 'https://api.github.com/repos/helenvholmes/letters/contents/arbitrary-folder/',
-    json: true,
-    headers: {
-      'Content-Type' : 'application/x-www-form-urlencoded',
-      'User-Agent': 'Letters'
-    }
-    },
-    function (error, res, object) {
-      if (error) {
-        console.log(error);
-      }
+// function _runQuery(opts) {
+//   opts = opts || {};
+//   var posts = allPosts;
 
-      if (res.statusCode === 200 ) {
-        numberOfLetters = res.body.length;
-        lettersResponse = res.body;
+//   if(opts.filter) {
+//     for(var name in opts.filter) {
+//     posts = posts.filter(x => {
+//       if(x[name] && x[name].length) {
+//         return x[name].indexOf(opts.filter[name]) !== -1;
+//       }
 
-        for (var i = 0; i < numberOfLetters; i++) {
-          letterTitles.push(lettersResponse[i].name);
-        }
+//       var val = x[name] === undefined ? false : x[name];
+//         return val === opts.filter[name];
+//       });
+//     }
+//   }
 
-        return lettersResponse;
-      }
-    }
-  );
-}
+//   if(opts.select) {
+//     posts = posts.map(x => {
+//       return t.toObj(opts.select, t.map(name => [name, x[name]]));
+//     });
+//   }
 
-makeCall();
+//   if(opts.limit) {
+//     posts = posts.slice(0, opts.limit);
+//   }
+
+//   return posts;
+// }
+
+// function queryPosts(query) {
+//   query = mergeObj(query, {
+//     filter: mergeObj(query.filter || {}, { published: true })
+//   });
+//   return _runQuery(query);
+// }
+
+indexPosts(pathToLetters);
+// console.log(process.env.PATH)
 
 // GET letters listing.
 router.get('/', function(req, res, next) {
   res.render('letters.html', { 
     title: 'Letters',
-    letterTitles: letterTitles
+    letterTitles: allPosts
   });
 });
 
 // GET letters listing.
-router.get('/random', function(req, res, next) {
-  var randomNumber = getRandomInt(0, numberOfLetters);
+// router.get('/random', function(req, res, next) {
+//   var randomNumber = getRandomInt(0, numberOfLetters);
 
-  request(lettersResponse[randomNumber].download_url, function (error, response, body) {
-    if (!error && response.statusCode == 200) {
-      var parsedResponse = marked(body);
-      console.log(parsedResponse);
-      res.render('letter.html', { 
-        title: 'Letters',
-        letter: parsedResponse
-      });
-    }
-  });
-});
+//   res.render('letter.html', { 
+//     title: 'Letters',
+//     letter: parsedResponse
+//   });
+// });
 
 router.get('/:name', function(req, res) {
-  var indx = _.findIndex(lettersResponse, ['name', req.params.name]);
+  var indx = _.findIndex(allPosts, ['shorturl', req.params.name]);
 
-  request(lettersResponse[indx].download_url, function (error, response, body) {
-    if (!error && response.statusCode == 200) {
-      var parsedResponse = marked(body);
-      res.render('letter.html', {
-        title: 'Letter: ' + req.params.name,
-        letter: parsedResponse
-      });
-    }
+  res.render('letter.html', {
+    title: 'Letter: ' + req.params.name,
+    letter: allPosts[indx]
   });
 });
 
