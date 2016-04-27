@@ -13,13 +13,9 @@ var pathToLetters = "/Users/hholmes/Library/Mobile\ Documents/27N4MQEA55~pro~wri
 var postIndex = {};
 var allPosts = [];
 
-// function getRandomInt(min, max) {
-//   return Math.floor(Math.random() * (max - min)) + min;
-// }
-
-// nconf.argv().env('_').file({
-//   file: path.join(__dirname, '../config/config.json')
-// });
+function getRandomInt(min, max) {
+  return Math.floor(Math.random() * (max - min)) + min;
+}
 
 function indexPosts(dirpath) {
 
@@ -40,51 +36,7 @@ function indexPosts(dirpath) {
   });
 }
 
-// function _runQuery(opts) {
-//   opts = opts || {};
-//   var posts = allPosts;
-
-//   if(opts.filter) {
-//     for(var name in opts.filter) {
-//     posts = posts.filter(x => {
-//       if(x[name] && x[name].length) {
-//         return x[name].indexOf(opts.filter[name]) !== -1;
-//       }
-
-//       var val = x[name] === undefined ? false : x[name];
-//         return val === opts.filter[name];
-//       });
-//     }
-//   }
-
-//   if(opts.select) {
-//     posts = posts.map(x => {
-//       return t.toObj(opts.select, t.map(name => [name, x[name]]));
-//     });
-//   }
-
-//   if(opts.limit) {
-//     posts = posts.slice(0, opts.limit);
-//   }
-
-//   return posts;
-// }
-
-// function queryPosts(query) {
-//   query = mergeObj(query, {
-//     filter: mergeObj(query.filter || {}, { published: true })
-//   });
-//   return _runQuery(query);
-// }
-
-// var parsedResponse = marked(body);
-//       console.log(parsedResponse);
-//       res.render('letter.html', { 
-//         title: 'Letters',
-//         letter: parsedResponse
-
 indexPosts(pathToLetters);
-// console.log(process.env.PATH)
 
 // GET letters listing.
 router.get('/', function(req, res, next) {
@@ -95,14 +47,15 @@ router.get('/', function(req, res, next) {
 });
 
 // GET letters listing.
-// router.get('/random', function(req, res, next) {
-//   var randomNumber = getRandomInt(0, numberOfLetters);
+router.get('/random', function(req, res, next) {
+  var randomNumber = getRandomInt(0, allPosts.length);
+  var randomParsedResponse = marked(allPosts[randomNumber].toString());
 
-//   res.render('letter.html', { 
-//     title: 'Letters',
-//     letter: parsedResponse
-//   });
-// });
+  res.render('letter.html', {
+    title: 'Random letter: ',
+    letter: randomParsedResponse
+  });
+});
 
 router.get('/:name', function(req, res) {
   var indx = _.findIndex(allPosts, ['shorturl', req.params.name]);
