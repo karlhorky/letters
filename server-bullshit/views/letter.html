@@ -3,7 +3,8 @@
 {% block content %}
   <a href='../letters'>back</a>
 
-  <h1>{{ title }}</h1>
-  <p>{{ letter }}</p>
+  <div class="letter">
+    {{ letter | safe }}
+  </div>
 
 {% endblock %}

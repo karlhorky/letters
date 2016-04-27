@@ -1,7 +1,7 @@
 var _        = require('lodash');
 var express  = require('express');
 var fs       = require('fs');
-var markdown = require('nunjucks-markdown');
+var marked   = require('marked');
 var nunjucks = require('nunjucks');
 var path     = require('path');
 var router   = express.Router();
@@ -104,16 +104,13 @@ router.get('/', function(req, res, next) {
 //   });
 // });
 
-function cleanUpShit(letter) {
-  return marked(letter);
-}
-
 router.get('/:name', function(req, res) {
   var indx = _.findIndex(allPosts, ['shorturl', req.params.name]);
+  var parsedResponse = marked(allPosts[indx].toString());
 
   res.render('letter.html', {
     title: 'Letter: ' + req.params.name,
-    letter: allPosts[indx]
+    letter: parsedResponse
   });
 });
 
