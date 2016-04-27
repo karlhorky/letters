@@ -1,10 +1,11 @@
-var express = require('express');
-var path = require('path');
-var favicon = require('serve-favicon');
-var logger = require('morgan');
+var bodyParser   = require('body-parser');
 var cookieParser = require('cookie-parser');
-var nunjucks = require('nunjucks')
-var bodyParser = require('body-parser');
+var express      = require('express');
+var favico       = require('serve-favicon');
+var logger       = require('morgan');
+var marked       = require('marked');
+var nunjucks     = require('nunjucks')
+var path         = require('path');
 
 var routes = require('./routes/index');
 var letters = require('./routes/letters');
@@ -12,11 +13,14 @@ var letters = require('./routes/letters');
 var app = express();
 
 // view engine setup
-nunjucks.configure('views', {
+var nunjucksEnv = nunjucks.configure('views', {
   autoescape: true,
   express: app
 });
 
+// nunjucksEnv.addFilter('meh', value => {
+//   return marked(value);
+// });
 
 // uncomment after placing your favicon in /public
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));

@@ -1,7 +1,6 @@
 var _        = require('lodash');
 var express  = require('express');
 var fs       = require('fs');
-var marked   = require('marked');
 var markdown = require('nunjucks-markdown');
 var nunjucks = require('nunjucks');
 var path     = require('path');
