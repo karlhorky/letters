@@ -104,6 +104,10 @@ router.get('/', function(req, res, next) {
 //   });
 // });
 
+function cleanUpShit(letter) {
+  return marked(letter);
+}
+
 router.get('/:name', function(req, res) {
   var indx = _.findIndex(allPosts, ['shorturl', req.params.name]);
 

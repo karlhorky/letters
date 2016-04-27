@@ -18,10 +18,6 @@ var nunjucksEnv = nunjucks.configure('views', {
   express: app
 });
 
-// nunjucksEnv.addFilter('meh', value => {
-//   return marked(value);
-// });
-
 // uncomment after placing your favicon in /public
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 app.use(logger('dev'));
