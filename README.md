@@ -40,6 +40,8 @@ I have always wanted to write, and once I did, this was all I ended up having to
 
 [Fun](arbitrary-folder/fun.md)
 
+[Gold](arbitrary-folder/gold.md)
+
 [Government](arbitrary-folder/government.md)
 
 [Hijos](arbitrary-folder/hijos.md)
