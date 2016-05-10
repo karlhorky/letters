@@ -63,8 +63,14 @@ gulp.task('css', function () {
     .pipe(browserSync.reload({ stream: true }));
 });
 
-gulp.task('sass', function () {
+gulp.task('global-styles', function () {
   return gulp.src('./styles/**/*.scss')
+    .pipe(sass().on('error', sass.logError))
+    .pipe(gulp.dest('./public/stylesheets'));
+});
+
+gulp.task('page-styles', function () {
+  return gulp.src('./views/**/*.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(gulp.dest('./public/stylesheets'));
 });
@@ -76,6 +82,7 @@ gulp.task('bs-reload', function () {
 gulp.task('default', ['browser-sync'], function () {
   gulp.watch('./public/**/*.js',   ['js', browserSync.reload]);
   gulp.watch('./public/**/*.css',  ['css']);
-  gulp.watch('./styles/**/*.scss',  ['sass']);
+  gulp.watch('./styles/**/*.scss', ['global-styles']);
+  gulp.watch('./views/**/*.scss',  ['page-styles']);
   gulp.watch('./public/**/*.html', ['bs-reload']);
 });
