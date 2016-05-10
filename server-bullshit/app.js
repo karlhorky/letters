@@ -13,13 +13,6 @@ var letters = require('./routes/letters');
 
 var app = express();
 
-if (app.get('env') == 'development') {
-  var browserSync = require('browser-sync');
-  var bs = browserSync({ logSnippet: false });
-  app.use(require('connect-browser-sync')(bs));
-}
-
-
 // view engine setup
 var nunjucksEnv = nunjucks.configure('views', {
   autoescape: true,
@@ -32,14 +25,6 @@ app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
-
-app.use(sassMiddleware({
-  src: path.join(__dirname, 'styles'),
-  dest: path.join(__dirname, 'public'),
-  debug: true,
-  outputStyle: 'compressed',
-  prefix:  '/stylesheets'  // Where prefix is at <link rel="stylesheets" href="stylesheets/style.css"/>
-}));
 
 app.use(express.static(path.join(__dirname, 'public')));
 
