@@ -1,0 +1,53 @@
+.editor {
+  border: 0;
+  display: block;
+  font-family: $monospace;
+  font-size: $h2-font-size;
+  min-height: 300px;
+  height: auto;
+  margin: 2em auto;
+  max-width: 850px;
+  position: relative;
+  width: 100%;
+
+  textarea {
+    height: 100%;
+    opacity: 0.5;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+  }
+}
+
+.content {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 0;
+ 
+  h1::before { content: "# "; }
+  h2::before { content: "## "; }
+  h3::before { content: "### "; }
+  h4::before { content: "#### "; }
+  h5::before { content: "##### "; }
+  h6::before { content: "###### "; }
+  strike::after, strike::before { content: "~~"; }
+  i::before, i::after { content: "*"; }
+  b::before, b::after { content: "**"; }
+  ol, ul { list-style: none; padding-left: 0; }
+  ul li::before { content: "* "; }
+  ol li::before { content: "1. "; }
+  code::before, code::after { content: "`"; }
+  pre::before { content: "```" attr(lang) "\A"; }
+  pre::after { content:"```\A"; }
+  a::before { content: "["; }
+  a::after { content: "](" attr(href) ")"; }
+  tr::before { content: "| "; }
+  td::after { content: " | "; }
+  thead td::after { content: " | \A-----| "; white-space: pre; }
+}

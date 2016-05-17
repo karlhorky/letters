@@ -1,0 +1,302 @@
+// Mountain illustration.
+
+.illustration {
+  background-color: dodgerblue;
+  height: 200px;
+  position: relative;
+
+  @include media($nine-col) {
+    height: 275px;
+  }
+
+  svg {
+    bottom: 0;
+    display: block;
+    fill: white;
+    float: left;
+    height: 150px;
+    position: absolute;
+    width: 100%;
+  }
+}
+
+// Ripple Animation
+@include keyframes(ripple) {
+  0% {
+    opacity: auto;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: auto;
+  }
+}
+
+.ring-1,
+.ring-2,
+.ring-3,
+.ring-4,
+.ring-5,
+.ring-6 {
+  @include animation(ripple 3.0s ease infinite);
+}
+
+.ring-1 {
+  opacity: 1;
+}
+
+.ring-2 {
+  @include animation-delay(0.25s);
+  opacity: 0.8;
+}
+
+.ring-3 {
+  @include animation-delay(0.5s);
+  opacity: 0.6;
+}
+
+.ring-4 {
+  @include animation-delay(0.75s);
+  opacity: 0.3;
+}
+
+.ring-5 {
+  @include animation-delay(1s);
+  opacity: 0.2;
+}
+
+.ring-6 {
+  @include animation-delay(1.25s);
+  opacity: 0.1;
+}
+
+
+// Pulse Animation
+@include keyframes(glide) {
+  0% {
+    @include transform(translateX(0px));
+  }
+  50% {
+    @include transform(translateX(5px));
+  }
+  100% {
+    @include transform(translateX(0px));
+  }
+}
+
+.cloud-level-top {
+  @include animation(glide 6s ease-in-out infinite);
+  @include animation-delay(0.25s);
+}
+
+.cloud-level-middle {
+  @include animation(glide 4s ease-in-out infinite);
+  @include animation-delay(0.5s);
+  opacity: 0.5;
+}
+
+.cloud-level-bottom {
+  @include animation(glide 8s ease-in-out infinite);
+  @include animation-delay(0.75s);
+  opacity: 0.15;
+}
+
+.poopy-browser {
+  @include align-self(center);
+
+  border-radius: 10px;
+  border: 3px solid white;
+  height: 20%;
+  min-height: 175px;
+  overflow: hidden; // Suggestion from @LukyVJ
+  padding: 10px;
+  position: relative;
+  width: 75%;
+
+  @include media($nine-col) {
+    width: 55%;
+  }
+}
+
+.close {
+  border-radius: 50%;
+  border: 3px solid white;
+  width: 5px;
+  height: 5px;
+  float: left;
+  margin-right: 3%;
+}
+
+.minimize {
+  @extend .close;
+}
+
+.maximize {
+  @extend .close;
+}
+
+.address-bar {
+  width: 115%;
+  margin-left: -7%;
+  border-top: 3px solid white;
+  margin-top: 20px;
+}
+
+.x {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  border: 3px solid white;
+  top: 55%;
+  margin-left: -30px;
+  left: 50%;
+  margin-top: -30px;
+  position: absolute;
+  
+  &:before {
+    @include transform(rotate(-45deg));
+    width: 40px;
+    height: 3px;
+    position: absolute;
+    top: 50%;
+    margin-top: -1.5px;
+    left: 50%;
+    margin-left: -20px;
+    background-color: white;
+    content: '';
+    display: block;
+  }
+  
+  &:after {
+    @extend :before;
+    @include transform(rotate(45deg));
+  }
+}
+
+@function makelongshadow($color, $length) {
+  $val: 0px 0px $color;
+  @for $i from 1 through $length {
+    $val: $val, $i + px $i + px $color;
+  }
+  @return $val;
+}
+
+@mixin longshadow($color, $length) {
+  box-shadow: makelongshadow($color, $length);
+}
+
+// Action buttons
+@mixin action-button($level-1, $level-2, $should-center, $size) {
+  @include align-self(center);
+
+  background-color: $level-1; // Action buttons have two bg colors
+  border-radius: 50%;
+  color: white;
+  height: $size;
+  overflow: hidden;
+  position: relative;
+  width: $size;
+
+  @include media($nine-col) {
+    @include align-self(center);
+
+    height: $size * 1.05;
+    width: $size * 1.05;
+  }
+
+  &:active {
+    &:before {
+      @include transition(background-color 0.2s ease 0s);
+      background-color: darken($level-1, 4%);
+      box-shadow: inset -10px -10px 0 darken($level-1, 10%); // animate inward
+      width: calc(($size * 2.25) - 20%);
+    }
+  }
+
+  &:before {
+    @include calc(height, '#{$size} - 20%'); // Decrement action button sizes
+    @include calc(width, '#{$size} - 20%');
+    @include longshadow(darken($level-1, 10%), 125);
+    @include transition(background-color 0.2s ease 0s);
+
+    background-color: $level-2;
+    border-radius: 50%;
+    content: '';
+    display: block;
+    margin-top: 10%;
+    position: absolute;
+
+    @if $should-center {
+      margin-left: 28%; // fallback
+      @include calc(margin-left, '50% - ((#{$size} - 20%)/2)');
+    }
+
+    @include media($nine-col) {
+      @include calc(height, '(#{$size}*1.05) - 20%'); // Decrement action button sizes
+      @include calc(width, '(#{$size}*1.05) - 20%');
+
+      @if $should-center {
+        margin-left: 16%; // fallback
+        @include calc(margin-left, '50% - (((#{$size}*1.05) - 20%)/2)');
+      }
+    }
+  }
+}
+
+$light-dodger: lighten(dodgerblue, 8%);
+
+.action-button {
+  @include action-button($light-dodger, dodgerblue, true, 200px);
+
+  display: block;
+  z-index: $zindex-5;
+
+  &:active {
+    .twitter {
+      @include transition(all 0.5s ease 0s);
+      fill: white;
+    }
+  }
+
+  // Desktop
+  @include media($nine-col) {
+    &:hover {
+      cursor: pointer;
+
+      .twitter {
+        @include transition(all 0.09s ease 0s);
+
+        font-size: 6em;
+        margin-left: 27%;
+        margin-top: 28%;
+
+        @include media($nine-col) {
+          font-size: 2.6em;
+        }
+      }
+    }
+  }
+
+  .twitter {
+    font-size: 2.35em;
+    margin-left: 28%;
+    margin-top: 29%;
+    overflow: hidden;
+    position: absolute;
+
+    @include media($nine-col) {
+      font-size: 2.5em;
+    }
+
+    .ico {
+      color: white;
+      overflow: hidden;
+      z-index: $zindex-6;
+    }
+  }
+}
+
+.login {
+  @include align-self(center);
+}

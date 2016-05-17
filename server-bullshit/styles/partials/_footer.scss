@@ -1,0 +1,49 @@
+.footer {
+  clear: both;
+  font-family: $serif;
+  font-size: $base-font-size;
+  margin: -5.75em auto;
+  position: relative;
+  text-align: center;
+
+  @include media($nine-col) {
+    margin: -5.2em auto 3em auto;
+  }
+
+  p {
+    margin: 1em auto;
+    width: 80%;
+  }
+}
+
+.decoration-line {
+  background-color: $brand-primary;
+  height: 1px;
+  position: absolute;
+  top: 33%;
+  width: 100%;
+  z-index: $zindex-1;
+}
+
+.find-posts {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: 6em auto;
+  width: 100%;
+
+  a, span {
+    padding: 5px;
+  }
+}
+
+.link-separator {
+  &:after {
+    @include font-feature-settings('ornm' 7);
+
+    color: $brand-primary;
+    content: '\0041';
+    display: inline-block;
+    font-size: 1em;
+  }
+}

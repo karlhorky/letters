@@ -1,0 +1,61 @@
+.header {
+  border-bottom: 1px solid $brand-primary;
+  display: flex;
+  flex-wrap: wrap;
+  font-family: $sans-serif;
+  height: 120px;
+  justify-content: flex-end;
+
+  @include media($nine-col) {
+    height: 80px;
+  }
+
+  .container {
+    max-width: 805px;
+    width: 70%;
+  }
+
+  a {
+    @include flex(2 1 auto);
+
+    h1 {
+      color: $brand-black;
+      font-family: $serif;
+      font-size: $h5-font-size;
+      font-weight: $light-weight;
+      margin: 0;
+
+      &:hover {
+        color: $brand-black;
+      }
+
+      @include media($nine-col) {
+        font-size: $h4-font-size;
+      }
+    }
+  }
+}
+
+.nav {
+  li {
+    @include flex(1 1 auto);
+
+    float: right;
+    font-family: $sans-serif;
+    font-size: 0.85em;
+    font-weight: $semibold-weight;
+    letter-spacing: 0.4px;
+    list-style-type: none;
+    margin-left: 15px;
+    text-transform: uppercase;
+
+    @include media($nine-col) {
+      margin-left: 30px;
+    }
+  }
+
+  ul {
+    margin: 0; // I don't like this override
+    padding: 0;
+  }
+}

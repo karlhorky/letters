@@ -1,3 +1,48 @@
+// Global styles.
+
 html {
-  // background-color: tomato;
+  @include font-feature-settings('liga');
+
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+  color: $brand-black;
+  font-family: $serif;
+  font-size: $base-font-size;
+  font-weight: $normal-weight;
+  line-height: $base-line-height;
+
+  img {
+    width: 100%;
+  }
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.container { // global container for app
+  align-items: center;
+  clear: both;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  width: 70%;
+}
+
+.upside-down {
+  @include transform(rotate(190deg));
+
+  display: inline-block;
+}
+
+audio {
+  width: 100%;
+}
+
+.twitter {
+  margin-bottom: 10em;
+  text-align: center;
+  font-style: italic;
+  width: 100%;
 }

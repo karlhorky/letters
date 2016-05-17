@@ -2,6 +2,7 @@
 
 var gulp        = require('gulp');
 var browserSync = require('browser-sync');
+var neat        = require('node-neat').includePaths;
 var nodemon     = require('gulp-nodemon');
 var sass        = require('gulp-sass');
 
@@ -60,17 +61,23 @@ gulp.task('js',  function () {
 
 gulp.task('css', function () {
   return gulp.src('./public/**/*.css')
-    .pipe(browserSync.reload({ stream: true }));
+    .pipe(browserSync.reload({ stream: true }))
 });
 
 gulp.task('global-styles', function () {
   return gulp.src('./styles/**/*.scss')
+    .pipe(sass({
+      includePaths: ['sass'].concat(neat)
+    }))
     .pipe(sass().on('error', sass.logError))
     .pipe(gulp.dest('./public/stylesheets'));
 });
 
 gulp.task('page-styles', function () {
   return gulp.src('./views/**/*.scss')
+    .pipe(sass({
+      includePaths: ['sass'].concat(neat)
+    }))
     .pipe(sass().on('error', sass.logError))
     .pipe(gulp.dest('./public/stylesheets'));
 });

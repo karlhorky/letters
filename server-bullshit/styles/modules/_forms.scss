@@ -1,0 +1,19 @@
+[type='text'],
+[type='email'] {
+  display: inline-block;
+  font-family: $display-sans, sans-serif;
+  font-weight: $extra-bold-weight;
+  margin: 2% auto;
+  padding: 2%;
+  width: 50%;
+
+  & + .mce_inline_error {
+    border: 1px solid #6B0505;
+    display: block;
+    font-family: $display-sans, sans-serif;
+    font-weight: $extra-bold-weight;
+    margin: 2% auto;
+    padding: 2%;
+    width: 50%;
+  }
+}

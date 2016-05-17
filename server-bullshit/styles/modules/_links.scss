@@ -1,0 +1,33 @@
+// Links
+
+a {
+  color: $brand-primary;
+  text-decoration: none;
+
+  &:hover {
+    color: darken($brand-primary, 10%);
+    text-decoration: underline;
+
+    // &:after {
+    //   @include animation(link-underlines 0.45s ease-in);
+    //   @include animation-fill-mode(forwards);
+
+    //   background-color: white;
+    //   border-bottom-width: 2px;
+    //   border-bottom-style: dashed;
+    //   border-top-width: 2px;
+    //   border-top-style: solid;
+    //   content: '';
+    //   display: block;
+    //   height: 8px;
+    // }
+  }
+
+  &:visited {
+    color: darken($brand-primary, 10%);
+  }
+
+  &:active {
+    color: darken($brand-primary, 10%);
+  }
+}

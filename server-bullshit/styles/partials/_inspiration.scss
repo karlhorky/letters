@@ -1,0 +1,101 @@
+.inspiration-grid {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: auto;
+  overflow-x: hidden;
+  width: 100vw;
+
+  @include media($nine-col) {
+    height: 1350px;
+  }
+
+  @include media($twelve-col) {
+    height: 1950px;
+  }
+}
+
+.inspiration-item {
+  opacity: 0; // animation fill mode forwards, so ends up being 1 after animation is complete
+  width: 100%;
+
+  img {
+    background-color: tomato; 
+  }
+
+  p {
+    font-family: $serif;
+    text-align: center;
+    margin: 2em auto;
+  }
+
+  @include media($nine-col) {
+    width: 25%;
+  }
+}
+
+$i: 15; // number of items in our inspiration grid halved
+
+@while $i > 0 {
+  .inspiration-item-#{$i} {
+    @include animation(fade-in-and-up 0.5s ease);
+    @include animation-fill-mode(forwards);
+  }
+  $i: $i - 1;
+}
+
+.inspiration-item-5 {
+  @include animation-delay(0.15s);
+}
+
+.inspiration-item-8 {
+  @include animation-delay(0.2s);
+}
+
+.inspiration-item-12 {
+  @include animation-delay(0.22s);
+}
+
+.inspiration-item-3 {
+  @include animation-delay(0.25s);
+}
+
+.inspiration-item-6 {
+  @include animation-delay(0.28s);
+}
+
+.inspiration-item-9 {
+  @include animation-delay(0.30s);
+}
+
+.inspiration-item-13 {
+  @include animation-delay(0.32s);
+}
+
+.inspiration-item-4 {
+  @include animation-delay(0.35s);
+}
+
+.inspiration-item-7 {
+  @include animation-delay(0.38s);
+}
+
+.inspiration-item-10 {
+  @include animation-delay(0.4s);
+}
+
+.inspiration-item-13 {
+  @include animation-delay(0.42s);
+}
+
+.inspiration-item-14 {
+  @include animation-delay(0.44s);
+}
+
+.inspiration-item-11 {
+  @include animation-delay(0.46s);
+}
+
+.inspiration-item-15 {
+  @include animation-delay(0.48s);
+}

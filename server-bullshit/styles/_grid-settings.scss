@@ -1,0 +1,15 @@
+// Grid settings through Bourbon Neat.
+
+// https://github.com/thoughtbot/neat#using-neat
+
+@import 'neat-helpers';
+
+// Change the grid settings
+$column: 90px;
+$gutter: 0px;
+$grid-columns: 4;
+$min-width: em(450px);
+
+// Define your breakpoints
+$nine-col:   new-breakpoint(min-width 850px 9);
+$twelve-col: new-breakpoint(min-width 1200px 12);

@@ -1,0 +1,173 @@
+// Some general container styles for blog posts.
+
+.post {
+  margin: auto;
+  text-align: justify;
+  width: 75%;
+
+  @include media($nine-col) {
+    width: 35%;
+  }
+
+  img, video {
+    width: 100%;
+  }
+}
+
+aside {
+  opacity: 0;
+
+  @include media($nine-col) {
+    opacity: 1;
+  }
+}
+
+.pullout {
+  clear: both;
+  font-family: $display-sans, sans-serif;
+  font-size: $h4-font-size;
+  font-weight: $extra-bold-weight;
+  left: 0;
+  line-height: $base-line-height * 1.05;
+  padding: 4%;
+  position: absolute;
+  text-align: center;
+  width: 20%;
+
+  &:before {
+    border-bottom: 2px solid $brand-primary;
+    border-top: 1px solid $brand-primary;
+    content: '';
+    display: block;
+    height: 7px;
+    margin-bottom: 10%;
+    margin-left: 20%;
+    width: 60%;
+  }
+
+  &:after {
+    border-bottom: 1px solid $brand-primary;
+    border-top: 2px solid $brand-primary;
+    content: '';
+    display: block;
+    height: 7px;
+    margin-left: 20%;
+    margin-top: 10%;
+    width: 60%;
+  }
+}
+
+.pullout-right {
+  position: absolute;
+  clear: both;
+  width: 20%;
+  padding: 5%;
+  right: 0;
+
+  img {
+    max-width: 100%;
+  }
+}
+
+.breakout {
+  align-items: stretch;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 5% 0;
+
+  &.two {
+    img {
+      flex: 0 1 45%;
+      max-width: 100%;
+    }
+
+    blockquote {
+      align-items: center;
+      background-color: $brand-primary;
+      display: flex;
+      flex: 0 1 45%;
+      font-family: $display-sans, sans-serif;
+      font-size: $h5-font-size;
+      font-weight: $bold-weight;
+      justify-content: center;
+      margin: 0;
+    }
+  }
+
+  .breakout-image {
+    flex: 0 1 45%;
+
+    img {
+      max-width: 100%; 
+    }
+  }
+}
+
+.post-video {
+  display: block;
+  margin: 2em auto;
+  max-width: 50%;
+}
+
+.large-image {
+  flex: 0 1 100%;
+
+  img {
+    max-width: 100%;
+  }
+
+  @include media($nine-col) {
+    flex: 0 1 70%;
+  }
+}
+
+.caption {
+  color: $brand-gray-dark;
+  flex: 0 1 70%;
+  font-family: $display-sans, sans-serif;
+  font-size: $h4-font-size;
+  font-weight: 500;
+  padding: 0 2%;
+  text-align: center;
+
+  @include media($nine-col) {
+    flex: 0 1 30%;
+    text-align: left;
+  }
+
+  &:before {
+    border-bottom: 2px solid $brand-primary;
+    border-top: 1px solid $brand-primary;
+    content: '';
+    display: block;
+    height: 7px;
+    margin-bottom: 5%;
+  }
+}
+
+.post-ending {
+  &:after {
+    @include font-feature-settings('ornm' 7);
+
+    color: $brand-primary;
+    content: '\0041';
+    display: inline-block;
+    font-size: 1em;
+    margin-left: 0.5em;
+  }
+}
+
+.interjection {
+  font-family: $display-sans, sans-serif;
+  font-size: $h2-font-size;
+  font-weight: $extra-bold-weight;
+  margin: 0 auto;
+  width: 75%;
+  text-align: center;
+
+  @include media($nine-col) {
+    margin: 0 auto 2em auto;
+    width: 50%;
+  }
+}

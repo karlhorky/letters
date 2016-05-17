@@ -1,0 +1,34 @@
+// Typography Variables
+
+// Note: Variables for grid/breakpoints are stored in _grid_settings.scss.
+// Note: Variables for global variables are stored in _variables.scss.
+
+// Font-faces
+$sans-serif:                 ProximaNova, Helvetica, Arial, sans-serif;
+$display-sans:               NeueHaasUnica, Helvetica, Arial, sans-serif;
+$serif:                      CalendasPlus, Georgia, "Times New Roman", Times, serif;
+$monospace:                  "Courier New", Courier, monospace;
+
+// Sizes
+$base-font-size:                 0.85em;
+$base-line-height:               $base-font-size * 2;
+$unitless-line-height:           $base-line-height / ($base-line-height * 0 + 1); // Strip units from line-height: https://developer.mozilla.org/en-US/docs/Web/CSS/line-height#Prefer_unitless_numbers_for_line-height_values
+$header-line-height:             $base-font-size * 1.25;
+$base-border-radius:             em(3);
+$base-vertical-spacing:          0.5em;
+
+$h1-font-size:                   $base-font-size * 3.25;
+$h2-font-size:                   $base-font-size * 2;
+$h3-font-size:                   $base-font-size * 1.75;
+$h4-font-size:                   $base-font-size * 1.5;
+$h5-font-size:                   $base-font-size * 1.25;
+$h6-font-size:                   $base-font-size;
+
+// Display sizes
+$blockquote-size:                $base-font-size * 3.25;
+
+$light-weight:                   300;
+$normal-weight:                  400;
+$semibold-weight:                600;
+$bold-weight:                    700;
+$extra-bold-weight:              900;

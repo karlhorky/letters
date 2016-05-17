@@ -422,217 +422,236 @@ th {
   font-weight: 400;
   src: url("/fonts/Calendas-Plus.eot?#iefix") format("embedded-opentype"), url("/fonts/Calendas-Plus.woff") format("woff"), url("/fonts/Calendas-Plus.ttf") format("truetype"), url("/fonts/Calendas-Plus.svg#CalendasPlus") format("svg"); }
 
-@-webkit-keyframes fade-in {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
+@font-face {
+  font-family: LeagueSpartan;
+  font-style: normal;
+  font-weight: 600;
+  src: url("../../fonts/leaguespartan-bold.eot?#iefix") format("embedded-opentype"), url("../../fonts/leaguespartan-bold.woff2") format("woff2"), url("../../fonts/leaguespartan-bold.woff") format("woff"), url("../../fonts/leaguespartan-bold.ttf") format("truetype"), url("../../fonts/leaguespartan-bold.svg#LeagueSpartan") format("svg"); }
 
-@-moz-keyframes fade-in {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
-
-@keyframes fade-in {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
-
-@-webkit-keyframes fade-in-and-up {
-  0% {
-    opacity: 0;
-    transform: translateY(10px); }
-  100% {
-    opacity: 1;
-    transform: translateY(0px); } }
-
-@-moz-keyframes fade-in-and-up {
-  0% {
-    opacity: 0;
-    transform: translateY(10px); }
-  100% {
-    opacity: 1;
-    transform: translateY(0px); } }
-
-@keyframes fade-in-and-up {
-  0% {
-    opacity: 0;
-    transform: translateY(10px); }
-  100% {
-    opacity: 1;
-    transform: translateY(0px); } }
-
-@-webkit-keyframes link-underlines {
-  0% {
-    opacity: 0;
-    transform: translateY(0);
-    border-bottom-color: white;
-    border-top-color: white; }
-  50% {
-    border-bottom-color: white;
-    border-top-color: peru; }
-  100% {
-    opacity: 1;
-    transform: translateY(2px);
-    border-bottom-color: peru; } }
-
-@-moz-keyframes link-underlines {
-  0% {
-    opacity: 0;
-    transform: translateY(0);
-    border-bottom-color: white;
-    border-top-color: white; }
-  50% {
-    border-bottom-color: white;
-    border-top-color: peru; }
-  100% {
-    opacity: 1;
-    transform: translateY(2px);
-    border-bottom-color: peru; } }
-
-@keyframes link-underlines {
-  0% {
-    opacity: 0;
-    transform: translateY(0);
-    border-bottom-color: white;
-    border-top-color: white; }
-  50% {
-    border-bottom-color: white;
-    border-top-color: peru; }
-  100% {
-    opacity: 1;
-    transform: translateY(2px);
-    border-bottom-color: peru; } }
-
-@-webkit-keyframes rainbow-colors {
-  0% {
-    color: #4A90E2; }
-  17% {
-    color: #60e6e4; }
-  34% {
-    color: #59e48c; }
-  51% {
-    color: #e1e570; }
-  68% {
-    color: #ea886d; }
-  85% {
-    color: #ea75e3; }
-  100% {
-    color: #8e7fe8; } }
-
-@-moz-keyframes rainbow-colors {
-  0% {
-    color: #4A90E2; }
-  17% {
-    color: #60e6e4; }
-  34% {
-    color: #59e48c; }
-  51% {
-    color: #e1e570; }
-  68% {
-    color: #ea886d; }
-  85% {
-    color: #ea75e3; }
-  100% {
-    color: #8e7fe8; } }
-
-@keyframes rainbow-colors {
-  0% {
-    color: #4A90E2; }
-  17% {
-    color: #60e6e4; }
-  34% {
-    color: #59e48c; }
-  51% {
-    color: #e1e570; }
-  68% {
-    color: #ea886d; }
-  85% {
-    color: #ea75e3; }
-  100% {
-    color: #8e7fe8; } }
-
-html {
-  -webkit-font-feature-settings: "liga";
-  -moz-font-feature-settings: "liga";
-  -ms-font-feature-settings: "liga";
-  font-feature-settings: "liga";
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  box-sizing: border-box;
-  color: #434242;
-  font-family: CalendasPlus, Georgia, "Times New Roman", Times, serif;
-  font-size: 0.85em;
-  font-weight: 400;
-  line-height: 1.7em; }
-
-html img {
-  width: 100%; }
-
-*, *:before, *:after {
-  box-sizing: inherit; }
-
-.container {
-  align-items: center;
-  clear: both;
+.union-header {
   display: flex;
   flex-wrap: wrap;
-  margin: auto;
+  margin: 5em auto 3em auto;
+  width: 80%; }
+
+.union-header-emoji {
+  flex: 0 1 30%;
+  align-self: center; }
+
+.union-header-emoji img {
+  max-width: 150px;
+  width: 100%; }
+
+.union-didot {
+  font-family: 'Didot 96 A', 'Didot 96 B', serif;
+  font-size: 5em;
+  font-style: italic;
+  line-height: 1;
+  margin-top: 0;
+  margin-bottom: 0;
+  flex: 0 1 70%; }
+
+@media screen and (min-width: 1200px) {
+  .union-didot {
+    font-size: 10em; } }
+
+.union-didot .union-strikeout {
+  display: inline; }
+
+.union-neue {
+  font-family: NeueHaasUnica, Helvetica, Arial, sans-serif;
+  font-size: 0.85em;
+  font-style: normal; }
+
+@media screen and (min-width: 1200px) {
+  .union-neue {
+    font-size: 1em; } }
+
+.union-important-questions {
+  font-family: LeagueSpartan, Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  line-height: 1;
+  font-weight: bold;
+  text-align: left;
+  margin: 2em auto;
+  width: 60%; }
+
+@media screen and (min-width: 1200px) {
+  .union-important-questions {
+    font-size: 2em;
+    width: 40%; } }
+
+.union-important-questions li {
+  margin-bottom: 2em; }
+
+.union-logo {
+  display: block;
+  margin: 10em auto;
+  width: 20%; }
+
+.union-points {
+  list-style-type: decimal;
+  margin: 4em auto;
+  padding: 0;
   width: 70%; }
 
-.upside-down {
-  -webkit-transform: rotate(190deg);
-  -moz-transform: rotate(190deg);
-  -ms-transform: rotate(190deg);
-  -o-transform: rotate(190deg);
-  transform: rotate(190deg);
-  display: inline-block; }
+.union-points .union-point {
+  display: flex;
+  align-items: center;
+  margin-top: 5em;
+  flex-wrap: wrap; }
 
-audio {
-  width: 100%; }
+.union-points .union-point.improvement li {
+  order: 1; }
 
-.twitter {
-  margin-bottom: 10em;
-  text-align: center;
+.union-points .union-point.improvement .union-point-detail {
+  margin-right: 8%;
+  margin-top: 2%;
+  order: 2; }
+
+@media screen and (min-width: 1200px) {
+  .union-points .union-point.improvement .union-point-detail {
+    margin-left: 10%;
+    margin-right: 0; } }
+
+.union-points .union-point-detail {
+  flex: 0 1 100%;
+  justify-content: center;
+  margin-right: 10%;
+  text-align: center; }
+
+@media screen and (min-width: 1200px) {
+  .union-points .union-point-detail {
+    flex: 0 1 40%; } }
+
+.union-points .union-point-detail video, .union-points .union-point-detail img {
+  border: 1px solid #F5F5F5;
+  margin: auto;
+  max-width: 70%;
+  width: 70%; }
+
+.union-points .union-point-detail video.no-border, .union-points .union-point-detail img.no-border {
+  border: 0; }
+
+.union-points .union-point-detail.wysiwyg {
+  color: #4A90E2;
+  font-family: NeueHaasUnica, Helvetica, Arial, sans-serif;
+  font-size: 2em;
+  font-weight: bold;
+  line-height: 1.25;
+  padding: 0 8%; }
+
+.union-points li {
+  list-style-type: decimal; }
+
+@media screen and (min-width: 1200px) {
+  .union-points li {
+    flex: 0 1 50%; } }
+
+.union-point-strong {
+  font-family: NeueHaasUnica, Helvetica, Arial, sans-serif;
+  font-weight: 900; }
+
+.union-sw {
+  margin: -0.75em;
+  font-family: Avenir;
+  font-size: 2em; }
+
+.union-sw:first-of-type, .union-sw:last-of-type {
+  opacity: 0.2; }
+
+.union-sw:nth-of-type(2), .union-sw:nth-of-type(6) {
+  opacity: 0.4; }
+
+.union-sw:nth-of-type(3), .union-sw:nth-of-type(5) {
+  opacity: 0.7; }
+
+.union-sw:last-of-type {
+  margin-bottom: 1em; }
+
+@media screen and (min-width: 1200px) {
+  .union-sw {
+    margin-bottom: 0; } }
+
+.union-newb-callout {
+  -webkit-animation: rainbow-colors 12s ease-out;
+  -moz-animation: rainbow-colors 12s ease-out;
+  animation: rainbow-colors 12s ease-out;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  color: #4A90E2;
+  font-family: 'Harriet Display', 'Didot 96 A', 'Didot 96 B', serif;
+  font-size: 4em;
   font-style: italic;
-  width: 100%; }
+  font-weight: 900;
+  line-height: 1.2;
+  margin: auto;
+  max-width: 8em;
+  padding: 0 10px;
+  text-align: center; }
 
-.ico {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  display: inline-block;
-  font-family: 'icomoon';
-  font-size: 2.7625em;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: normal;
+@media screen and (min-width: 1200px) {
+  .union-newb-callout {
+    font-size: 10em;
+    padding: 0; } }
+
+.union-blockquote-attribution {
+  float: right;
+  margin-right: 3em; }
+
+@media screen and (min-width: 1200px) {
+  .union-blockquote-attribution {
+    margin-right: 20em; } }
+
+.union-google-improvements {
+  margin: 4em auto !important;
+  text-align: center !important;
+  font-family: NeueHaasUnica, Helvetica, Arial, sans-serif;
+  font-size: 1.5em;
+  line-height: 1; }
+
+.union-less {
+  display: block;
+  margin: 45em auto;
+  text-align: center;
+  width: 10em;
+  font-style: italic; }
+
+.union-inline-video {
+  border: 1px solid #F5F5F5; }
+
+.union-products {
+  color: black;
+  font-family: "Avenir Next", sans-serif;
+  font-size: 2em;
+  font-weight: 900;
   line-height: 1;
-  margin: 0 5px;
-  speak: none;
-  text-transform: none; }
+  margin: 5em auto;
+  max-width: 10em;
+  width: 50%; }
 
-.ico.-add:before {
-  content: '\e600'; }
+@media screen and (min-width: 1200px) {
+  .union-products {
+    font-size: 3em;
+    width: 50%; } }
 
-.ico.-bets:before {
-  content: '\e607'; }
+.union-devtools-current {
+  padding-top: 10em; }
 
-.ico.-camera:before {
-  content: '\e605'; }
+.union-goals {
+  font-family: 'Didot 96 A', 'Didot 96 B', serif;
+  font-size: 10em;
+  overflow: hidden;
+  margin: 0 0 0 -10%;
+  font-style: italic;
+  text-transform: uppercase;
+  line-height: 1; }
 
-.ico.-crown:before {
-  content: '\e603'; }
+@media screen and (min-width: 1200px) {
+  .union-goals {
+    font-size: 30em;
+    margin: 0 0 0 -5%; } }
 
-.ico.-mail:before {
-  content: '\e602'; }
-
-.ico.-stats:before {
-  content: '\e608'; }
-
-.ico.-twitter:before {
-  content: "\e606"; }
-
-.ico.-users:before {
-  content: '\e601'; }
+.post.union {
+  margin-bottom: 10em; }

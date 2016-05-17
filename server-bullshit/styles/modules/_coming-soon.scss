@@ -1,0 +1,76 @@
+// Coming soon writing pages
+
+.coming-soon {
+  align-items: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  margin: 5% auto 15% auto !important;
+  max-width: 700px;
+  width: 100%;
+  
+  @include media($nine-col) {
+    margin: 5% auto 8% auto !important;
+  }
+
+  h1, input, p, #mc_embed_signup {
+    @include flex(0 1 100%);
+  }
+
+  #mc_embed_signup {
+    margin-top: 5%;
+    text-align: center;
+
+    .mce_inline_error {
+      @include animation(fade-in 1.0s ease);
+      @include animation-fill-mode(forwards);
+
+      margin: auto;
+      opacity: 0;
+    }
+  }
+
+  .response {
+    @include animation(fade-in 1.0s ease);
+    @include animation-fill-mode(forwards);
+
+    opacity: 0;
+    padding: 2% 10%;
+  }
+
+  .btn {
+    @include transition(background-color 0.25s ease);
+
+    background-color: white;
+    border: 3px solid $brand-primary;
+    color: $brand-primary;
+    flex: 0 1 100%;
+    font-family: $display-sans, sans-serif;
+    font-weight: $extra-bold-weight;
+    margin-top: 5%;
+    padding: 2% 10%;
+
+    &:hover {
+      background-color: $brand-primary;
+      color: white; 
+    }
+  }
+
+  h1 {
+    color: $brand-primary;
+    display: block;
+    font-family: 'Didot 06 A', 'Didot 06 B', serif;
+    font-size: $h1-font-size * 2;
+    font-style: italic;
+    font-weight: $light-weight;
+    line-height: $base-line-height / 1.5;
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  em {
+    text-align: center;
+    width: 100%;
+  }
+}

@@ -1,0 +1,61 @@
+// Icon font
+
+// Anti-aliasing
+// http://maximilianhoffmann.com/posts/better-font-rendering-on-osx
+@mixin font-smoothing($value: on) {
+  @if $value == on {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  @else {
+    -webkit-font-smoothing: subpixel-antialiased;
+    -moz-osx-font-smoothing: auto;
+  }
+}
+
+.ico {
+  @include font-smoothing(on);
+
+  display: inline-block;
+  font-family: 'icomoon';
+  font-size: $h1-font-size;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  margin: $hor-margin-small;
+  speak: none;
+  text-transform: none;
+
+  &.-add:before {
+    content: '\e600';
+  }
+
+  &.-bets:before {
+    content: '\e607';
+  }
+
+  &.-camera:before {
+    content: '\e605';
+  }
+
+  &.-crown:before {
+    content: '\e603';
+  }
+
+  &.-mail:before {
+    content: '\e602';
+  }
+
+  &.-stats:before {
+    content: '\e608';
+  }
+
+  &.-twitter:before {
+    content: "\e606";
+  }
+
+  &.-users:before {
+    content: '\e601';
+  }
+}

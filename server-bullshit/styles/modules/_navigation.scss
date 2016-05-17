@@ -1,0 +1,29 @@
+// Various navs (main + letters)
+
+.letter-nav {
+  align-items: center;
+  background-color: $brand-primary; 
+  display: flex;
+  height: 12px;
+  justify-content: center;
+  transition: all 0.3s ease;
+  width: 100%;
+
+  a {
+    color: white;
+    opacity: 0;
+    
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  &:hover {
+    cursor: pointer;
+    height: 30px;
+
+    a {
+      opacity: 1;
+    }
+  }
+}
