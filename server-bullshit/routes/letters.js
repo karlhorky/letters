@@ -40,7 +40,7 @@ indexPosts(pathToLetters);
 
 // GET letters listing.
 router.get('/', function(req, res, next) {
-  res.render('letters.html', { 
+  res.render('letters/letters.html', { 
     title: 'Letters',
     letterTitles: allPosts
   });
