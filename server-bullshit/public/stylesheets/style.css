@@ -363,54 +363,6 @@ th {
   padding: 0; }
 
 @font-face {
-  font-family: ProximaNova;
-  font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/proxima_nova_reg-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/proxima_nova_reg-webfont.woff2") format("woff2"), url("../fonts/proxima_nova_reg-webfont.woff") format("woff"), url("../fonts/proxima_nova_reg-webfont.ttf") format("truetype"), url("../fonts/proxima_nova_reg-webfont.svg#ProximaNova") format("svg"); }
-
-@font-face {
-  font-family: ProximaNova;
-  font-style: normal;
-  font-weight: 700;
-  src: url("../fonts/proxima_nova_bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/proxima_nova_bold-webfont.woff2") format("woff2"), url("../fonts/proxima_nova_bold-webfont.woff") format("woff"), url("../fonts/proxima_nova_bold-webfont.ttf") format("truetype"), url("../fonts/proxima_nova_bold-webfont.svg#ProximaNova") format("svg"); }
-
-@font-face {
-  font-family: ProximaNova;
-  font-style: normal;
-  font-weight: 300;
-  src: url("../fonts/proxima_nova_light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/proxima_nova_light-webfont.woff2") format("woff2"), url("../fonts/proxima_nova_light-webfont.woff") format("woff"), url("../fonts/proxima_nova_light-webfont.ttf") format("truetype"), url("../fonts/proxima_nova_light-webfont.svg#ProximaNova") format("svg"); }
-
-@font-face {
-  font-family: ProximaNova;
-  font-style: normal;
-  font-weight: 600;
-  src: url("../fonts/proxima_nova_sbold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/proxima_nova_sbold-webfont.woff2") format("woff2"), url("../fonts/proxima_nova_sbold-webfont.woff") format("woff"), url("../fonts/proxima_nova_sbold-webfont.ttf") format("truetype"), url("../fonts/proxima_nova_sbold-webfont.svg#ProximaNova") format("svg"); }
-
-@font-face {
-  font-family: ProximaNova;
-  font-style: normal;
-  font-weight: 600;
-  src: url("../fonts/proxima_nova_sbold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/proxima_nova_sbold-webfont.woff2") format("woff2"), url("../fonts/proxima_nova_sbold-webfont.woff") format("woff"), url("../fonts/proxima_nova_sbold-webfont.ttf") format("truetype"), url("../fonts/proxima_nova_sbold-webfont.svg#ProximaNova") format("svg"); }
-
-@font-face {
-  font-family: icomoon;
-  font-style: normal;
-  font-weight: normal;
-  src: url("../fonts/icomoon.eot?#iefix") format("embedded-opentype"), url("../fonts/icomoon.woff2") format("woff2"), url("../fonts/icomoon.woff") format("woff"), url("../fonts/icomoon.ttf") format("truetype"), url("../fonts/icomoon.svg#icomoon") format("svg"); }
-
-@font-face {
-  font-family: NeueHaasUnica;
-  font-style: normal;
-  font-weight: 900;
-  src: url("/fonts/NeueHaasUnicaW1G-Black.eot?#iefix") format("embedded-opentype"), url("/fonts/NeueHaasUnicaW1G-Black.woff") format("woff"), url("/fonts/NeueHaasUnicaW1G-Black.ttf") format("truetype"), url("/fonts/NeueHaasUnicaW1G-Black.svg#NeueHaasUnica") format("svg"); }
-
-@font-face {
-  font-family: NeueHaasUnica;
-  font-style: normal;
-  font-weight: 400;
-  src: url("/fonts/NeueHaasUnicaW1G-Regular.eot?#iefix") format("embedded-opentype"), url("/fonts/NeueHaasUnicaW1G-Regular.woff2") format("woff2"), url("/fonts/NeueHaasUnicaW1G-Regular.woff") format("woff"), url("/fonts/NeueHaasUnicaW1G-Regular.ttf") format("truetype"), url("/fonts/NeueHaasUnicaW1G-Regular.svg#NeueHaasUnica") format("svg"); }
-
-@font-face {
   font-family: CalendasPlus;
   font-style: italic;
   font-weight: 400;
@@ -422,137 +374,8 @@ th {
   font-weight: 400;
   src: url("/fonts/Calendas-Plus.eot?#iefix") format("embedded-opentype"), url("/fonts/Calendas-Plus.woff") format("woff"), url("/fonts/Calendas-Plus.ttf") format("truetype"), url("/fonts/Calendas-Plus.svg#CalendasPlus") format("svg"); }
 
-@-webkit-keyframes fade-in {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
-
-@-moz-keyframes fade-in {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
-
-@keyframes fade-in {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
-
-@-webkit-keyframes fade-in-and-up {
-  0% {
-    opacity: 0;
-    transform: translateY(10px); }
-  100% {
-    opacity: 1;
-    transform: translateY(0px); } }
-
-@-moz-keyframes fade-in-and-up {
-  0% {
-    opacity: 0;
-    transform: translateY(10px); }
-  100% {
-    opacity: 1;
-    transform: translateY(0px); } }
-
-@keyframes fade-in-and-up {
-  0% {
-    opacity: 0;
-    transform: translateY(10px); }
-  100% {
-    opacity: 1;
-    transform: translateY(0px); } }
-
-@-webkit-keyframes link-underlines {
-  0% {
-    opacity: 0;
-    transform: translateY(0);
-    border-bottom-color: white;
-    border-top-color: white; }
-  50% {
-    border-bottom-color: white;
-    border-top-color: peru; }
-  100% {
-    opacity: 1;
-    transform: translateY(2px);
-    border-bottom-color: peru; } }
-
-@-moz-keyframes link-underlines {
-  0% {
-    opacity: 0;
-    transform: translateY(0);
-    border-bottom-color: white;
-    border-top-color: white; }
-  50% {
-    border-bottom-color: white;
-    border-top-color: peru; }
-  100% {
-    opacity: 1;
-    transform: translateY(2px);
-    border-bottom-color: peru; } }
-
-@keyframes link-underlines {
-  0% {
-    opacity: 0;
-    transform: translateY(0);
-    border-bottom-color: white;
-    border-top-color: white; }
-  50% {
-    border-bottom-color: white;
-    border-top-color: peru; }
-  100% {
-    opacity: 1;
-    transform: translateY(2px);
-    border-bottom-color: peru; } }
-
-@-webkit-keyframes rainbow-colors {
-  0% {
-    color: #4A90E2; }
-  17% {
-    color: #60e6e4; }
-  34% {
-    color: #59e48c; }
-  51% {
-    color: #e1e570; }
-  68% {
-    color: #ea886d; }
-  85% {
-    color: #ea75e3; }
-  100% {
-    color: #8e7fe8; } }
-
-@-moz-keyframes rainbow-colors {
-  0% {
-    color: #4A90E2; }
-  17% {
-    color: #60e6e4; }
-  34% {
-    color: #59e48c; }
-  51% {
-    color: #e1e570; }
-  68% {
-    color: #ea886d; }
-  85% {
-    color: #ea75e3; }
-  100% {
-    color: #8e7fe8; } }
-
-@keyframes rainbow-colors {
-  0% {
-    color: #4A90E2; }
-  17% {
-    color: #60e6e4; }
-  34% {
-    color: #59e48c; }
-  51% {
-    color: #e1e570; }
-  68% {
-    color: #ea886d; }
-  85% {
-    color: #ea75e3; }
-  100% {
-    color: #8e7fe8; } }
+*, *:before, *:after {
+  box-sizing: inherit; }
 
 html {
   -webkit-font-feature-settings: "liga";
@@ -564,15 +387,12 @@ html {
   box-sizing: border-box;
   color: #434242;
   font-family: CalendasPlus, Georgia, "Times New Roman", Times, serif;
-  font-size: 0.85em;
+  font-size: 1em;
   font-weight: 400;
-  line-height: 1.7em; }
+  line-height: 2em; }
 
 html img {
   width: 100%; }
-
-*, *:before, *:after {
-  box-sizing: inherit; }
 
 .container {
   align-items: center;
@@ -580,59 +400,4 @@ html img {
   display: flex;
   flex-wrap: wrap;
   margin: auto;
-  width: 70%; }
-
-.upside-down {
-  -webkit-transform: rotate(190deg);
-  -moz-transform: rotate(190deg);
-  -ms-transform: rotate(190deg);
-  -o-transform: rotate(190deg);
-  transform: rotate(190deg);
-  display: inline-block; }
-
-audio {
-  width: 100%; }
-
-.twitter {
-  margin-bottom: 10em;
-  text-align: center;
-  font-style: italic;
-  width: 100%; }
-
-.ico {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  display: inline-block;
-  font-family: 'icomoon';
-  font-size: 2.7625em;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: normal;
-  line-height: 1;
-  margin: 0 5px;
-  speak: none;
-  text-transform: none; }
-
-.ico.-add:before {
-  content: '\e600'; }
-
-.ico.-bets:before {
-  content: '\e607'; }
-
-.ico.-camera:before {
-  content: '\e605'; }
-
-.ico.-crown:before {
-  content: '\e603'; }
-
-.ico.-mail:before {
-  content: '\e602'; }
-
-.ico.-stats:before {
-  content: '\e608'; }
-
-.ico.-twitter:before {
-  content: "\e606"; }
-
-.ico.-users:before {
-  content: '\e601'; }
+  width: 50%; }

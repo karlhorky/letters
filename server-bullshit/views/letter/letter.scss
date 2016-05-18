@@ -1,0 +1,61 @@
+@import 'bourbon';
+@import '../../styles/typography';
+@import '../../styles/variables';
+@import '../../styles/animations';
+
+.letter-nav {
+  align-items: center;
+  background-color: $brand-primary; 
+  display: flex;
+  height: 12px;
+  justify-content: center;
+  transition: all 0.3s ease;
+  width: 100%;
+
+  a {
+    color: white;
+    opacity: 0;
+    text-decoration: none;
+  }
+
+  &:hover {
+    cursor: pointer;
+    height: 30px;
+
+    a {
+      @include animation(fade-in-and-down 0.5s ease);
+      @include animation-fill-mode(forwards);
+    }
+  }
+}
+
+.letter {
+  font-family: $monospace;
+  margin-bottom: 10%;
+  padding: 2% 10%;
+  width: 50%;
+
+  p {
+    @include animation(fade-in-and-down 0s ease);
+    @include animation-fill-mode(forwards);
+
+    opacity: 0;
+  }
+
+  p:first-of-type {
+    @include animation(fade-in-and-down 0.75s ease);
+    @include animation-fill-mode(forwards);
+  }
+
+  p:nth-of-type(2) {
+    @include animation(fade-in-and-down 0.75s ease);
+    @include animation-delay(0.25s);
+    @include animation-fill-mode(forwards);
+  }
+
+  p:nth-of-type(3) {
+    @include animation(fade-in-and-down 0.75s ease);
+    @include animation-delay(0.45s);
+    @include animation-fill-mode(forwards);
+  }
+}

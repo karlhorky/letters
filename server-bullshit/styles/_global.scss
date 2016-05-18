@@ -1,4 +1,7 @@
 // Global styles.
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 
 html {
   @include font-feature-settings('liga');
@@ -17,32 +20,11 @@ html {
   }
 }
 
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-
 .container { // global container for app
   align-items: center;
   clear: both;
   display: flex;
   flex-wrap: wrap;
   margin: auto;
-  width: 70%;
-}
-
-.upside-down {
-  @include transform(rotate(190deg));
-
-  display: inline-block;
-}
-
-audio {
-  width: 100%;
-}
-
-.twitter {
-  margin-bottom: 10em;
-  text-align: center;
-  font-style: italic;
-  width: 100%;
+  width: 50%;
 }

@@ -1,0 +1,14 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+  <link rel="stylesheet" property="stylesheet" href="/stylesheets/letter/letter.css">
+
+  <div class="letter-nav">
+    <a href='../letters'>back</a>
+  </div>
+
+  <div class="letter">
+    {{ letter | safe }}
+  </div>
+
+{% endblock %}

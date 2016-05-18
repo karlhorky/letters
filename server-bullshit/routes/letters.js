@@ -51,7 +51,7 @@ router.get('/random', function(req, res, next) {
   var randomNumber = getRandomInt(0, allPosts.length);
   var randomParsedResponse = marked(allPosts[randomNumber].toString());
 
-  res.render('letter.html', {
+  res.render('letter/letter.html', {
     title: 'Random letter: ',
     letter: randomParsedResponse
   });
@@ -61,7 +61,7 @@ router.get('/:name', function(req, res) {
   var indx = _.findIndex(allPosts, ['shorturl', req.params.name]);
   var parsedResponse = marked(allPosts[indx].toString());
 
-  res.render('letter.html', {
+  res.render('letter/letter.html', {
     title: 'Letter: ' + req.params.name,
     letter: parsedResponse
   });
