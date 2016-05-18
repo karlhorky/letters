@@ -76,6 +76,8 @@ I have always wanted to write, and once I did, this was all I ended up having to
 
 [Sickness](arbitrary-folder/sickness.md)
 
+[Splitfoot](arbitrary-folder/splitfoot.md)
+
 [Special Books](arbitrary-folder/special-books.md)
 
 [Springtime for Hitler](arbitrary-folder/springtime-for-hitler.md)
