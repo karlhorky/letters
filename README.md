@@ -68,8 +68,6 @@ I have always wanted to write, and once I did, this was all I ended up having to
 
 [Raining](arbitrary-folder/raining.md)
 
-[Remix](arbitrary-folder/remix.md)
-
 [San Francisco](arbitrary-folder/san-francisco.md)
 
 [Scratching](arbitrary-folder/scratching.md)

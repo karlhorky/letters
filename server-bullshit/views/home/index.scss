@@ -1,0 +1,150 @@
+@import 'bourbon';
+@import '../../styles/grid-settings';
+@import 'neat';
+
+// Index.html
+
+.sheets {
+  clear: both;
+  display: table;
+  margin-top: 15%;
+  width: 100%;
+
+  @include media($nine-col) {
+    margin-top: 0;
+  }
+}
+
+.sheets-image {
+  display: none;
+  float: left;
+  width: 90%;
+
+  @include media($nine-col) {
+    display: block;
+  }
+}
+
+.sheets-quote {
+  display: none;
+  margin: 0;
+  text-indent: -0.5em;
+  vertical-align: middle;
+  width: 35%;
+  padding: 10%;
+  
+  @include media($nine-col) {
+    display: table-cell;
+    padding: 0 15% 0 0;
+  }
+}
+
+.sheets-quote-attribution {
+  text-align: right;
+}
+
+.cluster {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  float: right;
+  justify-content: center;
+  margin: 0;
+  width: 100%;
+
+  @include media($nine-col) {
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    margin: 10% 0 5% 0;
+    width: 95%;
+  }
+}
+
+.images, .my-face, .description, .corridor {
+  img {
+    max-width:100%;
+  }
+}
+
+.images {
+  display: none;
+  flex: 1 4 10em;
+  order: 3;
+
+  @include media($nine-col) {
+    display: block;
+    flex: 2 1 30em;
+    order: 1;
+  }
+
+  .cluster-one {
+    margin: auto;
+    width: 80%;
+  }
+
+  .cluster-two {
+    display: block;
+    float: left;
+    width: 50%;
+  }
+
+  .cluster-three {
+    display: block;
+    float: left;
+    width: 50%;
+  }
+
+  img {
+    display: none;
+
+    @include media($nine-col) {
+      display: block;
+    }
+  }
+}
+
+.my-face {
+  flex: 0 2 15em;
+  order: 1;
+
+  @include media($nine-col) {
+    margin-top: 5%;
+    order: 3;
+  }
+
+  img {
+    display: block;
+    margin: auto;
+
+    @include media($nine-col) {
+      margin: 0;
+      float: right;
+    }
+  }
+}
+
+.description {
+  flex: 1 1 30em;
+  margin-top: -2%;
+  order: 2;
+  padding: 10% 12.5%;
+
+  @include media($nine-col) {
+    padding: 0 5% 10% 5%;
+    margin-top: -1.5%;
+  }
+}
+
+.corridor {
+  display: block;
+  margin: 30% auto;
+  width: 70%;
+
+  @include media($nine-col) {
+    margin: 10% auto;
+  }
+
+  img {
+    width: 100%;
+  }
+}

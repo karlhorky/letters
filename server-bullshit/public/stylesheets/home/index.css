@@ -1,0 +1,132 @@
+html {
+  box-sizing: border-box; }
+
+*, *::after, *::before {
+  box-sizing: inherit; }
+
+.sheets {
+  clear: both;
+  display: table;
+  margin-top: 15%;
+  width: 100%; }
+
+@media screen and (min-width: 850px) {
+  .sheets {
+    margin-top: 0; } }
+
+.sheets-image {
+  display: none;
+  float: left;
+  width: 90%; }
+
+@media screen and (min-width: 850px) {
+  .sheets-image {
+    display: block; } }
+
+.sheets-quote {
+  display: none;
+  margin: 0;
+  text-indent: -0.5em;
+  vertical-align: middle;
+  width: 35%;
+  padding: 10%; }
+
+@media screen and (min-width: 850px) {
+  .sheets-quote {
+    display: table-cell;
+    padding: 0 15% 0 0; } }
+
+.sheets-quote-attribution {
+  text-align: right; }
+
+.cluster {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  float: right;
+  justify-content: center;
+  margin: 0;
+  width: 100%; }
+
+@media screen and (min-width: 850px) {
+  .cluster {
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    margin: 10% 0 5% 0;
+    width: 95%; } }
+
+.images img, .my-face img, .description img, .corridor img {
+  max-width: 100%; }
+
+.images {
+  display: none;
+  flex: 1 4 10em;
+  order: 3; }
+
+@media screen and (min-width: 850px) {
+  .images {
+    display: block;
+    flex: 2 1 30em;
+    order: 1; } }
+
+.images .cluster-one {
+  margin: auto;
+  width: 80%; }
+
+.images .cluster-two {
+  display: block;
+  float: left;
+  width: 50%; }
+
+.images .cluster-three {
+  display: block;
+  float: left;
+  width: 50%; }
+
+.images img {
+  display: none; }
+
+@media screen and (min-width: 850px) {
+  .images img {
+    display: block; } }
+
+.my-face {
+  flex: 0 2 15em;
+  order: 1; }
+
+@media screen and (min-width: 850px) {
+  .my-face {
+    margin-top: 5%;
+    order: 3; } }
+
+.my-face img {
+  display: block;
+  margin: auto; }
+
+@media screen and (min-width: 850px) {
+  .my-face img {
+    margin: 0;
+    float: right; } }
+
+.description {
+  flex: 1 1 30em;
+  margin-top: -2%;
+  order: 2;
+  padding: 10% 12.5%; }
+
+@media screen and (min-width: 850px) {
+  .description {
+    padding: 0 5% 10% 5%;
+    margin-top: -1.5%; } }
+
+.corridor {
+  display: block;
+  margin: 30% auto;
+  width: 70%; }
+
+@media screen and (min-width: 850px) {
+  .corridor {
+    margin: 10% auto; } }
+
+.corridor img {
+  width: 100%; }
