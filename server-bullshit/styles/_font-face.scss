@@ -8,8 +8,8 @@
 
 // @include font-face(icomoon, '../fonts/icomoon', normal);
 
-// @include font-face(NeueHaasUnica, '/fonts/NeueHaasUnicaW1G-Black', 900, $file-formats: eot oft svg ttf woff);
-// @include font-face(NeueHaasUnica, '/fonts/NeueHaasUnicaW1G-Regular', 400);
+@include font-face(NeueHaasUnica, '/fonts/NeueHaasUnicaW1G-Black', 900, $file-formats: eot oft svg ttf woff);
+@include font-face(NeueHaasUnica, '/fonts/NeueHaasUnicaW1G-Regular', 400);
 
 @include font-face(CalendasPlus, '/fonts/CalendasPlus-Italic', 400, italic, $file-formats: eot oft svg ttf woff);
 @include font-face(CalendasPlus, '/fonts/Calendas-Plus', 400, $file-formats: eot oft svg ttf woff);

@@ -1,0 +1,79 @@
+html {
+  box-sizing: border-box; }
+
+*, *::after, *::before {
+  box-sizing: inherit; }
+
+.ocean {
+  display: none;
+  text-align: center;
+  width: 80%; }
+
+@media screen and (min-width: 850px) {
+  .ocean {
+    display: block; } }
+
+.ocean-image {
+  float: left;
+  margin-top: 0;
+  margin-bottom: 1%;
+  width: 100%; }
+
+.ocean-quote {
+  background-color: white;
+  color: #202420;
+  display: block;
+  font-family: NeueHaasUnica, Helvetica, Arial, sans-serif;
+  font-size: 1.4875em;
+  font-weight: 900;
+  margin-top: 5%;
+  padding: 5% 4% 20% 5%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50%; }
+
+.me-i-guess {
+  display: flex;
+  justify-content: space-around; }
+
+@media screen and (min-width: 850px) {
+  .me-i-guess {
+    margin-top: 10%; } }
+
+.intro {
+  flex: 0 1 70%;
+  padding: 0 5%; }
+
+@media screen and (min-width: 850px) {
+  .intro {
+    flex: 0 1 25%;
+    margin-top: 10%;
+    padding: 0; } }
+
+.cool-ass-photos {
+  flex: 0 1 30%; }
+
+.cool-ass-photos > div {
+  margin-top: 25%; }
+
+@media screen and (min-width: 850px) {
+  .cool-ass-photos {
+    flex: 0 1 auto; } }
+
+.blank {
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Courier New", Courier, monospace; }
+
+.dead-plant {
+  margin: auto;
+  text-align: center;
+  width: 30%; }
+
+.dead-plant img {
+  margin-bottom: 5%; }

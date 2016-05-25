@@ -22,6 +22,8 @@ I have always wanted to write, and once I did, this was all I ended up having to
 ## The Lot
 [Angry](arbitrary-folder/angry.md)
 
+[Awful Person](arbitrary-folder/awful-person.md)
+
 [Baas](arbitrary-folder/baas.md)
 
 [Children](arbitrary-folder/children.md)
