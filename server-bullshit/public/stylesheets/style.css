@@ -566,3 +566,77 @@ html {
   flex-wrap: wrap;
   margin: auto;
   width: 50%; }
+
+.header {
+  border-bottom: 1px solid peru;
+  display: flex;
+  flex-wrap: wrap;
+  font-family: ProximaNova, Helvetica, Arial, sans-serif;
+  height: 120px;
+  justify-content: flex-end; }
+
+@media screen and (min-width: 850px) {
+  .header {
+    height: 80px; } }
+
+.header .container {
+  max-width: 805px;
+  width: 70%; }
+
+.header a {
+  -webkit-box-flex: 2;
+  -moz-box-flex: 2;
+  box-flex: 2;
+  -webkit-flex: 2 1 auto;
+  -moz-flex: 2 1 auto;
+  -ms-flex: 2 1 auto;
+  flex: 2 1 auto; }
+
+.header a h1 {
+  color: #434242;
+  font-family: CalendasPlus, Georgia, "Times New Roman", Times, serif;
+  font-size: 1.0625em;
+  font-weight: 300;
+  margin: 0; }
+
+.header a h1:hover {
+  color: #434242; }
+
+@media screen and (min-width: 850px) {
+  .header a h1 {
+    font-size: 1.275em; } }
+
+.navigation {
+  display: flex;
+  padding: 0 5%; }
+
+.navigation .name {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  box-flex: 1;
+  -webkit-flex: 1 1 10%;
+  -moz-flex: 1 1 10%;
+  -ms-flex: 1 1 10%;
+  flex: 1 1 10%;
+  font-size: 1em; }
+
+.navigation li {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  box-flex: 1;
+  -webkit-flex: 1 1 auto;
+  -moz-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  float: left;
+  font-family: ProximaNova, Helvetica, Arial, sans-serif;
+  font-size: 0.85em;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+  list-style-type: none;
+  margin-left: 15px;
+  text-transform: uppercase; }
+
+@media screen and (min-width: 850px) {
+  .navigation li {
+    margin-left: 30px; } }
