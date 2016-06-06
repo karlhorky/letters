@@ -618,7 +618,8 @@ html {
   -moz-flex: 1 1 10%;
   -ms-flex: 1 1 10%;
   flex: 1 1 10%;
-  font-size: 1em; }
+  font-size: 1em;
+  margin-top: 0.95em; }
 
 .navigation li {
   -webkit-box-flex: 1;

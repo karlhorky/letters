@@ -42,7 +42,9 @@
 
   .name {
     @include flex(1 1 10%);
+
     font-size: 1em;
+    margin-top: 0.95em;
   }
 
   li {
