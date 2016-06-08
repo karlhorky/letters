@@ -567,6 +567,24 @@ html {
   margin: auto;
   width: 50%; }
 
+a {
+  color: peru;
+  text-decoration: none; }
+
+a:hover {
+  color: #ac6c2d;
+  background-image: linear-gradient(to bottom, transparent 50%, rgba(0, 0, 0, 0.6) 50%);
+  background-repeat: repeat-x;
+  background-size: 2px 2px;
+  background-position: 0 95%;
+  transition: all 0.5s ease; }
+
+a:visited {
+  color: #ac6c2d; }
+
+a:active {
+  color: #ac6c2d; }
+
 .header {
   border-bottom: 1px solid peru;
   display: flex;
@@ -607,31 +625,43 @@ html {
     font-size: 1.275em; } }
 
 .navigation {
+  border-bottom: 1px solid peru;
   display: flex;
-  padding: 0 5%; }
+  padding: 1% 5%; }
 
 .navigation .name {
   -webkit-box-flex: 1;
   -moz-box-flex: 1;
   box-flex: 1;
-  -webkit-flex: 1 1 10%;
-  -moz-flex: 1 1 10%;
-  -ms-flex: 1 1 10%;
-  flex: 1 1 10%;
+  -webkit-flex: 1 1 100%;
+  -moz-flex: 1 1 100%;
+  -ms-flex: 1 1 100%;
+  flex: 1 1 100%;
   font-size: 1em;
   margin-top: 0.95em; }
+
+@media screen and (min-width: 850px) {
+  .navigation .name {
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    box-flex: 1;
+    -webkit-flex: 1 1 10%;
+    -moz-flex: 1 1 10%;
+    -ms-flex: 1 1 10%;
+    flex: 1 1 10%; } }
 
 .navigation li {
   -webkit-box-flex: 1;
   -moz-box-flex: 1;
   box-flex: 1;
-  -webkit-flex: 1 1 auto;
-  -moz-flex: 1 1 auto;
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
+  -webkit-flex: 1 1 0;
+  -moz-flex: 1 1 0;
+  -ms-flex: 1 1 0;
+  flex: 1 1 0;
+  display: none;
   float: left;
   font-family: ProximaNova, Helvetica, Arial, sans-serif;
-  font-size: 0.85em;
+  font-size: 0.8em;
   font-weight: 600;
   letter-spacing: 0.4px;
   list-style-type: none;
@@ -640,4 +670,12 @@ html {
 
 @media screen and (min-width: 850px) {
   .navigation li {
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    box-flex: 1;
+    -webkit-flex: 1 1 auto;
+    -moz-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    display: block;
     margin-left: 30px; } }

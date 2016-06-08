@@ -37,22 +37,28 @@
 }
 
 .navigation {
+  border-bottom: 1px solid $brand-primary;
   display: flex;
-  padding: 0 5%;
+  padding: 1% 5%;
 
   .name {
-    @include flex(1 1 10%);
+    @include flex(1 1 100%);
 
     font-size: 1em;
     margin-top: 0.95em;
+
+    @include media($nine-col) {
+      @include flex(1 1 10%);
+    }
   }
 
   li {
-    @include flex(1 1 auto);
+    @include flex(1 1 0);
 
+    display: none;
     float: left;
     font-family: $sans-serif;
-    font-size: 0.85em;
+    font-size: 0.8em;
     font-weight: $semibold-weight;
     letter-spacing: 0.4px;
     list-style-type: none;
@@ -60,6 +66,9 @@
     text-transform: uppercase;
 
     @include media($nine-col) {
+      @include flex(1 1 auto);
+
+      display: block;
       margin-left: 30px;
     }
   }
