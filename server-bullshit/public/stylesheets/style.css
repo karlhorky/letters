@@ -573,11 +573,10 @@ a {
 
 a:hover {
   color: #ac6c2d;
-  background-image: linear-gradient(to bottom, transparent 50%, rgba(0, 0, 0, 0.6) 50%);
+  background-image: linear-gradient(to bottom, peru 50%, peru 100%);
   background-repeat: repeat-x;
-  background-size: 2px 2px;
-  background-position: 0 95%;
-  transition: all 0.5s ease; }
+  background-size: 1px 1px;
+  background-position: 0 100%; }
 
 a:visited {
   color: #ac6c2d; }
@@ -585,49 +584,14 @@ a:visited {
 a:active {
   color: #ac6c2d; }
 
-.header {
-  border-bottom: 1px solid peru;
-  display: flex;
-  flex-wrap: wrap;
-  font-family: ProximaNova, Helvetica, Arial, sans-serif;
-  height: 120px;
-  justify-content: flex-end; }
-
-@media screen and (min-width: 850px) {
-  .header {
-    height: 80px; } }
-
-.header .container {
-  max-width: 805px;
-  width: 70%; }
-
-.header a {
-  -webkit-box-flex: 2;
-  -moz-box-flex: 2;
-  box-flex: 2;
-  -webkit-flex: 2 1 auto;
-  -moz-flex: 2 1 auto;
-  -ms-flex: 2 1 auto;
-  flex: 2 1 auto; }
-
-.header a h1 {
-  color: #434242;
-  font-family: CalendasPlus, Georgia, "Times New Roman", Times, serif;
-  font-size: 1.0625em;
-  font-weight: 300;
-  margin: 0; }
-
-.header a h1:hover {
-  color: #434242; }
-
-@media screen and (min-width: 850px) {
-  .header a h1 {
-    font-size: 1.275em; } }
-
 .navigation {
   border-bottom: 1px solid peru;
   display: flex;
-  padding: 1% 5%; }
+  padding: 3% 6%; }
+
+@media screen and (min-width: 850px) {
+  .navigation {
+    padding: 1% 10%; } }
 
 .navigation .name {
   -webkit-box-flex: 1;
@@ -637,8 +601,8 @@ a:active {
   -moz-flex: 1 1 100%;
   -ms-flex: 1 1 100%;
   flex: 1 1 100%;
-  font-size: 1em;
-  margin-top: 0.95em; }
+  font-size: 1.25em;
+  margin-top: 0.25em; }
 
 @media screen and (min-width: 850px) {
   .navigation .name {
@@ -648,7 +612,30 @@ a:active {
     -webkit-flex: 1 1 10%;
     -moz-flex: 1 1 10%;
     -ms-flex: 1 1 10%;
-    flex: 1 1 10%; } }
+    flex: 1 1 10%;
+    margin-top: 0.95em; } }
+
+.navigation ul {
+  background-color: peru;
+  display: block;
+  float: right;
+  height: 2px;
+  width: 10px;
+  position: relative; }
+
+@media screen and (min-width: 850px) {
+  .navigation ul {
+    height: auto;
+    width: auto; } }
+
+.navigation ul::before, .navigation ul::after {
+  background-color: aqua;
+  content: 'um hi';
+  display: block;
+  height: 2px;
+  position: absolute;
+  margin-bottom: 1%;
+  margin-top: 1%; }
 
 .navigation li {
   -webkit-box-flex: 1;
@@ -658,7 +645,6 @@ a:active {
   -moz-flex: 1 1 0;
   -ms-flex: 1 1 0;
   flex: 1 1 0;
-  display: none;
   float: left;
   font-family: ProximaNova, Helvetica, Arial, sans-serif;
   font-size: 0.8em;

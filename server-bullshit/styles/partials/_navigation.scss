@@ -1,61 +1,53 @@
-.header {
-  border-bottom: 1px solid $brand-primary;
-  display: flex;
-  flex-wrap: wrap;
-  font-family: $sans-serif;
-  height: 120px;
-  justify-content: flex-end;
-
-  @include media($nine-col) {
-    height: 80px;
-  }
-
-  .container {
-    max-width: 805px;
-    width: 70%;
-  }
-
-  a {
-    @include flex(2 1 auto);
-
-    h1 {
-      color: $brand-black;
-      font-family: $serif;
-      font-size: $h5-font-size;
-      font-weight: $light-weight;
-      margin: 0;
-
-      &:hover {
-        color: $brand-black;
-      }
-
-      @include media($nine-col) {
-        font-size: $h4-font-size;
-      }
-    }
-  }
-}
-
 .navigation {
   border-bottom: 1px solid $brand-primary;
   display: flex;
-  padding: 1% 5%;
+  padding: 3% 6%;
+
+  @include media($nine-col) {
+    padding: 1% 10%;
+  }
 
   .name {
     @include flex(1 1 100%);
 
-    font-size: 1em;
-    margin-top: 0.95em;
+    font-size: 1.25em;
+    margin-top: 0.25em;
 
     @include media($nine-col) {
       @include flex(1 1 10%);
+
+      margin-top: 0.95em;
+    }
+  }
+
+  ul {
+    background-color: $brand-primary;
+    display: block;
+    float: right;
+    height: 2px;
+    width: 10px;
+    position: relative;
+
+    @include media($nine-col) {
+      height: auto;
+      width: auto;
+    }
+
+    &::before, &::after {
+      background-color: aqua; 
+      content: 'um hi';
+      display: block;
+      height: 2px;
+      position: absolute;
+      margin-bottom: 1%;
+      margin-top: 1%;
     }
   }
 
   li {
     @include flex(1 1 0);
 
-    display: none;
+    // display: none;
     float: left;
     font-family: $sans-serif;
     font-size: 0.8em;
