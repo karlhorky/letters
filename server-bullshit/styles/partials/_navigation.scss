@@ -5,16 +5,16 @@
   flex-wrap: wrap;
   font-family: $sans-serif;
   height: 120px;
+  padding: 0 5%;
 
   @include media($nine-col) {
     height: 80px;
   }
 
-  a {
-    flex: 0 1 40%;
-    padding-left: 10%;
+  .name {
+    flex: 0 1 50%;
 
-    .name {
+    a {
       color: $brand-black;
       font-family: $serif;
       font-size: $h5-font-size;
@@ -34,7 +34,7 @@
 
 .navigation {
   display: flex;
-  flex: 0 1 50%;
+  flex: 1 1 auto;
 
   .nav-items {
     display: flex;
@@ -56,9 +56,5 @@
     list-style-type: none;
     text-align: center;
     text-transform: uppercase;
-
-    a {
-      padding: 0;
-    }
   }
 }

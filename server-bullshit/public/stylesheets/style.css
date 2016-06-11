@@ -608,24 +608,24 @@ a:active {
   display: flex;
   flex-wrap: wrap;
   font-family: ProximaNova, Helvetica, Arial, sans-serif;
-  height: 120px; }
+  height: 120px;
+  padding: 0 5%; }
 
 @media screen and (min-width: 850px) {
   .header {
     height: 80px; } }
 
-.header a {
-  flex: 0 1 40%;
-  padding-left: 10%; }
+.header .name {
+  flex: 0 1 50%; }
 
-.header a .name {
+.header .name a {
   color: #434242;
   font-family: CalendasPlus, Georgia, "Times New Roman", Times, serif;
   font-size: 1.0625em;
   font-weight: 300;
   margin: 0; }
 
-.header a .name:hover {
+.header .name a:hover {
   text-shadow: 0.03em 0 white, -0.03em 0 white, 0 0.03em white, 0 -0.03em white, 0.06em 0 white, -0.06em 0 white, 0.09em 0 white, -0.09em 0 white, 0.12em 0 white, -0.12em 0 white, 0.15em 0 white, -0.15em 0 white;
   background-image: linear-gradient(#434242, #434242);
   background-size: 1px 1px;
@@ -634,29 +634,29 @@ a:active {
   color: #434242;
   text-decoration: none; }
 
-.header a .name:hover::selection {
+.header .name a:hover::selection {
   text-shadow: 0.03em 0 peru, -0.03em 0 peru, 0 0.03em peru, 0 -0.03em peru, 0.06em 0 peru, -0.06em 0 peru, 0.09em 0 peru, -0.09em 0 peru, 0.12em 0 peru, -0.12em 0 peru, 0.15em 0 peru, -0.15em 0 peru;
   background: peru; }
 
-.header a .name:hover::-moz-selection {
+.header .name a:hover::-moz-selection {
   text-shadow: 0.03em 0 peru, -0.03em 0 peru, 0 0.03em peru, 0 -0.03em peru, 0.06em 0 peru, -0.06em 0 peru, 0.09em 0 peru, -0.09em 0 peru, 0.12em 0 peru, -0.12em 0 peru, 0.15em 0 peru, -0.15em 0 peru;
   background: peru; }
 
-.header a .name:hover *,
-.header a .name:hover *:after, .header a .name:hover:after,
-.header a .name:hover *:before, .header a .name:hover:before {
+.header .name a:hover *,
+.header .name a:hover *:after, .header .name a:hover:after,
+.header .name a:hover *:before, .header .name a:hover:before {
   text-shadow: none; }
 
-.header a .name:hover:visited {
+.header .name a:hover:visited {
   color: #434242; }
 
 @media screen and (min-width: 850px) {
-  .header a .name {
+  .header .name a {
     font-size: 1.275em; } }
 
 .navigation {
   display: flex;
-  flex: 0 1 50%; }
+  flex: 1 1 auto; }
 
 .navigation .nav-items {
   display: flex;
@@ -677,6 +677,3 @@ a:active {
   list-style-type: none;
   text-align: center;
   text-transform: uppercase; }
-
-.navigation .nav-item a {
-  padding: 0; }
