@@ -178,7 +178,30 @@
   animation: fade-in-and-down 0.5s ease;
   -webkit-animation-fill-mode: forwards;
   -moz-animation-fill-mode: forwards;
-  animation-fill-mode: forwards; }
+  animation-fill-mode: forwards;
+  text-shadow: 0.03em 0 peru, -0.03em 0 peru, 0 0.03em peru, 0 -0.03em peru, 0.06em 0 peru, -0.06em 0 peru, 0.09em 0 peru, -0.09em 0 peru, 0.12em 0 peru, -0.12em 0 peru, 0.15em 0 peru, -0.15em 0 peru;
+  background-image: linear-gradient(white, white);
+  background-size: 1px 1px;
+  background-repeat: repeat-x;
+  background-position: 0% 95%;
+  color: white;
+  text-decoration: none; }
+
+.letter-nav:hover a::selection {
+  text-shadow: 0.03em 0 white, -0.03em 0 white, 0 0.03em white, 0 -0.03em white, 0.06em 0 white, -0.06em 0 white, 0.09em 0 white, -0.09em 0 white, 0.12em 0 white, -0.12em 0 white, 0.15em 0 white, -0.15em 0 white;
+  background: white; }
+
+.letter-nav:hover a::-moz-selection {
+  text-shadow: 0.03em 0 white, -0.03em 0 white, 0 0.03em white, 0 -0.03em white, 0.06em 0 white, -0.06em 0 white, 0.09em 0 white, -0.09em 0 white, 0.12em 0 white, -0.12em 0 white, 0.15em 0 white, -0.15em 0 white;
+  background: white; }
+
+.letter-nav:hover a *,
+.letter-nav:hover a *:after, .letter-nav:hover a:after,
+.letter-nav:hover a *:before, .letter-nav:hover a:before {
+  text-shadow: none; }
+
+.letter-nav:hover a:visited {
+  color: white; }
 
 .letter {
   font-family: "Courier New", Courier, monospace;
@@ -221,6 +244,39 @@
   -webkit-animation-delay: 0.45s;
   -moz-animation-delay: 0.45s;
   animation-delay: 0.45s;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards; }
+
+.letter p:nth-of-type(4) {
+  -webkit-animation: fade-in-and-down 0.75s ease;
+  -moz-animation: fade-in-and-down 0.75s ease;
+  animation: fade-in-and-down 0.75s ease;
+  -webkit-animation-delay: 0.65s;
+  -moz-animation-delay: 0.65s;
+  animation-delay: 0.65s;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards; }
+
+.letter p:nth-of-type(5) {
+  -webkit-animation: fade-in-and-down 0.75s ease;
+  -moz-animation: fade-in-and-down 0.75s ease;
+  animation: fade-in-and-down 0.75s ease;
+  -webkit-animation-delay: 0.75s;
+  -moz-animation-delay: 0.75s;
+  animation-delay: 0.75s;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards; }
+
+.letter p:nth-of-type(6) {
+  -webkit-animation: fade-in-and-down 0.75s ease;
+  -moz-animation: fade-in-and-down 0.75s ease;
+  animation: fade-in-and-down 0.75s ease;
+  -webkit-animation-delay: 0.9s;
+  -moz-animation-delay: 0.9s;
+  animation-delay: 0.9s;
   -webkit-animation-fill-mode: forwards;
   -moz-animation-fill-mode: forwards;
   animation-fill-mode: forwards; }
