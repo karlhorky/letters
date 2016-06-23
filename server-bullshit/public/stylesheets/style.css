@@ -555,9 +555,9 @@ html {
   box-sizing: border-box;
   color: #434242;
   font-family: CalendasPlus, Georgia, "Times New Roman", Times, serif;
-  font-size: 0.85em;
+  font-size: 0.95em;
   font-weight: 400;
-  line-height: 1.7em; }
+  line-height: 1.9em; }
 
 .container {
   align-items: center;
@@ -621,7 +621,7 @@ a:active {
 .header .name a {
   color: #434242;
   font-family: CalendasPlus, Georgia, "Times New Roman", Times, serif;
-  font-size: 1.0625em;
+  font-size: 1.1875em;
   font-weight: 300;
   margin: 0; }
 
@@ -652,7 +652,7 @@ a:active {
 
 @media screen and (min-width: 850px) {
   .header .name a {
-    font-size: 1.275em; } }
+    font-size: 1.425em; } }
 
 .navigation {
   display: flex;

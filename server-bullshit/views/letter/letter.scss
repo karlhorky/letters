@@ -50,31 +50,31 @@
 
   p:nth-of-type(2) {
     @include animation(fade-in-and-down 0.75s ease);
-    @include animation-delay(0.25s);
+    @include animation-delay(0.15s);
     @include animation-fill-mode(forwards);
   }
 
   p:nth-of-type(3) {
     @include animation(fade-in-and-down 0.75s ease);
-    @include animation-delay(0.45s);
+    @include animation-delay(0.3s);
     @include animation-fill-mode(forwards);
   }
 
   p:nth-of-type(4) {
     @include animation(fade-in-and-down 0.75s ease);
-    @include animation-delay(0.65s);
+    @include animation-delay(0.45s);
     @include animation-fill-mode(forwards);
   }
 
   p:nth-of-type(5) {
     @include animation(fade-in-and-down 0.75s ease);
-    @include animation-delay(0.75s);
+    @include animation-delay(0.65s);
     @include animation-fill-mode(forwards);
   }
 
   p:nth-of-type(6) {
     @include animation(fade-in-and-down 0.75s ease);
-    @include animation-delay(0.9s);
+    @include animation-delay(0.75s);
     @include animation-fill-mode(forwards);
   }
 }

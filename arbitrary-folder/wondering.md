@@ -1,0 +1,1 @@
+We were driving around and you mused, "I wonder if all these people's houses are filled with shit too."
