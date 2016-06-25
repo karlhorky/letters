@@ -386,6 +386,9 @@ th {
   font-weight: 400;
   src: url("/fonts/Calendas-Plus.eot?#iefix") format("embedded-opentype"), url("/fonts/Calendas-Plus.woff") format("woff"), url("/fonts/Calendas-Plus.ttf") format("truetype"), url("/fonts/Calendas-Plus.svg#CalendasPlus") format("svg"); }
 
+.underline {
+  text-decoration: underline; }
+
 @-webkit-keyframes fade-in {
   0% {
     opacity: 0; }

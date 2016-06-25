@@ -4,6 +4,9 @@ html {
 *, *::after, *::before {
   box-sizing: inherit; }
 
+.underline {
+  text-decoration: underline; }
+
 .ocean {
   display: none;
   text-align: center;

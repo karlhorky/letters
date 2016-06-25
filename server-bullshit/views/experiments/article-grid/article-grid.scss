@@ -4,6 +4,10 @@
 @import '../../styles/typography';
 @import '../../styles/variables';
 
+img {
+  width: 100%;
+}
+
 .article-grid {
   display: grid;
   grid-template-rows: auto;
@@ -43,78 +47,164 @@
 }
 
 .the-pit {
-  // grid-row-start: 5;
-  // grid-row-end: 6;
+  grid-row-start: 5;
+  grid-row-end: 6;
   grid-column-start: 2;
-  grid-column-end: 8;
+  grid-column-end: 7;
+}
+
+.telescope-chillin {
+  grid-row-start: 6;
+  grid-row-end: 7;
+  grid-column-start: 2;
+  grid-column-end: 7;
 }
 
 .clarification {
   grid-row-start: 5;
-  grid-row-end: 6;
-  grid-column-start: 9;
-  grid-column-end: 12;
+  grid-row-end: 7;
+  grid-column-start: 8;
+  grid-column-end: 10;
 
   margin: 0 0 30% 0;
 }
 
 .mental-illness {
-  grid-row-start: 6;
-  grid-row-end: 7;
+  grid-row-start: 8;
+  grid-row-end: 10;
   grid-column-start: 3;
   grid-column-end: 6;
 
   margin: 0 0 30% 0;
+}
+
+.darkest-hallway {
+  grid-row-start: 8;
+  grid-row-end: 9;
+  grid-column-start: 9;
+  grid-column-end: 13;
+}
+
+.packing-tape {
+  grid-row-start: 9;
+  grid-row-end: 10;
+  grid-column-start: 8;
+  grid-column-end: 13;
+
+  margin-top: -3%;
 }
 
 .demons {
-  grid-row-start: 7;
-  grid-row-end: 8;
+  grid-row-start: 11;
+  grid-row-end: 12;
   grid-column-start: 6;
   grid-column-end: 9;
 
+  margin: 30% 0 30% 0;
+}
+
+.tv-setup {
+  grid-row-start: 12;
+  grid-row-end: 13;
+  grid-column-start: 4;
+  grid-column-end: 11;
+
   margin: 0 0 30% 0;
+  text-align: center;
+}
+
+.the-queens-mugs {
+  grid-row-start: 14;
+  grid-row-end: 15;
+  grid-column-start: 4;
+  grid-column-end: 11;
+
+  margin: 0 0 30% 0;
+  text-align: center;
+}
+
+.good-housekeeping {
+  grid-row-start: 16;
+  grid-row-end: 17;
+  grid-column-start: 4;
+  grid-column-end: 11;
+
+  margin: 0 0 30% 0;
+  text-align: center;
 }
 
 .sorted {
-  grid-row-start: 8;
-  grid-row-end: 9;
-  grid-column-start: 3;
-  grid-column-end: 6;
+  grid-row-start: 18;
+  grid-row-end: 21;
+  grid-column-start: 4;
+  grid-column-end: 7;
 
   margin: 0 0 50% 0;
+}
+
+.queens-of-england {
+  grid-row-start: 18;
+  grid-row-end: 19;
+  grid-column-start: 8;
+  grid-column-end: 11;
+
+  margin: 0 0 15% 0;
+  text-align: center;
+}
+
+.parrot {
+  grid-row-start: 19;
+  grid-row-end: 20;
+  grid-column-start: 8;
+  grid-column-end: 11;
+
+  margin: 0 0 50% 0;
+  text-align: center;
 }
 
 .get-rid-of-it {
-  grid-row-start: 9;
-  grid-row-end: 10;
+  grid-row-start: 21;
+  grid-row-end: 22;
   grid-column-start: 6;
   grid-column-end: 9;
 
-  margin: 0 0 50% 0;
+  margin: 50% 0 45% 0;
+}
+
+.enchanted-us {
+  grid-row-start: 23;
+  grid-row-end: 24;
+  grid-column-start: 1;
+  grid-column-end: 5;
 }
 
 .tired {
-  grid-row-start: 10;
-  grid-row-end: 11;
+  grid-row-start: 23;
+  grid-row-end: 24;
   grid-column-start: 8;
-  grid-column-end: 12;
+  grid-column-end: 11;
 
   margin: 0 0 20% 0;
 }
 
 .advice {
-  grid-row-start: 11;
-  grid-row-end: 12;
+  grid-row-start: 25;
+  grid-row-end: 26;
   grid-column-start: 5;
   grid-column-end: 10;
 
-  margin: 0 0 50% 0;
+  margin: 20% 0 50% 0;
+
+  .advice-point {
+    font-family: $knockout;
+    text-transform: uppercase;
+    font-size: $h2-font-size;
+  }
 }
 
 .ending {
-  grid-row-start: 12;
-  grid-row-end: 13;
+  grid-row-start: 27;
+  grid-row-end: 28;
   grid-column-start: 6;
   grid-column-end: 9;
 
