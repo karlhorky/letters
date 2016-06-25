@@ -7,6 +7,17 @@ html {
 .underline {
   text-decoration: underline; }
 
+.post-ending:after {
+  -webkit-font-feature-settings: "ornm" 7;
+  -moz-font-feature-settings: "ornm" 7;
+  -ms-font-feature-settings: "ornm" 7;
+  font-feature-settings: "ornm" 7;
+  color: peru;
+  content: '\0041';
+  display: inline-block;
+  font-size: 1em;
+  margin-left: 0.5em; }
+
 img {
   width: 100%; }
 

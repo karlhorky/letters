@@ -1,0 +1,11 @@
+.post-ending {
+  &:after {
+    @include font-feature-settings('ornm' 7);
+
+    color: $brand-primary;
+    content: '\0041';
+    display: inline-block;
+    font-size: 1em;
+    margin-left: 0.5em;
+  }
+}
