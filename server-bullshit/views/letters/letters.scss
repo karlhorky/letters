@@ -2,6 +2,7 @@
 @import '../../styles/grid-settings';
 @import 'neat';
 @import '../../styles/variables';
+@import '../../styles/font-face/neuehaasunica';
 @import '../../styles/typography';
 @import '../../styles/animations';
 
@@ -26,11 +27,33 @@
   font-size: 14em;
   font-style: italic;
   margin-top: -1px;
-  padding: 0 0 5% 5%;
+  padding: 4% 0 7% 5%;
+  position: relative;
   line-height: 1;
   text-transform: uppercase;
 
+  .first-word, .second-word, .third-word, .last-word {
+    @include animation(fade-in 0.25s ease);
+    @include animation-fill-mode(forwards);
+
+    opacity: 0;
+  }
+
+  .first-word {
+    @include animation-delay(0.1s);
+  }
+
+  .second-word {
+    @include animation-delay(0.14s);
+  }
+
+  .third-word {
+    @include animation-delay(0.17s);
+  }
+
   .last-word {
+    @include animation-delay(0.2s);
+
     color: $brand-black;
   }
 }
@@ -38,4 +61,71 @@
 .letters-description {
   width: 30%;
   margin-left: 10%;
+}
+
+.letters-lot {
+  width: 60%;
+  float: right;
+  // font-family: $display-sans;
+  list-style-type: none;
+  font-size: $h3-font-size;
+  line-height: 3;
+  margin-right: 10%;
+  text-transform: capitalize;
+
+  a {
+    color: $brand-gray-dark;
+    transition: color 0.5s ease;
+
+    &:hover {
+      background: transparent;
+      color: darken($brand-gray-dark, 15%);
+    }
+  }
+
+  li {
+    border-bottom: 2px solid $brand-gray-dark;
+    display: inline-block;
+    padding-bottom: 3px;
+    position: relative;
+    width: 100%;
+    outline-offset: 15px;
+
+    &::before {
+      bottom: 0;
+      content: '';
+      display: block;
+      height: 3px;
+      left: 0;
+      position: absolute;
+      transition: width 0s ease, background .5s ease;
+      width: 0;
+    }
+
+    &::after {
+      background: $brand-gray-dark;
+      bottom: 0;
+      content: '';
+      display: block;
+      height: 3px;
+      position: absolute;
+      right: 0;
+      transition: width .5s ease;
+      width: 0;
+    }
+
+    &:hover {
+      &::before {
+        background: $brand-gray-dark;
+        transition: width .5s ease;
+        width: 100%;
+      }
+
+      &::after {
+        background: transparent;
+        transition: all 0s ease;
+        width: 100%;
+      }
+    }
+  }
 }
