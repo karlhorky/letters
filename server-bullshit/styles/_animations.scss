@@ -86,3 +86,12 @@
     color: rgba(142, 127, 232, 1);
   }
 }
+
+@include keyframe(open-up) {
+  0% {
+    background-size: 100% 75%;
+  }
+  100% {
+    background-size: 100% 100%;
+  }
+}

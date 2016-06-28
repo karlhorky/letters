@@ -527,6 +527,24 @@ th {
   100% {
     color: #8e7fe8; } }
 
+@-webkit-keyframes open-up {
+  0% {
+    background-size: 100% 75%; }
+  100% {
+    background-size: 100% 100%; } }
+
+@-moz-keyframes open-up {
+  0% {
+    background-size: 100% 75%; }
+  100% {
+    background-size: 100% 100%; } }
+
+@keyframes open-up {
+  0% {
+    background-size: 100% 75%; }
+  100% {
+    background-size: 100% 100%; } }
+
 *, *:before, *:after {
   box-sizing: inherit; }
 
@@ -640,6 +658,9 @@ a:active {
   position: relative;
   width: 117px;
   z-index: 2; }
+
+.underline {
+  text-decoration: underline; }
 
 @-webkit-keyframes fade-in {
   0% {
@@ -797,6 +818,24 @@ a:active {
   100% {
     color: #8e7fe8; } }
 
+@-webkit-keyframes open-up {
+  0% {
+    background-size: 100% 75%; }
+  100% {
+    background-size: 100% 100%; } }
+
+@-moz-keyframes open-up {
+  0% {
+    background-size: 100% 75%; }
+  100% {
+    background-size: 100% 100%; } }
+
+@keyframes open-up {
+  0% {
+    background-size: 100% 75%; }
+  100% {
+    background-size: 100% 100%; } }
+
 .header {
   align-items: center;
   border-bottom: 1px solid peru;
@@ -853,7 +892,7 @@ a:active {
 
 @media screen and (min-width: 850px) {
   .header .name a {
-    font-size: 1.35em; } }
+    font-size: 1.125em; } }
 
 .navigation {
   -webkit-animation: fade-in 0.75s ease;

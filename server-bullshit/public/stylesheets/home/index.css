@@ -160,6 +160,24 @@ html {
   100% {
     color: #8e7fe8; } }
 
+@-webkit-keyframes open-up {
+  0% {
+    background-size: 100% 75%; }
+  100% {
+    background-size: 100% 100%; } }
+
+@-moz-keyframes open-up {
+  0% {
+    background-size: 100% 75%; }
+  100% {
+    background-size: 100% 100%; } }
+
+@keyframes open-up {
+  0% {
+    background-size: 100% 75%; }
+  100% {
+    background-size: 100% 100%; } }
+
 .sheets {
   clear: both;
   display: table;

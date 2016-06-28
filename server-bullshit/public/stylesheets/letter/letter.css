@@ -157,6 +157,24 @@
   100% {
     color: #8e7fe8; } }
 
+@-webkit-keyframes open-up {
+  0% {
+    background-size: 100% 75%; }
+  100% {
+    background-size: 100% 100%; } }
+
+@-moz-keyframes open-up {
+  0% {
+    background-size: 100% 75%; }
+  100% {
+    background-size: 100% 100%; } }
+
+@keyframes open-up {
+  0% {
+    background-size: 100% 75%; }
+  100% {
+    background-size: 100% 100%; } }
+
 .letter-nav {
   align-items: center;
   background-color: peru;
@@ -188,7 +206,8 @@
   font-family: "Courier New", Courier, monospace;
   margin-bottom: 10%;
   padding: 2% 10%;
-  width: 50%; }
+  width: 50%;
+  min-height: 55vh; }
 
 .letter p {
   -webkit-animation: fade-in-and-down 0s ease;
