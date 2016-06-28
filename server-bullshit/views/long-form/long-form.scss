@@ -1,4 +1,14 @@
+@import 'bourbon';
+@import '../../styles/grid-settings';
+@import 'neat';
+@import '../../styles/variables';
+@import '../../styles/typography';
+
 // The writing page
+
+img {
+  width: 100%;
+}
 
 .the-generalist {
   align-items: center;

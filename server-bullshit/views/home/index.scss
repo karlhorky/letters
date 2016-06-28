@@ -1,6 +1,8 @@
 @import 'bourbon';
 @import '../../styles/grid-settings';
 @import 'neat';
+@import '../../styles/variables';
+@import '../../styles/animations';
 
 // Index.html
 
@@ -16,6 +18,9 @@
 }
 
 .sheets-image {
+  @include animation(fade-in 0.5s ease);
+  @include animation-fill-mode(forwards);
+
   display: none;
   float: left;
   width: 90%;
@@ -26,6 +31,9 @@
 }
 
 .sheets-quote {
+  @include animation(fade-in 0.5s ease);
+  @include animation-fill-mode(forwards);
+
   display: none;
   margin: 0;
   text-indent: -0.5em;
@@ -44,6 +52,9 @@
 }
 
 .cluster {
+  @include animation(fade-in 0.5s ease);
+  @include animation-fill-mode(forwards);
+
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -136,6 +147,9 @@
 }
 
 .corridor {
+  @include animation(fade-in 0.75s ease);
+  @include animation-fill-mode(forwards);
+
   display: block;
   margin: 30% auto;
   width: 70%;

@@ -12,7 +12,7 @@ $monospace:                 "Courier New", Courier, monospace;
 $mega-display:              "Didot 96 A", "Didot 96 B", serif;
 
 // Sizes
-$base-font-size:                 0.95em;
+$base-font-size:                 0.9em;
 $base-line-height:               $base-font-size * 2;
 $unitless-line-height:           $base-line-height / ($base-line-height * 0 + 1); // Strip units from line-height: https://developer.mozilla.org/en-US/docs/Web/CSS/line-height#Prefer_unitless_numbers_for_line-height_values
 $header-line-height:             $base-font-size * 1.25;

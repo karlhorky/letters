@@ -1,3 +1,6 @@
+@import '../../styles/variables';
+@import '../../styles/animations';
+
 .header {
   align-items: center;
   border-bottom: 1px solid $brand-primary;
@@ -12,6 +15,9 @@
   }
 
   .name {
+    @include animation(fade-in 0.75s ease);
+    @include animation-fill-mode(forwards);
+
     flex: 0 1 50%;
 
     a {
@@ -33,6 +39,9 @@
 }
 
 .navigation {
+  @include animation(fade-in 0.75s ease);
+  @include animation-fill-mode(forwards);
+
   display: flex;
   flex: 1 1 auto;
 

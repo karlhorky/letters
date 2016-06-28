@@ -25,7 +25,8 @@
     a {
       @include animation(fade-in-and-down 0.5s ease);
       @include animation-fill-mode(forwards);
-      @include link-underline($brand-primary, white, white);
+
+      color: white;
     }
   }
 }
@@ -76,5 +77,34 @@
     @include animation(fade-in-and-down 0.75s ease);
     @include animation-delay(0.75s);
     @include animation-fill-mode(forwards);
+  }
+
+  p:nth-of-type(7) {
+    @include animation(fade-in-and-down 0.85s ease);
+    @include animation-delay(0.85s);
+    @include animation-fill-mode(forwards);
+  }
+
+  p:nth-of-type(8) {
+    @include animation(fade-in-and-down 0.95s ease);
+    @include animation-delay(0.95s);
+    @include animation-fill-mode(forwards);
+  }
+}
+
+.letter-footer-nav {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: 10% 0;
+
+  .ornament::before {
+    @include font-feature-settings('ornm' 7);
+
+    color: $brand-primary;
+    content: '\0041';
+    display: inline-block;
+    font-size: 1em;
+    margin: 0 2em;
   }
 }

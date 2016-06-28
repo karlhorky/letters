@@ -182,28 +182,6 @@
   -webkit-animation-fill-mode: forwards;
   -moz-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
-  text-shadow: 0.03em 0 peru, -0.03em 0 peru, 0 0.03em peru, 0 -0.03em peru, 0.06em 0 peru, -0.06em 0 peru, 0.09em 0 peru, -0.09em 0 peru, 0.12em 0 peru, -0.12em 0 peru, 0.15em 0 peru, -0.15em 0 peru;
-  background-image: linear-gradient(white, white);
-  background-size: 1px 1px;
-  background-repeat: repeat-x;
-  background-position: 0% 95%;
-  color: white;
-  text-decoration: none; }
-
-.letter-nav:hover a::selection {
-  text-shadow: 0.03em 0 white, -0.03em 0 white, 0 0.03em white, 0 -0.03em white, 0.06em 0 white, -0.06em 0 white, 0.09em 0 white, -0.09em 0 white, 0.12em 0 white, -0.12em 0 white, 0.15em 0 white, -0.15em 0 white;
-  background: white; }
-
-.letter-nav:hover a::-moz-selection {
-  text-shadow: 0.03em 0 white, -0.03em 0 white, 0 0.03em white, 0 -0.03em white, 0.06em 0 white, -0.06em 0 white, 0.09em 0 white, -0.09em 0 white, 0.12em 0 white, -0.12em 0 white, 0.15em 0 white, -0.15em 0 white;
-  background: white; }
-
-.letter-nav:hover a *,
-.letter-nav:hover a *:after, .letter-nav:hover a:after,
-.letter-nav:hover a *:before, .letter-nav:hover a:before {
-  text-shadow: none; }
-
-.letter-nav:hover a:visited {
   color: white; }
 
 .letter {
@@ -283,3 +261,42 @@
   -webkit-animation-fill-mode: forwards;
   -moz-animation-fill-mode: forwards;
   animation-fill-mode: forwards; }
+
+.letter p:nth-of-type(7) {
+  -webkit-animation: fade-in-and-down 0.85s ease;
+  -moz-animation: fade-in-and-down 0.85s ease;
+  animation: fade-in-and-down 0.85s ease;
+  -webkit-animation-delay: 0.85s;
+  -moz-animation-delay: 0.85s;
+  animation-delay: 0.85s;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards; }
+
+.letter p:nth-of-type(8) {
+  -webkit-animation: fade-in-and-down 0.95s ease;
+  -moz-animation: fade-in-and-down 0.95s ease;
+  animation: fade-in-and-down 0.95s ease;
+  -webkit-animation-delay: 0.95s;
+  -moz-animation-delay: 0.95s;
+  animation-delay: 0.95s;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards; }
+
+.letter-footer-nav {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: 10% 0; }
+
+.letter-footer-nav .ornament::before {
+  -webkit-font-feature-settings: "ornm" 7;
+  -moz-font-feature-settings: "ornm" 7;
+  -ms-font-feature-settings: "ornm" 7;
+  font-feature-settings: "ornm" 7;
+  color: peru;
+  content: '\0041';
+  display: inline-block;
+  font-size: 1em;
+  margin: 0 2em; }
