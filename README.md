@@ -2,7 +2,7 @@
 
 <img src='sic-transit.jpg' />
 
-The following are a series of very personal, very private, very loving collection of things I’ve written and then published on the internet without context or concern for anyone else’s feelings on whether or not it’s appropriate to publish such a series of personal, private, loving writings in public forum.
+The following are a personal, private, loving collection of things I’ve written and then published on the internet sort of despite this. They don’t really belong anywhere, so they’re here.
 
 I have always wanted to write, and once I did, this was all I ended up having to say.
 
