@@ -171,14 +171,14 @@ html {
 
 .letters-header {
   background-image: linear-gradient(to bottom, #434242 35%, white 35%, white 35.25%, #434242 35.25%, #434242 57%, white 57%, white 57.5%, #434242 57.5%, #434242 62%, white 62%, white 63%, #434242 63%, #434242 65%, white 65%, white 67%, #434242 67%, #434242 67.75%, white 67.75%, white 75%, #434242 75%, #434242 75.25%, white 75.25%, white 92%, #434242 92%, #434242 92.1%, white 92.1%);
-  font-family: "Didot 96 A", "Didot 96 B", serif;
   color: white;
+  font-family: "Didot 96 A", "Didot 96 B", serif;
   font-size: 14em;
   font-style: italic;
+  line-height: 1;
   margin-top: -1px;
   padding: 4% 0 7% 5%;
   position: relative;
-  line-height: 1;
   text-transform: uppercase; }
 
 .letters-header .first-word, .letters-header .second-word, .letters-header .third-word, .letters-header .last-word {
@@ -215,14 +215,51 @@ html {
   width: 30%;
   margin-left: 10%; }
 
+.letters-sf {
+  margin: 10% auto 5% auto;
+  width: 60%; }
+
+.letters-letras {
+  float: left;
+  margin: 5% 5%;
+  width: 40%; }
+
+.letters-government {
+  float: left;
+  margin: 3% 15% 20% 15%;
+  width: 18%; }
+
+.letters-i-forgot {
+  margin: 5% auto;
+  width: 30%; }
+
+.letters-millennial {
+  float: left;
+  margin: 20% 10%;
+  width: 30%; }
+
+.letters-pianos {
+  float: left;
+  margin: 15% 10%;
+  width: 30%; }
+
 .letters-lot {
   width: 60%;
   float: right;
   list-style-type: none;
   font-size: 1.575em;
   line-height: 3;
-  margin-right: 10%;
+  margin: 0 10% 10% 0;
   text-transform: capitalize; }
+
+.letters-lot::before {
+  border-bottom: 1px solid peru;
+  border-top: 3px solid peru;
+  content: '';
+  display: block;
+  height: 9px;
+  margin: 15% auto;
+  width: 25%; }
 
 .letters-lot a {
   color: #959595;
