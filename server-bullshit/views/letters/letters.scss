@@ -1,7 +1,41 @@
-h1 {
-  width: 100%;
+@import 'bourbon';
+@import '../../styles/grid-settings';
+@import 'neat';
+@import '../../styles/variables';
+@import '../../styles/typography';
+@import '../../styles/animations';
+
+.letters-header {
+  background-image: linear-gradient( 
+    to bottom,
+    $brand-black 35%, white 35%, 
+    white 35.25%, $brand-black 35.25%,
+    $brand-black 57%, white 57%,
+    white 57.5%, $brand-black 57.5%,
+    $brand-black 62%, white 62%,
+    white 63%, $brand-black 63%,
+    $brand-black 65%, white 65%,
+    white 67%, $brand-black 67%,
+    $brand-black 67.75%, white 67.75%,
+    white 75%, $brand-black 75%,
+    $brand-black 75.25%, white 75.25%,
+    white 92%, $brand-black 92%,
+    $brand-black 92.1%, white 92.1% );
+  font-family: $mega-display;
+  color: white;
+  font-size: 14em;
+  font-style: italic;
+  margin-top: -1px;
+  padding: 0 0 5% 5%;
+  line-height: 1;
+  text-transform: uppercase;
+
+  .last-word {
+    color: $brand-black;
+  }
 }
 
-ol {
-  margin-left: -2.75em;
+.letters-description {
+  width: 30%;
+  margin-left: 10%;
 }
