@@ -1,0 +1,81 @@
+html {
+  box-sizing: border-box; }
+
+*, *::after, *::before {
+  box-sizing: inherit; }
+
+.underline {
+  text-decoration: underline; }
+
+.about {
+  flex-wrap: wrap;
+  margin: 4% auto 0 auto;
+  padding-bottom: 15%;
+  width: 50%; }
+
+.about .face {
+  align-self: flex-start;
+  flex: 0 1 100%;
+  z-index: -2; }
+
+@media screen and (min-width: 850px) {
+  .about .face {
+    flex: 0 1 50%; } }
+
+.about .face img {
+  max-width: 100%;
+  width: 100%; }
+
+.about .line-1 {
+  background-color: peru;
+  display: none;
+  height: 1px;
+  left: -65%;
+  position: absolute;
+  top: 5%;
+  width: 200%;
+  z-index: -1; }
+
+@media screen and (min-width: 850px) {
+  .about .line-1 {
+    display: block; } }
+
+.about .line-2 {
+  background-color: peru;
+  display: none;
+  height: 1px;
+  left: -100%;
+  position: absolute;
+  top: 10%;
+  width: 250%;
+  z-index: -1; }
+
+@media screen and (min-width: 850px) {
+  .about .line-2 {
+    display: block; } }
+
+.about .line-3 {
+  background-color: peru;
+  display: none;
+  height: 1px;
+  left: -25%;
+  position: absolute;
+  top: 20%;
+  width: 150%;
+  z-index: -1; }
+
+@media screen and (min-width: 850px) {
+  .about .line-3 {
+    display: block; } }
+
+.about .describing-me {
+  flex: 0 1 100%;
+  margin-top: -2%;
+  position: relative;
+  background-color: white; }
+
+@media screen and (min-width: 850px) {
+  .about .describing-me {
+    flex: 0 1 40%;
+    margin-left: 4%;
+    padding: 0 2%; } }
