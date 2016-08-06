@@ -1,0 +1,273 @@
+@import 'bourbon';
+@import '../../styles/grid-settings';
+@import 'neat';
+@import '../../styles/variables';
+@import '../../styles/typography';
+@import '../../styles/font-face';
+@import '../../styles/modules/posts';
+
+@include font-face(LeagueSpartan, '/fonts/leaguespartan-bold', 600);
+@include font-face(NeueHaasUnica, '/fonts/NeueHaasUnicaW1G', 600);
+
+.union-header {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 5em auto 3em auto;
+  width: 80%;
+}
+
+.union-header-emoji {
+  flex: 0 1 30%;
+  align-self: center;
+
+  img {
+    max-width: 150px;
+    width: 100%;
+  }
+}
+
+.union-didot {
+  font-family: 'Didot 96 A', 'Didot 96 B', serif;
+  font-size: 5em;
+  font-style: italic;
+  line-height: 1;
+  margin-top: 0;
+  margin-bottom: 0;
+  flex: 0 1 70%;
+
+  @include media($twelve-col) {
+    font-size: 10em;
+  }
+
+  .union-strikeout {
+    display: inline;
+  }
+}
+
+.union-neue {
+  font-family: $display-sans;
+  font-size: 0.85em;
+  font-style: normal;
+
+  @include media($twelve-col) {
+    font-size: 1em;
+  }
+}
+
+.union-important-questions {
+  font-family: LeagueSpartan, Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  line-height: 1;
+  font-weight: bold;
+  text-align: left;
+  margin: 2em auto;
+  width: 60%;
+
+  @include media($twelve-col) {
+    font-size: 2em;
+    width: 40%;
+  }
+
+  li {
+    margin-bottom: 2em;
+  }
+}
+
+.union-logo {
+  display: block;
+  margin: 10em auto;
+  width: 20%;
+}
+
+.union-points {
+  list-style-type: decimal;
+  margin: 4em auto;
+  padding: 0;
+  width: 70%;
+
+  .union-point {
+    display: flex;
+    align-items: center;
+    margin-top: 5em;
+    flex-wrap: wrap;
+
+    &.improvement {
+      li {
+        order: 1;
+      }
+
+      .union-point-detail {
+        margin-right: 8%;
+        margin-top: 2%;
+        order: 2;
+
+        @include media($twelve-col) {
+          margin-left: 10%;
+          margin-right: 0;
+        }
+      }
+    }
+  }
+
+  .union-point-detail {
+    flex: 0 1 100%;
+    justify-content: center;
+    margin-right: 10%;
+    text-align: center;
+
+    @include media($twelve-col) {
+      flex: 0 1 40%;
+    }
+
+    video, img {
+      border: 1px solid $brand-gray;
+      margin: auto;
+      max-width: 70%;
+      width: 70%;
+
+      &.no-border {
+        border: 0;
+      }
+    }
+
+    &.wysiwyg {
+      color: $devtools-primary;
+      font-family: $display-sans;
+      font-size: 2em;
+      font-weight: bold;
+      line-height: 1.25;
+      padding: 0 8%;
+    }
+  }
+
+  li {
+    // flex: 0 1 100%;
+    list-style-type: decimal;
+
+    @include media($twelve-col) {
+      flex: 0 1 50%;
+    }
+  }
+}
+
+.union-point-strong {
+  font-family: $display-sans;
+  font-weight: 900;
+}
+
+.union-sw {
+  margin: -0.75em;
+  font-family: Avenir;
+  font-size: 2em;
+
+  &:first-of-type, &:last-of-type {
+    opacity: 0.2;
+  }
+
+  &:nth-of-type(2), &:nth-of-type(6) {
+    opacity: 0.4;
+  }
+
+  &:nth-of-type(3), &:nth-of-type(5) {
+    opacity: 0.7;
+  }
+
+  &:last-of-type {
+    margin-bottom: 1em;
+  }
+
+  @include media($twelve-col) {
+    margin-bottom: 0;
+  }
+}
+
+.union-newb-callout {
+  @include animation(rainbow-colors 12s ease-out);
+  @include animation-iteration-count(infinite);
+
+  color: $devtools-primary;
+  font-family: 'Harriet Display', 'Didot 96 A', 'Didot 96 B', serif;
+  font-size: 4em;
+  font-style: italic;
+  font-weight: 900;
+  line-height: 1.2;
+  margin: auto;
+  max-width: 8em;
+  padding: 0 10px;
+  text-align: center;
+
+  @include media($twelve-col) {
+    font-size: 10em;
+    padding: 0;
+  }
+}
+
+.union-blockquote-attribution {
+  float: right;
+  margin-right: 3em;
+
+  @include media($twelve-col) {
+    margin-right: 20em;
+  }
+}
+
+.union-google-improvements {
+  margin: 4em auto !important;
+  text-align: center !important;
+  font-family: $display-sans;
+  font-size: 1.5em;
+  line-height: 1;
+}
+
+.union-less {
+  display: block;
+  margin: 45em auto;
+  text-align: center;
+  width: 10em;
+  font-style: italic;
+}
+
+.union-inline-video {
+  border: 1px solid $brand-gray;
+}
+
+.union-products {
+  color: black;
+  font-family: "Avenir Next", sans-serif;
+  font-size: 2em;
+  font-weight: 900;
+  line-height: 1;
+  margin: 5em auto;
+  max-width: 10em;
+  width: 50%;
+
+  @include media($twelve-col) {
+    font-size: 3em;
+    width: 50%;
+  }
+}
+
+.union-devtools-current {
+  padding-top: 10em;
+}
+
+.union-goals {
+  font-family: 'Didot 96 A', 'Didot 96 B', serif;
+  font-size: 10em;
+  overflow: hidden;
+  margin: 0 0 0 -10%;
+  font-style: italic;
+  text-transform: uppercase;
+  line-height: 1;
+  
+  @include media($twelve-col) {
+    font-size: 30em;
+    margin: 0 0 0 -5%;
+  }
+}
+
+.post {
+  &.union {
+    margin-bottom: 10em;
+  }
+}

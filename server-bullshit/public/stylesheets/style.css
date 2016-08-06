@@ -609,13 +609,8 @@ a:active {
   clear: both;
   font-family: CalendasPlus, Georgia, "Times New Roman", Times, serif;
   font-size: 0.9em;
-  margin: -5.75em auto;
   position: relative;
   text-align: center; }
-
-@media screen and (min-width: 850px) {
-  .footer {
-    margin: -5.2em auto 3em auto; } }
 
 .footer p {
   margin: 1em auto;

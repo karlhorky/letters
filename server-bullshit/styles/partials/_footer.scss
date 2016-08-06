@@ -2,12 +2,12 @@
   clear: both;
   font-family: $serif;
   font-size: $base-font-size;
-  margin: -5.75em auto;
+  // margin: -5.75em auto;
   position: relative;
   text-align: center;
 
   @include media($nine-col) {
-    margin: -5.2em auto 3em auto;
+    // margin: -5.2em auto 3em auto;
   }
 
   p {
