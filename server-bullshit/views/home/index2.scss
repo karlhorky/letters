@@ -65,6 +65,12 @@
     margin-top: 25%;
   }
 
+  em {
+    display: block;
+    margin: 2% auto;
+    text-align: center;
+  }
+
   @include media($nine-col) {
     flex: 0 1 auto;
   }
@@ -81,11 +87,13 @@
 }
 
 .dead-plant {
-  margin: auto;
+  margin: 0 auto 5% auto;
   text-align: center;
   width: 30%;
 
-  img {
-    margin-bottom: 5%;
+  em {
+    display: block;
+    margin: 2% auto;
+    text-align: center;
   }
 }

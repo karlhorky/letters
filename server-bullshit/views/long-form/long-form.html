@@ -1,7 +1,55 @@
 {% extends 'layout.html' %}
 
 {% block content %}
+  <script>
+    var cb = function() {
+      var l = document.createElement('link'); l.rel = 'stylesheet';
+      l.href = '//cloud.typography.com/6668652/681922/css/fonts.css';
+      var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h);
+    };
+    var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+        webkitRequestAnimationFrame || msRequestAnimationFrame;
+    if (raf) raf(cb);
+    else window.addEventListener('load', cb);
+  </script>
   <link rel="stylesheet" property="stylesheet" href="/stylesheets/long-form/long-form.css">
+
+  <div class="container">
+    <div class="the-generalist">
+      <img src="/images/writing/the-generalist.jpg"/>
+
+      <a href="/the-generalist" class="title">
+        <h1>The General—ist</h1>
+        <em>Perhaps you've heard me expound on this before?</em>
+      </a>
+
+      <a href="/the-future-of-wearables" class="the-future">
+        <h1>The future of wearables</h1>
+        <em>No more telemarketers need call, please.</em>
+      </a>
+
+      <a href="/designing-for-the-mind" class="designing-for-the-mind">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="title">
+          <h1>Designing for the Mind</h1><em>Designers have incredible power.</em>
+        </div></a></div>
+    <div class="staying-ugly"></div>
+    <div class="additional-articles">
+      <ul>
+        <li>Mona Lisa Mode, Part 1</li>
+        <li>I'm a pessimist and it works for me</li>
+        <li>Color in tech</li>
+        <li>2015</li>
+        <li>Opening things</li>
+        <li>Rework</li>
+        <li>The only woman</li>
+      </ul>
+    </div>
+  </div>
 
   <div class="container">
     <p>

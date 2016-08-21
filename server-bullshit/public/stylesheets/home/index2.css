@@ -60,6 +60,11 @@ html {
 .cool-ass-photos > div {
   margin-top: 25%; }
 
+.cool-ass-photos em {
+  display: block;
+  margin: 2% auto;
+  text-align: center; }
+
 @media screen and (min-width: 850px) {
   .cool-ass-photos {
     flex: 0 1 auto; } }
@@ -74,9 +79,11 @@ html {
   font-family: "Courier New", Courier, monospace; }
 
 .dead-plant {
-  margin: auto;
+  margin: 0 auto 5% auto;
   text-align: center;
   width: 30%; }
 
-.dead-plant img {
-  margin-bottom: 5%; }
+.dead-plant em {
+  display: block;
+  margin: 2% auto;
+  text-align: center; }
