@@ -8,11 +8,11 @@ function getRandomInt(min, max) {
 
 var randomNumber = getRandomInt(1, 3);
 
-console.log(randomNumber);
-
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('home/index' + [randomNumber] + '.html', { title: 'Helen V. Holmes' });
+  res.render('home/index' + [randomNumber] + '.html', { 
+    title: 'some rogue designer'
+  });
 });
 
 module.exports = router;

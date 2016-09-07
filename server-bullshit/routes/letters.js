@@ -41,7 +41,7 @@ indexPosts(pathToLetters);
 // GET letters listing.
 router.get('/', function(req, res, next) {
   res.render('letters/letters.html', { 
-    title: 'Letters',
+    title: 'read something personal',
     letterTitles: allPosts
   });
 });
@@ -52,7 +52,7 @@ router.get('/random', function(req, res, next) {
   var randomParsedResponse = marked(allPosts[randomNumber].toString());
 
   res.render('letter/letter.html', {
-    title: 'Random letter: ',
+    title: 'random: ' + req.params.name,
     letter: randomParsedResponse
   });
 });
@@ -62,7 +62,7 @@ router.get('/:name', function(req, res) {
   var parsedResponse = marked(allPosts[indx].toString());
 
   res.render('letter/letter.html', {
-    title: 'Letter: ' + req.params.name,
+    title: 'letter: ' + req.params.name,
     letter: parsedResponse
   });
 });

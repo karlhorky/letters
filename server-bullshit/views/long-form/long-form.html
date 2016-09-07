@@ -15,45 +15,28 @@
   <link rel="stylesheet" property="stylesheet" href="/stylesheets/long-form/long-form.css">
 
   <div class="container">
-    <div class="the-generalist">
-      <img src="/images/writing/the-generalist.jpg"/>
+    <div class="the-things">
+      <img src="/images/the-things-we-own/parrot.jpg" class="the-things-parrot" />
 
-      <a href="/the-generalist" class="title">
-        <h1>The General—ist</h1>
-        <em>Perhaps you've heard me expound on this before?</em>
-      </a>
-
-      <a href="/the-future-of-wearables" class="the-future">
-        <h1>The future of wearables</h1>
-        <em>No more telemarketers need call, please.</em>
-      </a>
-
-      <a href="/designing-for-the-mind" class="designing-for-the-mind">
-        <div class="circle"></div>
-        <div class="circle"></div>
-        <div class="circle"></div>
-        <div class="circle"></div>
-        <div class="circle"></div>
-        <div class="title">
-          <h1>Designing for the Mind</h1><em>Designers have incredible power.</em>
-        </div></a></div>
-    <div class="staying-ugly"></div>
-    <div class="additional-articles">
-      <ul>
-        <li>Mona Lisa Mode, Part 1</li>
-        <li>I'm a pessimist and it works for me</li>
-        <li>Color in tech</li>
-        <li>2015</li>
-        <li>Opening things</li>
-        <li>Rework</li>
-        <li>The only woman</li>
-      </ul>
+      <h1 class="the-things-title">The things we own</h1>
+      <em class="the-things-subtitle">A story about the the stuff, the cruft, the things—</em>
     </div>
   </div>
+
+
+  <div class="additional-articles"></div>
 
   <div class="container">
     <p>
       <a href="/writing/the-state-of-devtools">the state of devtools</a>
     </p>
   </div>
+
+  <ol class="letters-lot">
+    {% for longFormTitle in longFormTitles %}
+      <a href="/writing/the-{{ longFormTitle }}">
+        <li>The {{ longFormTitle | replace("-", " ")}}</li>
+      </a>
+    {% endfor %}
+  </ol>
 {% endblock %}

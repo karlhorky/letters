@@ -10,222 +10,57 @@ img {
   width: 100%;
 }
 
-.the-generalist {
-  align-items: center;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: flex-start;
-  margin: 5em auto;
-  max-width: 805px;
-  width: 100%;
-
-  .title {
-    cursor: pointer;
-    flex: 0 1 100%;
-    position: relative;
-
-    @include media($nine-col) {
-      flex: 0 1 50%;
-      margin-left: 5%;
-    }
-
-    em {
-      display: inline-block;
-      text-align: center;
-      width: 100%;
-
-      @include media($nine-col) {
-        text-align: left;
-      }
-    }
-  }
-
-  a {
-    &:hover {
-      text-decoration: none;
-    }
-  }
-
-  h1 {
-    color: black;
-    font-family: 'Didot 96 A', 'Didot 96 B', serif;
-    font-size: $h1-font-size * 1.1;
-    font-style: italic;
-    font-weight: $light-weight;
-    line-height: $base-line-height / 1.5;
-    margin: 0;
-    margin-top: 0.25em;
-    position: relative;
-    text-align: center;
-    text-transform: uppercase;
-    word-wrap: break-word;
-
-    @include media($nine-col) {
-      font-size: $h1-font-size * 2.2;
-      margin-top: 0;
-      text-align: left;
-    }
-  }
-
-  em {
-    color: $brand-black;
-    margin: auto;
-
-    @include media($nine-col) {
-      margin-left: -0.5em;
-    }
-  }
-
-  img {
-    float: left;
-    @include flex(0 1 100%);
-
-    @include media($nine-col) {
-      @include flex(0 1 45%);
-    }
-  }
+.container {
+  width: 80%;
 }
 
-.the-future {
-  align-self: center;
-  clear: both;
+.the-things {
+  margin-top: 10%;
+}
+
+.the-things-title {
   color: black;
-  cursor: pointer;
-  flex: 0 1 100%;
-  margin-top: 45%;
+  flex: 0 1 45%;
+  font-family: 'Didot 96 A', 'Didot 96 B', serif;
+  font-size: $h1-font-size * 1.1;
+  font-style: italic;
+  font-weight: $light-weight;
+  line-height: $base-line-height / 1.5;
+  margin: 0;
+  margin-top: 0.25em;
   position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  word-wrap: break-word;
 
   @include media($nine-col) {
-    flex: 0 1 50%;
-    margin-top: 15%;
-  }
-
-  &:before {
-    background-color: $brand-primary;
-    content: '';
-    display: block;
-    height: 200px;
-    width: 200px;
-
-    @include media($nine-col) {
-      height: 150px;
-      width: 150px;
-    }
-  }
-
-  h1 {
-    font-family: $display-sans, sans-serif;
-    font-size: $h1-font-size;
-    font-style: normal;
-    font-weight: $extra-bold-weight;
-    line-height: $base-line-height;
-    margin-left: 25px;
-    margin-top: -25%;
-    position: relative;
-    text-align: center;
-    text-transform: capitalize;
-
-    @include media($nine-col) {
-      margin-left: 50px;
-      margin-top: -32%;
-      text-align: left;
-    }
-  }
-
-  em {
-    position: relative;
-    display: inline-block;
-    width: 100%;
-    text-align: center;
-
-    @include media($nine-col) {
-      margin-left: 120px;
-      text-align: left;
-      top: -71px;
-    }
+    font-size: $h1-font-size * 1.9;
+    margin-top: 0;
+    text-align: left;
   }
 }
 
-.designing-for-the-mind {
-  align-self: center;
-  clear: both;
-  color: black;
-  cursor: pointer;
-  flex: 0 1 100%;
-  margin-top: 45%;
-  padding-bottom: 20%;
+.the-things-parrot {
+  @include flex(0 1 100%);
+
+  float: left;
+  margin-right: 5%;
 
   @include media($nine-col) {
-    flex: 0 1 50%;
-    margin-top: 10%;
-    padding-bottom: 0;
+    max-width: 45%;
   }
+}
 
-  .title {
-    background-color: white;
-    position: relative;
-
-    em {
-      text-align: center;
-    }
-  }
-
-  h1 {
-    font-family: 'Knockout', sans-serif;
-    font-size: $h1-font-size * 1.5;
-    font-style: normal;
-    font-weight: $bold-weight;
-    letter-spacing: 1px;
-    position: relative;
-    text-align: center;
-
-    @include media($nine-col) {
-      margin-top: -30%;
-    }
-  }
-
-  em {
-    display: block;
-    margin: -3% auto;
-    text-align: center;
-  }
-
-  .circle {
-    border-radius: 50%;
-    border: 1px solid $brand-primary;
-    height: 100px;
-    position: relative;
-    width: 100px;
-
-    &:first-of-type {
-      margin: auto;
-    }
-
-    &:nth-of-type(2) {
-      margin-top: -32%;
-      margin-left: 50%;
-    }
-
-    &:nth-of-type(3) {
-      margin-top: -28%;
-      margin-left: 25%;
-    }
-
-    &:nth-of-type(4) {
-      margin-top: -12%;
-      margin-left: 30%;
-    }
-
-    &:nth-of-type(5) {
-      margin-top: -10%;
-      margin-left: 40%;
-    }
-  }
+.the-things-subtitle {
+  display: block;
+  flex: 0 1 45%;
+  justify-content: flex-end;
 }
 
 .additional-articles {
   flex: 0 1 100%;
   margin-bottom: 10%;
+  margin-top: 10%;
 
   &:before {
     border-bottom: $brand-primary 2px solid;
@@ -236,27 +71,80 @@ img {
     margin: auto;
     width: 150px;
   }
+}
 
-  ul {
-    float: right;
-    width: 80%;
+.letters-lot {
+  width: 60%;
+  float: right;
+  list-style-type: none;
+  font-size: $h3-font-size;
+  line-height: 3;
+  margin: 0 10% 10% 0;
+  text-transform: capitalize;
+
+  &::before {
+    border-bottom: 1px solid $brand-primary;
+    border-top: 3px solid $brand-primary;
+    content: '';
+    display: block;
+    height: 9px;
+    margin: 15% auto;
+    width: 25%;
+  }
+
+  a {
+    color: $brand-gray-dark;
+    transition: color 0.5s ease;
+
+    &:hover {
+      background: transparent;
+      color: darken($brand-gray-dark, 15%);
+    }
   }
 
   li {
-    border-bottom: $brand-primary 1px solid;
-    color: $brand-gray-light;
-    font-family: $display-sans, sans-serif;
-    font-size: $h2-font-size;
-    list-style-type: none;
-    margin-bottom: 3%;
-    padding-bottom: 3%;
+    border-bottom: 2px solid $brand-gray-dark;
+    display: inline-block;
+    padding-bottom: 3px;
+    position: relative;
+    width: 100%;
+    outline-offset: 15px;
 
-    &:first-of-type {
-      padding-top: 10%;
+    &::before {
+      bottom: 0;
+      content: '';
+      display: block;
+      height: 3px;
+      left: 0;
+      position: absolute;
+      transition: width 0s ease, background .5s ease;
+      width: 0;
     }
 
-    &:last-of-type {
-      border-bottom: none;
+    &::after {
+      background: $brand-gray-dark;
+      bottom: 0;
+      content: '';
+      display: block;
+      height: 3px;
+      position: absolute;
+      right: 0;
+      transition: width .5s ease;
+      width: 0;
+    }
+
+    &:hover {
+      &::before {
+        background: $brand-gray-dark;
+        transition: width .5s ease;
+        width: 100%;
+      }
+
+      &::after {
+        background: transparent;
+        transition: all 0s ease;
+        width: 100%;
+      }
     }
   }
 }
