@@ -8,10 +8,64 @@ html {
   text-decoration: underline; }
 
 @font-face {
+  font-family: ProximaNova;
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/proxima_nova_reg-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/proxima_nova_reg-webfont.woff2") format("woff2"), url("../fonts/proxima_nova_reg-webfont.woff") format("woff"), url("../fonts/proxima_nova_reg-webfont.ttf") format("truetype"), url("../fonts/proxima_nova_reg-webfont.svg#ProximaNova") format("svg"); }
+
+@font-face {
+  font-family: ProximaNova;
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/proxima_nova_bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/proxima_nova_bold-webfont.woff2") format("woff2"), url("../fonts/proxima_nova_bold-webfont.woff") format("woff"), url("../fonts/proxima_nova_bold-webfont.ttf") format("truetype"), url("../fonts/proxima_nova_bold-webfont.svg#ProximaNova") format("svg"); }
+
+@font-face {
+  font-family: ProximaNova;
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/proxima_nova_light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/proxima_nova_light-webfont.woff2") format("woff2"), url("../fonts/proxima_nova_light-webfont.woff") format("woff"), url("../fonts/proxima_nova_light-webfont.ttf") format("truetype"), url("../fonts/proxima_nova_light-webfont.svg#ProximaNova") format("svg"); }
+
+@font-face {
+  font-family: ProximaNova;
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/proxima_nova_sbold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/proxima_nova_sbold-webfont.woff2") format("woff2"), url("../fonts/proxima_nova_sbold-webfont.woff") format("woff"), url("../fonts/proxima_nova_sbold-webfont.ttf") format("truetype"), url("../fonts/proxima_nova_sbold-webfont.svg#ProximaNova") format("svg"); }
+
+@font-face {
+  font-family: ProximaNova;
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/proxima_nova_sbold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/proxima_nova_sbold-webfont.woff2") format("woff2"), url("../fonts/proxima_nova_sbold-webfont.woff") format("woff"), url("../fonts/proxima_nova_sbold-webfont.ttf") format("truetype"), url("../fonts/proxima_nova_sbold-webfont.svg#ProximaNova") format("svg"); }
+
+@font-face {
+  font-family: icomoon;
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/icomoon.eot?#iefix") format("embedded-opentype"), url("../fonts/icomoon.woff2") format("woff2"), url("../fonts/icomoon.woff") format("woff"), url("../fonts/icomoon.ttf") format("truetype"), url("../fonts/icomoon.svg#icomoon") format("svg"); }
+
+@font-face {
   font-family: CalendasPlus;
   font-style: normal;
   font-weight: 400;
   src: url("/fonts/Calendas-Plus.eot?#iefix") format("embedded-opentype"), url("/fonts/Calendas-Plus.woff") format("woff"), url("/fonts/Calendas-Plus.ttf") format("truetype"), url("/fonts/Calendas-Plus.svg#CalendasPlus") format("svg"); }
+
+@font-face {
+  font-family: CalendasPlus;
+  font-style: italic;
+  font-weight: 400;
+  src: url("/fonts/CalendasPlus-Italic.eot?#iefix") format("embedded-opentype"), url("/fonts/CalendasPlus-Italic.woff") format("woff"), url("/fonts/CalendasPlus-Italic.ttf") format("truetype"), url("/fonts/CalendasPlus-Italic.svg#CalendasPlus") format("svg"); }
+
+@font-face {
+  font-family: NeueHaasUnica;
+  font-style: normal;
+  font-weight: 900;
+  src: url("/fonts/NeueHaasUnicaW1G-Black.eot?#iefix") format("embedded-opentype"), url("/fonts/NeueHaasUnicaW1G-Black.woff") format("woff"), url("/fonts/NeueHaasUnicaW1G-Black.ttf") format("truetype"), url("/fonts/NeueHaasUnicaW1G-Black.svg#NeueHaasUnica") format("svg"); }
+
+@font-face {
+  font-family: NeueHaasUnica;
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/NeueHaasUnicaW1G-Regular.eot?#iefix") format("embedded-opentype"), url("/fonts/NeueHaasUnicaW1G-Regular.woff2") format("woff2"), url("/fonts/NeueHaasUnicaW1G-Regular.woff") format("woff"), url("/fonts/NeueHaasUnicaW1G-Regular.ttf") format("truetype"), url("/fonts/NeueHaasUnicaW1G-Regular.svg#NeueHaasUnica") format("svg"); }
 
 .post {
   margin: auto;

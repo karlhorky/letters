@@ -2,4 +2,16 @@
 
 @import 'bourbon';
 
+@include font-face(ProximaNova, '../fonts/proxima_nova_reg-webfont', 400);
+@include font-face(ProximaNova, '../fonts/proxima_nova_bold-webfont', 700);
+@include font-face(ProximaNova, '../fonts/proxima_nova_light-webfont', 300);
+@include font-face(ProximaNova, '../fonts/proxima_nova_sbold-webfont', 600);
+@include font-face(ProximaNova, '../fonts/proxima_nova_sbold-webfont', 600);
+
+@include font-face(icomoon, '../fonts/icomoon', normal);
+
 @include font-face(CalendasPlus, '/fonts/Calendas-Plus', 400, $file-formats: eot svg ttf woff);
+@include font-face(CalendasPlus, '/fonts/CalendasPlus-Italic', 400, italic, $file-formats: eot oft svg ttf woff);
+
+@include font-face(NeueHaasUnica, '/fonts/NeueHaasUnicaW1G-Black', 900, $file-formats: eot oft svg ttf woff);
+@include font-face(NeueHaasUnica, '/fonts/NeueHaasUnicaW1G-Regular', 400);

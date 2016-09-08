@@ -57,6 +57,66 @@ img {
   justify-content: flex-end;
 }
 
+.the-future {
+  align-self: center;
+  clear: both;
+  color: black;
+  cursor: pointer;
+  flex: 0 1 100%;
+  margin-top: 45%;
+  position: relative;
+
+  @include media($nine-col) {
+    flex: 0 1 50%;
+    margin-top: 15%;
+  }
+
+  &:before {
+    background-color: $brand-primary;
+    content: '';
+    display: block;
+    height: 200px;
+    width: 200px;
+
+    @include media($nine-col) {
+      height: 150px;
+      width: 150px;
+    }
+  }
+
+  h1 {
+    font-family: $display-sans, sans-serif;
+    font-size: $h1-font-size;
+    font-style: normal;
+    font-weight: $extra-bold-weight;
+    line-height: $base-line-height;
+    margin-left: 25px;
+    margin-top: -25%;
+    position: relative;
+    text-align: center;
+    text-transform: capitalize;
+
+    @include media($nine-col) {
+      margin-left: 50px;
+      margin-top: -32%;
+      text-align: left;
+    }
+  }
+
+  em {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+
+    @include media($nine-col) {
+      margin-left: 120px;
+      text-align: left;
+      top: -71px;
+    }
+  }
+}
+
 .additional-articles {
   flex: 0 1 100%;
   margin-bottom: 10%;

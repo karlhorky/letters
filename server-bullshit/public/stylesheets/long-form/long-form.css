@@ -57,6 +57,62 @@ img {
   flex: 0 1 45%;
   justify-content: flex-end; }
 
+.the-future {
+  align-self: center;
+  clear: both;
+  color: black;
+  cursor: pointer;
+  flex: 0 1 100%;
+  margin-top: 45%;
+  position: relative; }
+
+@media screen and (min-width: 850px) {
+  .the-future {
+    flex: 0 1 50%;
+    margin-top: 15%; } }
+
+.the-future:before {
+  background-color: peru;
+  content: '';
+  display: block;
+  height: 200px;
+  width: 200px; }
+
+@media screen and (min-width: 850px) {
+  .the-future:before {
+    height: 150px;
+    width: 150px; } }
+
+.the-future h1 {
+  font-family: NeueHaasUnica, Helvetica, Arial, sans-serif, sans-serif;
+  font-size: 2.925em;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 1.8em;
+  margin-left: 25px;
+  margin-top: -25%;
+  position: relative;
+  text-align: center;
+  text-transform: capitalize; }
+
+@media screen and (min-width: 850px) {
+  .the-future h1 {
+    margin-left: 50px;
+    margin-top: -32%;
+    text-align: left; } }
+
+.the-future em {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  text-align: center; }
+
+@media screen and (min-width: 850px) {
+  .the-future em {
+    margin-left: 120px;
+    text-align: left;
+    top: -71px; } }
+
 .additional-articles {
   flex: 0 1 100%;
   margin-bottom: 10%;
