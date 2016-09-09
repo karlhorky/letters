@@ -27,7 +27,7 @@ html {
   width: 100%; }
 
 .about .line-1 {
-  background-color: peru;
+  background-color: indianred;
   display: none;
   height: 1px;
   left: -65%;
@@ -41,7 +41,7 @@ html {
     display: block; } }
 
 .about .line-2 {
-  background-color: peru;
+  background-color: indianred;
   display: none;
   height: 1px;
   left: -100%;
@@ -55,7 +55,7 @@ html {
     display: block; } }
 
 .about .line-3 {
-  background-color: peru;
+  background-color: indianred;
   display: none;
   height: 1px;
   left: -25%;

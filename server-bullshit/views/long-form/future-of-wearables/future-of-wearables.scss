@@ -11,7 +11,7 @@
 
 .post {
   &.future-of-wearables {
-    margin: 6em auto 0 auto;
+    margin: 10em auto 0 auto;
 
     @include media($nine-col) {
       margin: auto;
@@ -91,7 +91,7 @@
 h1.future-of-wearables {
   color: black;
   font-family: $display-sans, sans-serif;
-  font-size: $h1-font-size * 1.5;
+  font-size: $h1-font-size * 1.15;
   font-weight: 900;
   line-height: $h6-font-size;
   margin-left: 10%;

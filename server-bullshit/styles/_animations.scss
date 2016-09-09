@@ -95,3 +95,30 @@
     background-size: 100% 100%;
   }
 }
+
+@keyframes grow {
+  0% {
+    transform: scale(0);
+ }
+  
+  100% {
+    transform: scale(1);
+ }
+}
+
+@keyframes shrink {
+  0% {
+    transform: scale(1);
+ }
+  
+  100% {
+    transform: scale(0);
+ }
+}
+
+@keyframes blinds {
+  100% {
+    background-position: 0 0, 0 -3em;
+    background-size: 0 0, 1em 6em;
+  }
+}

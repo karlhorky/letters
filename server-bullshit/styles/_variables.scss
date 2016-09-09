@@ -4,7 +4,7 @@
 // Note: Variables for typography are stored in _typography.scss.
 
 // Colors
-$brand-primary:               peru;
+$brand-primary:               indianred;
 $devtools-primary:            #4A90E2;
 
 // Black --- White
@@ -101,7 +101,3 @@ $ipads--landscape: "only screen and (min-device-width : 768px) and (max-device-w
 $ipads--portrait: "only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait)";
 $laptop: "only screen and (min-width : 1224px)";
 $desktop: "only screen and (min-width : 1824px)";
-
-// Old, refactor
-$large-breakpoint: "(max-width: 960px)";
-$medium-breakpoint: "(max-width: 550px)";

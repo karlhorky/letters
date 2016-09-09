@@ -99,8 +99,8 @@ aside {
   width: 20%; }
 
 .pullout:before {
-  border-bottom: 2px solid peru;
-  border-top: 1px solid peru;
+  border-bottom: 2px solid indianred;
+  border-top: 1px solid indianred;
   content: '';
   display: block;
   height: 7px;
@@ -109,8 +109,8 @@ aside {
   width: 60%; }
 
 .pullout:after {
-  border-bottom: 1px solid peru;
-  border-top: 2px solid peru;
+  border-bottom: 1px solid indianred;
+  border-top: 2px solid indianred;
   content: '';
   display: block;
   height: 7px;
@@ -141,7 +141,7 @@ aside {
 
 .breakout.two blockquote {
   align-items: center;
-  background-color: peru;
+  background-color: indianred;
   display: flex;
   flex: 0 1 45%;
   font-family: NeueHaasUnica, Helvetica, Arial, sans-serif, sans-serif;
@@ -186,8 +186,8 @@ aside {
     text-align: left; } }
 
 .caption:before {
-  border-bottom: 2px solid peru;
-  border-top: 1px solid peru;
+  border-bottom: 2px solid indianred;
+  border-top: 1px solid indianred;
   content: '';
   display: block;
   height: 7px;
@@ -198,7 +198,7 @@ aside {
   -moz-font-feature-settings: "ornm" 7;
   -ms-font-feature-settings: "ornm" 7;
   font-feature-settings: "ornm" 7;
-  color: peru;
+  color: indianred;
   content: '\0041';
   display: inline-block;
   font-size: 1em;
@@ -222,21 +222,21 @@ aside {
   -moz-font-feature-settings: "ornm" 7;
   -ms-font-feature-settings: "ornm" 7;
   font-feature-settings: "ornm" 7;
-  color: peru;
+  color: indianred;
   content: '\0041';
   display: inline-block;
   font-size: 1em;
   margin-left: 0.5em; }
 
 .post.future-of-wearables {
-  margin: 6em auto 0 auto; }
+  margin: 10em auto 0 auto; }
 
 @media screen and (min-width: 850px) {
   .post.future-of-wearables {
     margin: auto; } }
 
 .future-watch {
-  background-color: peru;
+  background-color: indianred;
   border-radius: 20px;
   float: left;
   height: 200px;
@@ -252,7 +252,7 @@ aside {
     top: 156px; } }
 
 .strap-1 {
-  background-color: peru;
+  background-color: indianred;
   content: '';
   display: block;
   height: 125px;
@@ -271,7 +271,7 @@ aside {
   width: 20px; }
 
 .strap-2 {
-  background-color: peru;
+  background-color: indianred;
   content: '';
   display: block;
   height: 165px;
@@ -281,7 +281,7 @@ aside {
   width: 100px; }
 
 .power-button {
-  background-color: peru;
+  background-color: indianred;
   border-radius: 4px;
   height: 50px;
   left: 98%;
@@ -290,7 +290,7 @@ aside {
   width: 8px; }
 
 .spin-button {
-  background-color: peru;
+  background-color: indianred;
   border-radius: 40px;
   height: 30px;
   left: 97%;
@@ -301,7 +301,7 @@ aside {
 h1.future-of-wearables {
   color: black;
   font-family: NeueHaasUnica, Helvetica, Arial, sans-serif, sans-serif;
-  font-size: 4.3875em;
+  font-size: 3.36375em;
   font-weight: 900;
   line-height: 0.9em;
   margin-left: 10%;
@@ -320,7 +320,7 @@ h1.future-of-wearables {
   margin-left: 40%; }
 
 blockquote.future-of-wearables {
-  color: peru;
+  color: indianred;
   font-family: 'Didot 96 A', 'Didot 96 B', serif;
   font-size: 2.925em;
   font-style: italic;

@@ -99,8 +99,8 @@ aside {
   width: 20%; }
 
 .pullout:before {
-  border-bottom: 2px solid peru;
-  border-top: 1px solid peru;
+  border-bottom: 2px solid indianred;
+  border-top: 1px solid indianred;
   content: '';
   display: block;
   height: 7px;
@@ -109,8 +109,8 @@ aside {
   width: 60%; }
 
 .pullout:after {
-  border-bottom: 1px solid peru;
-  border-top: 2px solid peru;
+  border-bottom: 1px solid indianred;
+  border-top: 2px solid indianred;
   content: '';
   display: block;
   height: 7px;
@@ -141,7 +141,7 @@ aside {
 
 .breakout.two blockquote {
   align-items: center;
-  background-color: peru;
+  background-color: indianred;
   display: flex;
   flex: 0 1 45%;
   font-family: NeueHaasUnica, Helvetica, Arial, sans-serif, sans-serif;
@@ -186,8 +186,8 @@ aside {
     text-align: left; } }
 
 .caption:before {
-  border-bottom: 2px solid peru;
-  border-top: 1px solid peru;
+  border-bottom: 2px solid indianred;
+  border-top: 1px solid indianred;
   content: '';
   display: block;
   height: 7px;
@@ -198,7 +198,7 @@ aside {
   -moz-font-feature-settings: "ornm" 7;
   -ms-font-feature-settings: "ornm" 7;
   font-feature-settings: "ornm" 7;
-  color: peru;
+  color: indianred;
   content: '\0041';
   display: inline-block;
   font-size: 1em;

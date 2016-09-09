@@ -75,11 +75,11 @@
     border-top-color: white; }
   50% {
     border-bottom-color: white;
-    border-top-color: peru; }
+    border-top-color: indianred; }
   100% {
     opacity: 1;
     transform: translateY(2px);
-    border-bottom-color: peru; } }
+    border-bottom-color: indianred; } }
 
 @-moz-keyframes link-underlines {
   0% {
@@ -89,11 +89,11 @@
     border-top-color: white; }
   50% {
     border-bottom-color: white;
-    border-top-color: peru; }
+    border-top-color: indianred; }
   100% {
     opacity: 1;
     transform: translateY(2px);
-    border-bottom-color: peru; } }
+    border-bottom-color: indianred; } }
 
 @keyframes link-underlines {
   0% {
@@ -103,11 +103,11 @@
     border-top-color: white; }
   50% {
     border-bottom-color: white;
-    border-top-color: peru; }
+    border-top-color: indianred; }
   100% {
     opacity: 1;
     transform: translateY(2px);
-    border-bottom-color: peru; } }
+    border-bottom-color: indianred; } }
 
 @-webkit-keyframes rainbow-colors {
   0% {
@@ -175,9 +175,26 @@
   100% {
     background-size: 100% 100%; } }
 
+@keyframes grow {
+  0% {
+    transform: scale(0); }
+  100% {
+    transform: scale(1); } }
+
+@keyframes shrink {
+  0% {
+    transform: scale(1); }
+  100% {
+    transform: scale(0); } }
+
+@keyframes blinds {
+  100% {
+    background-position: 0 0, 0 -3em;
+    background-size: 0 0, 1em 6em; } }
+
 .letter-nav {
   align-items: center;
-  background-color: peru;
+  background-color: indianred;
   display: flex;
   height: 12px;
   justify-content: center;
@@ -314,7 +331,7 @@
   -moz-font-feature-settings: "ornm" 7;
   -ms-font-feature-settings: "ornm" 7;
   font-feature-settings: "ornm" 7;
-  color: peru;
+  color: indianred;
   content: '\0041';
   display: inline-block;
   font-size: 1em;

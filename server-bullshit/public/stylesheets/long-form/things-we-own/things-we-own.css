@@ -12,7 +12,7 @@ html {
   -moz-font-feature-settings: "ornm" 7;
   -ms-font-feature-settings: "ornm" 7;
   font-feature-settings: "ornm" 7;
-  color: peru;
+  color: indianred;
   content: '\0041';
   display: inline-block;
   font-size: 1em;
@@ -23,7 +23,7 @@ img {
 
 .intro, .basement {
   display: block;
-  margin: 15% auto 0 auto;
+  margin: 19% auto 0 auto;
   width: 35%; }
 
 .title {

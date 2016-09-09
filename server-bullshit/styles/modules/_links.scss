@@ -9,7 +9,7 @@ a {
   text-decoration: none;
 
   &:hover {
-    @include link-underline(white, $brand-primary, $color-selection);
+    color: darken($brand-primary, 10%);
   }
 
   &:visited {

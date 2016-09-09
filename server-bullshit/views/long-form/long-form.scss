@@ -3,6 +3,7 @@
 @import 'neat';
 @import '../../styles/variables';
 @import '../../styles/typography';
+// @import '../../styles/modules/links';
 
 // The writing page
 
@@ -18,25 +19,28 @@ img {
   margin-top: 10%;
 }
 
-.the-things-title {
+a.the-things-title {
   color: black;
-  flex: 0 1 45%;
+  float: left;
   font-family: 'Didot 96 A', 'Didot 96 B', serif;
   font-size: $h1-font-size * 1.1;
   font-style: italic;
   font-weight: $light-weight;
   line-height: $base-line-height / 1.5;
   margin: 0;
-  margin-top: 0.25em;
+  margin-top: 0.5em;
   position: relative;
   text-align: center;
   text-transform: uppercase;
+  width: 100%;
   word-wrap: break-word;
+  text-decoration: none;
 
   @include media($nine-col) {
     font-size: $h1-font-size * 1.9;
-    margin-top: 0;
+    margin-top: 0.15em;
     text-align: left;
+    width: 45%;
   }
 }
 
@@ -52,9 +56,18 @@ img {
 }
 
 .the-things-subtitle {
+  clear: both;
   display: block;
-  flex: 0 1 45%;
-  justify-content: flex-end;
+  text-align: center;
+  width: 100%;
+
+  @include media($nine-col) {
+    clear: none;
+    float: left;
+    text-align: left;
+    text-indent: 0.5em;
+    width: 45%;
+  }
 }
 
 .the-future {
@@ -68,7 +81,7 @@ img {
 
   @include media($nine-col) {
     flex: 0 1 50%;
-    margin-top: 15%;
+    margin-top: 10%;
   }
 
   &:before {
@@ -112,14 +125,13 @@ img {
     @include media($nine-col) {
       margin-left: 120px;
       text-align: left;
-      top: -71px;
+      top: -110px;
     }
   }
 }
 
 .additional-articles {
   flex: 0 1 100%;
-  margin-bottom: 10%;
   margin-top: 10%;
 
   &:before {
@@ -134,13 +146,20 @@ img {
 }
 
 .letters-lot {
-  width: 60%;
-  float: right;
-  list-style-type: none;
   font-size: $h3-font-size;
   line-height: 3;
-  margin: 0 10% 10% 0;
+  list-style-type: none;
+  margin: 0 auto 10% auto;
+  padding-left: 0;
   text-transform: capitalize;
+  width: 80%;
+
+  @include media($nine-col) {
+    float: right;
+    margin: 0 10% 10% 0;
+    padding: auto;
+    width: 60%;
+  }
 
   &::before {
     border-bottom: 1px solid $brand-primary;
