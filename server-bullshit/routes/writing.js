@@ -5,7 +5,7 @@ var fs       = require('fs');
 var path     = require('path');
 var glob     = require("glob");
 
-var pathToLongFormContent = "/Users/hholmes/Library/Mobile\ Documents/27N4MQEA55~pro~writer/Documents/Letters/server-bullshit/views/long-form/";
+var pathToLongFormContent = "./views/long-form/";
 var shorturls = [];
 
 var files = glob.sync("**/*.html", {cwd: pathToLongFormContent});

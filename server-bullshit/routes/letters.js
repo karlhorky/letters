@@ -9,7 +9,7 @@ var router   = express.Router();
 var numberOfLetters = 0;
 var lettersResponse = {};
 var letterTitles = [];
-var pathToLetters = "/Users/hholmes/Library/Mobile\ Documents/27N4MQEA55~pro~writer/Documents/Letters/arbitrary-folder";
+var pathToLetters = "../arbitrary-folder";
 var postIndex = {};
 var allPosts = [];
 
