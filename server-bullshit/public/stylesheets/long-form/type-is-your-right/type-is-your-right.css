@@ -18,14 +18,97 @@ html {
   font-size: 1em;
   margin-left: 0.5em; }
 
+/**
+ * GitHub Gist Theme
+ * Author : Louis Barranqueiro - https://github.com/LouisBarranqueiro
+ */
+.hljs {
+  display: block;
+  background: white;
+  padding: 0.5em;
+  color: #333333;
+  overflow-x: auto; }
+
+.hljs-comment,
+.hljs-meta {
+  color: #969896; }
+
+.hljs-string,
+.hljs-variable,
+.hljs-template-variable,
+.hljs-strong,
+.hljs-emphasis,
+.hljs-quote {
+  color: #df5000; }
+
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-type {
+  color: #a71d5d; }
+
+.hljs-literal,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-attribute {
+  color: #0086b3; }
+
+.hljs-section,
+.hljs-name {
+  color: #63a35c; }
+
+.hljs-tag {
+  color: #333333; }
+
+.hljs-title,
+.hljs-attr,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-selector-attr,
+.hljs-selector-pseudo {
+  color: #795da3; }
+
+.hljs-addition {
+  color: #55a532;
+  background-color: #eaffea; }
+
+.hljs-deletion {
+  color: #bd2c00;
+  background-color: #ffecec; }
+
+.hljs-link {
+  text-decoration: underline; }
+
 img, video {
   width: 100%; }
 
+.no-top-margin {
+  margin-top: 0 !important; }
+
+.no-bottom-margin {
+  margin-bottom: 0 !important; }
+
+.no-outline {
+  outline: 0px solid currentColor !important; }
+
+.extra {
+  margin-top: 20% !important; }
+
+@media screen and (min-width: 850px) {
+  .extra {
+    margin-top: 40% !important; } }
+
+ol {
+  padding: 0; }
+
 .left, .middle, .right {
   margin-bottom: 10%;
-  margin-top: 20%;
+  margin-top: 10%;
   text-align: justify;
-  width: 40%; }
+  width: 80%; }
+
+@media screen and (min-width: 850px) {
+  .left, .middle, .right {
+    width: 40%; } }
 
 .left {
   margin-left: 10%; }
@@ -35,14 +118,22 @@ img, video {
   margin-right: auto; }
 
 .right {
-  margin-left: 50%; }
+  margin-left: 10%; }
+
+@media screen and (min-width: 850px) {
+  .right {
+    margin-left: 50%; } }
 
 .title {
   font-family: "Didot 96 A", "Didot 96 B", serif;
-  font-size: 11rem;
+  font-size: 4rem;
   font-style: italic;
   line-height: 1;
   text-transform: uppercase; }
+
+@media screen and (min-width: 850px) {
+  .title {
+    font-size: 11rem; } }
 
 .batman {
   margin: 10% auto;
@@ -53,24 +144,39 @@ img, video {
   width: 90%; }
 
 .ux {
+  display: none;
+  float: left;
   margin: 5% 0 0 10%;
   outline: 1px solid #F5F5F5;
-  float: left;
   width: 30%; }
+
+@media screen and (min-width: 850px) {
+  .ux {
+    display: block; } }
 
 .ux > .right {
   float: left; }
 
 .sf {
-  margin: 5% 0 0 0;
+  display: none;
   float: left;
+  margin: 0;
   width: 50%; }
+
+@media screen and (min-width: 850px) {
+  .sf {
+    display: block; } }
 
 .glyphs {
   width: 100%; }
 
 .glyphs ~ .right {
   margin-top: 0; }
+
+.middle-example {
+  display: block;
+  margin: auto;
+  width: 50%; }
 
 .printing-press {
   float: right;
@@ -82,22 +188,30 @@ img, video {
   margin-top: 0; }
 
 .printing-press-quote {
-  margin-top: 30% !important; }
+  width: 100% !important; }
 
 .kerning {
   width: 30%; }
 
 .example {
-  float: right;
-  margin-top: 5%;
-  margin-right: 10%;
-  width: 30%; }
+  width: 100%; }
+
+@media screen and (min-width: 850px) {
+  .example {
+    float: right;
+    margin-right: 10%;
+    width: 30%; } }
 
 .quote {
   font-family: ProximaNova, Helvetica, Arial, sans-serif;
   font-size: 1.5em;
-  margin: 10% auto 10% auto;
-  width: 50%; }
+  margin: 5% auto 5% auto;
+  width: 80%; }
+
+@media screen and (min-width: 850px) {
+  .quote {
+    margin: 20% auto 10% auto;
+    width: 50%; } }
 
 .quote-attribution {
   font-family: CalendasPlus, Georgia, "Times New Roman", Times, serif;
@@ -109,8 +223,81 @@ img, video {
   font-family: "Courier New", Courier, monospace;
   margin: 5% auto;
   text-align: center;
-  width: 50%; }
+  width: 80%; }
+
+@media screen and (min-width: 850px) {
+  .open-type {
+    width: 50%; } }
 
 h2 {
   font-family: ProximaNova, Helvetica, Arial, sans-serif;
   font-size: 2em; }
+
+.king {
+  font-family: ProximaNova, Helvetica, Arial, sans-serif;
+  font-size: 1.8em;
+  font-weight: 700;
+  margin: auto;
+  text-align: center;
+  text-transform: uppercase;
+  width: 60%; }
+
+.king::before {
+  background-color: white;
+  border-bottom: 2px solid indianred;
+  border-top: 1px solid indianred;
+  content: "";
+  display: block;
+  height: 7px;
+  margin: 0 auto 15% auto;
+  width: 15%; }
+
+.king::after {
+  background-color: white;
+  border-top: 2px solid indianred;
+  border-bottom: 1px solid indianred;
+  content: "";
+  display: block;
+  height: 7px;
+  margin: 15% auto 0 auto;
+  width: 15%; }
+
+.code-example-section {
+  clear: both;
+  padding-top: 10%;
+  margin-bottom: 30%; }
+
+.code-example {
+  margin-left: 10%;
+  width: 80%; }
+
+@media screen and (min-width: 850px) {
+  .code-example {
+    margin-left: 5%;
+    width: 30%; } }
+
+.code-example-code {
+  width: 100%; }
+
+@media screen and (min-width: 850px) {
+  .code-example-code {
+    float: right;
+    margin-right: 5%;
+    margin-top: 0;
+    width: 55%; } }
+
+.foft {
+  color: indianred;
+  font-family: ProximaNova, Helvetica, Arial, sans-serif;
+  font-size: 1.8em;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase; }
+
+.colophon {
+  margin: auto;
+  width: 80%; }
+
+@media screen and (min-width: 850px) {
+  .colophon {
+    width: 50%; } }

@@ -13,6 +13,7 @@
     else window.addEventListener('load', cb);
   </script> -->
   <link rel="stylesheet" property="stylesheet" href="/stylesheets/long-form/type-is-your-right/type-is-your-right.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/styles/default.min.css">
 
   <main>
     <section class="middle">
@@ -48,7 +49,7 @@
     </video>
 
     <section class="right">
-      <p>Do I have any UX designers in the audience?</p>
+      <p>Have you ever done any UX design?</p>
 
       <p>When you’re trying to create a new website or new app, you draw from patterns you’ve already seen in other places that work well. This is because choosing patterns users are familiar with helps them acclimate to your product faster.</p>
 
@@ -57,7 +58,7 @@
       <p>Typography copying the way we write and technical revolution means three patterns emerge:</p>
     </section>
 
-    <section class="middle">
+    <section class="middle extra">
       <ol>
         <li>Typography and what we as readers find legible change and morph together, and are influenced by how we’re reading—be it by book, newspaper, or webpage.</li>
         <li>Typography is also influenced by the way people write by hand, and borrows the solutions people find when writing by hand when it needs them.</li>
@@ -100,14 +101,14 @@
       <p>Written word, before the printing press, was able to fix awkward spacing between letters. Acronyms in bodies of text flowed. If you were talented, adding flourishes to your work was simple.</p>
 
       <p>Printing presses’ needs were very different. Typography needed ways to solve awkward spacing, and build flourishes, and have number fractions—all of the things that had been solved and were easy to write, but not easy to typeset. Ellen Lupton in her book <em>Thinking with Type</em> puts this really elegantly:</p>
+
+      <blockquote class="quote printing-press-quote">
+        <p>“The first typefaces were directly models on forms of calligraphy. Typefaces, however, are not bodily gestures—they are manufactured images design for infinite repetition.”</p>
+        <attr class="quote-attribution">— Ellen Lupton, <em>Thinking with Type</em></attr>
+      </blockquote>
     </section>
 
-    <blockquote class="quote printing-press-quote">
-      <p>“The first typefaces were directly models on forms of calligraphy. Typefaces, however, are not bodily gestures—they are manufactured images design for infinite repetition.”</p>
-      <attr class="quote-attribution">— Ellen Lupton, <em>Thinking with Type</em></attr>
-    </blockquote>
-
-    <section class="middle">
+    <section class="middle extra">
       <p>To solve these issues, type designers had to create all the glyphs that you can find in fonts today:</p>
 
       <p>Slugs meant that as a type designer you had to choose and find important combinations of letters. You had to give decorative glyphs for people printing books. You needed to create small caps. You needed to create often-used fractions.</p>
@@ -155,6 +156,11 @@
       <p>Old Style Numerals give you numbers that go below the baseline, which look more similar to the way you might write out numbers by hand, which has the added benefit of making them more legible in certain scenarios.</p>
     </section>
 
+    <video nocontrols autoplay muted loop class="example">
+      <source src="/images/type-is-your-right/swashes.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
     <section class="left">
       <p>Swashes allow you to get really fancy with your typography, and are great for fancy headers and article titles.</p>
     </section>
@@ -171,7 +177,9 @@
       <p>The challenging part is knowing what your typeface supports, which you can figure out with a variety of methods.</p>
     </section>
 
-    <section class="right">
+    <img src="/images/type-is-your-right/typekit.png" class="ux" />
+
+    <section class="right no-bottom-margin">
       <h2>Typekit</h2>
 
       <p>If you’re serving up the font from Typekit, it will list those features. Once you’ve created a kit on Typekit you can see the OpenType features the typeface supports by clicking the question mark next to “OpenType Features”. Unfortunately, you already need to be pretty familiar with the OpenType syntax to know what these mean. </p>
@@ -181,7 +189,11 @@
       <p>I like this one because it makes it pretty easy to just turn on and off the different features and it spits out the relevant CSS along the bottom of the page. If you click an OpenType feature and nothing happens, that particular feature is probably just not supported by that typeface.</p>
 
       <p>The last challenge is discovering additional glyphs that a font file might contain, since we know from <a href="https://twitter.com/BaldCondensed/status/525631405251125248">this tweet</a> that sometimes there are additional characters and glyphs that you can’t access without key commands or help from some sort of visual editing software. To find these, you have two options:</p>
+    </section>
 
+      <img src="/images/type-is-your-right/fontbook.png" class="ux no-outline" />
+
+    <section class="right no-top-margin">
       <ol>
         <li>Looking at all of the glyphs using Font Book/Character Map</li>
         <li>Or, if you have a spare $600, using Adobe InDesign</li>
@@ -196,7 +208,7 @@
       <p>The workflow for playing with a new typeface I’d like to use is typically to use an OpenType sandbox to discover the CSS features the typeface supports, and then to use Font Book to discover glyphs I might want to use in my designs. For example, if you’re on Mac, the system font, San Francisco, has a lots of little fun wingdings, including nicer punctuation to replace “dumb” or “straight” quotes:</p>
     </section>
 
-    <code>   ❛ ❜ ❞❝</code>
+    <code class="open-type">   ❛ ❜ ❞❝</code>
 
     <section class="middle">
       <p>Font Book also is a way, using the information panel, to see what languages a typeface supports, which is good information if you’re building a site that needs to support different character sets, or languages with lots of accents.</p>
@@ -225,19 +237,19 @@
       <attr class="quote-attribution">— Chris Manning, <em>The @font-face Dilemma</em></attr>
     </blockquote>
 
-    <section class="middle">
+    <section class="middle no-bottom-margin extra">
       <p>If you’ve ever loaded in a webfont from Google fonts you probably copy and pasted their suggested import code, which looks something like this:</p>
     </section>
 
-    <!-- <code>@import 'https://fonts.googleapis.com/css?family=Roboto';</code> -->
+    <pre class="open-type"><code>@import 'https://fonts.googleapis.com/css?family=Roboto';</code></pre>
 
-    <section class="middle">
+    <section class="middle no-top-margin no-bottom-margin">
       <p>Or this:</p>
     </section>
 
-    <!-- <code><link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"></code> -->
+    <pre class="open-type"><code>&ltlink href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"&gt;</code></pre>
 
-    <section class="left">
+    <section class="left no-top-margin">
       <p>These methods get the job done but we can improve on them. For one, they can cause a flash of unstyled text:</p>
 
       <p>Even worse, they can cause a flash of invisible text, which means you can’t even read the content before it’s all loaded:</p>
@@ -255,64 +267,68 @@
       <p>For this demos, I’m going to be using a typeface named Calendas Plus.</p>
     </section>
 
-    <section class="code-example">
-      <p>Here, we’re declaring our webfont font stack first on the body, and then our desired font stack in a class:</p>
+    <div class="code-example-section">
+      <pre class="code-example-code"><code class="css">
+@font-face {
+      font-family: 'Calendas Plus'; 
+      src: url('/css/type/calendas-plus-webfont.woff2') format('woff2'), 
+           url('/css/type/calendas-plus-webfont.woff') format('woff'),
+           url('/css/type/calendas-plus-webfont.ttf') format('truetype');
+      font-weight: 300;
+      font-style: normal;
+  }
 
-      <!-- <code>
-        @font-face {
-            font-family: 'Calendas Plus'; 
-            src: url('/css/type/calendas-plus-webfont.woff2') format('woff2'), 
-                 url('/css/type/calendas-plus-webfont.woff') format('woff'),
-                 url('/css/type/calendas-plus-webfont.ttf') format('truetype');
-            font-weight: 300;
-            font-style: normal;
-        }
+  body {
+    font-family: serif;
+  }
 
-        body {
-          font-family: serif;
-        }
+  body.fonts-loaded {
+    font-family: 'Calendas Plus', serif;
+  }
+      </code></pre>
 
-        body.fonts-loaded {
-          font-family: 'Calendas Plus', serif;
-        }
-      </code> -->
-    </section>
+      <section class="code-example">
+        <p>Here, we’re declaring our webfont font stack first on the body, and then our desired font stack in a class.</p>
+      </section>
+    </div>
 
-    <section class="code-example">
-      <p>For the JavaScript, we’re using a small library produced by Bram Stein, who works at typekit named <a href="https://fontfaceobserver.com/">Font Face Observer</a>.</p>
+    <div class="code-example-section">
+      <pre class="code-example-code"><code class="javascript">
+var fontFamilies = {
+  'Calendas Plus': [
+    {
+      weight: 400
+    },
+    {
+      weight: 700
+    }
+  ]
+}
 
-      <p>In this code, we start an object with the different font families we want to load. Here we have one typeface with two different weights, which we can append to later with different families.</p>
+var fontObservers = [];
 
-      <p>We create a new font face observer for each family in the object; this will return a promise that is resolved when the font has loaded, or rejected if the font fails. In the promise below we handle the two use cases—in the event of the promise being fulfilled, we add the ‘fonts-loaded’ class to the body that will trigger the typeface from our CSS and then apply that Calendas Plus typeface that looks so nice. Voilà!</p>
+Object.keys(fontFamilies).forEach(function(family) {
+  fontObservers.push(fontFamilies[family].map(function(config) {
+    return new FontFaceObserver(family, config).check()
+  }));
+});
 
-      <!-- <code>
-        var fontFamilies = {
-          'Calendas Plus': [
-            {
-              weight: 400
-            },
-            {
-              weight: 700
-            }
-          ]
-        }
+Promise.all(fontObservers)
+  .then(function() {
+    document.body.classList.add('fonts-loaded');
+  }, function() {
+    console.log('Fonts not available');
+});
+      </code></pre>
 
-        var fontObservers = [];
+      <section class="code-example">
+        <p>For the JavaScript, we’re using a small library produced by Bram Stein, who works at typekit named <a href="https://fontfaceobserver.com/">Font Face Observer</a>.</p>
 
-        Object.keys(fontFamilies).forEach(function(family) {
-          fontObservers.push(fontFamilies[family].map(function(config) {
-            return new FontFaceObserver(family, config).check()
-          }));
-        });
+        <p>In this code, we start an object with the different font families we want to load. Here we have one typeface with two different weights, which we can append to later with different families.</p>
 
-        Promise.all(fontObservers)
-          .then(function() {
-            document.body.classList.add('fonts-loaded');
-          }, function() {
-            console.log('Fonts not available');
-        });
-      </code> -->
-    </section>
+        <p>We create a new font face observer for each family in the object; this will return a promise that is resolved when the font has loaded, or rejected if the font fails. In the promise below we handle the two use cases—in the event of the promise being fulfilled, we add the ‘fonts-loaded’ class to the body that will trigger the typeface from our CSS and then apply that Calendas Plus typeface that looks so nice. Voilà!</p>
+      </section>
+    </div>
 
     <section class="middle">
       <h2>Minimizing the FOUT</h2>
@@ -320,180 +336,198 @@
       <p>There’s still work to be done though to minimize our new problem: the flash of unstyled text that the user sees between the initial render of our websafe font and our webfont that we’ve chosen.</p>
 
       <p>To do this, we’re going to compare the font we have with the font we want when we’re choosing our stack. This trick comes from Tim Brown, who explains the philosophy by pulling a quote from Jason Santa Maria’s book <em>On Web Typography</em>:</p>
+    </section>
 
-      <blockquote class="quote">
-        <p>“The thing I try to avoid most in my designs is not FOUT but a jarring shift in the layout when a webfont finishes loading. This shift is usually due to sizing discrepancies between your layout and system fonts, and your webfont.”</p>
-        <attr class="quote-attribution">— Jason Santa Maria, <em>On Web Typography</em></attr>
-      </blockquote>
+    <blockquote class="quote">
+      <p>“The thing I try to avoid most in my designs is not FOUT but a jarring shift in the layout when a webfont finishes loading. This shift is usually due to sizing discrepancies between your layout and system fonts, and your webfont.”</p>
+      <attr class="quote-attribution">— Jason Santa Maria, <em>On Web Typography</em></attr>
+    </blockquote>
 
+    <section class="middle no-bottom-margin">
       <p>The way that Tim Brown handles this discrepancy is by matching his fallback font and his intended webfont’s x-heights and widths—a typefaces’ x-height being the height of the lower case letters, and the width being the literal width of the letters when laid out in a line:</p>
+    </section>
 
+    <img src="/images/type-is-your-right/overlaid.png" class="middle-example" />
+
+    <section class="middle no-top-margin no-bottom-margin">
       <p>In these examples I’m using Calendas Plus and Georgia, both set at 36 points. When we overlay them we see how Georgia is both taller and wider than Calendas Plus is:</p>
 
       <p>By bumping down Georgia to 35 points, we get a much closer match between the two that isn’t going to cause as dramatic a shift in the layout as a user begins to read because of similar height heights, and closer widths:</p>
+    </section>
 
+    <img src="/images/type-is-your-right/matching.png" class="middle-example" />
+
+    <section class="middle no-top-margin no-bottom-margin">
       <p>As Tim Brown puts it,</p>
-
-      <!-- <img src="TODO" /> -->
-      —@nicewebtype, https://twitter.com/nicewebtype/status/760866055724097536
     </section>
 
-    <section class="code-example">
-      <p>This means that we need to modify our css a little bit from before.</p>
+    <blockquote class="quote">
+      <p>“The style doesn’t matter so much, it’s that it has to flow the same way.”</p>
+      <attr class="quote-attribution">— Tim Brown, <em><a href="https://twitter.com/nicewebtype/status/760866055724097536">Twitter</a></em></attr>
+    </blockquote>
 
-      <!-- <code>
-        @font-face {
-            font-family: 'Calendas Plus'; 
-            src: url('/css/type/calendas-plus-webfont.woff2') format('woff2'), 
-                 url('/css/type/calendas-plus-webfont.woff') format('woff'),
-                 url('/css/type/calendas-plus-webfont.ttf') format('truetype');
-            font-weight: 300;
-            font-style: normal;
-        }
+    <div class="code-example-section">
+      <pre class="code-example-code"><code class="css">
+@font-face {
+    font-family: 'Calendas Plus'; 
+    src: url('/css/type/calendas-plus-webfont.woff2') format('woff2'), 
+         url('/css/type/calendas-plus-webfont.woff') format('woff'),
+         url('/css/type/calendas-plus-webfont.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
 
-        body {
-          font-family: Georgia, serif;
-          font-size: 35pt;
-        }
+body {
+  font-family: Georgia, serif;
+  font-size: 35pt;
+}
 
-        body.fonts-loaded {
-          font-family: 'Calendas Plus', serif;
-          font-sized: 36pt;
-        }
-      </code> -->
-    </section>
+body.fonts-loaded {
+  font-family: 'Calendas Plus', serif;
+  font-sized: 36pt;
+}
+      </code></pre>
+
+      <section class="code-example">
+        <p>This means that we need to modify our css a little bit from before.</p>
+
+        <p>Instead of just specifying any old serif, we want to specify Georgia, since it was a serif that closely matched Calendas Plus. Secondly, we want to set Georgia, the font that loads first, at 35 points, and then Calendas Plus, the font that loads second, at 36 points, to avoid those layout shifts.</p>
+      </section>
+    </div>
 
     <section class="middle">
-      <p>Instead of just specifying any old serif, we want to specify Georgia, since it was a serif that closely matched Calendas Plus. Secondly, we want to set Georgia, the font that loads first, at 35 points, and then Calendas Plus, the font that loads second, at 36 points, to avoid those layout shifts.</p>
-
       <h2>But wait! We can do even more!</h2>
 
       <p>If you’re loading in a typeface from Typekit or from Google fonts, this should get you pretty far. Already, you know how to circumvent Flashes of Invisible Text with a lazyload so that your users can read their text <em>and</em> get a nice webfont at that, and we know how to make sure that this load isn’t disruptive to the reading experience. But we can still improve on this! </p>
 
       <p>Zach Leatherman from Filament Group shows us that we can get even more granular with our lazyloading, splitting up the normal (or roman), italic, and bold versions of our typeface, using the browsers’ faster, built-in algorithms to italicize and bold our typeface until we can lazyload the proper italic and bold versions of our typeface. He calls this FOFT, or</p>
 
-      <!-- <div class="TODO">Flash of Faux Text</div> -->
+      <div class="foft">Flash of Faux Text</div>
 
       <p>The way that Zach handles this is using a <code>fontfaceonload</code> polyfill he’s created, which executes a callback when a webfont loads. To use it, we load the <code>fontfaceonload</code> library and set up our loads to happen in “stages”—Stage 1 being the roman font family loading, and stage two being the bold and italic styles of the font family loading.</p>
     </section>
 
-    <section class="code-example">
-      <p>We’re going to use Proxima Nova for these examples, since Proxima Nova has a lot of different weights that would be fabulous to load in over time:</p>
+    <div class="code-example-section">
+      <pre class="code-example-code"><code class="css">
+FontFaceOnload( "ProximaNovaRegular", {
+  success: function() {
+    var docEl = document.documentElement;
+    
+    // Stage 1 Complete
+    // FOFT engaged
+    docEl.className += " proxima-nova-loaded";
 
-      <p>Here we’re loading the roman version of our typeface <em>first</em>. On completion for that variant, we have two more checks for the bold and light versions of our typeface. If these succeed, we add another success class to the top element on our page so our css file knows to apply the correct font file.</p>
+    var counter = 0;
+    var success = function() {
+      counter++;
+      if( counter === 2 ) { // number of additional font faces we're loading in
+        // Stage 2 Complete
+        // All Fonts Loaded
+        docEl.className += " proxima-nova-b-loaded";
+      }
+    };
 
-      <!-- <code>
-        FontFaceOnload( "ProximaNovaRegular", {
-          success: function() {
-            var docEl = document.documentElement;
-            
-            // Stage 1 Complete
-            // FOFT engaged
-            docEl.className += " proxima-nova-loaded";
+    FontFaceOnload( "ProximaNovaBold", {
+      weight: 700,
+      success: success
+    });
+    FontFaceOnload( "ProximaNovaLight", {
+      weight: 300,
+      success: success
+    });
+  }
+});
+      </code></pre>
 
-            var counter = 0;
-            var success = function() {
-              counter++;
-              if( counter === 2 ) { // number of additional font faces we're loading in
-                // Stage 2 Complete
-                // All Fonts Loaded
-                docEl.className += " proxima-nova-b-loaded";
-              }
-            };
+      <section class="code-example">
+        <p>We’re going to use Proxima Nova for these examples, since Proxima Nova has a lot of different weights that would be fabulous to load in over time:</p>
 
-            FontFaceOnload( "ProximaNovaBold", {
-              weight: 700,
-              success: success
-            });
-            FontFaceOnload( "ProximaNovaLight", {
-              weight: 300,
-              success: success
-            });
-          }
-        });
-      </code> -->
-    </section>
+        <p>Here we’re loading the roman version of our typeface <em>first</em>. On completion for that variant, we have two more checks for the bold and light versions of our typeface. If these succeed, we add another success class to the top element on our page so our css file knows to apply the correct font file.</p>
+      </section>
+    </div>
 
-    <section class="code-example">
-      <p>First we load in our webfont using an @font-face declaration. We’re doing this three times over, one for each weight of the font we want to load in, because grouping them together will cause the dreaded FOIT we’re trying to avoid if we load them in the way we’re doing with our javascript. Browsers are smart enough to not download a @font-face until the class exists in the DOM tree, so we don’t need to worry about these being downloaded and slowing down render.</p>
+    <div class="code-example-section">
+      <pre class="code-example-code"><code class="css">
+/*
+All font variants need to be aliased to different names to avoid the FOIT
+*/
+@font-face {
+    font-family: ProximaNovaBold;
+    src: url('proxima_nova_bold-webfont.woff2') format('woff2'),
+         url('proxima_nova_bold-webfont.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
 
-      <p>First, we declare our websafe fonts that most closely match our desired font, as we did before. The closest I could find to Proxima Nova was the Mac system font San Francisco, but system fonts on Windows and Linux didn’t match as closely, so instead of having the traditional system fallbacks of Segoe UI and Tahoma for Windows and Linux systems, I’m next just setting Helvetica.</p>
+@font-face {
+    font-family: ProximaNovaLight;
+    src: url('proxima_nova_light-webfont.woff2') format('woff2'),
+         url('proxima_nova_light-webfont.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
 
-      <p>Next we set a loaded class named <code>.proxima-nova-loaded</code>, where we set our desired webfont. All still things you’ve seen before.
+@font-face {
+    font-family: ProximaNovaRegular;
+    src: url('proxima_nova_reg-webfont.woff2') format('woff2'),
+         url('proxima_nova_reg-webfont.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
 
-      <p><em>Next</em> we start seeing some new code—a <code>.proxima-nova-b-loaded</code> class, the class our JavaScript sets when the italic and bold versions of our typeface have loaded on the <code><html></code> element. We have to refine where in what instances we want italics and bolds to load since we’ve stripped them out previously—hence resetting italics on <code>em</code> elements and resetting bolds on <code>strongs</code> and <code>h*s</code> to use the webfont’s true bold and italics instead of the browsers’.</p>
+html {
+    font-family: -apple-system, BlinkMacSystemFont, Helvetica, sans-serif;
+}
 
-      <p>All of these strategies have the potential to timeout after a period set by the browser, and that’s okay—at least your content <em>loads</em>.</p>
+/* Stage 1 */
+html.proxima-nova-loaded {
+    font-family: ProximaNovaRegular, sans-serif;
+}
 
-      <!-- <code>
-        /*
-        All font variants need to be aliased to different names to avoid the FOIT
-        */
-        @font-face {
-            font-family: ProximaNovaBold;
-            src: url('proxima_nova_bold-webfont.woff2') format('woff2'),
-                 url('proxima_nova_bold-webfont.woff') format('woff');
-            font-weight: 700;
-            font-style: normal;
-        }
+/* 
+ * Stage 2
+ * The rest of this CSS is to work around
+ * the separate font-family limitation
+ * described below.
+ */
 
-        @font-face {
-            font-family: ProximaNovaLight;
-            src: url('proxima_nova_light-webfont.woff2') format('woff2'),
-                 url('proxima_nova_light-webfont.woff') format('woff');
-            font-weight: 300;
-            font-style: normal;
-        }
+.proxima-nova-b-loaded h1,
+.proxima-nova-b-loaded h2,
+.proxima-nova-b-loaded h3,
+.proxima-nova-b-loaded h4,
+.proxima-nova-b-loaded h5,
+.proxima-nova-b-loaded strong {
+    font-family: ProximaNovaBold;
+}
+.proxima-nova-b-loaded em {
+  font-family: ProximaNovaLight;
+  font-style: italic;
+}
+.proxima-nova-b-loaded strong em,
+.proxima-nova-b-loaded strong blockquote,
+.proxima-nova-b-loaded em strong {
+  font-family: ProximaNovaBold;
+  font-style: italic;
+}
+      </code></pre>
 
-        @font-face {
-            font-family: ProximaNovaRegular;
-            src: url('proxima_nova_reg-webfont.woff2') format('woff2'),
-                 url('proxima_nova_reg-webfont.woff') format('woff');
-            font-weight: 400;
-            font-style: normal;
-        }
+      <section class="code-example">
+        <p>First we load in our webfont using an @font-face declaration. We’re doing this three times over, one for each weight of the font we want to load in, because grouping them together will cause the dreaded FOIT we’re trying to avoid if we load them in the way we’re doing with our javascript. Browsers are smart enough to not download a @font-face until the class exists in the DOM tree, so we don’t need to worry about these being downloaded and slowing down render.</p>
 
-        html {
-            font-family: -apple-system, BlinkMacSystemFont, Helvetica, sans-serif;
-        }
+        <p>First, we declare our websafe fonts that most closely match our desired font, as we did before. The closest I could find to Proxima Nova was the Mac system font San Francisco, but system fonts on Windows and Linux didn’t match as closely, so instead of having the traditional system fallbacks of Segoe UI and Tahoma for Windows and Linux systems, I’m next just setting Helvetica.</p>
 
-        /* Stage 1 */
-        html.proxima-nova-loaded {
-            font-family: ProximaNovaRegular, sans-serif;
-        }
+        <p>Next we set a loaded class named <code>.proxima-nova-loaded</code>, where we set our desired webfont. All still things you’ve seen before.
 
-        /* 
-         * Stage 2
-         * The rest of this CSS is to work around
-         * the separate font-family limitation
-         * described below.
-         */
+        <p><em>Next</em> we start seeing some new code—a <code>.proxima-nova-b-loaded</code> class, the class our JavaScript sets when the italic and bold versions of our typeface have loaded on the <code><html></code> element. We have to refine where in what instances we want italics and bolds to load since we’ve stripped them out previously—hence resetting italics on <code>em</code> elements and resetting bolds on <code>strongs</code> and <code>h*s</code> to use the webfont’s true bold and italics instead of the browsers’.</p>
 
-        .proxima-nova-b-loaded h1,
-        .proxima-nova-b-loaded h2,
-        .proxima-nova-b-loaded h3,
-        .proxima-nova-b-loaded h4,
-        .proxima-nova-b-loaded h5,
-        .proxima-nova-b-loaded strong {
-            font-family: ProximaNovaBold;
-        }
-        .proxima-nova-b-loaded em {
-          font-family: ProximaNovaLight;
-          font-style: italic;
-        }
-        .proxima-nova-b-loaded strong em,
-        .proxima-nova-b-loaded strong blockquote,
-        .proxima-nova-b-loaded em strong {
-          font-family: ProximaNovaBold;
-          font-style: italic;
-        }
-      </code> -->
-    </section>
+        <p>All of these strategies have the potential to timeout after a period set by the browser, and that’s okay—at least your content <em>loads</em>.</p>
+      </section>
+    </div>
 
     <section class="middle">
       <h2>Wrapping Up</h2>
 
-      <p>There’s a talk by Kenneth Ormandy that really wonderful on web typography, and he tells a story about the printing press, but 100 years after Gutenberg and the story we covered.</p>
+      <p>There’s <a href="http://kennethormandy.com/journal/efficient-web-type-circa-1556">a talk</a> by Kenneth Ormandy that really wonderful on web typography, and he tells a story about the printing press, but 100 years after Gutenberg and the story we covered.</p>
 
       <p>100 years after the printing press was created, a man named Pierre Haultin is trying to recreate Gutenberg’s greatest accomplishment: printing the Bible. But Haultin’s reasons for doing so are a little different than Gutenberg’s: Gutenberg wanted to print the Bible. Haultin wants to print like… the mini-Bible. That’s because Haultin is a Protestant living in very Catholic France where he is unable to lug around a big ol’ Protestant Bible that he might get caught with.</p>
 
@@ -509,11 +543,11 @@
 
       <h2>Resources</h2>
 
-      <p>If you want to learn more about Type, I highly recommend Ellen Lupton’s TODO <em>Thinking with Type</em>. If you like to sweat the small stuff, this is the book for you.</p>
+      <p>If you want to learn more about Type, I highly recommend Ellen Lupton’s <a href="https://www.amazon.com/Thinking-Type-2nd-revised-expanded/dp/1568989695"><em>Thinking with Type</em></a>. If you like to sweat the small stuff, this is the book for you.</p>
 
-      <p>If you want to make working with OpenType features easier, I recommend TODO Kenneth Ormandy’s Utility Opentype and Normalize-OpenType projects, which both work to make working with OpenType easier.</p>
+      <p>If you want to make working with OpenType features easier, I recommend Kenneth Ormandy’s <a href="https://github.com/kennethormandy/utility-opentype">Utility Opentype</a> and <a href="https://github.com/kennethormandy/normalize-opentype.css">Normalize-OpenType</a> projects, which both work to make working with OpenType easier.</p>
 
-      <p>If you want to learn more about progressive typeloading techniques, TODO Zach Leather’s research is beyond fabulous. He has ideas for how to get even more performant with Data-URI techniques that I didn’t cover here, so that’s also worth looking at.</p>
+      <p>If you want to learn more about progressive typeloading techniques, Zach Leatherman’s <a href="https://www.zachleat.com/web/research/">research</a> is beyond fabulous. He has ideas for how to get even more performant with Data-URI techniques that I didn’t cover here, so that’s also worth looking at.</p>
     </section>
 
     <section class="colophon">
@@ -586,5 +620,8 @@
         </ul>
     </section>
   </main>
+
+  <script async src="/javascripts/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
 
 {% endblock %}

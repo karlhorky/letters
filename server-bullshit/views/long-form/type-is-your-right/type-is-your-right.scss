@@ -4,16 +4,45 @@
 @import '../../../styles/typography';
 @import '../../../styles/variables';
 @import '../../../styles/modules/post-ending';
+@import '../../../styles/vendor/github';
 
 img, video {
   width: 100%;
 }
 
+.no-top-margin {
+  margin-top: 0 !important;
+}
+
+.no-bottom-margin {
+  margin-bottom: 0 !important;
+}
+
+.no-outline {
+  outline: 0px solid currentColor !important;
+}
+
+.extra {
+  margin-top: 20% !important;
+
+  @include media($nine-col) {
+    margin-top: 40% !important;
+  }
+}
+
+ol {
+  padding: 0;
+}
+
 .left, .middle, .right {
   margin-bottom: 10%;
-  margin-top: 20%;
+  margin-top: 10%;
   text-align: justify;
-  width: 40%;
+  width: 80%;
+
+  @include media($nine-col) {
+    width: 40%;
+  }
 }
 
 .left {
@@ -26,15 +55,23 @@ img, video {
 }
 
 .right {
-  margin-left: 50%;
+  margin-left: 10%;
+
+  @include media($nine-col) {
+    margin-left: 50%;
+  }
 }
 
 .title {
   font-family: $mega-display;
-  font-size: 11rem;
+  font-size: 4rem;
   font-style: italic;
   line-height: 1;
   text-transform: uppercase;
+
+  @include media($nine-col) {
+    font-size: 11rem;
+  }
 }
 
 .batman {
@@ -48,10 +85,15 @@ img, video {
 }
 
 .ux {
+  display: none;
+  float: left;
   margin: 5% 0 0 10%;
   outline: 1px solid $brand-gray;
-  float: left;
   width: 30%;
+
+  @include media($nine-col) {
+    display: block;
+  }
 }
 
 .ux > .right {
@@ -59,9 +101,14 @@ img, video {
 }
 
 .sf {
-  margin: 5% 0 0 0;
+  display: none;
   float: left;
+  margin: 0;
   width: 50%;
+
+  @include media($nine-col) {
+    display: block;
+  }
 }
 
 .glyphs {
@@ -70,6 +117,12 @@ img, video {
   & ~ .right {
     margin-top: 0;
   }
+}
+
+.middle-example {
+  display: block;
+  margin: auto;
+  width: 50%;
 }
 
 .printing-press {
@@ -85,7 +138,7 @@ img, video {
 
 .printing-press-quote {
   // Am I down to the wire yet
-  margin-top: 30% !important;
+  width: 100% !important;
 }
 
 .kerning {
@@ -93,17 +146,25 @@ img, video {
 }
 
 .example {
-  float: right;
-  margin-top: 5%;
-  margin-right: 10%;
-  width: 30%;
+  width: 100%;
+
+  @include media($nine-col) {
+    float: right;
+    margin-right: 10%;
+    width: 30%;
+  }
 }
 
 .quote {
   font-family: $sans-serif;
   font-size: 1.5em;
-  margin: 10% auto 10% auto;
-  width: 50%;
+  margin: 5% auto 5% auto;
+  width: 80%;
+
+  @include media($nine-col) {
+    margin: 20% auto 10% auto;
+    width: 50%;
+  }
 }
 
 .quote-attribution {
@@ -117,10 +178,91 @@ img, video {
   font-family: $monospace;
   margin: 5% auto;
   text-align: center;
-  width: 50%;
+  width: 80%;
+
+  @include media($nine-col) {
+    width: 50%;
+  }
 }
 
 h2 {
   font-family: $sans-serif;
   font-size: 2em;
+}
+
+.king {
+  font-family: $sans-serif;
+  font-size: $h2-font-size;
+  font-weight: $bold-weight;
+  margin: auto;
+  text-align: center;
+  text-transform: uppercase;
+  width: 60%;
+
+  &::before {
+    background-color: white;
+    border-bottom: 2px solid $brand-primary;
+    border-top: 1px solid $brand-primary;
+    content: "";
+    display: block;
+    height: 7px;
+    margin: 0 auto 15% auto;
+    width: 15%;
+  }
+
+  &::after {
+    background-color: white;
+    border-top: 2px solid $brand-primary;
+    border-bottom: 1px solid $brand-primary;
+    content: "";
+    display: block;
+    height: 7px;
+    margin: 15% auto 0 auto;
+    width: 15%;
+  }
+}
+
+.code-example-section {
+  clear: both;
+  padding-top: 10%;
+  margin-bottom: 30%;
+}
+
+.code-example {
+  margin-left: 10%;
+  width: 80%;
+
+  @include media($nine-col) {
+    margin-left: 5%;
+    width: 30%;
+  }
+}
+
+.code-example-code {
+  width: 100%;
+
+  @include media($nine-col) {
+    float: right;
+    margin-right: 5%;
+    margin-top: 0;
+    width: 55%;
+  }
+}
+
+.foft {
+  color: $brand-primary;
+  font-family: $sans-serif;
+  font-size: $h2-font-size;
+  font-weight: $bold-weight;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.colophon {
+  margin: auto;
+  width: 80%;
+
+  @include media($nine-col) {
+    width: 50%;
+  }
 }
