@@ -79,6 +79,9 @@ html {
 .printing-press ~ .quote {
   width: 70%; }
 
+.example {
+  clear: both; }
+
 .quote {
   font-family: ProximaNova, Helvetica, Arial, sans-serif;
   font-size: 1.5em;
