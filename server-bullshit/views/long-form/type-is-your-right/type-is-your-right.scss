@@ -30,6 +30,14 @@ img, video {
   }
 }
 
+.extra-2x {
+  margin-top: 20% !important;
+
+  @include media($nine-col) {
+    margin-top: 70% !important;
+  }
+}
+
 ol {
   padding: 0;
 }

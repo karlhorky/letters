@@ -97,6 +97,13 @@ img, video {
   .extra {
     margin-top: 40% !important; } }
 
+.extra-2x {
+  margin-top: 20% !important; }
+
+@media screen and (min-width: 850px) {
+  .extra-2x {
+    margin-top: 70% !important; } }
+
 ol {
   padding: 0; }
 
