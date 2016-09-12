@@ -42,7 +42,7 @@
       </div>
     </section>
 
-    <video nocontrols autoplay muted class="ux">
+    <video nocontrols autoplay muted loop class="ux">
       <source src="/images/type-is-your-right/ux.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
@@ -73,7 +73,7 @@
       </p>
     </section>
 
-    <video nocontrols autoplay muted class="sf">
+    <video nocontrols autoplay muted loop class="sf">
       <source src="/images/type-is-your-right/sf.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
@@ -119,28 +119,43 @@
       <p>There are over 100 of them, so I’m not going to go through every single one, but we can at least learn a few some common ones:</p>
     </section>
 
-    <video nocontrols autoplay muted class="kerning">
+    <video nocontrols autoplay muted loop class="example">
       <source src="/images/type-is-your-right/kerning.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
 
-    <section class="left example">
+    <section class="left">
       <p>There is kerning, which is the adjustment between letters so spacing looks good. Type designers will put a lot of work into figuring out spacing between your letters, so it makes sense to turn this on to <code>auto</code>, which ensures the browser will choose the most performant kerning option on by default.</p>
     </section>
 
-    <section class="left example">
+    <video nocontrols autoplay muted loop class="example">
+      <source src="/images/type-is-your-right/ligatures.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    <section class="left">
       <p>There are ligatures, which fix awkward letter combinations. When type gets really small, spacing gets awkward between certain letter combinations. Ligatures fix that. These are normally split into normal and discretionary ligatures, discretionary meaning, “turn on if you want to be extra fancy.” This is a good option for headers and pullquotes.</p>
     </section>
 
-    <section class="left example">
+    <video nocontrols autoplay muted loop class="example">
+      <source src="/images/type-is-your-right/smallcaps.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    <section class="left">
       <p>Next there are small caps, which make make abbreviations look good. This is because they don’t interrupt the flow of a sentence by staying at the same height as the lowercase letters.</p>
     </section>
 
-    <section class="left example">
+    <video nocontrols autoplay muted loop class="example">
+      <source src="/images/type-is-your-right/numerals.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    <section class="left">
       <p>Old Style Numerals give you numbers that go below the baseline, which look more similar to the way you might write out numbers by hand, which has the added benefit of making them more legible in certain scenarios.</p>
     </section>
 
-    <section class="left example">
+    <section class="left">
       <p>Swashes allow you to get really fancy with your typography, and are great for fancy headers and article titles.</p>
     </section>
 
@@ -150,7 +165,7 @@
       <p>These things are pretty easy to turn on; they’re ultimately just CSS properties (I’ve left them all unprefixed for brevity):</p>
     </section>
 
-    <code>font-feature-settings: "kern", "liga", "clig", "calt";</code>
+    <code class="open-type">font-feature-settings: "kern", "liga", "clig", "calt";</code>
 
     <section class="middle">
       <p>The challenging part is knowing what your typeface supports, which you can figure out with a variety of methods.</p>

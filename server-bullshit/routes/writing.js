@@ -37,7 +37,7 @@ router.get('/', function(req, res, next) {
 shorturls.forEach(shorturl => {
   if (shorturl === "type-is-your-right") {
     router.get("/" + shorturl, function(req, res, next) {
-      res.render("long-form/" + shorturl + "/" + shorturl + ".html", { title: 'type is your right~' });
+      res.render("long-form/" + shorturl + "/" + shorturl + ".html", { title: 'type is your right' });
     });
   } else { // most articles are "the"-something
     router.get("/the-" + shorturl, function(req, res, next) {

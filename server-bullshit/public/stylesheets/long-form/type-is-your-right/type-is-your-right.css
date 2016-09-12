@@ -18,7 +18,7 @@ html {
   font-size: 1em;
   margin-left: 0.5em; }
 
-img {
+img, video {
   width: 100%; }
 
 .left, .middle, .right {
@@ -55,14 +55,16 @@ img {
 .ux {
   margin: 5% 0 0 10%;
   outline: 1px solid #F5F5F5;
-  float: left; }
+  float: left;
+  width: 30%; }
 
 .ux > .right {
   float: left; }
 
 .sf {
   margin: 5% 0 0 0;
-  float: left; }
+  float: left;
+  width: 50%; }
 
 .glyphs {
   width: 100%; }
@@ -82,8 +84,14 @@ img {
 .printing-press-quote {
   margin-top: 30% !important; }
 
+.kerning {
+  width: 30%; }
+
 .example {
-  clear: both; }
+  float: right;
+  margin-top: 5%;
+  margin-right: 10%;
+  width: 30%; }
 
 .quote {
   font-family: ProximaNova, Helvetica, Arial, sans-serif;
@@ -96,7 +104,7 @@ img {
   font-size: 0.7em;
   float: right; }
 
-code {
+.open-type {
   display: block;
   font-family: "Courier New", Courier, monospace;
   margin: 5% auto;

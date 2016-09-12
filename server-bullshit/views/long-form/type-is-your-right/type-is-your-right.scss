@@ -5,7 +5,7 @@
 @import '../../../styles/variables';
 @import '../../../styles/modules/post-ending';
 
-img {
+img, video {
   width: 100%;
 }
 
@@ -51,6 +51,7 @@ img {
   margin: 5% 0 0 10%;
   outline: 1px solid $brand-gray;
   float: left;
+  width: 30%;
 }
 
 .ux > .right {
@@ -60,6 +61,7 @@ img {
 .sf {
   margin: 5% 0 0 0;
   float: left;
+  width: 50%;
 }
 
 .glyphs {
@@ -86,8 +88,15 @@ img {
   margin-top: 30% !important;
 }
 
+.kerning {
+  width: 30%;
+}
+
 .example {
-  clear: both;
+  float: right;
+  margin-top: 5%;
+  margin-right: 10%;
+  width: 30%;
 }
 
 .quote {
@@ -103,7 +112,7 @@ img {
   float: right;
 }
 
-code {
+.open-type {
   display: block;
   font-family: $monospace;
   margin: 5% auto;
