@@ -83,7 +83,10 @@ a.the-things-title {
     flex: 0 1 50%;
     margin-top: 10%; } }
 
-.the-future:before {
+.the-future:hover::before {
+  animation: spin-color 8s linear forwards; }
+
+.the-future::before {
   background-color: indianred;
   content: '';
   display: block;
@@ -91,7 +94,7 @@ a.the-things-title {
   width: 200px; }
 
 @media screen and (min-width: 850px) {
-  .the-future:before {
+  .the-future::before {
     height: 150px;
     width: 150px; } }
 
@@ -110,8 +113,13 @@ a.the-things-title {
 @media screen and (min-width: 850px) {
   .the-future h1 {
     margin-left: 50px;
-    margin-top: -32%;
     text-align: left; } }
+
+.the-future h1 a {
+  color: #434242; }
+
+.the-future h1 a:hover {
+  color: #434242; }
 
 .the-future em {
   position: relative;
@@ -137,6 +145,31 @@ a.the-things-title {
   height: 7px;
   margin: auto;
   width: 150px; }
+
+.have-histories {
+  font-family: "Baskerville", CalendasPlus, Georgia, "Times New Roman", Times, serif;
+  font-weight: regular;
+  margin-left: 15%;
+  margin-top: 5%;
+  text-align: center;
+  text-transform: uppercase; }
+
+.have-histories a {
+  color: #434242; }
+
+.have-histories .all {
+  font-size: 1em;
+  font-feature-settings: "c2sc" 1;
+  letter-spacing: 0.1em; }
+
+.have-histories .have {
+  display: block;
+  font-feature-settings: "c2sc" 1;
+  width: 100%; }
+
+.have-histories .histories {
+  display: block;
+  width: 100%; }
 
 .letters-lot {
   font-size: 1.575em;

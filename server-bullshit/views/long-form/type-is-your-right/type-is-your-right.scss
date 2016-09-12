@@ -1,6 +1,108 @@
 @import 'bourbon';
-@import '../../styles/grid-settings';
+@import '../../../styles/grid-settings';
 @import 'neat';
-@import '../../styles/typography';
-@import '../../styles/variables';
-@import '../../styles/modules/post-ending';
+@import '../../../styles/typography';
+@import '../../../styles/variables';
+@import '../../../styles/modules/post-ending';
+
+.left, .middle, .right {
+  margin-bottom: 10%;
+  margin-top: 20%;
+  text-align: justify;
+  width: 40%;
+}
+
+.left {
+  margin-left: 10%;
+}
+
+.middle {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.right {
+  margin-left: 50%;
+}
+
+.title {
+  font-family: $mega-display;
+  font-size: 11rem;
+  font-style: italic;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.batman {
+  margin: 10% auto;
+  width: 50%;
+  text-align: center;
+
+  img {
+    width: 90%;
+  }
+}
+
+.ux {
+  margin: 5% 0 0 10%;
+  outline: 1px solid $brand-gray;
+  float: left;
+}
+
+.ux > .right {
+  float: left;
+}
+
+.sf {
+  margin: 5% 0 0 0;
+  float: left;
+}
+
+.glyphs {
+  width: 100%;
+
+  & ~ .right {
+    margin-top: 0;
+  }
+}
+
+.printing-press {
+  float: right;
+  margin-left: 10%;
+  width: 40%;
+
+  & ~ .left {
+    float: right;
+    margin-top: 0;
+  }
+
+  & ~ .quote {
+    width: 70%;
+  }
+}
+
+.quote {
+  font-family: $sans-serif;
+  font-size: 1.5em;
+  margin: 10% auto 10% auto;
+  width: 50%;
+}
+
+.quote-attribution {
+  font-family: $serif;
+  font-size: 0.7em;
+  float: right;
+}
+
+code {
+  display: block;
+  font-family: $monospace;
+  margin: 5% auto;
+  text-align: center;
+  width: 50%;
+}
+
+h2 {
+  font-family: $sans-serif;
+  font-size: 2em;
+}

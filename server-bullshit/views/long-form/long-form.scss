@@ -84,7 +84,13 @@ a.the-things-title {
     margin-top: 10%;
   }
 
-  &:before {
+  &:hover {
+    &::before {
+      animation: spin-color 8s linear forwards;
+    }
+  }
+
+  &::before {
     background-color: $brand-primary;
     content: '';
     display: block;
@@ -111,8 +117,15 @@ a.the-things-title {
 
     @include media($nine-col) {
       margin-left: 50px;
-      margin-top: -32%;
       text-align: left;
+    }
+
+    a {
+      color: $brand-black;
+
+      &:hover {
+        color: $brand-black;
+      }
     }
   }
 
@@ -142,6 +155,36 @@ a.the-things-title {
     height: 7px;
     margin: auto;
     width: 150px;
+  }
+}
+
+.have-histories {
+  font-family: "Baskerville", $serif;
+  font-weight: regular;
+  margin-left: 15%;
+  margin-top: 5%;
+  text-align: center;
+  text-transform: uppercase;
+
+  a {
+    color: $brand-black;
+  }
+
+  .all {
+    font-size: 1em;
+    font-feature-settings: "c2sc" 1;
+    letter-spacing: 0.1em;
+  }
+
+  .have {
+    display: block;
+    font-feature-settings: "c2sc" 1;
+    width: 100%;
+  }
+
+  .histories {
+    display: block;
+    width: 100%;
   }
 }
 

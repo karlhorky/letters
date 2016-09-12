@@ -204,6 +204,22 @@ html {
     background-position: 0 0, 0 -3em;
     background-size: 0 0, 1em 6em; } }
 
+@keyframes spin-color {
+  0% {
+    background-color: indianred; }
+  20% {
+    background-color: #cdcd5c; }
+  40% {
+    background-color: #5ccd5c; }
+  55% {
+    background-color: #5ccdcd; }
+  75% {
+    background-color: #5c5ccd; }
+  90 {
+    background-color: #cd5ccd; }
+  100% {
+    background-color: indianred; } }
+
 .letters-header {
   -webkit-animation: open-up 1s ease;
   -moz-animation: open-up 1s ease;

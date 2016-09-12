@@ -1,10 +1,10 @@
 @import 'bourbon';
-@import '../../styles/grid-settings';
+@import '../../../styles/grid-settings';
 @import 'neat';
-@import '../../styles/variables';
-@import '../../styles/typography';
-@import '../../styles/font-face';
-@import '../../styles/modules/posts';
+@import '../../../styles/variables';
+@import '../../../styles/typography';
+@import '../../../styles/font-face';
+@import '../../../styles/modules/posts';
 
 @include font-face(LeagueSpartan, '/fonts/leaguespartan-bold', 600);
 @include font-face(NeueHaasUnica, '/fonts/NeueHaasUnicaW1G', 600);

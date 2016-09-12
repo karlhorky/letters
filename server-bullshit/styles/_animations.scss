@@ -122,3 +122,33 @@
     background-size: 0 0, 1em 6em;
   }
 }
+
+@keyframes spin-color {
+  0% {
+    background-color: adjust-hue($brand-primary, 0);
+  }
+
+  20% {
+    background-color: adjust-hue($brand-primary, 60);
+  }
+
+  40% {
+    background-color: adjust-hue($brand-primary, 120);
+  }
+
+  55% {
+    background-color: adjust-hue($brand-primary, 180);
+  }
+
+  75% {
+    background-color: adjust-hue($brand-primary, 240);
+  }
+
+  90 {
+    background-color: adjust-hue($brand-primary, 300);
+  }
+
+  100% {
+    background-color: adjust-hue($brand-primary, 360);
+  }
+}
