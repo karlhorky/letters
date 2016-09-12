@@ -1,7 +1,7 @@
 {% extends 'layout.html' %}
 
 {% block content %}
-  <script>
+  <!-- <script>
     var cb = function() {
       var l = document.createElement('link'); l.rel = 'stylesheet';
       l.href = '//cloud.typography.com/6668652/681922/css/fonts.css';
@@ -11,7 +11,7 @@
         webkitRequestAnimationFrame || msRequestAnimationFrame;
     if (raf) raf(cb);
     else window.addEventListener('load', cb);
-  </script>
+  </script> -->
   <link rel="stylesheet" property="stylesheet" href="/stylesheets/long-form/type-is-your-right/type-is-your-right.css">
 
   <main>
@@ -67,10 +67,10 @@
       <p>I found this great tweet the other day:</p>
 
       <p>
-        <blockquote class="twitter-tweet" data-lang="en">
-          <p lang="en" dir="ltr">The difference between what you see on keyboard and what is available in font is often staggering. 1/2 <a href="https://twitter.com/hashtag/AdobeTypeUI?src=hash">#AdobeTypeUI</a> <a href="http://t.co/EGYb6VeBtY">pic.twitter.com/EGYb6VeBtY</a></p>&mdash; Yves Peters (@BaldCondensed) <a href="https://twitter.com/BaldCondensed/status/525631405251125248">October 24, 2014</a>
-        </blockquote>
-      <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></p>
+        <a href="https://twitter.com/BaldCondensed/status/525631405251125248">
+          <img src="/images/type-is-your-right/keyboard.png" />
+        </a>
+      </p>
     </section>
 
     <video nocontrols autoplay muted class="sf">
@@ -102,7 +102,7 @@
       <p>Printing presses’ needs were very different. Typography needed ways to solve awkward spacing, and build flourishes, and have number fractions—all of the things that had been solved and were easy to write, but not easy to typeset. Ellen Lupton in her book <em>Thinking with Type</em> puts this really elegantly:</p>
     </section>
 
-    <blockquote class="quote">
+    <blockquote class="quote printing-press-quote">
       <p>“The first typefaces were directly models on forms of calligraphy. Typefaces, however, are not bodily gestures—they are manufactured images design for infinite repetition.”</p>
       <attr class="quote-attribution">— Ellen Lupton, <em>Thinking with Type</em></attr>
     </blockquote>
@@ -118,6 +118,11 @@
 
       <p>There are over 100 of them, so I’m not going to go through every single one, but we can at least learn a few some common ones:</p>
     </section>
+
+    <video nocontrols autoplay muted class="kerning">
+      <source src="/images/type-is-your-right/kerning.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
 
     <section class="left example">
       <p>There is kerning, which is the adjustment between letters so spacing looks good. Type designers will put a lot of work into figuring out spacing between your letters, so it makes sense to turn this on to <code>auto</code>, which ensures the browser will choose the most performant kerning option on by default.</p>
@@ -140,7 +145,7 @@
     </section>
 
     <section class="middle">
-      <p>When you put all these things together you end up with the subtle changes that <em>make users feel good.</em></p>
+      <p>Any of these one changes, in the grand scheme of building an entire website, is relatively small; but together they have a net gain much larger than their individual parts. They make type more legible, and thus, make your site more pleasant to be on.</p>
 
       <p>These things are pretty easy to turn on; they’re ultimately just CSS properties (I’ve left them all unprefixed for brevity):</p>
     </section>
@@ -209,13 +214,13 @@
       <p>If you’ve ever loaded in a webfont from Google fonts you probably copy and pasted their suggested import code, which looks something like this:</p>
     </section>
 
-    <code>@import 'https://fonts.googleapis.com/css?family=Roboto';</code>
+    <!-- <code>@import 'https://fonts.googleapis.com/css?family=Roboto';</code> -->
 
     <section class="middle">
       <p>Or this:</p>
     </section>
 
-    <code><link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"></code>
+    <!-- <code><link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"></code> -->
 
     <section class="left">
       <p>These methods get the job done but we can improve on them. For one, they can cause a flash of unstyled text:</p>
@@ -238,7 +243,7 @@
     <section class="code-example">
       <p>Here, we’re declaring our webfont font stack first on the body, and then our desired font stack in a class:</p>
 
-      <code>
+      <!-- <code>
         @font-face {
             font-family: 'Calendas Plus'; 
             src: url('/css/type/calendas-plus-webfont.woff2') format('woff2'), 
@@ -255,7 +260,7 @@
         body.fonts-loaded {
           font-family: 'Calendas Plus', serif;
         }
-      </code>
+      </code> -->
     </section>
 
     <section class="code-example">
@@ -265,7 +270,7 @@
 
       <p>We create a new font face observer for each family in the object; this will return a promise that is resolved when the font has loaded, or rejected if the font fails. In the promise below we handle the two use cases—in the event of the promise being fulfilled, we add the ‘fonts-loaded’ class to the body that will trigger the typeface from our CSS and then apply that Calendas Plus typeface that looks so nice. Voilà!</p>
 
-      </code>
+      <!-- <code>
         var fontFamilies = {
           'Calendas Plus': [
             {
@@ -291,7 +296,7 @@
           }, function() {
             console.log('Fonts not available');
         });
-      </code>
+      </code> -->
     </section>
 
     <section class="middle">
@@ -314,14 +319,14 @@
 
       <p>As Tim Brown puts it,</p>
 
-      <img src="TODO" />
+      <!-- <img src="TODO" /> -->
       —@nicewebtype, https://twitter.com/nicewebtype/status/760866055724097536
     </section>
 
     <section class="code-example">
       <p>This means that we need to modify our css a little bit from before.</p>
 
-      <code>
+      <!-- <code>
         @font-face {
             font-family: 'Calendas Plus'; 
             src: url('/css/type/calendas-plus-webfont.woff2') format('woff2'), 
@@ -340,7 +345,7 @@
           font-family: 'Calendas Plus', serif;
           font-sized: 36pt;
         }
-      </code>
+      </code> -->
     </section>
 
     <section class="middle">
@@ -352,7 +357,7 @@
 
       <p>Zach Leatherman from Filament Group shows us that we can get even more granular with our lazyloading, splitting up the normal (or roman), italic, and bold versions of our typeface, using the browsers’ faster, built-in algorithms to italicize and bold our typeface until we can lazyload the proper italic and bold versions of our typeface. He calls this FOFT, or</p>
 
-      <div class="TODO">Flash of Faux Text</div>
+      <!-- <div class="TODO">Flash of Faux Text</div> -->
 
       <p>The way that Zach handles this is using a <code>fontfaceonload</code> polyfill he’s created, which executes a callback when a webfont loads. To use it, we load the <code>fontfaceonload</code> library and set up our loads to happen in “stages”—Stage 1 being the roman font family loading, and stage two being the bold and italic styles of the font family loading.</p>
     </section>
@@ -362,7 +367,7 @@
 
       <p>Here we’re loading the roman version of our typeface <em>first</em>. On completion for that variant, we have two more checks for the bold and light versions of our typeface. If these succeed, we add another success class to the top element on our page so our css file knows to apply the correct font file.</p>
 
-      <code>
+      <!-- <code>
         FontFaceOnload( "ProximaNovaRegular", {
           success: function() {
             var docEl = document.documentElement;
@@ -391,7 +396,7 @@
             });
           }
         });
-      </code>
+      </code> -->
     </section>
 
     <section class="code-example">
@@ -405,7 +410,7 @@
 
       <p>All of these strategies have the potential to timeout after a period set by the browser, and that’s okay—at least your content <em>loads</em>.</p>
 
-      <code>
+      <!-- <code>
         /*
         All font variants need to be aliased to different names to avoid the FOIT
         */
@@ -467,7 +472,7 @@
           font-family: ProximaNovaBold;
           font-style: italic;
         }
-      </code>
+      </code> -->
     </section>
 
     <section class="middle">
