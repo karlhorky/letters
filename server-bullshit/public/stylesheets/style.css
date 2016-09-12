@@ -1110,7 +1110,7 @@ a:active {
   list-style-type: none;
   text-align: right;
   text-transform: uppercase;
-  margin-left: 15px; }
+  margin-left: 25px; }
 
 @media screen and (min-width: 850px) {
   .nav-item {
