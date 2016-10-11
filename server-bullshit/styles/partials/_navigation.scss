@@ -14,7 +14,7 @@
   @include animation(fade-in 0.75s ease);
   @include animation-fill-mode(forwards);
 
-  flex: 0 1 70%;
+  flex: 0 1 60%;
 
   a {
     color: $brand-black;
@@ -67,6 +67,10 @@
   text-align: right;
   text-transform: uppercase;
   margin-left: 50px;
+
+  &:first-of-type {
+    margin-left: 0;
+  }
 
   @include media($nine-col) {
     margin: 0;

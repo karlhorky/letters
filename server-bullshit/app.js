@@ -11,7 +11,7 @@ var sassMiddleware = require('node-sass-middleware');
 var routes = require('./routes/index');
 var letters = require('./routes/letters');
 var experiments = require('./routes/experiments');
-var writing = require('./routes/writing');
+var currently = require('./routes/currently');
 var about = require('./routes/about');
 var wares = require('./routes/wares');
 
@@ -35,7 +35,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', routes);
 app.use('/letters', letters);
 app.use('/experiments', experiments);
-app.use('/writing', writing);
+app.use('/currently', currently);
 app.use('/about', about);
 app.use('/wares', wares);
 

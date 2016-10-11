@@ -1065,7 +1065,7 @@ a:active {
   -webkit-animation-fill-mode: forwards;
   -moz-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
-  flex: 0 1 70%; }
+  flex: 0 1 60%; }
 
 .name a {
   color: #434242;
@@ -1111,6 +1111,9 @@ a:active {
   text-align: right;
   text-transform: uppercase;
   margin-left: 50px; }
+
+.nav-item:first-of-type {
+  margin-left: 0; }
 
 @media screen and (min-width: 850px) {
   .nav-item {
