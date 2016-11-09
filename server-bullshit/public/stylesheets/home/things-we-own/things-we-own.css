@@ -1,0 +1,123 @@
+html {
+  box-sizing: border-box; }
+
+*, *::after, *::before {
+  box-sizing: inherit; }
+
+.underline {
+  text-decoration: underline; }
+
+.post-ending:after {
+  -webkit-font-feature-settings: "ornm" 7;
+  -moz-font-feature-settings: "ornm" 7;
+  -ms-font-feature-settings: "ornm" 7;
+  font-feature-settings: "ornm" 7;
+  color: indianred;
+  content: '\0041';
+  display: inline-block;
+  font-size: 1em;
+  margin-left: 0.5em; }
+
+img {
+  width: 100%; }
+
+.intro, .basement {
+  display: block;
+  margin: 19% auto 0 auto;
+  width: 35%; }
+
+.title {
+  font-family: "Didot 96 A", "Didot 96 B", serif;
+  font-size: 24em;
+  margin-left: -5%;
+  font-style: italic;
+  line-height: 1;
+  text-transform: uppercase; }
+
+.basement {
+  margin-bottom: 30%; }
+
+.the-pit, .telescope-chillin {
+  clear: both;
+  float: left;
+  margin: 0 10% 0 15%;
+  width: 30%; }
+
+.telescope-chillin {
+  margin-top: 15%; }
+
+.clarification {
+  float: left;
+  width: 30%; }
+
+.mental-illness {
+  clear: both;
+  float: left;
+  margin: 20% 10% 30% 10%;
+  width: 25%; }
+
+.darkest-hallway {
+  float: right;
+  margin: 20% 10% 0 0;
+  width: 20%; }
+
+.packing-tape {
+  float: right;
+  margin: 5% 10% 0 0;
+  width: 25%; }
+
+.demons {
+  clear: both;
+  display: block;
+  margin: auto;
+  text-align: justify;
+  width: 25%; }
+
+.tv-setup, .the-queens-mugs, .good-housekeeping {
+  margin: 20% auto 0 auto;
+  text-align: center;
+  width: 60%; }
+
+.sorted {
+  clear: both;
+  float: left;
+  margin: 20% 10% 30% 20%;
+  width: 25%; }
+
+.queens-of-england, .parrot {
+  float: right;
+  margin: 20% 20% 0 0;
+  text-align: center;
+  width: 20%; }
+
+.parrot {
+  margin-top: 5%; }
+
+.get-rid-of-it {
+  clear: both;
+  margin: 100% auto 45% auto;
+  width: 25%; }
+
+.enchanted-us {
+  float: left;
+  margin-right: 20%;
+  width: 30%; }
+
+.tired {
+  float: left;
+  width: 25%; }
+
+.advice {
+  clear: both;
+  margin: auto;
+  padding-top: 10%;
+  width: 40%; }
+
+.advice .advice-point {
+  font-family: "Knockout", NeueHaasUnica, Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 1.8em; }
+
+.ending {
+  margin: 20% auto 20% auto;
+  width: 25%; }

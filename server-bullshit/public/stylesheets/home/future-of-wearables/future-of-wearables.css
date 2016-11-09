@@ -1,0 +1,338 @@
+html {
+  box-sizing: border-box; }
+
+*, *::after, *::before {
+  box-sizing: inherit; }
+
+@font-face {
+  font-family: ProximaNova;
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/proxima_nova_reg-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/proxima_nova_reg-webfont.woff2") format("woff2"), url("../fonts/proxima_nova_reg-webfont.woff") format("woff"), url("../fonts/proxima_nova_reg-webfont.ttf") format("truetype"), url("../fonts/proxima_nova_reg-webfont.svg#ProximaNova") format("svg"); }
+
+@font-face {
+  font-family: ProximaNova;
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/proxima_nova_bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/proxima_nova_bold-webfont.woff2") format("woff2"), url("../fonts/proxima_nova_bold-webfont.woff") format("woff"), url("../fonts/proxima_nova_bold-webfont.ttf") format("truetype"), url("../fonts/proxima_nova_bold-webfont.svg#ProximaNova") format("svg"); }
+
+@font-face {
+  font-family: ProximaNova;
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/proxima_nova_light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/proxima_nova_light-webfont.woff2") format("woff2"), url("../fonts/proxima_nova_light-webfont.woff") format("woff"), url("../fonts/proxima_nova_light-webfont.ttf") format("truetype"), url("../fonts/proxima_nova_light-webfont.svg#ProximaNova") format("svg"); }
+
+@font-face {
+  font-family: ProximaNova;
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/proxima_nova_sbold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/proxima_nova_sbold-webfont.woff2") format("woff2"), url("../fonts/proxima_nova_sbold-webfont.woff") format("woff"), url("../fonts/proxima_nova_sbold-webfont.ttf") format("truetype"), url("../fonts/proxima_nova_sbold-webfont.svg#ProximaNova") format("svg"); }
+
+@font-face {
+  font-family: ProximaNova;
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/proxima_nova_sbold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/proxima_nova_sbold-webfont.woff2") format("woff2"), url("../fonts/proxima_nova_sbold-webfont.woff") format("woff"), url("../fonts/proxima_nova_sbold-webfont.ttf") format("truetype"), url("../fonts/proxima_nova_sbold-webfont.svg#ProximaNova") format("svg"); }
+
+@font-face {
+  font-family: icomoon;
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/icomoon.eot?#iefix") format("embedded-opentype"), url("../fonts/icomoon.woff2") format("woff2"), url("../fonts/icomoon.woff") format("woff"), url("../fonts/icomoon.ttf") format("truetype"), url("../fonts/icomoon.svg#icomoon") format("svg"); }
+
+@font-face {
+  font-family: CalendasPlus;
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/Calendas-Plus.eot?#iefix") format("embedded-opentype"), url("/fonts/Calendas-Plus.woff") format("woff"), url("/fonts/Calendas-Plus.ttf") format("truetype"), url("/fonts/Calendas-Plus.svg#CalendasPlus") format("svg"); }
+
+@font-face {
+  font-family: CalendasPlus;
+  font-style: italic;
+  font-weight: 400;
+  src: url("/fonts/CalendasPlus-Italic.eot?#iefix") format("embedded-opentype"), url("/fonts/CalendasPlus-Italic.woff") format("woff"), url("/fonts/CalendasPlus-Italic.ttf") format("truetype"), url("/fonts/CalendasPlus-Italic.svg#CalendasPlus") format("svg"); }
+
+@font-face {
+  font-family: NeueHaasUnica;
+  font-style: normal;
+  font-weight: 900;
+  src: url("/fonts/NeueHaasUnicaW1G-Black.eot?#iefix") format("embedded-opentype"), url("/fonts/NeueHaasUnicaW1G-Black.woff") format("woff"), url("/fonts/NeueHaasUnicaW1G-Black.ttf") format("truetype"), url("/fonts/NeueHaasUnicaW1G-Black.svg#NeueHaasUnica") format("svg"); }
+
+@font-face {
+  font-family: NeueHaasUnica;
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/NeueHaasUnicaW1G-Regular.eot?#iefix") format("embedded-opentype"), url("/fonts/NeueHaasUnicaW1G-Regular.woff2") format("woff2"), url("/fonts/NeueHaasUnicaW1G-Regular.woff") format("woff"), url("/fonts/NeueHaasUnicaW1G-Regular.ttf") format("truetype"), url("/fonts/NeueHaasUnicaW1G-Regular.svg#NeueHaasUnica") format("svg"); }
+
+.underline {
+  text-decoration: underline; }
+
+.post {
+  margin: auto;
+  text-align: justify;
+  width: 75%; }
+
+@media screen and (min-width: 850px) {
+  .post {
+    width: 35%; } }
+
+.post img, .post video {
+  width: 100%; }
+
+aside {
+  opacity: 0; }
+
+@media screen and (min-width: 850px) {
+  aside {
+    opacity: 1; } }
+
+.pullout {
+  clear: both;
+  font-family: NeueHaasUnica, Helvetica, Arial, sans-serif, sans-serif;
+  font-size: 1.35em;
+  font-weight: 900;
+  left: 0;
+  line-height: 1.89em;
+  padding: 4%;
+  position: absolute;
+  text-align: center;
+  width: 20%; }
+
+.pullout:before {
+  border-bottom: 2px solid indianred;
+  border-top: 1px solid indianred;
+  content: '';
+  display: block;
+  height: 7px;
+  margin-bottom: 10%;
+  margin-left: 20%;
+  width: 60%; }
+
+.pullout:after {
+  border-bottom: 1px solid indianred;
+  border-top: 2px solid indianred;
+  content: '';
+  display: block;
+  height: 7px;
+  margin-left: 20%;
+  margin-top: 10%;
+  width: 60%; }
+
+.pullout-right {
+  position: absolute;
+  clear: both;
+  width: 20%;
+  padding: 5%;
+  right: 0; }
+
+.pullout-right img {
+  max-width: 100%; }
+
+.breakout {
+  align-items: stretch;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 5% 0; }
+
+.breakout.two img {
+  flex: 0 1 45%;
+  max-width: 100%; }
+
+.breakout.two blockquote {
+  align-items: center;
+  background-color: indianred;
+  display: flex;
+  flex: 0 1 45%;
+  font-family: NeueHaasUnica, Helvetica, Arial, sans-serif, sans-serif;
+  font-size: 1.125em;
+  font-weight: 700;
+  justify-content: center;
+  margin: 0; }
+
+.breakout .breakout-image {
+  flex: 0 1 45%; }
+
+.breakout .breakout-image img {
+  max-width: 100%; }
+
+.post-video {
+  display: block;
+  margin: 2em auto;
+  max-width: 50%; }
+
+.large-image {
+  flex: 0 1 100%; }
+
+.large-image img {
+  max-width: 100%; }
+
+@media screen and (min-width: 850px) {
+  .large-image {
+    flex: 0 1 70%; } }
+
+.caption {
+  color: #959595;
+  flex: 0 1 70%;
+  font-family: NeueHaasUnica, Helvetica, Arial, sans-serif, sans-serif;
+  font-size: 1.35em;
+  font-weight: 500;
+  padding: 0 2%;
+  text-align: center; }
+
+@media screen and (min-width: 850px) {
+  .caption {
+    flex: 0 1 30%;
+    text-align: left; } }
+
+.caption:before {
+  border-bottom: 2px solid indianred;
+  border-top: 1px solid indianred;
+  content: '';
+  display: block;
+  height: 7px;
+  margin-bottom: 5%; }
+
+.post-ending:after {
+  -webkit-font-feature-settings: "ornm" 7;
+  -moz-font-feature-settings: "ornm" 7;
+  -ms-font-feature-settings: "ornm" 7;
+  font-feature-settings: "ornm" 7;
+  color: indianred;
+  content: '\0041';
+  display: inline-block;
+  font-size: 1em;
+  margin-left: 0.5em; }
+
+.interjection {
+  font-family: NeueHaasUnica, Helvetica, Arial, sans-serif, sans-serif;
+  font-size: 1.8em;
+  font-weight: 900;
+  margin: 0 auto;
+  width: 75%;
+  text-align: center; }
+
+@media screen and (min-width: 850px) {
+  .interjection {
+    margin: 0 auto 2em auto;
+    width: 50%; } }
+
+.post-ending:after {
+  -webkit-font-feature-settings: "ornm" 7;
+  -moz-font-feature-settings: "ornm" 7;
+  -ms-font-feature-settings: "ornm" 7;
+  font-feature-settings: "ornm" 7;
+  color: indianred;
+  content: '\0041';
+  display: inline-block;
+  font-size: 1em;
+  margin-left: 0.5em; }
+
+.post.future-of-wearables {
+  margin: 10em auto 0 auto; }
+
+@media screen and (min-width: 850px) {
+  .post.future-of-wearables {
+    margin: auto; } }
+
+.future-watch {
+  background-color: indianred;
+  border-radius: 20px;
+  float: left;
+  height: 200px;
+  margin: 0 5%;
+  position: absolute;
+  top: 195px;
+  width: 200px;
+  z-index: 0; }
+
+@media screen and (min-width: 850px) {
+  .future-watch {
+    margin: 0 15%;
+    top: 156px; } }
+
+.strap-1 {
+  background-color: indianred;
+  content: '';
+  display: block;
+  height: 125px;
+  left: 26%;
+  margin-top: -43%;
+  position: relative;
+  width: 100px; }
+
+.adjustment-hole {
+  background-color: white;
+  border-radius: 4px;
+  height: 5px;
+  margin: 10% auto;
+  position: relative;
+  top: 15%;
+  width: 20px; }
+
+.strap-2 {
+  background-color: indianred;
+  content: '';
+  display: block;
+  height: 165px;
+  left: 26%;
+  margin-top: 35%;
+  position: relative;
+  width: 100px; }
+
+.power-button {
+  background-color: indianred;
+  border-radius: 4px;
+  height: 50px;
+  left: 98%;
+  position: relative;
+  top: 15%;
+  width: 8px; }
+
+.spin-button {
+  background-color: indianred;
+  border-radius: 40px;
+  height: 30px;
+  left: 97%;
+  position: relative;
+  top: -3%;
+  width: 15px; }
+
+h1.future-of-wearables {
+  color: black;
+  font-family: NeueHaasUnica, Helvetica, Arial, sans-serif, sans-serif;
+  font-size: 3.36375em;
+  font-weight: 900;
+  line-height: 0.9em;
+  margin-left: 10%;
+  margin-top: 50%;
+  position: relative;
+  z-index: 1; }
+
+@media screen and (min-width: 850px) {
+  h1.future-of-wearables {
+    font-size: 7.3125em;
+    margin-left: 4%;
+    margin-top: 12%; } }
+
+.title-aside {
+  position: absolute;
+  margin-left: 40%; }
+
+blockquote.future-of-wearables {
+  color: indianred;
+  font-family: 'Didot 96 A', 'Didot 96 B', serif;
+  font-size: 2.925em;
+  font-style: italic;
+  line-height: 1em;
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 1% 15%; }
+
+@media screen and (min-width: 850px) {
+  blockquote.future-of-wearables {
+    font-size: 5.85em; } }
+
+.twitter {
+  text-align: center; }
