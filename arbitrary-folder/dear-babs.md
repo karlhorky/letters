@@ -1,4 +1,4 @@
-Hey babs,
+Dear babs,
 
 I was thinking about a lot of people when I voted yesterday. I have a lot of friends who aren’t Americans or aren’t _yet_ People who, jokingly, implored me to not fuck it up. It was preaching to the choir, of course. They knew who I was voting for, I knew who they wanted me to vote for.
 
