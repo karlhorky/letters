@@ -1,0 +1,66 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+  <script>
+    var cb = function() {
+      var l = document.createElement('link'); l.rel = 'stylesheet';
+      l.href = '//cloud.typography.com/6668652/681922/css/fonts.css';
+      var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h);
+    };
+    var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+        webkitRequestAnimationFrame || msRequestAnimationFrame;
+    if (raf) raf(cb);
+    else window.addEventListener('load', cb);
+  </script>
+  <link rel="stylesheet" property="stylesheet" href="/stylesheets/writing/writing.css">
+
+  <div class="container">
+    <div class="the-things">
+      <img src="/images/the-things-we-own/parrot.jpg" class="the-things-parrot" />
+
+      <a href="/writing/the-things-we-own" class="the-things-title">The things we own</a>
+      <em class="the-things-subtitle">A story about the the stuff, the cruft, the things—</em>
+    </div>
+
+    <div class="additional-articles"></div>
+
+    <div class="the-future">
+      <h1>
+        <a href="/the-future-of-wearables">
+          The future of 
+          <br />wearables
+        </a>
+      </h1>
+      <em>No more telemarketers need call, please.</em>
+    </div>
+
+    <div class="have-histories">
+      <h1>
+        <a href="#">
+          <span class="all">All Typefaces</span> 
+          <span class="have">Have</span>
+          <span class="histories">Histories</span>
+        </a>
+      </h1>
+      <em>Coming soon</em>
+    </div>
+  </div>
+
+  <ol class="letters-lot">
+    {% for longFormTitle in longFormTitles %}
+      {% if longFormTitle == "type-is-your-right" %}
+        <a href="/writing/{{ longFormTitle }}">
+          <li>{{ longFormTitle | replace("-", " ")}}!</li>
+        </a>
+      {% elif longFormTitle == "baas" %}
+        <a href="/writing/{{ longFormTitle }}">
+          <li>{{ longFormTitle | replace("-", " ")}}</li>
+        </a>
+      {% else %}
+        <a href="/writing/the-{{ longFormTitle }}">
+          <li>The {{ longFormTitle | replace("-", " ")}}</li>
+        </a>
+      {% endif %}
+    {% endfor %}
+  </ol>
+{% endblock %}

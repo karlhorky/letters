@@ -1,0 +1,264 @@
+/* Grid
+   Grid settings through Bourbon Neat.
+   https://github.com/thoughtbot/neat#using-neat
+
+   Color variables are stored in _color.scss.
+
+   Typography variables are stored in _typography.scss.
+*/
+html {
+  box-sizing: border-box; }
+
+*, *::after, *::before {
+  box-sizing: inherit; }
+
+/* Color
+
+   Grid/breakpoints variables are stored in _grid_settings.scss.
+
+   Typography variables are stored in _typography.scss.
+*/
+/* Typography
+
+   Grid/breakpoints variables are stored in _grid_settings.scss.
+
+   Color variables are stored in _color.scss.
+*/
+.underline {
+  text-decoration: underline; }
+
+img {
+  width: 100%; }
+
+.container {
+  width: 80%; }
+
+.the-things {
+  margin-top: 10%; }
+
+a.the-things-title {
+  color: black;
+  float: left;
+  font-family: 'Didot 96 A', 'Didot 96 B', serif;
+  font-size: 3.2175em;
+  font-style: italic;
+  font-weight: 300;
+  line-height: 1.2em;
+  margin: 0;
+  margin-top: 0.5em;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
+  word-wrap: break-word;
+  text-decoration: none; }
+
+@media screen and (min-width: 850px) {
+  a.the-things-title {
+    font-size: 5.5575em;
+    margin-top: 0.15em;
+    text-align: left;
+    width: 45%; } }
+
+.the-things-parrot {
+  -webkit-box-flex: 0;
+  -moz-box-flex: 0;
+  box-flex: 0;
+  -webkit-flex: 0 1 100%;
+  -moz-flex: 0 1 100%;
+  -ms-flex: 0 1 100%;
+  flex: 0 1 100%;
+  float: left;
+  margin-right: 5%; }
+
+@media screen and (min-width: 850px) {
+  .the-things-parrot {
+    max-width: 45%; } }
+
+.the-things-subtitle {
+  clear: both;
+  display: block;
+  text-align: center;
+  width: 100%; }
+
+@media screen and (min-width: 850px) {
+  .the-things-subtitle {
+    clear: none;
+    float: left;
+    text-align: left;
+    text-indent: 0.5em;
+    width: 45%; } }
+
+.the-future {
+  align-self: center;
+  clear: both;
+  color: black;
+  cursor: pointer;
+  flex: 0 1 100%;
+  margin-top: 45%;
+  position: relative; }
+
+@media screen and (min-width: 850px) {
+  .the-future {
+    flex: 0 1 50%;
+    margin-top: 10%; } }
+
+.the-future:hover::before {
+  animation: spin-color 8s linear forwards; }
+
+.the-future::before {
+  background-color: indianred;
+  content: '';
+  display: block;
+  height: 200px;
+  width: 200px; }
+
+@media screen and (min-width: 850px) {
+  .the-future::before {
+    height: 150px;
+    width: 150px; } }
+
+.the-future h1 {
+  font-family: NeueHaasUnica, Helvetica, Arial, sans-serif, sans-serif;
+  font-size: 2.925em;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 1.8em;
+  margin-left: 25px;
+  margin-top: -25%;
+  position: relative;
+  text-align: center;
+  text-transform: capitalize; }
+
+@media screen and (min-width: 850px) {
+  .the-future h1 {
+    margin-left: 50px;
+    text-align: left; } }
+
+.the-future h1 a {
+  color: #434242; }
+
+.the-future h1 a:hover {
+  color: #434242; }
+
+.the-future em {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  text-align: center; }
+
+@media screen and (min-width: 850px) {
+  .the-future em {
+    margin-left: 120px;
+    text-align: left;
+    top: -110px; } }
+
+.additional-articles {
+  flex: 0 1 100%;
+  margin-top: 10%; }
+
+.additional-articles:before {
+  border-bottom: indianred 2px solid;
+  border-top: indianred 1px solid;
+  content: '';
+  display: block;
+  height: 7px;
+  margin: auto;
+  width: 150px; }
+
+.have-histories {
+  font-family: "Baskerville", CalendasPlus, Georgia, "Times New Roman", Times, serif;
+  font-weight: regular;
+  margin-left: 15%;
+  margin-top: 5%;
+  text-align: center;
+  text-transform: uppercase; }
+
+.have-histories a {
+  color: #434242; }
+
+.have-histories .all {
+  font-size: 1em;
+  font-feature-settings: "c2sc" 1;
+  letter-spacing: 0.1em; }
+
+.have-histories .have {
+  display: block;
+  font-feature-settings: "c2sc" 1;
+  width: 100%; }
+
+.have-histories .histories {
+  display: block;
+  width: 100%; }
+
+.letters-lot {
+  font-size: 1.575em;
+  line-height: 3;
+  list-style-type: none;
+  margin: 0 auto 10% auto;
+  padding-left: 0;
+  text-transform: capitalize;
+  width: 80%; }
+
+@media screen and (min-width: 850px) {
+  .letters-lot {
+    float: right;
+    margin: 0 10% 10% 0;
+    padding: auto;
+    width: 60%; } }
+
+.letters-lot::before {
+  border-bottom: 1px solid indianred;
+  border-top: 3px solid indianred;
+  content: '';
+  display: block;
+  height: 9px;
+  margin: 15% auto;
+  width: 25%; }
+
+.letters-lot a {
+  color: #959595;
+  transition: color 0.5s ease; }
+
+.letters-lot a:hover {
+  background: transparent;
+  color: #6f6f6f; }
+
+.letters-lot li {
+  border-bottom: 2px solid #959595;
+  display: inline-block;
+  padding-bottom: 3px;
+  position: relative;
+  width: 100%;
+  outline-offset: 15px; }
+
+.letters-lot li::before {
+  bottom: 0;
+  content: '';
+  display: block;
+  height: 3px;
+  left: 0;
+  position: absolute;
+  transition: width 0s ease, background .5s ease;
+  width: 0; }
+
+.letters-lot li::after {
+  background: #959595;
+  bottom: 0;
+  content: '';
+  display: block;
+  height: 3px;
+  position: absolute;
+  right: 0;
+  transition: width .5s ease;
+  width: 0; }
+
+.letters-lot li:hover::before {
+  background: #959595;
+  transition: width .5s ease;
+  width: 100%; }
+
+.letters-lot li:hover::after {
+  background: transparent;
+  transition: all 0s ease;
+  width: 100%; }
