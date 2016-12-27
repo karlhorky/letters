@@ -29,7 +29,7 @@ indexLongformWriting();
 /* GET writing page. */
 router.get('/', function(req, res, next) {
   res.render('writing/writing.html', { 
-    title: 'read some cool stuff',
+    title: 'Writing',
     longFormTitles: shorturls
   });
 });
@@ -39,7 +39,7 @@ shorturls.forEach(shorturl => {
     router.get("/" + shorturl, function(req, res, next) {
       res.render("writing/" + shorturl + "/" + shorturl + ".html", { title: 'type is your right' });
     });
-  } if (shorturl === "baas") {
+  } else if (shorturl === "baas") {
     router.get("/" + shorturl, function(req, res, next) {
       res.render("writing/" + shorturl + "/" + shorturl + ".html", { title: 'baas' });
     });
