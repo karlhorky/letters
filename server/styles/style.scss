@@ -6,12 +6,11 @@
 @import 'vendor/normalize-opentype';
 
 // Global
-@import 'variables';
+@import 'colors';
 @import 'font-face';
 @import 'typography';
 @import 'animations';
 @import 'global';
-// @import 'icons';
 
 // Modules
 @import 'modules/links';

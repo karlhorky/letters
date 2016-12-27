@@ -1,4 +1,7 @@
-// Animations.
+/* Animations
+   Animations not "fancy" enough to merit being put into their own separate app pages.
+
+*/
 
 @mixin keyframe($animation) {
   @-webkit-keyframes #{$animation} {

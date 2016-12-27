@@ -5,7 +5,7 @@
   <defs>
     <linearGradient x1="70.33%" y1="33.036%" x2="0%" y2="42.806%" id="b">
       <stop stop-color="#FFF" offset="0%"/>
-      <stop stop-color="#CD853F" offset="100%"/>
+      <stop stop-color="#CD5C5C" offset="100%"/>
     </linearGradient>
     <pattern id="c" width="512" height="512" x="-348.889" y="-491.666" patternUnits="userSpaceOnUse">
       <use xlink:href="#a"/>

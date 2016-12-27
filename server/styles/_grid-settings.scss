@@ -1,6 +1,11 @@
-// Grid settings through Bourbon Neat.
+/* Grid
+   Grid settings through Bourbon Neat.
+   https://github.com/thoughtbot/neat#using-neat
 
-// https://github.com/thoughtbot/neat#using-neat
+   Color variables are stored in _color.scss.
+
+   Typography variables are stored in _typography.scss.
+*/
 
 @import 'neat-helpers';
 

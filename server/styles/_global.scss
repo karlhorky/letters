@@ -1,4 +1,8 @@
-// Global styles.
+/* Global
+   Global helpers such as globally applied styles and containers.
+
+*/
+
 *, *:before, *:after {
   box-sizing: inherit;
 }
@@ -6,8 +10,8 @@
 html {
   @include font-feature-settings('liga');
 
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
+ -moz-osx-font-smoothing: grayscale;
+ -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
   color: $brand-black;
   font-family: $serif;
@@ -16,7 +20,7 @@ html {
   line-height: $base-line-height;
 }
 
-.container { // global container for app
+.container { // global container for site
   align-items: center;
   clear: both;
   display: flex;

@@ -1,7 +1,0 @@
-ol, li {
-  margin-left: -0.75em;
-
-  @include media($twelve-col) {
-    margin-left: -1.5em;
-  }
-}

@@ -1,6 +1,22 @@
+/* Typography
+
+   Grid/breakpoints variables are stored in _grid_settings.scss.
+
+   Color variables are stored in _color.scss.
+*/
 .underline {
   text-decoration: underline; }
 
+/* Color
+
+   Grid/breakpoints variables are stored in _grid_settings.scss.
+
+   Typography variables are stored in _typography.scss.
+*/
+/* Animations
+   Animations not "fancy" enough to merit being put into their own separate app pages.
+
+*/
 @-webkit-keyframes fade-in {
   0% {
     opacity: 0; }

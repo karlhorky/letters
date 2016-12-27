@@ -1,7 +1,9 @@
-// Typography Variables
+/* Typography
 
-// Note: Variables for grid/breakpoints are stored in _grid_settings.scss.
-// Note: Variables for global variables are stored in _variables.scss.
+   Grid/breakpoints variables are stored in _grid_settings.scss.
+
+   Color variables are stored in _color.scss.
+*/
 
 // Font-faces
 $sans-serif:                     ProximaNova, Helvetica, Arial, sans-serif;
@@ -37,18 +39,18 @@ $extra-bold-weight:              900;
 
 // Adam Schwartz' smart underline mixin
 @mixin text-underline-crop($background) {
-  text-shadow:  .03em 0 $background, 
-                -.03em 0 $background,
-                0 .03em $background,
-                0 -.03em $background,
-                .06em 0 $background,
-                -.06em 0 $background,
-                .09em 0 $background,
-                -.09em 0 $background,
-                .12em 0 $background,
-                -.12em 0 $background,
-                .15em 0 $background,
-                -.15em 0 $background;
+  text-shadow:                  .03em 0 $background, 
+                               -.03em 0 $background,
+                                 0 .03em $background,
+                                 0 -.03em $background,
+                                .06em 0 $background,
+                               -.06em 0 $background,
+                                .09em 0 $background,
+                               -.09em 0 $background,
+                                .12em 0 $background,
+                               -.12em 0 $background,
+                                .15em 0 $background,
+                               -.15em 0 $background;
 }
 
 @mixin text-underline($color-bg, $color-text) {
@@ -100,10 +102,10 @@ $extra-bold-weight:              900;
   
   // Hide aliased edges caused by mixing blend modes. Will appear as a faint dark outline on certain backgrounds. Tweak to improve rendering
     text-shadow: 
-      1px 1px 0px $background,
+      1px  1px 0px $background,
       1px -1px 0px $background,
-      -1px -1px 0px $background,
-      -1px 1px 0px $background;
+     -1px -1px 0px $background,
+     -1px  1px 0px $background;
   
   &::before,
   &::after {

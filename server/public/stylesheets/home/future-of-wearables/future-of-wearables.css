@@ -1,9 +1,21 @@
+/* Grid
+   Grid settings through Bourbon Neat.
+   https://github.com/thoughtbot/neat#using-neat
+
+   Color variables are stored in _color.scss.
+
+   Typography variables are stored in _typography.scss.
+*/
 html {
   box-sizing: border-box; }
 
 *, *::after, *::before {
   box-sizing: inherit; }
 
+/* Font-face
+   Calls for webfonts used.
+
+*/
 @font-face {
   font-family: ProximaNova;
   font-style: normal;
@@ -35,12 +47,6 @@ html {
   src: url("../fonts/proxima_nova_sbold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/proxima_nova_sbold-webfont.woff2") format("woff2"), url("../fonts/proxima_nova_sbold-webfont.woff") format("woff"), url("../fonts/proxima_nova_sbold-webfont.ttf") format("truetype"), url("../fonts/proxima_nova_sbold-webfont.svg#ProximaNova") format("svg"); }
 
 @font-face {
-  font-family: icomoon;
-  font-style: normal;
-  font-weight: normal;
-  src: url("../fonts/icomoon.eot?#iefix") format("embedded-opentype"), url("../fonts/icomoon.woff2") format("woff2"), url("../fonts/icomoon.woff") format("woff"), url("../fonts/icomoon.ttf") format("truetype"), url("../fonts/icomoon.svg#icomoon") format("svg"); }
-
-@font-face {
   font-family: CalendasPlus;
   font-style: normal;
   font-weight: 400;
@@ -64,9 +70,21 @@ html {
   font-weight: 400;
   src: url("/fonts/NeueHaasUnicaW1G-Regular.eot?#iefix") format("embedded-opentype"), url("/fonts/NeueHaasUnicaW1G-Regular.woff2") format("woff2"), url("/fonts/NeueHaasUnicaW1G-Regular.woff") format("woff"), url("/fonts/NeueHaasUnicaW1G-Regular.ttf") format("truetype"), url("/fonts/NeueHaasUnicaW1G-Regular.svg#NeueHaasUnica") format("svg"); }
 
+/* Typography
+
+   Grid/breakpoints variables are stored in _grid_settings.scss.
+
+   Color variables are stored in _color.scss.
+*/
 .underline {
   text-decoration: underline; }
 
+/* Color
+
+   Grid/breakpoints variables are stored in _grid_settings.scss.
+
+   Typography variables are stored in _typography.scss.
+*/
 .post {
   margin: auto;
   text-align: justify;
