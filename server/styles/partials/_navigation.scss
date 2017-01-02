@@ -3,43 +3,26 @@
 @import '../../styles/animations';
 
 .header {
-  align-items: center;
   display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
   font-family: $sans-serif;
-  height: 120px;
   padding: 0 10% 0 9%;
+  
 }
 
-.name {
+.nav-item.name {
   @include animation(fade-in 0.75s ease);
   @include animation-fill-mode(forwards);
 
-  flex: 0 1 60%;
+  $color2: $brand-primary;
+  $color: peru;
 
-  a {
-    color: $brand-black;
-    font-family: $serif;
-    font-size: $h5-font-size;
-    font-weight: $light-weight;
-    // margin: 0;
-    padding: 1% 0 1% 1%;
-    display: block;
-    position: relative;
-    width: auto;
-
-    $color2: $brand-primary;
-    $color: peru;
-
-    &:hover {
-      animation: blinds 0.75s linear forwards;
-      background: linear-gradient(0deg, $color 25%, transparent 25%) 0 0 / 0.5em 0.5em
-                , linear-gradient(0deg, $color2 50%, transparent 50%) 0 0 / 1em 1em;
-      color: adjust-hue($brand-gray-accent, 180);
-    }
-
-    @include media($nine-col) {
-      font-size: $h5-font-size;
-    }
+  &:hover {
+    animation: blinds 0.75s linear forwards;
+    background: linear-gradient(0deg, $color 25%, transparent 25%) 0 0 / 0.5em 0.5em
+              , linear-gradient(0deg, $color2 50%, transparent 50%) 0 0 / 1em 1em;
+    color: adjust-hue($brand-gray-accent, 180);
   }
 }
 
@@ -59,14 +42,13 @@
 }
 
 .nav-item {
-  flex: 1 1 auto;
+  flex: 1 1 100%;
   font-size: 0.8em;
   font-weight: $semibold-weight;
   letter-spacing: 0.05em;
   list-style-type: none;
   text-align: right;
   text-transform: uppercase;
-  margin-left: 50px;
 
   &:first-of-type {
     margin-left: 0;

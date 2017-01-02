@@ -41,12 +41,12 @@ indexPosts(pathToLetters);
 // GET letters listing.
 router.get('/', function(req, res, next) {
   res.render('letters/letters.html', { 
-    title: 'read something personal',
+    title: 'Letters',
     letterTitles: allPosts
   });
 });
 
-// GET letters listing.
+// GET random letter.
 router.get('/random', function(req, res, next) {
   var randomNumber = getRandomInt(0, allPosts.length);
   var randomParsedResponse = marked(allPosts[randomNumber].toString());

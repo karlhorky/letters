@@ -17,6 +17,7 @@ var experiments    = require('./routes/experiments');
 var letters        = require('./routes/letters');
 var wares          = require('./routes/wares');
 var writing        = require('./routes/writing');
+var currently      = require('./routes/currently');
 
 var app = express();
 
@@ -36,6 +37,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
+app.use('/currently', currently);
 app.use('/letters', letters);
 app.use('/experiments', experiments);
 app.use('/writing', writing);
@@ -72,6 +74,5 @@ app.use(function(err, req, res, next) {
     error: {}
   });
 });
-
 
 module.exports = app;
