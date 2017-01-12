@@ -1094,11 +1094,17 @@ a:active {
     background-color: indianred; } }
 
 .header {
+  align-items: flex-end;
   display: flex;
   flex-direction: column;
-  flex-wrap: nowrap;
   font-family: ProximaNova, Helvetica, Arial, sans-serif;
-  padding: 0 10% 0 9%; }
+  padding-right: 2%;
+  position: fixed;
+  right: 0;
+  width: 200px; }
+
+.threed-nav {
+  width: 100%; }
 
 .nav-item.name {
   -webkit-animation: fade-in 0.75s ease;
@@ -1120,20 +1126,20 @@ a:active {
   -webkit-animation-fill-mode: forwards;
   -moz-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
-  display: flex;
-  flex: 1 1 auto; }
+  display: flex; }
 
 .nav-items {
   display: flex;
-  flex: 1 1 auto;
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  flex-direction: column; }
 
 .nav-item {
-  flex: 1 1 100%;
+  flex: 0 1 100%;
   font-size: 0.8em;
   font-weight: 600;
   letter-spacing: 0.05em;
+  line-height: 2.5;
   list-style-type: none;
   text-align: right;
   text-transform: uppercase; }
@@ -1144,55 +1150,3 @@ a:active {
 @media screen and (min-width: 850px) {
   .nav-item {
     margin: 0; } }
-
-.hover-left::after {
-  animation-duration: 0.15s;
-  animation-fill-mode: forwards;
-  animation-name: grow;
-  animation-timing-function: cubic-bezier(0.415, 0.61, 0.855, 1);
-  background-color: indianred;
-  content: "";
-  display: block;
-  height: 1px;
-  float: right;
-  transform-origin: left;
-  width: 70%; }
-
-.hover-out-left::after {
-  animation-duration: 0.15s;
-  animation-fill-mode: forwards;
-  animation-name: shrink;
-  animation-timing-function: cubic-bezier(0.415, 0.61, 0.855, 1);
-  background-color: indianred;
-  content: "";
-  display: block;
-  height: 1px;
-  float: right;
-  transform-origin: left;
-  width: 70%; }
-
-.hover-right::after {
-  animation-duration: 0.15s;
-  animation-fill-mode: forwards;
-  animation-name: grow;
-  animation-timing-function: cubic-bezier(0.415, 0.61, 0.855, 1);
-  background-color: indianred;
-  content: "";
-  display: block;
-  height: 1px;
-  float: right;
-  transform-origin: right;
-  width: 70%; }
-
-.hover-out-right::after {
-  animation-duration: 0.15s;
-  animation-fill-mode: forwards;
-  animation-name: shrink;
-  animation-timing-function: cubic-bezier(0.415, 0.61, 0.855, 1);
-  background-color: indianred;
-  content: "";
-  display: block;
-  height: 1px;
-  float: right;
-  transform-origin: left;
-  width: 70%; }

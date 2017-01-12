@@ -3,12 +3,18 @@
 @import '../../styles/animations';
 
 .header {
+  align-items: flex-end;
   display: flex;
   flex-direction: column;
-  flex-wrap: nowrap;
   font-family: $sans-serif;
-  padding: 0 10% 0 9%;
-  
+  padding-right: 2%;
+  position: fixed;
+  right: 0;
+  width: 200px;
+}
+
+.threed-nav {
+  width: 100%;
 }
 
 .nav-item.name {
@@ -31,21 +37,21 @@
   @include animation-fill-mode(forwards);
 
   display: flex;
-  flex: 1 1 auto;
 }
 
 .nav-items {
   display: flex;
-  flex: 1 1 auto;
   padding: 0;
   margin: 0;
+  flex-direction: column;
 }
 
 .nav-item {
-  flex: 1 1 100%;
+  flex: 0 1 100%;
   font-size: 0.8em;
   font-weight: $semibold-weight;
   letter-spacing: 0.05em;
+  line-height: 2.5;
   list-style-type: none;
   text-align: right;
   text-transform: uppercase;
@@ -59,58 +65,58 @@
   }
 }
 
-.hover-left::after {
-  animation-duration: 0.15s;
-  animation-fill-mode: forwards;
-  animation-name: grow;
-  animation-timing-function: cubic-bezier(0.415, 0.610, 0.855, 1.000);
-  background-color: $brand-primary;
-  content: "";
-  display: block;
-  height: 1px;
-  float: right;
-  transform-origin: left;
-  width: 70%;
-}
+// .hover-left::after {
+//   animation-duration: 0.15s;
+//   animation-fill-mode: forwards;
+//   animation-name: grow;
+//   animation-timing-function: cubic-bezier(0.415, 0.610, 0.855, 1.000);
+//   background-color: $brand-primary;
+//   content: "";
+//   display: block;
+//   height: 1px;
+//   float: right;
+//   transform-origin: left;
+//   width: 70%;
+// }
 
-.hover-out-left::after {
-  animation-duration: 0.15s;
-  animation-fill-mode: forwards;
-  animation-name: shrink;
-  animation-timing-function: cubic-bezier(0.415, 0.610, 0.855, 1.000);
-  background-color: $brand-primary;
-  content: "";
-  display: block;
-  height: 1px;
-  float: right;
-  transform-origin: left;
-  width: 70%;
-}
+// .hover-out-left::after {
+//   animation-duration: 0.15s;
+//   animation-fill-mode: forwards;
+//   animation-name: shrink;
+//   animation-timing-function: cubic-bezier(0.415, 0.610, 0.855, 1.000);
+//   background-color: $brand-primary;
+//   content: "";
+//   display: block;
+//   height: 1px;
+//   float: right;
+//   transform-origin: left;
+//   width: 70%;
+// }
 
-.hover-right::after {
-  animation-duration: 0.15s;
-  animation-fill-mode: forwards;
-  animation-name: grow;
-  animation-timing-function: cubic-bezier(0.415, 0.610, 0.855, 1.000);
-  background-color: $brand-primary;
-  content: "";
-  display: block;
-  height: 1px;
-  float: right;
-  transform-origin: right;
-  width: 70%;
-}
+// .hover-right::after {
+//   animation-duration: 0.15s;
+//   animation-fill-mode: forwards;
+//   animation-name: grow;
+//   animation-timing-function: cubic-bezier(0.415, 0.610, 0.855, 1.000);
+//   background-color: $brand-primary;
+//   content: "";
+//   display: block;
+//   height: 1px;
+//   float: right;
+//   transform-origin: right;
+//   width: 70%;
+// }
 
-.hover-out-right::after {
-  animation-duration: 0.15s;
-  animation-fill-mode: forwards;
-  animation-name: shrink;
-  animation-timing-function: cubic-bezier(0.415, 0.610, 0.855, 1.000);
-  background-color: $brand-primary;
-  content: "";
-  display: block;
-  height: 1px;
-  float: right;
-  transform-origin: left;
-  width: 70%;
-}
+// .hover-out-right::after {
+//   animation-duration: 0.15s;
+//   animation-fill-mode: forwards;
+//   animation-name: shrink;
+//   animation-timing-function: cubic-bezier(0.415, 0.610, 0.855, 1.000);
+//   background-color: $brand-primary;
+//   content: "";
+//   display: block;
+//   height: 1px;
+//   float: right;
+//   transform-origin: left;
+//   width: 70%;
+// }
