@@ -84,9 +84,9 @@ gulp.task('page-styles', function () {
 });
 
 gulp.task('images', function () {
-  return gulp.src('./views/**/images/*')
+  return gulp.src('./views/**/*')
     .pipe(imagemin())
-    .pipe(gulp.dest('./public/'))
+    .pipe(gulp.dest('./public/images'))
 });
 
 gulp.task('bs-reload', function () {

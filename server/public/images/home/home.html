@@ -1,0 +1,20 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+  <script>
+    var cb = function() {
+      var l = document.createElement('link'); l.rel = 'stylesheet';
+      l.href = '//cloud.typography.com/6668652/681922/css/fonts.css';
+      var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h);
+    };
+    var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+        webkitRequestAnimationFrame || msRequestAnimationFrame;
+    if (raf) raf(cb);
+    else window.addEventListener('load', cb);
+  </script>
+  <link rel="stylesheet" property="stylesheet" href="/stylesheets/home/home.css">
+
+  <div class="container">
+    Home, whatever
+  </div>
+{% endblock %}

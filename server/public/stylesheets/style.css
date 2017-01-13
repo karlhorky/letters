@@ -813,12 +813,12 @@ a {
   text-decoration: none; }
 
 a::selection {
-  text-shadow: 0.03em 0 red, -0.03em 0 red, 0 0.03em red, 0 -0.03em red, 0.06em 0 red, -0.06em 0 red, 0.09em 0 red, -0.09em 0 red, 0.12em 0 red, -0.12em 0 red, 0.15em 0 red, -0.15em 0 red;
-  background: red; }
+  text-shadow: 0.03em 0 #D8D8D8, -0.03em 0 #D8D8D8, 0 0.03em #D8D8D8, 0 -0.03em #D8D8D8, 0.06em 0 #D8D8D8, -0.06em 0 #D8D8D8, 0.09em 0 #D8D8D8, -0.09em 0 #D8D8D8, 0.12em 0 #D8D8D8, -0.12em 0 #D8D8D8, 0.15em 0 #D8D8D8, -0.15em 0 #D8D8D8;
+  background: #D8D8D8; }
 
 a::-moz-selection {
-  text-shadow: 0.03em 0 red, -0.03em 0 red, 0 0.03em red, 0 -0.03em red, 0.06em 0 red, -0.06em 0 red, 0.09em 0 red, -0.09em 0 red, 0.12em 0 red, -0.12em 0 red, 0.15em 0 red, -0.15em 0 red;
-  background: red; }
+  text-shadow: 0.03em 0 #D8D8D8, -0.03em 0 #D8D8D8, 0 0.03em #D8D8D8, 0 -0.03em #D8D8D8, 0.06em 0 #D8D8D8, -0.06em 0 #D8D8D8, 0.09em 0 #D8D8D8, -0.09em 0 #D8D8D8, 0.12em 0 #D8D8D8, -0.12em 0 #D8D8D8, 0.15em 0 #D8D8D8, -0.15em 0 #D8D8D8;
+  background: #D8D8D8; }
 
 a *,
 a *:after, a:after,
@@ -1108,7 +1108,8 @@ a:visited {
   display: flex;
   flex-direction: column;
   font-family: ProximaNova, Helvetica, Arial, sans-serif;
-  padding-right: 2%;
+  padding-right: 4%;
+  padding-top: 2%;
   position: fixed;
   right: 0;
   width: 200px; }

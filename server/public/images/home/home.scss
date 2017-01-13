@@ -1,0 +1,271 @@
+@import 'bourbon';
+@import '../../styles/grid-settings';
+@import 'neat';
+@import '../../styles/colors';
+@import '../../styles/typography';
+
+// The writing page
+
+img {
+  width: 100%;
+}
+
+.container {
+  width: 80%;
+}
+
+.the-things {
+  margin-top: 10%;
+}
+
+a.the-things-title {
+  color: black;
+  float: left;
+  font-family: 'Didot 96 A', 'Didot 96 B', serif;
+  font-size: $h1-font-size * 1.1;
+  font-style: italic;
+  font-weight: $light-weight;
+  line-height: $base-line-height / 1.5;
+  margin: 0;
+  margin-top: 0.5em;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
+  word-wrap: break-word;
+  text-decoration: none;
+
+  @include media($nine-col) {
+    font-size: $h1-font-size * 1.9;
+    margin-top: 0.15em;
+    text-align: left;
+    width: 45%;
+  }
+}
+
+.the-things-parrot {
+  @include flex(0 1 100%);
+
+  float: left;
+  margin-right: 5%;
+
+  @include media($nine-col) {
+    max-width: 45%;
+  }
+}
+
+.the-things-subtitle {
+  clear: both;
+  display: block;
+  text-align: center;
+  width: 100%;
+
+  @include media($nine-col) {
+    clear: none;
+    float: left;
+    text-align: left;
+    text-indent: 0.5em;
+    width: 45%;
+  }
+}
+
+.the-future {
+  align-self: center;
+  clear: both;
+  color: black;
+  cursor: pointer;
+  flex: 0 1 100%;
+  margin-top: 45%;
+  position: relative;
+
+  @include media($nine-col) {
+    flex: 0 1 50%;
+    margin-top: 10%;
+  }
+
+  &:hover {
+    &::before {
+      animation: spin-color 8s linear forwards;
+    }
+  }
+
+  &::before {
+    background-color: $brand-primary;
+    content: '';
+    display: block;
+    height: 200px;
+    width: 200px;
+
+    @include media($nine-col) {
+      height: 150px;
+      width: 150px;
+    }
+  }
+
+  h1 {
+    font-family: $display-sans, sans-serif;
+    font-size: $h1-font-size;
+    font-style: normal;
+    font-weight: $extra-bold-weight;
+    line-height: $base-line-height;
+    margin-left: 25px;
+    margin-top: -25%;
+    position: relative;
+    text-align: center;
+    text-transform: capitalize;
+
+    @include media($nine-col) {
+      margin-left: 50px;
+      text-align: left;
+    }
+
+    a {
+      color: $brand-black;
+
+      &:hover {
+        color: $brand-black;
+      }
+    }
+  }
+
+  em {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+
+    @include media($nine-col) {
+      margin-left: 120px;
+      text-align: left;
+      top: -110px;
+    }
+  }
+}
+
+.additional-articles {
+  flex: 0 1 100%;
+  margin-top: 10%;
+
+  &:before {
+    border-bottom: $brand-primary 2px solid;
+    border-top: $brand-primary 1px solid;
+    content: '';
+    display: block;
+    height: 7px;
+    margin: auto;
+    width: 150px;
+  }
+}
+
+.have-histories {
+  font-family: "Baskerville", $serif;
+  font-weight: regular;
+  margin-left: 15%;
+  margin-top: 5%;
+  text-align: center;
+  text-transform: uppercase;
+
+  a {
+    color: $brand-black;
+  }
+
+  .all {
+    font-size: 1em;
+    font-feature-settings: "c2sc" 1;
+    letter-spacing: 0.1em;
+  }
+
+  .have {
+    display: block;
+    font-feature-settings: "c2sc" 1;
+    width: 100%;
+  }
+
+  .histories {
+    display: block;
+    width: 100%;
+  }
+}
+
+.letters-lot {
+  font-size: $h3-font-size;
+  line-height: 3;
+  list-style-type: none;
+  margin: 0 auto 10% auto;
+  padding-left: 0;
+  text-transform: capitalize;
+  width: 80%;
+
+  @include media($nine-col) {
+    float: right;
+    margin: 0 10% 10% 0;
+    padding: auto;
+    width: 60%;
+  }
+
+  &::before {
+    border-bottom: 1px solid $brand-primary;
+    border-top: 3px solid $brand-primary;
+    content: '';
+    display: block;
+    height: 9px;
+    margin: 15% auto;
+    width: 25%;
+  }
+
+  a {
+    color: $brand-gray-dark;
+    transition: color 0.5s ease;
+
+    &:hover {
+      background: transparent;
+      color: darken($brand-gray-dark, 15%);
+    }
+  }
+
+  li {
+    border-bottom: 2px solid $brand-gray-dark;
+    display: inline-block;
+    padding-bottom: 3px;
+    position: relative;
+    width: 100%;
+    outline-offset: 15px;
+
+    &::before {
+      bottom: 0;
+      content: '';
+      display: block;
+      height: 3px;
+      left: 0;
+      position: absolute;
+      transition: width 0s ease, background .5s ease;
+      width: 0;
+    }
+
+    &::after {
+      background: $brand-gray-dark;
+      bottom: 0;
+      content: '';
+      display: block;
+      height: 3px;
+      position: absolute;
+      right: 0;
+      transition: width .5s ease;
+      width: 0;
+    }
+
+    &:hover {
+      &::before {
+        background: $brand-gray-dark;
+        transition: width .5s ease;
+        width: 100%;
+      }
+
+      &::after {
+        background: transparent;
+        transition: all 0s ease;
+        width: 100%;
+      }
+    }
+  }
+}
