@@ -1,22 +1,24 @@
 // Links
 
+@import '../../styles/colors';
+
 $color-text:        #333332;
 $color-background:  #fff;
 $color-selection:   #b4d5fe;
 
 a {
-  color: $brand-primary;
-  text-decoration: none;
+  // color: $brand-primary;
+  @include link-underline(transparent, $brand-primary, red);
 
-  &:hover {
-    color: darken($brand-primary, 10%);
-  }
+  // &:hover {
+  //   color: darken($brand-primary, 10%);
+  // }
 
-  &:visited {
-    color: darken($brand-primary, 10%);
-  }
+  // &:visited {
+  //   color: darken($brand-primary, 10%);
+  // }
 
-  &:active {
-    color: darken($brand-primary, 10%);
-  }
+  // &:active {
+  //   color: darken($brand-primary, 10%);
+  // }
 }

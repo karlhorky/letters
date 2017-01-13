@@ -5,64 +5,48 @@
 @import '../../styles/typography';
 
 // About MEEEEE
-
-.about {
+.container { // global container for site
+  align-items: center;
+  clear: both;
+  display: flex;
   flex-wrap: wrap;
-  margin: 4% auto 0 auto;
-  padding-bottom: 15%;
-  width: 70%;
+  margin-left: 30%;
+  width: 45%;
+}
 
-  .face {
-    align-self: flex-start;
-    flex: 0 1 100%;
-    z-index: -2;
+section {
+  margin-top: 15%;
+  padding-left: 20%;
 
-    @include media($nine-col) {
-      flex: 0 1 50%;
-    }
-
-    img {
-      max-width: 100%;
-      width: 100%; // Firefox, not Chrome?
-    }
+  &:last-of-type {
+    margin-top: 0;
+    margin-bottom: 10%;
   }
+}
 
-  @mixin line($width, $top, $left) {
-    background-color: $brand-primary;
-    display: none;
-    height: 1px; 
-    left: $left;
-    position: absolute;
-    top: $top;
-    width: $width;
-    z-index: -1;
+@mixin line($width, $top, $left) {
+  background-color: $brand-primary;
+  display: none;
+  height: 1px; 
+  left: $left;
+  position: absolute;
+  top: $top;
+  width: $width;
+  z-index: -1;
 
-    @include media($nine-col) {
-      display: block;
-    }
+  @include media($nine-col) {
+    display: block;
   }
+}
 
-  .line-1 {
-    @include line(200%, 5%, -65%);
-  }
+.line-1 {
+  @include line(200%, 5%, -65%);
+}
 
-  .line-2 {
-    @include line(250%, 10%, -100%);
-  }
+.line-2 {
+  @include line(250%, 10%, -100%);
+}
 
-  .line-3 {
-    @include line(150%, 20%, -25%);
-  }
-
-  .describing-me {
-    flex: 0 1 100%;
-    margin-top: -2%;
-    position: relative;
-
-    @include media($nine-col) {
-      flex: 0 1 40%;
-      margin-left: 4%;
-      padding: 0 2%;
-    }
-  }
+.line-3 {
+  @include line(150%, 20%, -25%);
 }

@@ -19,12 +19,3 @@ html {
   font-weight: $normal-weight;
   line-height: $base-line-height;
 }
-
-.container { // global container for site
-  align-items: center;
-  clear: both;
-  display: flex;
-  flex-wrap: wrap;
-  margin: auto;
-  width: 50%;
-}

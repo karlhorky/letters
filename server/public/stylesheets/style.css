@@ -797,26 +797,36 @@ html {
   font-weight: 400;
   line-height: 1.8em; }
 
-.container {
-  align-items: center;
-  clear: both;
-  display: flex;
-  flex-wrap: wrap;
-  margin: auto;
-  width: 50%; }
+/* Color
 
+   Grid/breakpoints variables are stored in _grid_settings.scss.
+
+   Typography variables are stored in _typography.scss.
+*/
 a {
+  text-shadow: 0.03em 0 transparent, -0.03em 0 transparent, 0 0.03em transparent, 0 -0.03em transparent, 0.06em 0 transparent, -0.06em 0 transparent, 0.09em 0 transparent, -0.09em 0 transparent, 0.12em 0 transparent, -0.12em 0 transparent, 0.15em 0 transparent, -0.15em 0 transparent;
+  background-image: linear-gradient(indianred, indianred);
+  background-size: 1px 1px;
+  background-repeat: repeat-x;
+  background-position: 0% 95%;
   color: indianred;
   text-decoration: none; }
 
-a:hover {
-  color: #bc3a3a; }
+a::selection {
+  text-shadow: 0.03em 0 red, -0.03em 0 red, 0 0.03em red, 0 -0.03em red, 0.06em 0 red, -0.06em 0 red, 0.09em 0 red, -0.09em 0 red, 0.12em 0 red, -0.12em 0 red, 0.15em 0 red, -0.15em 0 red;
+  background: red; }
+
+a::-moz-selection {
+  text-shadow: 0.03em 0 red, -0.03em 0 red, 0 0.03em red, 0 -0.03em red, 0.06em 0 red, -0.06em 0 red, 0.09em 0 red, -0.09em 0 red, 0.12em 0 red, -0.12em 0 red, 0.15em 0 red, -0.15em 0 red;
+  background: red; }
+
+a *,
+a *:after, a:after,
+a *:before, a:before {
+  text-shadow: none; }
 
 a:visited {
-  color: #bc3a3a; }
-
-a:active {
-  color: #bc3a3a; }
+  color: indianred; }
 
 .footer {
   clear: both;
@@ -1139,7 +1149,7 @@ a:active {
   font-size: 0.8em;
   font-weight: 600;
   letter-spacing: 0.05em;
-  line-height: 2.5;
+  line-height: 3.5;
   list-style-type: none;
   text-align: right;
   text-transform: uppercase; }
@@ -1150,3 +1160,10 @@ a:active {
 @media screen and (min-width: 850px) {
   .nav-item {
     margin: 0; } }
+
+.nav-item a {
+  background-image: none !important;
+  transition: background-image 0.25s ease-in-out; }
+
+.nav-item a:hover {
+  background-image: linear-gradient(indianred, indianred) !important; }

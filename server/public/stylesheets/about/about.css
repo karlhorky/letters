@@ -27,26 +27,23 @@ html {
 .underline {
   text-decoration: underline; }
 
-.about {
+.container {
+  align-items: center;
+  clear: both;
+  display: flex;
   flex-wrap: wrap;
-  margin: 4% auto 0 auto;
-  padding-bottom: 15%;
-  width: 70%; }
+  margin-left: 30%;
+  width: 45%; }
 
-.about .face {
-  align-self: flex-start;
-  flex: 0 1 100%;
-  z-index: -2; }
+section {
+  margin-top: 15%;
+  padding-left: 20%; }
 
-@media screen and (min-width: 850px) {
-  .about .face {
-    flex: 0 1 50%; } }
+section:last-of-type {
+  margin-top: 0;
+  margin-bottom: 10%; }
 
-.about .face img {
-  max-width: 100%;
-  width: 100%; }
-
-.about .line-1 {
+.line-1 {
   background-color: indianred;
   display: none;
   height: 1px;
@@ -57,10 +54,10 @@ html {
   z-index: -1; }
 
 @media screen and (min-width: 850px) {
-  .about .line-1 {
+  .line-1 {
     display: block; } }
 
-.about .line-2 {
+.line-2 {
   background-color: indianred;
   display: none;
   height: 1px;
@@ -71,10 +68,10 @@ html {
   z-index: -1; }
 
 @media screen and (min-width: 850px) {
-  .about .line-2 {
+  .line-2 {
     display: block; } }
 
-.about .line-3 {
+.line-3 {
   background-color: indianred;
   display: none;
   height: 1px;
@@ -85,16 +82,5 @@ html {
   z-index: -1; }
 
 @media screen and (min-width: 850px) {
-  .about .line-3 {
+  .line-3 {
     display: block; } }
-
-.about .describing-me {
-  flex: 0 1 100%;
-  margin-top: -2%;
-  position: relative; }
-
-@media screen and (min-width: 850px) {
-  .about .describing-me {
-    flex: 0 1 40%;
-    margin-left: 4%;
-    padding: 0 2%; } }
