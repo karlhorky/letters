@@ -5,6 +5,7 @@ var browserSync = require('browser-sync');
 var neat        = require('node-neat').includePaths;
 var nodemon     = require('gulp-nodemon');
 var sass        = require('gulp-sass');
+var imagemin    = require('gulp-imagemin');
 
 // we'd need a slight delay to reload browsers
 // connected to browser-sync after restarting nodemon
@@ -82,14 +83,21 @@ gulp.task('page-styles', function () {
     .pipe(gulp.dest('./public/stylesheets'));
 });
 
+gulp.task('images', function () {
+  return gulp.src('./views/**/images/*')
+    .pipe(imagemin())
+    .pipe(gulp.dest('./public/'))
+});
+
 gulp.task('bs-reload', function () {
   browserSync.reload();
 });
 
 gulp.task('default', ['browser-sync'], function () {
-  gulp.watch('./public/**/*.js',   ['js', browserSync.reload]);
-  gulp.watch('./public/**/*.css',  ['css']);
-  gulp.watch('./styles/**/*.scss', ['global-styles']);
-  gulp.watch('./views/**/*.scss',  ['page-styles']);
-  gulp.watch('./public/**/*.html', ['bs-reload']);
+  gulp.watch('./public/**/*.js',     ['js', browserSync.reload]);
+  gulp.watch('./public/**/*.css',    ['css']);
+  gulp.watch('./styles/**/*.scss',   ['global-styles']);
+  gulp.watch('./views/**/*.scss',    ['page-styles']);
+  gulp.watch('./views/**/images/*',  ['images']);
+  gulp.watch('./public/**/*.html',   ['bs-reload']);
 });
