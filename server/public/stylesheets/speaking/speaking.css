@@ -42,23 +42,71 @@ html {
   margin-left: 50%; }
 
 .past-engagements {
+  clear: both;
+  margin-top: 20%;
   background-color: white;
   z-index: 1; }
 
 li {
+  clear: both;
   color: #959595;
-  list-style-type: none; }
+  display: block;
+  list-style-type: none;
+  line-height: 2; }
 
 .upcoming-engagements li, .past-engagements li {
-  font-family: NeueHaasUnica, Helvetica, Arial, sans-serif; }
+  border-bottom: 2px solid #959595;
+  cursor: pointer;
+  display: inline-block;
+  font-family: NeueHaasUnica, Helvetica, Arial, sans-serif;
+  outline-offset: 15px;
+  padding-bottom: 3px;
+  position: relative;
+  width: 50%; }
+
+.upcoming-engagements li::before, .past-engagements li::before {
+  bottom: 0;
+  content: '';
+  display: block;
+  height: 3px;
+  left: 0;
+  position: absolute;
+  transition: width 0s ease, background .5s ease;
+  width: 0; }
+
+.upcoming-engagements li::after, .past-engagements li::after {
+  background: #959595;
+  bottom: 0;
+  content: '';
+  display: block;
+  height: 3px;
+  position: absolute;
+  right: 0;
+  transition: width .5s ease;
+  width: 0; }
+
+.upcoming-engagements li:hover, .past-engagements li:hover {
+  border-bottom: 2px solid indianred;
+  color: indianred; }
+
+.upcoming-engagements li:hover::before, .past-engagements li:hover::before {
+  background: indianred;
+  transition: width .5s ease;
+  width: 100%; }
+
+.upcoming-engagements li:hover::after, .past-engagements li:hover::after {
+  background: transparent;
+  transition: all 0s ease;
+  width: 100%; }
 
 .engagement {
-  outline: 1px solid slateblue;
+  float: left;
   font-size: 1.8em; }
 
 .date {
-  float: left;
-  outline: 1px solid tomato; }
+  float: right;
+  font-size: 0.78261em;
+  font-weight: bold; }
 
 /* Lines
 --------------------------------------- */

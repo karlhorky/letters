@@ -22,30 +22,80 @@
 }
 
 .past-engagements {
+  clear: both;
+  margin-top: 20%;
   background-color: white;
   z-index: 1;
 }
 
 li {
-  // clear: both;
+  clear: both;
   color: $brand-gray-dark;
-  // display: block;
+  display: block;
   list-style-type: none;
+  line-height: 2;
 }
 
 .upcoming-engagements li, .past-engagements li {
+  border-bottom: 2px solid $brand-gray-dark;
+  cursor: pointer;
+  display: inline-block;
   font-family: $display-sans;
+  outline-offset: 15px;
+  padding-bottom: 3px;
+  position: relative;
+  width: 50%;
+
+  &::before {
+    bottom: 0;
+    content: '';
+    display: block;
+    height: 3px;
+    left: 0;
+    position: absolute;
+    transition: width 0s ease, background .5s ease;
+    width: 0;
+  }
+
+  &::after {
+    background: $brand-gray-dark;
+    bottom: 0;
+    content: '';
+    display: block;
+    height: 3px;
+    position: absolute;
+    right: 0;
+    transition: width .5s ease;
+    width: 0;
+  }
+
+  &:hover {
+    border-bottom: 2px solid $brand-primary;
+    color: $brand-primary;
+
+    &::before {
+      background: $brand-primary;
+      transition: width .5s ease;
+      width: 100%;
+    }
+
+    &::after {
+      background: transparent;
+      transition: all 0s ease;
+      width: 100%;
+    }
+  }
 }
 
 .engagement {
-  // float: left;
-  outline: 1px solid slateblue;
+  float: left;
   font-size: $h2-font-size;
 }
 
 .date {
-  float: left;
-  outline: 1px solid tomato;
+  float: right;
+  font-size: $base-font-size/1.15;
+  font-weight: bold;
 }
 
 // Speaking Engagements
