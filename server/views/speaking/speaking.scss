@@ -4,40 +4,51 @@
 @import '../../styles/colors';
 @import '../../styles/typography';
 
-// About
-.moi {
-  display: block;
-  margin-left: 8%;
-  padding-top: 5%;
+.conferences {
+  width: 35%;
+  margin-left: 20%;
+  padding-top: 15%;
 }
 
-.container { // global container for site
-  align-items: center;
-  clear: both;
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: 30%;
-  width: 45%;
-}
-
-section {
+.upcoming-engagements {
+  background-color: white;
+  margin-left: 10%;
   margin-top: 15%;
-  padding-left: 20%;
+  z-index: 1;
 
-  &:first-of-type {
-    margin-top: 5%;
-  }
-
-  &:last-of-type {
-    margin-top: 0;
-    margin-bottom: 10%;
+  h1 {
+    margin-left: 50%;
   }
 }
 
-.contact {
-  margin-top: 15%;
+.past-engagements {
+  background-color: white;
+  z-index: 1;
 }
 
+li {
+  // clear: both;
+  color: $brand-gray-dark;
+  // display: block;
+  list-style-type: none;
+}
+
+.upcoming-engagements li, .past-engagements li {
+  font-family: $display-sans;
+}
+
+.engagement {
+  // float: left;
+  outline: 1px solid slateblue;
+  font-size: $h2-font-size;
+}
+
+.date {
+  float: left;
+  outline: 1px solid tomato;
+}
+
+// Speaking Engagements
 /* Lines
 --------------------------------------- */
 #domExplosionList {
@@ -60,6 +71,7 @@ section {
 .line {
   background-color: $brand-primary;
   width: 1px;
+  z-index: 0;
 }
 
 .line-1 {

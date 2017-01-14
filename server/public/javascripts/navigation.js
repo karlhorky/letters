@@ -25,8 +25,8 @@ var originalClassName = "nav-item";
 
 function buttonEntered() {
   var direction = state.prevPosition < state.currPosition ? "right" : "left";
-  console.log("Previous Position: " + state.prevPosition);
-  console.log("Current Position: " + state.currPosition);
+  // console.log("Previous Position: " + state.prevPosition);
+  // console.log("Current Position: " + state.currPosition);
   this.className = `${originalClassName} hover-${direction}`;
 }
 

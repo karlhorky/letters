@@ -4,7 +4,7 @@ var nunjucks = require('nunjucks')
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('currently/currently1.html', { title: 'read about me' });
+  res.render('currently/currently1.html', { title: 'Currently Collections' });
 });
 
 module.exports = router;

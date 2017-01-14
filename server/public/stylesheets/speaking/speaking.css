@@ -27,32 +27,38 @@ html {
 .underline {
   text-decoration: underline; }
 
-.moi {
-  display: block;
-  margin-left: 8%;
-  padding-top: 5%; }
+.conferences {
+  width: 35%;
+  margin-left: 20%;
+  padding-top: 15%; }
 
-.container {
-  align-items: center;
-  clear: both;
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: 30%;
-  width: 45%; }
-
-section {
+.upcoming-engagements {
+  background-color: white;
+  margin-left: 10%;
   margin-top: 15%;
-  padding-left: 20%; }
+  z-index: 1; }
 
-section:first-of-type {
-  margin-top: 5%; }
+.upcoming-engagements h1 {
+  margin-left: 50%; }
 
-section:last-of-type {
-  margin-top: 0;
-  margin-bottom: 10%; }
+.past-engagements {
+  background-color: white;
+  z-index: 1; }
 
-.contact {
-  margin-top: 15%; }
+li {
+  color: #959595;
+  list-style-type: none; }
+
+.upcoming-engagements li, .past-engagements li {
+  font-family: NeueHaasUnica, Helvetica, Arial, sans-serif; }
+
+.engagement {
+  outline: 1px solid slateblue;
+  font-size: 1.8em; }
+
+.date {
+  float: left;
+  outline: 1px solid tomato; }
 
 /* Lines
 --------------------------------------- */
@@ -87,7 +93,8 @@ section:last-of-type {
 
 .line {
   background-color: indianred;
-  width: 1px; }
+  width: 1px;
+  z-index: 0; }
 
 .line-1 {
   height: 500px; }

@@ -13,11 +13,12 @@ var routes         = require('./routes/index');
 
 // other routes
 var about          = require('./routes/about');
+var currently      = require('./routes/currently');
 var experiments    = require('./routes/experiments');
 var letters        = require('./routes/letters');
+var speaking       = require('./routes/speaking');
 var wares          = require('./routes/wares');
 var writing        = require('./routes/writing');
-var currently      = require('./routes/currently');
 
 var app = express();
 
@@ -37,12 +38,13 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
-app.use('/currently', currently);
-app.use('/letters', letters);
-app.use('/experiments', experiments);
-app.use('/writing', writing);
 app.use('/about', about);
+app.use('/currently', currently);
+app.use('/experiments', experiments);
+app.use('/letters', letters);
+app.use('/speaking', speaking);
 app.use('/wares', wares);
+app.use('/writing', writing);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

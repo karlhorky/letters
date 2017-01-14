@@ -52,7 +52,7 @@ router.get('/random', function(req, res, next) {
   var randomParsedResponse = marked(allPosts[randomNumber].toString());
 
   res.render('letter/letter.html', {
-    title: 'random: ' + req.params.name,
+    title: 'Random: ' + req.params.name,
     letter: randomParsedResponse
   });
 });
@@ -62,7 +62,7 @@ router.get('/:name', function(req, res) {
   var parsedResponse = marked(allPosts[indx].toString());
 
   res.render('letter/letter.html', {
-    title: 'letter: ' + req.params.name,
+    title: 'Letter: ' + req.params.name,
     letter: parsedResponse
   });
 });

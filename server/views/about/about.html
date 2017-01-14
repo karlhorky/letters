@@ -3,6 +3,7 @@
 {% block content %}
   <link rel="stylesheet" property="stylesheet" href="/stylesheets/about/about.css">
 
+  <img src="/images/about/me_2.jpg" class="moi" />
   <div class="container">
     <section>
       <p>I live in Virginia with my <a href="http://brianaguirre.github.io/">wonderful husband</a> and my <a href="https://www.instagram.com/p/BIXQXx-h1Eg/?taken-by=helenvholmes">silly oversized dog</a>. At some point as a young child I learned that I and my best friend were good enough at drawing that we could sell art to our classmates for 20¢ or so. I also learned that I liked slipping away from my band of ragtag cousins to write alone in the woods. Thus began a love for making things in my own little ways.</p>
@@ -21,18 +22,34 @@
     </section>
 
     <section>
-      <p>In 2015 I got it into my head that I should try public speaking, even though the small forays throughout my career had given me terrible indigestion and had never been to audiences larger than 15 or so people. I also discovered, after my first talk at <a href="http://2015.cascadiajs.com/">CascadiaJS</a>, that fear is relative and that I rather enjoyed it. When I’m not working these days I am often either writing or preparing talks about graphic and interaction design and how those disciplines play best with engineering. (A list of my past and future engagements can be found <a href="#">here</a>.)</p>
+      <p>In 2015 I got it into my head that I should try public speaking, even though the small forays throughout my career had given me terrible indigestion and had never been to audiences larger than 15 or so people. I also discovered, after my first talk at <a href="http://2015.cascadiajs.com/">CascadiaJS</a>, that fear is relative and that I rather enjoyed it. When I’m not working these days I am often either writing or preparing talks about graphic and interaction design and how those disciplines play best with engineering. (A list of my past and future engagements can be found <a href="/speaking">here</a>.)</p>
 
       <p>When I am not public speaking, I love writing about <a href="/writing">design, life, and technology</a>. (This, perhaps because of its more introverted nature, I love all the more.) I also occasionally pen a small series entitled “<a href="/letters"><em>Letters</em></a>” that began as a way of coping with grief after a loved one passed away. I also document my travels with <a href="http://stimulatingadventureclub.com/"><em>Stimulating Adventure Club</em></a>, named after a bizarre line in a Christmas card I once received. (More information included at the above link.)</p>
     </section>
 
     <section>
-      <p>Previous versions of this portfolio have been featured in a few places, including <a href="http://www.typewolf.com/site-of-the-day/helen-v-holmes">Typewolf</a>, <a href="http://unmatchedstyle.com/gallery/helen-v-holmes.php">Unmatched </a>, and <a href="https://www.designernews.co/stories/51687-site-design-helen-v-holmes-designer-">the front page of Designer News</a>. If you’d like to feature it somewhere, please let me know!</p>
+      <p>Previous versions of this portfolio have been featured in a few places, including <a href="http://www.typewolf.com/site-of-the-day/helen-v-holmes">Typewolf</a>, <a href="http://unmatchedstyle.com/gallery/helen-v-holmes.php">Unmatched</a>, and <a href="https://www.designernews.co/stories/51687-site-design-helen-v-holmes-designer-">the front page of Designer News</a>. If you’d like to feature it somewhere, please let me know!</p>
     </section>
 
-    <h1 id="contact">Contact</h1>
+    <h1 id="contact" class="contact">Contact</h1>
     <section>
       <p>If you’d like to get in touch about working together, please feel free to email me at <a href="mailto:helen.v.holmes@gmail.com">helen.v.holmes@gmail.com</a>. If sending email is scary, feel free to <a href="http://twitter.com/helenvholmes">DM me on Twitter</a>.</p>
     </section>
   </div>
+
+  <div id="explosion">
+    <ul id="domExplosionList">
+      <li class="item dei-1 line line-1"></li>
+      <li class="item dei-2 line line-2"></li>
+      <li class="item dei-3 line line-3"></li>
+      <li class="item dei-4 line line-4"></li>
+      <li class="item dei-5 line line-5"></li>
+    </ul>
+  </div>
+
+  <script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+  <script async src="/javascripts/parallax.js"></script>
 {% endblock %}

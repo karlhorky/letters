@@ -9,13 +9,13 @@ var router   = express.Router();
 // GET letters listing.
 router.get('/', function(req, res, next) {
   res.render('experiments/experiments.html', { 
-    title: 'experiments'
+    title: 'Experiments'
   });
 });
 
 router.get('/article-grid', function(req, res, next) {
   res.render('experiments/article-grid/article-grid.html', { 
-    title: 'article grid'
+    title: 'Article Grid'
   });
 });
 

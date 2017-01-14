@@ -4,6 +4,7 @@
 
 .header {
   align-items: flex-end;
+  background-color: white;
   display: flex;
   flex-direction: column;
   font-family: $sans-serif;
@@ -12,13 +13,14 @@
   position: fixed;
   right: 0;
   width: 200px;
+  z-index: 1;
 }
 
 .threed-nav {
   width: 100%;
 }
 
-.nav-item.name {
+.nav-item.name a {
   @include animation(fade-in 0.75s ease);
   @include animation-fill-mode(forwards);
 
