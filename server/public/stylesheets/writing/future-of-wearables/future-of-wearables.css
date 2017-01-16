@@ -70,6 +70,18 @@ html {
   font-weight: 400;
   src: url("/fonts/NeueHaasUnicaW1G-Regular.eot?#iefix") format("embedded-opentype"), url("/fonts/NeueHaasUnicaW1G-Regular.woff2") format("woff2"), url("/fonts/NeueHaasUnicaW1G-Regular.woff") format("woff"), url("/fonts/NeueHaasUnicaW1G-Regular.ttf") format("truetype"), url("/fonts/NeueHaasUnicaW1G-Regular.svg#NeueHaasUnica") format("svg"); }
 
+@font-face {
+  font-family: AvenirNext;
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/avenir-next-regular.eot?#iefix") format("embedded-opentype"), url("/fonts/avenir-next-regular.woff2") format("woff2"), url("/fonts/avenir-next-regular.woff") format("woff"), url("/fonts/avenir-next-regular.ttf") format("truetype"), url("/fonts/avenir-next-regular.svg#AvenirNext") format("svg"); }
+
+@font-face {
+  font-family: AvenirNextBold;
+  font-style: normal;
+  font-weight: 600;
+  src: url("/fonts/avenir-next-bold.eot?#iefix") format("embedded-opentype"), url("/fonts/avenir-next-bold.woff2") format("woff2"), url("/fonts/avenir-next-bold.woff") format("woff"), url("/fonts/avenir-next-bold.ttf") format("truetype"), url("/fonts/avenir-next-bold.svg#AvenirNextBold") format("svg"); }
+
 /* Typography
 
    Grid/breakpoints variables are stored in _grid_settings.scss.
@@ -106,7 +118,7 @@ aside {
 
 .pullout {
   clear: both;
-  font-family: NeueHaasUnica, Helvetica, Arial, sans-serif, sans-serif;
+  font-family: Arial, sans-serif, sans-serif;
   font-size: 1.35em;
   font-weight: 900;
   left: 0;
@@ -162,7 +174,7 @@ aside {
   background-color: indianred;
   display: flex;
   flex: 0 1 45%;
-  font-family: NeueHaasUnica, Helvetica, Arial, sans-serif, sans-serif;
+  font-family: Arial, sans-serif, sans-serif;
   font-size: 1.125em;
   font-weight: 700;
   justify-content: center;
@@ -192,7 +204,7 @@ aside {
 .caption {
   color: #959595;
   flex: 0 1 70%;
-  font-family: NeueHaasUnica, Helvetica, Arial, sans-serif, sans-serif;
+  font-family: Arial, sans-serif, sans-serif;
   font-size: 1.35em;
   font-weight: 500;
   padding: 0 2%;
@@ -223,7 +235,7 @@ aside {
   margin-left: 0.5em; }
 
 .interjection {
-  font-family: NeueHaasUnica, Helvetica, Arial, sans-serif, sans-serif;
+  font-family: Arial, sans-serif, sans-serif;
   font-size: 1.8em;
   font-weight: 900;
   margin: 0 auto;
@@ -318,7 +330,7 @@ aside {
 
 h1.future-of-wearables {
   color: black;
-  font-family: NeueHaasUnica, Helvetica, Arial, sans-serif, sans-serif;
+  font-family: Arial, sans-serif, sans-serif;
   font-size: 3.36375em;
   font-weight: 900;
   line-height: 0.9em;

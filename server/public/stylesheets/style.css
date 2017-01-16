@@ -556,6 +556,18 @@ caption {
   font-weight: 400;
   src: url("/fonts/NeueHaasUnicaW1G-Regular.eot?#iefix") format("embedded-opentype"), url("/fonts/NeueHaasUnicaW1G-Regular.woff2") format("woff2"), url("/fonts/NeueHaasUnicaW1G-Regular.woff") format("woff"), url("/fonts/NeueHaasUnicaW1G-Regular.ttf") format("truetype"), url("/fonts/NeueHaasUnicaW1G-Regular.svg#NeueHaasUnica") format("svg"); }
 
+@font-face {
+  font-family: AvenirNext;
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/avenir-next-regular.eot?#iefix") format("embedded-opentype"), url("/fonts/avenir-next-regular.woff2") format("woff2"), url("/fonts/avenir-next-regular.woff") format("woff"), url("/fonts/avenir-next-regular.ttf") format("truetype"), url("/fonts/avenir-next-regular.svg#AvenirNext") format("svg"); }
+
+@font-face {
+  font-family: AvenirNextBold;
+  font-style: normal;
+  font-weight: 600;
+  src: url("/fonts/avenir-next-bold.eot?#iefix") format("embedded-opentype"), url("/fonts/avenir-next-bold.woff2") format("woff2"), url("/fonts/avenir-next-bold.woff") format("woff"), url("/fonts/avenir-next-bold.ttf") format("truetype"), url("/fonts/avenir-next-bold.svg#AvenirNextBold") format("svg"); }
+
 /* Typography
 
    Grid/breakpoints variables are stored in _grid_settings.scss.
@@ -792,7 +804,7 @@ html {
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
   color: #434242;
-  font-family: CalendasPlus, Georgia, "Times New Roman", Times, serif;
+  font-family: AvenirNext, sans-serif;
   font-size: 0.9em;
   font-weight: 400;
   line-height: 1.8em; }
@@ -1113,8 +1125,8 @@ a:visited {
   padding-top: 2%;
   position: fixed;
   right: 0;
-  width: 200px;
-  z-index: 1; }
+  width: 300px;
+  z-index: 2; }
 
 .threed-nav {
   width: 100%; }

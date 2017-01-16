@@ -119,7 +119,7 @@ a.the-things-title {
     width: 150px; } }
 
 .the-future h1 {
-  font-family: NeueHaasUnica, Helvetica, Arial, sans-serif, sans-serif;
+  font-family: Arial, sans-serif, sans-serif;
   font-size: 2.925em;
   font-style: normal;
   font-weight: 900;
@@ -154,8 +154,7 @@ a.the-things-title {
     top: -110px; } }
 
 .additional-articles {
-  flex: 0 1 100%;
-  margin-top: 10%; }
+  flex: 0 1 100%; }
 
 .additional-articles:before {
   border-bottom: indianred 2px solid;

@@ -18,6 +18,18 @@ html {
 
    Typography variables are stored in _typography.scss.
 */
+@font-face {
+  font-family: NeueHaasUnica;
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/NeueHaasUnicaW1G-Regular.eot?#iefix") format("embedded-opentype"), url("/fonts/NeueHaasUnicaW1G-Regular.woff2") format("woff2"), url("/fonts/NeueHaasUnicaW1G-Regular.woff") format("woff"), url("/fonts/NeueHaasUnicaW1G-Regular.ttf") format("truetype"), url("/fonts/NeueHaasUnicaW1G-Regular.svg#NeueHaasUnica") format("svg"); }
+
+@font-face {
+  font-family: LibreCaslonDisplay;
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/librecaslondisplay-regular.eot?#iefix") format("embedded-opentype"), url("/fonts/librecaslondisplay-regular.woff2") format("woff2"), url("/fonts/librecaslondisplay-regular.woff") format("woff"), url("/fonts/librecaslondisplay-regular.ttf") format("truetype"), url("/fonts/librecaslondisplay-regular.svg#LibreCaslonDisplay") format("svg"); }
+
 /* Typography
 
    Grid/breakpoints variables are stored in _grid_settings.scss.
@@ -36,7 +48,8 @@ html {
   background-color: white;
   margin-left: 10%;
   margin-top: 15%;
-  z-index: 1; }
+  z-index: 1;
+  position: relative; }
 
 .upcoming-engagements h1 {
   margin-left: 50%; }
@@ -45,7 +58,13 @@ html {
   clear: both;
   margin-top: 20%;
   background-color: white;
-  z-index: 1; }
+  z-index: 1;
+  position: relative; }
+
+.past-engagements iframe {
+  margin-left: 25%;
+  margin-bottom: 2%;
+  margin-top: 2%; }
 
 li {
   clear: both;
@@ -54,15 +73,23 @@ li {
   list-style-type: none;
   line-height: 2; }
 
+.neuehaasunica-loaded .upcoming-engagements {
+  font-family: NeueHaasUnica, Arial, sans-serif; }
+
+.librecaslon-loaded .upcoming-engagements h1, .librecaslon-loaded .past-engagements h1 {
+  font-family: LibreCaslonDisplay, sans-serif;
+  font-size: 2.925em;
+  font-weight: 300; }
+
 .upcoming-engagements li, .past-engagements li {
   border-bottom: 2px solid #959595;
   cursor: pointer;
   display: inline-block;
-  font-family: NeueHaasUnica, Helvetica, Arial, sans-serif;
+  font-family: Arial, sans-serif;
   outline-offset: 15px;
   padding-bottom: 3px;
   position: relative;
-  width: 50%; }
+  width: 60%; }
 
 .upcoming-engagements li::before, .past-engagements li::before {
   bottom: 0;
@@ -89,6 +116,9 @@ li {
   border-bottom: 2px solid indianred;
   color: indianred; }
 
+.upcoming-engagements li:hover .outside-link, .past-engagements li:hover .outside-link {
+  opacity: 1; }
+
 .upcoming-engagements li:hover::before, .past-engagements li:hover::before {
   background: indianred;
   transition: width .5s ease;
@@ -99,21 +129,49 @@ li {
   transition: all 0s ease;
   width: 100%; }
 
+.upcoming-engagements a, .past-engagements a {
+  background-image: none; }
+
+.past-engagements {
+  margin-left: 10%; }
+
+.past-engagements ul {
+  margin-left: 5%; }
+
+.past-engagements li {
+  width: 70%; }
+
 .engagement {
   float: left;
   font-size: 1.8em; }
 
 .date {
   float: right;
-  font-size: 0.78261em;
-  font-weight: bold; }
+  font-family: AvenirNextBold, sans-serif;
+  font-size: 0.9em;
+  font-weight: bold;
+  margin-right: 5%;
+  margin-top: 15px; }
+
+.outside-link {
+  opacity: 0;
+  float: right;
+  margin-top: 8px;
+  margin-right: 2%;
+  width: 16px;
+  transition: opacity 0.15s ease-in-out; }
+
+.fit {
+  margin: 7% auto 7% auto;
+  width: 40%; }
 
 /* Lines
 --------------------------------------- */
 #domExplosionList {
   position: fixed;
+  top: 10%;
   width: 100%;
-  top: 10%; }
+  z-index: 0; }
 
 .item {
   position: absolute;
@@ -141,8 +199,7 @@ li {
 
 .line {
   background-color: indianred;
-  width: 1px;
-  z-index: 0; }
+  width: 1px; }
 
 .line-1 {
   height: 500px; }

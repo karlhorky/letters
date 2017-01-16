@@ -6,8 +6,13 @@
 */
 
 // Font-faces
+$avenir-next:                    AvenirNext, sans-serif;
+$avenir-next-bold:               AvenirNextBold, sans-serif;
 $sans-serif:                     ProximaNova, Helvetica, Arial, sans-serif;
-$display-sans:                   NeueHaasUnica, Helvetica, Arial, sans-serif;
+$display-sans:                   Arial, sans-serif;
+$display-sans-loaded:            NeueHaasUnica, Arial, sans-serif;
+$libre-caslon:                   sans-serif;
+$libre-caslon-loaded:            LibreCaslonDisplay, sans-serif;
 $knockout:                      "Knockout", $display-sans;
 $serif:                          CalendasPlus, Georgia, "Times New Roman", Times, serif;
 $monospace:                     "Courier New", Courier, monospace;
