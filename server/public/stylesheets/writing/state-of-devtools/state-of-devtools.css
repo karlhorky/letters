@@ -28,9 +28,53 @@ html {
   text-decoration: underline; }
 
 /* Font-face
-   Calls for webfonts used.
+   Calls for webfonts used, alphabetically.
+   
+   Typefaces are not downloaded until they're added to a font-stack.
 
 */
+@font-face {
+  font-family: AvenirNext;
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/avenir-next-regular.eot?#iefix") format("embedded-opentype"), url("/fonts/avenir-next-regular.woff2") format("woff2"), url("/fonts/avenir-next-regular.woff") format("woff"), url("/fonts/avenir-next-regular.ttf") format("truetype"), url("/fonts/avenir-next-regular.svg#AvenirNext") format("svg"); }
+
+@font-face {
+  font-family: AvenirNextBold;
+  font-style: normal;
+  font-weight: 700;
+  src: url("/fonts/avenir-next-bold.eot?#iefix") format("embedded-opentype"), url("/fonts/avenir-next-bold.woff2") format("woff2"), url("/fonts/avenir-next-bold.woff") format("woff"), url("/fonts/avenir-next-bold.ttf") format("truetype"), url("/fonts/avenir-next-bold.svg#AvenirNextBold") format("svg"); }
+
+@font-face {
+  font-family: CalendasPlus;
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/Calendas-Plus.eot?#iefix") format("embedded-opentype"), url("/fonts/Calendas-Plus.woff") format("woff"), url("/fonts/Calendas-Plus.ttf") format("truetype"), url("/fonts/Calendas-Plus.svg#CalendasPlus") format("svg"); }
+
+@font-face {
+  font-family: CalendasPlus;
+  font-style: italic;
+  font-weight: 400;
+  src: url("/fonts/CalendasPlus-Italic.eot?#iefix") format("embedded-opentype"), url("/fonts/CalendasPlus-Italic.woff") format("woff"), url("/fonts/CalendasPlus-Italic.ttf") format("truetype"), url("/fonts/CalendasPlus-Italic.svg#CalendasPlus") format("svg"); }
+
+@font-face {
+  font-family: LibreCaslonDisplay;
+  font-style: normal;
+  font-weight: 300;
+  src: url("/fonts/librecaslondisplay-regular.eot?#iefix") format("embedded-opentype"), url("/fonts/librecaslondisplay-regular.woff2") format("woff2"), url("/fonts/librecaslondisplay-regular.woff") format("woff"), url("/fonts/librecaslondisplay-regular.ttf") format("truetype"), url("/fonts/librecaslondisplay-regular.svg#LibreCaslonDisplay") format("svg"); }
+
+@font-face {
+  font-family: NeueHaasUnica;
+  font-style: normal;
+  font-weight: 900;
+  src: url("/fonts/NeueHaasUnicaW1G-Black.eot?#iefix") format("embedded-opentype"), url("/fonts/NeueHaasUnicaW1G-Black.woff") format("woff"), url("/fonts/NeueHaasUnicaW1G-Black.ttf") format("truetype"), url("/fonts/NeueHaasUnicaW1G-Black.svg#NeueHaasUnica") format("svg"); }
+
+@font-face {
+  font-family: NeueHaasUnica;
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/NeueHaasUnicaW1G-Regular.eot?#iefix") format("embedded-opentype"), url("/fonts/NeueHaasUnicaW1G-Regular.woff2") format("woff2"), url("/fonts/NeueHaasUnicaW1G-Regular.woff") format("woff"), url("/fonts/NeueHaasUnicaW1G-Regular.ttf") format("truetype"), url("/fonts/NeueHaasUnicaW1G-Regular.svg#NeueHaasUnica") format("svg"); }
+
 @font-face {
   font-family: ProximaNova;
   font-style: normal;
@@ -60,42 +104,6 @@ html {
   font-style: normal;
   font-weight: 600;
   src: url("../fonts/proxima_nova_sbold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/proxima_nova_sbold-webfont.woff2") format("woff2"), url("../fonts/proxima_nova_sbold-webfont.woff") format("woff"), url("../fonts/proxima_nova_sbold-webfont.ttf") format("truetype"), url("../fonts/proxima_nova_sbold-webfont.svg#ProximaNova") format("svg"); }
-
-@font-face {
-  font-family: CalendasPlus;
-  font-style: normal;
-  font-weight: 400;
-  src: url("/fonts/Calendas-Plus.eot?#iefix") format("embedded-opentype"), url("/fonts/Calendas-Plus.woff") format("woff"), url("/fonts/Calendas-Plus.ttf") format("truetype"), url("/fonts/Calendas-Plus.svg#CalendasPlus") format("svg"); }
-
-@font-face {
-  font-family: CalendasPlus;
-  font-style: italic;
-  font-weight: 400;
-  src: url("/fonts/CalendasPlus-Italic.eot?#iefix") format("embedded-opentype"), url("/fonts/CalendasPlus-Italic.woff") format("woff"), url("/fonts/CalendasPlus-Italic.ttf") format("truetype"), url("/fonts/CalendasPlus-Italic.svg#CalendasPlus") format("svg"); }
-
-@font-face {
-  font-family: NeueHaasUnica;
-  font-style: normal;
-  font-weight: 900;
-  src: url("/fonts/NeueHaasUnicaW1G-Black.eot?#iefix") format("embedded-opentype"), url("/fonts/NeueHaasUnicaW1G-Black.woff") format("woff"), url("/fonts/NeueHaasUnicaW1G-Black.ttf") format("truetype"), url("/fonts/NeueHaasUnicaW1G-Black.svg#NeueHaasUnica") format("svg"); }
-
-@font-face {
-  font-family: NeueHaasUnica;
-  font-style: normal;
-  font-weight: 400;
-  src: url("/fonts/NeueHaasUnicaW1G-Regular.eot?#iefix") format("embedded-opentype"), url("/fonts/NeueHaasUnicaW1G-Regular.woff2") format("woff2"), url("/fonts/NeueHaasUnicaW1G-Regular.woff") format("woff"), url("/fonts/NeueHaasUnicaW1G-Regular.ttf") format("truetype"), url("/fonts/NeueHaasUnicaW1G-Regular.svg#NeueHaasUnica") format("svg"); }
-
-@font-face {
-  font-family: AvenirNext;
-  font-style: normal;
-  font-weight: 400;
-  src: url("/fonts/avenir-next-regular.eot?#iefix") format("embedded-opentype"), url("/fonts/avenir-next-regular.woff2") format("woff2"), url("/fonts/avenir-next-regular.woff") format("woff"), url("/fonts/avenir-next-regular.ttf") format("truetype"), url("/fonts/avenir-next-regular.svg#AvenirNext") format("svg"); }
-
-@font-face {
-  font-family: AvenirNextBold;
-  font-style: normal;
-  font-weight: 600;
-  src: url("/fonts/avenir-next-bold.eot?#iefix") format("embedded-opentype"), url("/fonts/avenir-next-bold.woff2") format("woff2"), url("/fonts/avenir-next-bold.woff") format("woff"), url("/fonts/avenir-next-bold.ttf") format("truetype"), url("/fonts/avenir-next-bold.svg#AvenirNextBold") format("svg"); }
 
 .post {
   margin: auto;

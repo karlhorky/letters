@@ -1,3 +1,9 @@
+@import 'bourbon';
+@import '../../styles/grid-settings';
+@import 'neat';
+@import '../../styles/colors';
+@import '../../styles/typography';
+
 .portfolio {
   flex-wrap: wrap;
 

@@ -132,6 +132,12 @@ li {
   font-size: $h2-font-size;
 }
 
+.avenirnext-bold-loaded {
+  .date {
+    font-family: $avenir-next-bold-loaded;
+  }
+}
+
 .date {
   float: right;
   font-family: $avenir-next-bold;

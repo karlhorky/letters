@@ -20,6 +20,18 @@ html {
   line-height: $base-line-height;
 }
 
+html.avenirnext-loaded {
+  font-family: $avenir-next;
+}
+
+html.librecaslon-loaded {
+  h1 {
+    font-family: $libre-caslon-loaded;
+  }
+}
+
 h1 {
-  
+  font-family: $libre-caslon;
+  font-size: $h1-font-size;
+  font-weight: 300;
 }

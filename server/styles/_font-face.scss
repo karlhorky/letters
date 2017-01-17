@@ -1,27 +1,30 @@
 /* Font-face
-   Calls for webfonts used.
+   Calls for webfonts used, alphabetically.
+   
+   Typefaces are not downloaded until they're added to a font-stack.
 
 */
 
 @import 'bourbon';
 
-// Proxima Nova
+// Avenir Next, <p>
+@include font-face(AvenirNext, '/fonts/avenir-next-regular', 400);
+@include font-face(AvenirNextBold, '/fonts/avenir-next-bold', 700);
+
+// Calendas Plus, used in past Currentlys
+@include font-face(CalendasPlus, '/fonts/Calendas-Plus', 400, $file-formats: eot svg ttf woff);
+@include font-face(CalendasPlus, '/fonts/CalendasPlus-Italic', 400, italic, $file-formats: eot oft svg ttf woff);
+
+// Libre Caslon Display, <h1>
+@include font-face(LibreCaslonDisplay, '/fonts/librecaslondisplay-regular', 300);
+
+// Neue Haas Unica, <ul>
+@include font-face(NeueHaasUnica, '/fonts/NeueHaasUnicaW1G-Black', 900, $file-formats: eot oft svg ttf woff);
+@include font-face(NeueHaasUnica, '/fonts/NeueHaasUnicaW1G-Regular', 400);
+
+// Proxima Nova, navigation
 @include font-face(ProximaNova, '../fonts/proxima_nova_reg-webfont', 400);
 @include font-face(ProximaNova, '../fonts/proxima_nova_bold-webfont', 700);
 @include font-face(ProximaNova, '../fonts/proxima_nova_light-webfont', 300);
 @include font-face(ProximaNova, '../fonts/proxima_nova_sbold-webfont', 600);
 @include font-face(ProximaNova, '../fonts/proxima_nova_sbold-webfont', 600);
-
-// Currently unused, but should an icon font come to be used on the site
-// @include font-face(icomoon, '../fonts/icomoon', normal);
-
-// Calendas Plus
-@include font-face(CalendasPlus, '/fonts/Calendas-Plus', 400, $file-formats: eot svg ttf woff);
-@include font-face(CalendasPlus, '/fonts/CalendasPlus-Italic', 400, italic, $file-formats: eot oft svg ttf woff);
-
-// Neue Haas Unica
-@include font-face(NeueHaasUnica, '/fonts/NeueHaasUnicaW1G-Black', 900, $file-formats: eot oft svg ttf woff);
-@include font-face(NeueHaasUnica, '/fonts/NeueHaasUnicaW1G-Regular', 400);
-
-@include font-face(AvenirNext, '/fonts/avenir-next-regular', 400);
-@include font-face(AvenirNextBold, '/fonts/avenir-next-bold', 600);
