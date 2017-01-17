@@ -1186,15 +1186,15 @@ a:visited {
 
 .collapsed-nav {
   width: 30px;
-  height: 13px;
-  margin-left: 83%;
+  height: 9px;
+  margin-left: 81%;
   opacity: 0;
   background-color: indianred;
   transition: opacity 0.25s ease; }
 
 .collapsed-nav:before {
   width: 30px;
-  height: 2px;
+  height: 1px;
   background-color: indianred;
   display: block;
   content: "";
@@ -1203,7 +1203,7 @@ a:visited {
 
 .collapsed-nav:after {
   width: 30px;
-  height: 2px;
+  height: 1px;
   background-color: indianred;
   display: block;
   content: "";
@@ -1301,3 +1301,16 @@ a:visited {
 
 .nav-item a {
   background-image: linear-gradient(transparent, transparent); }
+
+.nav-item:hover::after {
+  animation-duration: 0.15s;
+  animation-fill-mode: forwards;
+  animation-name: grow;
+  animation-timing-function: cubic-bezier(0.415, 0.61, 0.855, 1);
+  background-color: indianred;
+  content: "";
+  display: block;
+  height: 1px;
+  float: right;
+  transform-origin: left;
+  width: 100%; }
