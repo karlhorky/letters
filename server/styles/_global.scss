@@ -7,6 +7,9 @@
   box-sizing: inherit;
 }
 
+::-moz-selection { background: $brand-secondary; }
+::selection { background: $brand-secondary; }
+
 html {
   @include font-feature-settings('liga');
 

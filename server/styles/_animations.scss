@@ -48,6 +48,21 @@
   }
 }
 
+@keyframes fold-up {
+  0% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-25px);
+  }
+}
+
+
 @include keyframe(link-underlines) {
   0% {
     opacity: 0;

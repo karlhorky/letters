@@ -4,7 +4,6 @@
 
 .header {
   align-items: flex-end;
-  background-color: white;
   display: flex;
   flex-direction: column;
   font-family: $sans-serif;
@@ -17,13 +16,9 @@
 }
 
 .threed-nav {
-  width: 100%;
 }
 
-.nav-item.name a {
-  @include animation(fade-in 0.75s ease);
-  @include animation-fill-mode(forwards);
-
+.name a {
   $color2: $brand-primary;
   $color: peru;
 
@@ -35,11 +30,59 @@
   }
 }
 
+
 .navigation {
   @include animation(fade-in 0.75s ease);
   @include animation-fill-mode(forwards);
 
   display: flex;
+}
+
+.collapsed-nav {
+  width: 30px;
+  height: 13px;
+  margin-left: 83%;
+  opacity: 0;
+  background-color: $brand-primary;
+  transition: opacity 0.25s ease;
+  
+  &:before {
+    width: 30px;
+    height: 2px;
+    background-color: $brand-primary;
+    display: block;
+    content: "";
+    margin-top: 8px;
+    position: absolute;
+  }
+  
+  &:after {
+    width: 30px;
+    height: 2px;
+    background-color: $brand-primary;
+    display: block;
+    content: "";
+    margin-top: 16px;
+    position: absolute;
+  }
+}
+
+$nav-items: 5; // number of nav lines
+$type-width: 20px;
+
+@while ($nav-items > 0) {
+  .small-nav {
+    .nav-item-#{$nav-items} {
+      $nav-items: $nav-items - 1;
+      @include animation(fold-up 0.75s ease);
+      @include animation-fill-mode(forwards);
+      @include animation-delay(($nav-items / 15) + s);
+    }
+    
+    .collapsed-nav {
+      opacity: 1;
+    }
+  }
 }
 
 .nav-items {
@@ -52,7 +95,7 @@
 .nav-item {
   flex: 0 1 100%;
   font-size: 0.8em;
-  font-weight: $semibold-weight;
+  font-weight: 600;
   letter-spacing: 0.05em;
   line-height: 3.5;
   list-style-type: none;
@@ -63,72 +106,7 @@
     margin-left: 0;
   }
 
-  @include media($nine-col) {
-    margin: 0;
-  }
-
   a {
-    background-image: none !important;
-    transition: background-image 0.25s ease-in-out;
-    
-    &:hover {
-      background-image: linear-gradient($brand-primary, $brand-primary) !important;
-    }
+    background-image: linear-gradient(transparent, transparent);
   }
 }
-
-// .hover-left::after {
-//   animation-duration: 0.15s;
-//   animation-fill-mode: forwards;
-//   animation-name: grow;
-//   animation-timing-function: cubic-bezier(0.415, 0.610, 0.855, 1.000);
-//   background-color: $brand-primary;
-//   content: "";
-//   display: block;
-//   height: 1px;
-//   float: right;
-//   transform-origin: left;
-//   width: 70%;
-// }
-
-// .hover-out-left::after {
-//   animation-duration: 0.15s;
-//   animation-fill-mode: forwards;
-//   animation-name: shrink;
-//   animation-timing-function: cubic-bezier(0.415, 0.610, 0.855, 1.000);
-//   background-color: $brand-primary;
-//   content: "";
-//   display: block;
-//   height: 1px;
-//   float: right;
-//   transform-origin: left;
-//   width: 70%;
-// }
-
-// .hover-right::after {
-//   animation-duration: 0.15s;
-//   animation-fill-mode: forwards;
-//   animation-name: grow;
-//   animation-timing-function: cubic-bezier(0.415, 0.610, 0.855, 1.000);
-//   background-color: $brand-primary;
-//   content: "";
-//   display: block;
-//   height: 1px;
-//   float: right;
-//   transform-origin: right;
-//   width: 70%;
-// }
-
-// .hover-out-right::after {
-//   animation-duration: 0.15s;
-//   animation-fill-mode: forwards;
-//   animation-name: shrink;
-//   animation-timing-function: cubic-bezier(0.415, 0.610, 0.855, 1.000);
-//   background-color: $brand-primary;
-//   content: "";
-//   display: block;
-//   height: 1px;
-//   float: right;
-//   transform-origin: left;
-//   width: 70%;
-// }

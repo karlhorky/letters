@@ -24,10 +24,10 @@
       <p>Business inquiries can be made at <a href="mailto:helen.v.holmes@gmail.com">helen.v.holmes@gmail.com</a>.</p>
     </section>
 
-    <section>
+    <section class="writing">
       <p>A smattering of her writing:</p>
 
-      <p>THE NEW AGE MADMEN</p>
+      <div class="">THE NEW AGE MADMEN</div>
     </section>
 
     <section class="speaking">
@@ -49,4 +49,19 @@
 
   <script src="/javascripts/fontfaceonload.js"></script>
   <script src="/javascripts/neuehaasunica.js"></script>
+  <script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+  <script type="text/javascript">
+    $(window).scroll(function() {
+      var scroll = $(window).scrollTop();
+      if (scroll >= 10) {
+        console.log("hey");
+        $(".navigation").addClass("small-nav");
+      } else {
+        $(".navigation").removeClass("small-nav");
+      }
+    });
+  </script>
 {% endblock %}

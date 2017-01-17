@@ -132,7 +132,7 @@ html {
 
 @-webkit-keyframes rainbow-colors {
   0% {
-    color: #4A90E2; }
+    color: #4a90e2; }
   17% {
     color: #60e6e4; }
   34% {
@@ -148,7 +148,7 @@ html {
 
 @-moz-keyframes rainbow-colors {
   0% {
-    color: #4A90E2; }
+    color: #4a90e2; }
   17% {
     color: #60e6e4; }
   34% {
@@ -164,7 +164,7 @@ html {
 
 @keyframes rainbow-colors {
   0% {
-    color: #4A90E2; }
+    color: #4a90e2; }
   17% {
     color: #60e6e4; }
   34% {

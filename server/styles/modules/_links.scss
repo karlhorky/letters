@@ -8,7 +8,7 @@ $color-selection:   #b4d5fe;
 
 a {
   // color: $brand-primary;
-  @include link-underline(transparent, $brand-primary, $brand-gray-accent);
+  @include link-underline(transparent, $brand-primary, $brand-secondary);
 
   // &:hover {
   //   color: darken($brand-primary, 10%);

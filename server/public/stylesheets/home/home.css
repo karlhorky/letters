@@ -28,7 +28,7 @@ html {
   text-decoration: underline; }
 
 .moi {
-  margin-top: 4%;
+  margin-top: 3%;
   margin-left: 3%; }
 
 .who-is-helen {
@@ -39,3 +39,7 @@ html {
   padding-top: 0.15%;
   width: 50%;
   position: relative; }
+
+.writing p {
+  width: 30%;
+  margin-left: 50%; }
