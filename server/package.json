@@ -1,9 +1,13 @@
 {
   "name": "letters-server",
   "version": "0.0.0",
+  "engines": {
+    "node": "6.9.4"
+  }, 
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "npm start",
+    "postinstall": "npm install && gulp images"
   },
   "dependencies": {
     "body-parser": "~1.13.2",
