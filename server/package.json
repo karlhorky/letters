@@ -6,8 +6,7 @@
   }, 
   "private": true,
   "scripts": {
-    "start": "npm start",
-    "postinstall": "npm install && gulp images"
+    "start": "npm start"
   },
   "dependencies": {
     "body-parser": "~1.13.2",
