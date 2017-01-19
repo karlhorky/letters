@@ -18,6 +18,9 @@ html {
 
    Color variables are stored in _color.scss.
 */
+/* Sizes
+
+*/
 .underline {
   text-decoration: underline; }
 
@@ -46,7 +49,7 @@ html {
   background-color: white;
   color: #202420;
   display: block;
-  font-family: Arial, sans-serif;
+  font-family: NeueHaasUnica, Arial, sans-serif;
   font-size: 1.575em;
   font-weight: 900;
   margin-top: 8%;

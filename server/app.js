@@ -18,6 +18,7 @@ var experiments    = require('./routes/experiments');
 var letters        = require('./routes/letters');
 var portfolio      = require('./routes/portfolio');
 var speaking       = require('./routes/speaking');
+var typeLoading    = require('./routes/type-loading');
 var wares          = require('./routes/wares');
 var writing        = require('./routes/writing');
 
@@ -45,6 +46,7 @@ app.use('/experiments', experiments);
 app.use('/letters', letters);
 app.use('/portfolio', portfolio);
 app.use('/speaking', speaking);
+app.use('/type-loading', typeLoading);
 app.use('/wares', wares);
 app.use('/writing', writing);
 

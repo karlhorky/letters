@@ -18,6 +18,9 @@ html {
 
    Color variables are stored in _color.scss.
 */
+/* Sizes
+
+*/
 .underline {
   text-decoration: underline; }
 
@@ -193,7 +196,7 @@ img {
   margin: 20% 0 50% 0; }
 
 .advice .advice-point {
-  font-family: "Knockout", Arial, sans-serif;
+  font-family: "Knockout", NeueHaasUnica, Arial, sans-serif;
   text-transform: uppercase;
   font-size: 1.8em; }
 

@@ -168,7 +168,7 @@ ol {
 }
 
 .quote {
-  font-family: $sans-serif;
+  font-family: $proxima-nova;
   font-size: 1.5em;
   margin: 5% auto 5% auto;
   width: 80%;
@@ -180,7 +180,7 @@ ol {
 }
 
 .quote-attribution {
-  font-family: $serif;
+  font-family: $calendas-plus;
   font-size: 0.7em;
   float: right;
 }
@@ -198,12 +198,12 @@ ol {
 }
 
 h2 {
-  font-family: $sans-serif;
+  font-family: $proxima-nova;
   font-size: 2em;
 }
 
 .king {
-  font-family: $sans-serif;
+  font-family: $proxima-nova;
   font-size: $h2-font-size;
   font-weight: $bold-weight;
   margin: auto;
@@ -263,7 +263,7 @@ h2 {
 
 .foft {
   color: $brand-primary;
-  font-family: $sans-serif;
+  font-family: $proxima-nova;
   font-size: $h2-font-size;
   font-weight: $bold-weight;
   text-align: center;

@@ -24,6 +24,9 @@ html {
 
    Color variables are stored in _color.scss.
 */
+/* Sizes
+
+*/
 .underline {
   text-decoration: underline; }
 
@@ -32,11 +35,11 @@ html {
 
 .portfolio h1 {
   flex: 0 1 85%;
-  font-family: Arial, sans-serif, sans-serif;
+  font-family: NeueHaasUnica, Arial, sans-serif, sans-serif;
   font-size: 4.3875em;
   font-style: normal;
   font-weight: 900;
-  line-height: 1.2em;
+  line-height: 1.16667;
   margin-top: 10%; }
 
 @media screen and (min-width: 850px) {
@@ -53,11 +56,11 @@ html {
 
 .portfolio p {
   flex: 0 1 100%;
-  font-family: Arial, sans-serif, sans-serif;
+  font-family: NeueHaasUnica, Arial, sans-serif, sans-serif;
   font-size: 1.8em;
   font-style: normal;
   font-weight: 400;
-  line-height: 1.8em;
+  line-height: 1.75;
   margin: 0 auto 8% auto; }
 
 .cd-1 {
@@ -542,7 +545,7 @@ html {
     width: 25px; } }
 
 .project h2 {
-  font-family: ProximaNova, Helvetica, Arial, sans-serif;
+  font-family: NeueHaasUnica, Arial, sans-serif;
   font-size: 1.8em;
   text-transform: uppercase; }
 

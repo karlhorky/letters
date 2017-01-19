@@ -18,6 +18,9 @@ html {
 
    Color variables are stored in _color.scss.
 */
+/* Sizes
+
+*/
 .underline {
   text-decoration: underline; }
 

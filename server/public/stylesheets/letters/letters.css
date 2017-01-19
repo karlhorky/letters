@@ -18,17 +18,14 @@ html {
 
    Typography variables are stored in _typography.scss.
 */
-@font-face {
-  font-family: NeueHaasUnica;
-  font-style: normal;
-  font-weight: 400;
-  src: url("/fonts/NeueHaasUnicaW1G-Regular.eot?#iefix") format("embedded-opentype"), url("/fonts/NeueHaasUnicaW1G-Regular.woff2") format("woff2"), url("/fonts/NeueHaasUnicaW1G-Regular.woff") format("woff"), url("/fonts/NeueHaasUnicaW1G-Regular.ttf") format("truetype"), url("/fonts/NeueHaasUnicaW1G-Regular.svg#NeueHaasUnica") format("svg"); }
-
 /* Typography
 
    Grid/breakpoints variables are stored in _grid_settings.scss.
 
    Color variables are stored in _color.scss.
+*/
+/* Sizes
+
 */
 .underline {
   text-decoration: underline; }
@@ -102,6 +99,16 @@ html {
   100% {
     opacity: 1;
     transform: translateY(0px); } }
+
+@keyframes fold-up {
+  0% {
+    opacity: 1;
+    transform: translateY(0px); }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 0;
+    transform: translateY(-25px); } }
 
 @-webkit-keyframes link-underlines {
   0% {

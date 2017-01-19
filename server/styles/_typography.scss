@@ -5,24 +5,43 @@
    Color variables are stored in _color.scss.
 */
 
-// Font-faces
-$avenir-next:                    sans-serif;
-$avenir-next-bold:               sans-serif;
-$avenir-next-loaded:             AvenirNext, sans-serif;
-$avenir-next-bold-loaded:        AvenirNextBold, sans-serif;
-$sans-serif:                     ProximaNova, Helvetica, Arial, sans-serif;
-$display-sans:                   Arial, sans-serif;
-$display-sans-loaded:            NeueHaasUnica, Arial, sans-serif;
-$libre-caslon:                   serif;
-$libre-caslon-loaded:            LibreCaslonDisplay, serif;
-$knockout:                      "Knockout", $display-sans;
-$serif:                          CalendasPlus, Georgia, "Times New Roman", Times, serif;
+// Avenir (base typography)
+$pre-avenir-next:                -apple-system, BlinkMacSystemFont, sans-serif;
+$avenir-next:                    AvenirNext, $pre-avenir-next;
+$avenir-next-italic:             AvenirNextItalic, $pre-avenir-next;
+
+// Libre Caslon Display (headers)
+$pre-libre-caslon:               serif;
+$libre-caslon:                   LibreCaslonDisplay, $pre-libre-caslon;
+
+// Neue Haas Unica (unordered lists)
+$pre-neue-haas-unica:            Arial, sans-serif;
+$neue-haas-unica:                NeueHaasUnica, $pre-neue-haas-unica;
+
+// Proxima Nova (navigation)
+$pre-proxima-nova:               Helvetica, Arial, sans-serif;
+$proxima-nova:                   ProximaNova, $pre-proxima-nova;
+
+// Calendas Plus (default serif)
+$pre-calendas-plus:              Georgia, "Times New Roman", Times, serif;
+$calendas-plus:                  CalendasPlus, $pre-calendas-plus;
+
+// Courier New (default monospace, websafe)
 $monospace:                     "Courier New", Courier, monospace;
+
+// Didot (large titles/callouts). Doesn't have a font-loading
+// strategy nomenclature because it's hosted through typography.com
 $mega-display:                  "Didot 96 A", "Didot 96 B", serif;
 
-// Sizes
+// Knockout (idk where I'm using this)
+$knockout:                      "Knockout", $neue-haas-unica;
+
+
+/* Sizes
+
+*/
 $base-font-size:                 0.9em;
-$base-line-height:               $base-font-size * 2;
+$base-line-height:               1.75;
 $unitless-line-height:           $base-line-height / ($base-line-height * 0 + 1); // Strip units from line-height: https://developer.mozilla.org/en-US/docs/Web/CSS/line-height#Prefer_unitless_numbers_for_line-height_values
 $header-line-height:             $base-font-size * 1.25;
 $base-border-radius:             em(3);
@@ -33,7 +52,7 @@ $h2-font-size:                   $base-font-size * 2;
 $h3-font-size:                   $base-font-size * 1.75;
 $h4-font-size:                   $base-font-size * 1.5;
 $h5-font-size:                   $base-font-size * 1.25;
-$h6-font-size:                   $base-font-size;
+$h6-font-size:                   $base-font-size * 1.5;
 
 // Display sizes
 $blockquote-size:                $base-font-size * 3.25;

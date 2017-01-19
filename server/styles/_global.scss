@@ -17,24 +17,125 @@ html {
  -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
   color: $brand-black;
-  font-family: $avenir-next;
+  font-family: $pre-avenir-next;
   font-size: $base-font-size;
   font-weight: $normal-weight;
   line-height: $base-line-height;
 }
 
-html.avenirnext-loaded {
-  font-family: $avenir-next;
-}
+/* Set base typography
+   Avenir Next and sans-serif stack for most type.
 
-html.librecaslon-loaded {
-  h1 {
-    font-family: $libre-caslon-loaded;
+*/
+.avenirnext-loaded {
+  p {
+    font-family: $avenir-next; // pre-load stack set on <html> element
   }
 }
 
-h1 {
-  font-family: $libre-caslon;
-  font-size: $h1-font-size;
-  font-weight: 300;
+/* Set headers
+   Basic headers, unless otherwise stated, get Libre Caslon Display.
+
+*/
+h1, h2, h3, h4, h5, h6 {
+  font-family: $pre-libre-caslon;
+}
+
+.librecaslon-loaded {
+  h1, h2, h3, h4, h5, h6 {
+    font-family: $libre-caslon;
+    font-weight: 300;
+  }
+}
+
+/* Set unordered lists
+   Unordered lists (and some other treatments) get Neue Haas Unica.
+
+*/
+li {
+  font-family: $pre-neue-haas-unica;
+}
+
+.neuehaasunica-loaded {
+  li {
+    font-family: $neue-haas-unica;
+  }
+}
+
+/* Set navigation
+   Navigation receives Proxima Nova.
+
+*/
+.navigation ul li {
+  font-family: $pre-proxima-nova;
+}
+
+.proximanova-loaded {
+  .navigation ul li {
+    font-family: $proxima-nova;
+  }
+}
+
+/* Set serif
+   Lots of legacy pages use Calendas Plus for body copy.
+
+*/
+.serif {
+  font-family: $pre-calendas-plus;
+}
+
+.calendasplus-loaded {
+  .serif {
+    font-family: $calendas-plus;
+  }
+}
+
+/* "Explosion" code
+   The parallax lines that appear on a lot of pages on the site.
+
+*/
+
+
+/* Lines
+--------------------------------------- */
+#domExplosionList {
+  position: fixed;
+  width: 100%;
+  top: 10%;
+}
+
+.item {
+  position: absolute;
+  list-style-type: none;
+}
+
+.dei-1  { top: 100px;   left: 15%; }
+.dei-2  { top: 400px;   left: 80%; }
+.dei-3  { top: 650px;   left: 87%; }
+.dei-4  { top: 550px;   left: 93%; }
+.dei-5  { top: 750px;   left: 15%; }
+
+.line {
+  background-color: $brand-primary;
+  width: 1px;
+}
+
+.line-1 {
+  height: 500px;
+}
+
+.line-2 {
+  height: 300px;
+}
+
+.line-3 {
+  height: 400px;
+}
+
+.line-4 {
+  height: 325px;
+}
+
+.line-5 {
+  height: 350px;
 }

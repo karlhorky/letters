@@ -18,23 +18,14 @@ html {
 
    Typography variables are stored in _typography.scss.
 */
-@font-face {
-  font-family: NeueHaasUnica;
-  font-style: normal;
-  font-weight: 400;
-  src: url("/fonts/NeueHaasUnicaW1G-Regular.eot?#iefix") format("embedded-opentype"), url("/fonts/NeueHaasUnicaW1G-Regular.woff2") format("woff2"), url("/fonts/NeueHaasUnicaW1G-Regular.woff") format("woff"), url("/fonts/NeueHaasUnicaW1G-Regular.ttf") format("truetype"), url("/fonts/NeueHaasUnicaW1G-Regular.svg#NeueHaasUnica") format("svg"); }
-
-@font-face {
-  font-family: LibreCaslonDisplay;
-  font-style: normal;
-  font-weight: 400;
-  src: url("/fonts/librecaslondisplay-regular.eot?#iefix") format("embedded-opentype"), url("/fonts/librecaslondisplay-regular.woff2") format("woff2"), url("/fonts/librecaslondisplay-regular.woff") format("woff"), url("/fonts/librecaslondisplay-regular.ttf") format("truetype"), url("/fonts/librecaslondisplay-regular.svg#LibreCaslonDisplay") format("svg"); }
-
 /* Typography
 
    Grid/breakpoints variables are stored in _grid_settings.scss.
 
    Color variables are stored in _color.scss.
+*/
+/* Sizes
+
 */
 .underline {
   text-decoration: underline; }
@@ -73,19 +64,13 @@ li {
   list-style-type: none;
   line-height: 2; }
 
-.neuehaasunica-loaded .upcoming-engagements {
-  font-family: NeueHaasUnica, Arial, sans-serif; }
-
-.librecaslon-loaded .upcoming-engagements h1, .librecaslon-loaded .past-engagements h1 {
-  font-family: LibreCaslonDisplay, serif;
-  font-size: 2.925em;
-  font-weight: 300; }
+.upcoming-engagements h1, .past-engagements h1 {
+  font-size: 2.925em; }
 
 .upcoming-engagements li, .past-engagements li {
   border-bottom: 2px solid #959595;
   cursor: pointer;
   display: inline-block;
-  font-family: Arial, sans-serif;
   outline-offset: 15px;
   padding-bottom: 3px;
   position: relative;
@@ -146,11 +131,12 @@ li {
   font-size: 1.8em; }
 
 .avenirnext-bold-loaded .date {
-  font-family: AvenirNextBold, sans-serif; }
+  font-family: AvenirNext, -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: 700; }
 
 .date {
   float: right;
-  font-family: sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
   font-size: 0.9em;
   font-weight: bold;
   margin-right: 5%;

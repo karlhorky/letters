@@ -29,3 +29,11 @@ html {
 */
 .underline {
   text-decoration: underline; }
+
+.container {
+  align-items: center;
+  clear: both;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 30%;
+  width: 45%; }

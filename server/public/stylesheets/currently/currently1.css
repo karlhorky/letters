@@ -88,6 +88,16 @@ html {
     opacity: 1;
     transform: translateY(0px); } }
 
+@keyframes fold-up {
+  0% {
+    opacity: 1;
+    transform: translateY(0px); }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 0;
+    transform: translateY(-25px); } }
+
 @-webkit-keyframes link-underlines {
   0% {
     opacity: 0;

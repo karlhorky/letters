@@ -24,6 +24,9 @@ html {
 
    Color variables are stored in _color.scss.
 */
+/* Sizes
+
+*/
 .underline {
   text-decoration: underline; }
 
@@ -40,6 +43,30 @@ html {
   width: 50%;
   position: relative; }
 
-.writing p {
+.who-is-helen h1 {
+  font-size: 4.3875em;
+  margin-bottom: 0;
+  line-height: 1; }
+
+.writing, .speaking {
+  background-color: white;
+  margin-top: 20%; }
+
+.writing p, .speaking p {
   width: 30%;
-  margin-left: 50%; }
+  margin-left: 50%;
+  margin-bottom: 5%; }
+
+.writing iframe, .speaking iframe {
+  margin: auto;
+  display: block; }
+
+.mad-men {
+  font-family: "Didot 96 A", "Didot 96 B", serif;
+  font-size: 14em;
+  padding: 0 5%;
+  line-height: 1;
+  font-style: italic;
+  text-transform: uppercase;
+  background-color: white;
+  z-index: 2; }

@@ -6,10 +6,10 @@
   align-items: flex-end;
   display: flex;
   flex-direction: column;
-  font-family: $sans-serif;
   padding-right: 4%;
   padding-top: 2%;
   position: fixed;
+  font-weight: 300;
   right: 0;
   width: 300px;
   z-index: 2;
@@ -21,6 +21,8 @@
 .name a {
   $color2: $brand-primary;
   $color: peru;
+
+  background-color: white;
 
   &:hover {
     animation: blinds 0.75s linear forwards;
@@ -39,13 +41,13 @@
 }
 
 .collapsed-nav {
-  width: 30px;
-  height: 9px;
+  background-color: $brand-primary;
+  height: 7px;
   margin-left: 81%;
   opacity: 0;
-  background-color: $brand-primary;
   transition: opacity 0.25s ease;
-  
+  width: 30px;
+
   &:before {
     width: 30px;
     height: 1px;
@@ -55,7 +57,7 @@
     margin-top: 8px;
     position: absolute;
   }
-  
+
   &:after {
     width: 30px;
     height: 1px;
@@ -78,9 +80,11 @@ $type-width: 20px;
       @include animation-fill-mode(forwards);
       @include animation-delay(($nav-items / 15) + s);
     }
-    
+
     .collapsed-nav {
-      opacity: 1;
+      @include animation(fade-in-and-down 0.25s ease);
+      @include animation-fill-mode(forwards);
+      @include animation-delay(0.25s);
     }
   }
 }
@@ -95,7 +99,7 @@ $type-width: 20px;
 .nav-item {
   flex: 0 1 100%;
   font-size: 0.8em;
-  font-weight: 600;
+  font-weight: 400;
   letter-spacing: 0.05em;
   line-height: 3.5;
   list-style-type: none;

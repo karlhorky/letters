@@ -507,80 +507,89 @@ caption {
 @font-face {
   font-family: AvenirNext;
   font-style: normal;
-  font-weight: 400;
-  src: url("/fonts/avenir-next-regular.eot?#iefix") format("embedded-opentype"), url("/fonts/avenir-next-regular.woff2") format("woff2"), url("/fonts/avenir-next-regular.woff") format("woff"), url("/fonts/avenir-next-regular.ttf") format("truetype"), url("/fonts/avenir-next-regular.svg#AvenirNext") format("svg"); }
+  font-weight: 300;
+  src: url("../fonts/avenir-next-thin.eot?#iefix") format("embedded-opentype"), url("../fonts/avenir-next-thin.woff2") format("woff2"), url("../fonts/avenir-next-thin.woff") format("woff"), url("../fonts/avenir-next-thin.ttf") format("truetype"), url("../fonts/avenir-next-thin.svg#AvenirNext") format("svg"); }
 
 @font-face {
-  font-family: AvenirNextBold;
+  font-family: AvenirNext;
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/avenir-next-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/avenir-next-regular.woff2") format("woff2"), url("../fonts/avenir-next-regular.woff") format("woff"), url("../fonts/avenir-next-regular.ttf") format("truetype"), url("../fonts/avenir-next-regular.svg#AvenirNext") format("svg"); }
+
+@font-face {
+  font-family: AvenirNext;
   font-style: normal;
   font-weight: 700;
-  src: url("/fonts/avenir-next-bold.eot?#iefix") format("embedded-opentype"), url("/fonts/avenir-next-bold.woff2") format("woff2"), url("/fonts/avenir-next-bold.woff") format("woff"), url("/fonts/avenir-next-bold.ttf") format("truetype"), url("/fonts/avenir-next-bold.svg#AvenirNextBold") format("svg"); }
+  src: url("../fonts/avenir-next-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/avenir-next-bold.woff2") format("woff2"), url("../fonts/avenir-next-bold.woff") format("woff"), url("../fonts/avenir-next-bold.ttf") format("truetype"), url("../fonts/avenir-next-bold.svg#AvenirNext") format("svg"); }
 
 @font-face {
-  font-family: CalendasPlus;
-  font-style: normal;
-  font-weight: 400;
-  src: url("/fonts/Calendas-Plus.eot?#iefix") format("embedded-opentype"), url("/fonts/Calendas-Plus.woff") format("woff"), url("/fonts/Calendas-Plus.ttf") format("truetype"), url("/fonts/Calendas-Plus.svg#CalendasPlus") format("svg"); }
-
-@font-face {
-  font-family: CalendasPlus;
+  font-family: AvenirNext;
   font-style: italic;
   font-weight: 400;
-  src: url("/fonts/CalendasPlus-Italic.eot?#iefix") format("embedded-opentype"), url("/fonts/CalendasPlus-Italic.woff") format("woff"), url("/fonts/CalendasPlus-Italic.ttf") format("truetype"), url("/fonts/CalendasPlus-Italic.svg#CalendasPlus") format("svg"); }
+  src: url("../fonts/avenir-next-italic.eot?#iefix") format("embedded-opentype"), url("../fonts/avenir-next-italic.woff2") format("woff2"), url("../fonts/avenir-next-italic.woff") format("woff"), url("../fonts/avenir-next-italic.ttf") format("truetype"), url("../fonts/avenir-next-italic.svg#AvenirNext") format("svg"); }
 
 @font-face {
   font-family: LibreCaslonDisplay;
   font-style: normal;
-  font-weight: 300;
-  src: url("/fonts/librecaslondisplay-regular.eot?#iefix") format("embedded-opentype"), url("/fonts/librecaslondisplay-regular.woff2") format("woff2"), url("/fonts/librecaslondisplay-regular.woff") format("woff"), url("/fonts/librecaslondisplay-regular.ttf") format("truetype"), url("/fonts/librecaslondisplay-regular.svg#LibreCaslonDisplay") format("svg"); }
+  font-weight: 400;
+  src: url("../fonts/libre-caslon-display-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/libre-caslon-display-regular.woff2") format("woff2"), url("../fonts/libre-caslon-display-regular.woff") format("woff"), url("../fonts/libre-caslon-display-regular.ttf") format("truetype"), url("../fonts/libre-caslon-display-regular.svg#LibreCaslonDisplay") format("svg"); }
+
+@font-face {
+  font-family: NeueHaasUnica;
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/neue-haas-unica-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/neue-haas-unica-regular.woff2") format("woff2"), url("../fonts/neue-haas-unica-regular.woff") format("woff"), url("../fonts/neue-haas-unica-regular.ttf") format("truetype"), url("../fonts/neue-haas-unica-regular.svg#NeueHaasUnica") format("svg"); }
 
 @font-face {
   font-family: NeueHaasUnica;
   font-style: normal;
   font-weight: 900;
-  src: url("/fonts/NeueHaasUnicaW1G-Black.eot?#iefix") format("embedded-opentype"), url("/fonts/NeueHaasUnicaW1G-Black.woff") format("woff"), url("/fonts/NeueHaasUnicaW1G-Black.ttf") format("truetype"), url("/fonts/NeueHaasUnicaW1G-Black.svg#NeueHaasUnica") format("svg"); }
-
-@font-face {
-  font-family: NeueHaasUnica;
-  font-style: normal;
-  font-weight: 400;
-  src: url("/fonts/NeueHaasUnicaW1G-Regular.eot?#iefix") format("embedded-opentype"), url("/fonts/NeueHaasUnicaW1G-Regular.woff2") format("woff2"), url("/fonts/NeueHaasUnicaW1G-Regular.woff") format("woff"), url("/fonts/NeueHaasUnicaW1G-Regular.ttf") format("truetype"), url("/fonts/NeueHaasUnicaW1G-Regular.svg#NeueHaasUnica") format("svg"); }
-
-@font-face {
-  font-family: ProximaNova;
-  font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/proxima_nova_reg-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/proxima_nova_reg-webfont.woff2") format("woff2"), url("../fonts/proxima_nova_reg-webfont.woff") format("woff"), url("../fonts/proxima_nova_reg-webfont.ttf") format("truetype"), url("../fonts/proxima_nova_reg-webfont.svg#ProximaNova") format("svg"); }
-
-@font-face {
-  font-family: ProximaNova;
-  font-style: normal;
-  font-weight: 700;
-  src: url("../fonts/proxima_nova_bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/proxima_nova_bold-webfont.woff2") format("woff2"), url("../fonts/proxima_nova_bold-webfont.woff") format("woff"), url("../fonts/proxima_nova_bold-webfont.ttf") format("truetype"), url("../fonts/proxima_nova_bold-webfont.svg#ProximaNova") format("svg"); }
+  src: url("../fonts/neue-haas-unica-black.eot?#iefix") format("embedded-opentype"), url("../fonts/neue-haas-unica-black.woff2") format("woff2"), url("../fonts/neue-haas-unica-black.woff") format("woff"), url("../fonts/neue-haas-unica-black.ttf") format("truetype"), url("../fonts/neue-haas-unica-black.svg#NeueHaasUnica") format("svg"); }
 
 @font-face {
   font-family: ProximaNova;
   font-style: normal;
   font-weight: 300;
-  src: url("../fonts/proxima_nova_light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/proxima_nova_light-webfont.woff2") format("woff2"), url("../fonts/proxima_nova_light-webfont.woff") format("woff"), url("../fonts/proxima_nova_light-webfont.ttf") format("truetype"), url("../fonts/proxima_nova_light-webfont.svg#ProximaNova") format("svg"); }
+  src: url("../fonts/proxima-nova-light.eot?#iefix") format("embedded-opentype"), url("../fonts/proxima-nova-light.woff2") format("woff2"), url("../fonts/proxima-nova-light.woff") format("woff"), url("../fonts/proxima-nova-light.ttf") format("truetype"), url("../fonts/proxima-nova-light.svg#ProximaNova") format("svg"); }
 
 @font-face {
   font-family: ProximaNova;
   font-style: normal;
-  font-weight: 600;
-  src: url("../fonts/proxima_nova_sbold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/proxima_nova_sbold-webfont.woff2") format("woff2"), url("../fonts/proxima_nova_sbold-webfont.woff") format("woff"), url("../fonts/proxima_nova_sbold-webfont.ttf") format("truetype"), url("../fonts/proxima_nova_sbold-webfont.svg#ProximaNova") format("svg"); }
+  font-weight: 400;
+  src: url("../fonts/proxima-nova-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/proxima-nova-regular.woff2") format("woff2"), url("../fonts/proxima-nova-regular.woff") format("woff"), url("../fonts/proxima-nova-regular.ttf") format("truetype"), url("../fonts/proxima-nova-regular.svg#ProximaNova") format("svg"); }
 
 @font-face {
   font-family: ProximaNova;
   font-style: normal;
-  font-weight: 600;
-  src: url("../fonts/proxima_nova_sbold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/proxima_nova_sbold-webfont.woff2") format("woff2"), url("../fonts/proxima_nova_sbold-webfont.woff") format("woff"), url("../fonts/proxima_nova_sbold-webfont.ttf") format("truetype"), url("../fonts/proxima_nova_sbold-webfont.svg#ProximaNova") format("svg"); }
+  font-weight: 700;
+  src: url("../fonts/proxima-nova-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/proxima-nova-bold.woff2") format("woff2"), url("../fonts/proxima-nova-bold.woff") format("woff"), url("../fonts/proxima-nova-bold.ttf") format("truetype"), url("../fonts/proxima-nova-bold.svg#ProximaNova") format("svg"); }
+
+@font-face {
+  font-family: CalendasPlus;
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/calendas-plus-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/calendas-plus-regular.woff2") format("woff2"), url("../fonts/calendas-plus-regular.woff") format("woff"), url("../fonts/calendas-plus-regular.ttf") format("truetype"), url("../fonts/calendas-plus-regular.svg#CalendasPlus") format("svg"); }
+
+@font-face {
+  font-family: CalendasPlus;
+  font-style: italic;
+  font-weight: 400;
+  src: url("../fonts/calendas-plus-italic.eot?#iefix") format("embedded-opentype"), url("../fonts/calendas-plus-italic.woff2") format("woff2"), url("../fonts/calendas-plus-italic.woff") format("woff"), url("../fonts/calendas-plus-italic.ttf") format("truetype"), url("../fonts/calendas-plus-italic.svg#CalendasPlus") format("svg"); }
+
+@font-face {
+  font-family: LeagueSpartan;
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/league-spartan-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/league-spartan-bold.woff2") format("woff2"), url("../fonts/league-spartan-bold.woff") format("woff"), url("../fonts/league-spartan-bold.ttf") format("truetype"), url("../fonts/league-spartan-bold.svg#LeagueSpartan") format("svg"); }
 
 /* Typography
 
    Grid/breakpoints variables are stored in _grid_settings.scss.
 
    Color variables are stored in _color.scss.
+*/
+/* Sizes
+
 */
 .underline {
   text-decoration: underline; }
@@ -828,21 +837,112 @@ html {
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
   color: #434242;
-  font-family: sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
   font-size: 0.9em;
   font-weight: 400;
-  line-height: 1.8em; }
+  line-height: 1.75; }
 
-html.avenirnext-loaded {
-  font-family: sans-serif; }
+/* Set base typography
+   Avenir Next and sans-serif stack for most type.
 
-html.librecaslon-loaded h1 {
-  font-family: LibreCaslonDisplay, serif; }
+*/
+.avenirnext-loaded p {
+  font-family: AvenirNext, -apple-system, BlinkMacSystemFont, sans-serif; }
 
-h1 {
-  font-family: serif;
-  font-size: 2.925em;
+/* Set headers
+   Basic headers, unless otherwise stated, get Libre Caslon Display.
+
+*/
+h1, h2, h3, h4, h5, h6 {
+  font-family: serif; }
+
+.librecaslon-loaded h1, .librecaslon-loaded h2, .librecaslon-loaded h3, .librecaslon-loaded h4, .librecaslon-loaded h5, .librecaslon-loaded h6 {
+  font-family: LibreCaslonDisplay, serif;
   font-weight: 300; }
+
+/* Set unordered lists
+   Unordered lists (and some other treatments) get Neue Haas Unica.
+
+*/
+li {
+  font-family: Arial, sans-serif; }
+
+.neuehaasunica-loaded li {
+  font-family: NeueHaasUnica, Arial, sans-serif; }
+
+/* Set navigation
+   Navigation receives Proxima Nova.
+
+*/
+.navigation ul li {
+  font-family: Helvetica, Arial, sans-serif; }
+
+.proximanova-loaded .navigation ul li {
+  font-family: ProximaNova, Helvetica, Arial, sans-serif; }
+
+/* Set serif
+   Lots of legacy pages use Calendas Plus for body copy.
+
+*/
+.serif {
+  font-family: Georgia, "Times New Roman", Times, serif; }
+
+.calendasplus-loaded .serif {
+  font-family: CalendasPlus, Georgia, "Times New Roman", Times, serif; }
+
+/* "Explosion" code
+   The parallax lines that appear on a lot of pages on the site.
+
+*/
+/* Lines
+--------------------------------------- */
+#domExplosionList {
+  position: fixed;
+  width: 100%;
+  top: 10%; }
+
+.item {
+  position: absolute;
+  list-style-type: none; }
+
+.dei-1 {
+  top: 100px;
+  left: 15%; }
+
+.dei-2 {
+  top: 400px;
+  left: 80%; }
+
+.dei-3 {
+  top: 650px;
+  left: 87%; }
+
+.dei-4 {
+  top: 550px;
+  left: 93%; }
+
+.dei-5 {
+  top: 750px;
+  left: 15%; }
+
+.line {
+  background-color: indianred;
+  width: 1px; }
+
+.line-1 {
+  height: 500px; }
+
+.line-2 {
+  height: 300px; }
+
+.line-3 {
+  height: 400px; }
+
+.line-4 {
+  height: 325px; }
+
+.line-5 {
+  height: 350px; }
 
 /* Color
 
@@ -933,6 +1033,9 @@ a:visited {
    Grid/breakpoints variables are stored in _grid_settings.scss.
 
    Color variables are stored in _color.scss.
+*/
+/* Sizes
+
 */
 .underline {
   text-decoration: underline; }
@@ -1162,13 +1265,16 @@ a:visited {
   align-items: flex-end;
   display: flex;
   flex-direction: column;
-  font-family: ProximaNova, Helvetica, Arial, sans-serif;
   padding-right: 4%;
   padding-top: 2%;
   position: fixed;
+  font-weight: 300;
   right: 0;
   width: 300px;
   z-index: 2; }
+
+.name a {
+  background-color: white; }
 
 .name a:hover {
   animation: blinds 0.75s linear forwards;
@@ -1185,12 +1291,12 @@ a:visited {
   display: flex; }
 
 .collapsed-nav {
-  width: 30px;
-  height: 9px;
+  background-color: indianred;
+  height: 7px;
   margin-left: 81%;
   opacity: 0;
-  background-color: indianred;
-  transition: opacity 0.25s ease; }
+  transition: opacity 0.25s ease;
+  width: 30px; }
 
 .collapsed-nav:before {
   width: 30px;
@@ -1222,7 +1328,15 @@ a:visited {
   animation-delay: 0.26667s; }
 
 .small-nav .collapsed-nav {
-  opacity: 1; }
+  -webkit-animation: fade-in-and-down 0.25s ease;
+  -moz-animation: fade-in-and-down 0.25s ease;
+  animation: fade-in-and-down 0.25s ease;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-delay: 0.25s;
+  -moz-animation-delay: 0.25s;
+  animation-delay: 0.25s; }
 
 .small-nav .nav-item-4 {
   -webkit-animation: fold-up 0.75s ease;
@@ -1236,7 +1350,15 @@ a:visited {
   animation-delay: 0.2s; }
 
 .small-nav .collapsed-nav {
-  opacity: 1; }
+  -webkit-animation: fade-in-and-down 0.25s ease;
+  -moz-animation: fade-in-and-down 0.25s ease;
+  animation: fade-in-and-down 0.25s ease;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-delay: 0.25s;
+  -moz-animation-delay: 0.25s;
+  animation-delay: 0.25s; }
 
 .small-nav .nav-item-3 {
   -webkit-animation: fold-up 0.75s ease;
@@ -1250,7 +1372,15 @@ a:visited {
   animation-delay: 0.13333s; }
 
 .small-nav .collapsed-nav {
-  opacity: 1; }
+  -webkit-animation: fade-in-and-down 0.25s ease;
+  -moz-animation: fade-in-and-down 0.25s ease;
+  animation: fade-in-and-down 0.25s ease;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-delay: 0.25s;
+  -moz-animation-delay: 0.25s;
+  animation-delay: 0.25s; }
 
 .small-nav .nav-item-2 {
   -webkit-animation: fold-up 0.75s ease;
@@ -1264,7 +1394,15 @@ a:visited {
   animation-delay: 0.06667s; }
 
 .small-nav .collapsed-nav {
-  opacity: 1; }
+  -webkit-animation: fade-in-and-down 0.25s ease;
+  -moz-animation: fade-in-and-down 0.25s ease;
+  animation: fade-in-and-down 0.25s ease;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-delay: 0.25s;
+  -moz-animation-delay: 0.25s;
+  animation-delay: 0.25s; }
 
 .small-nav .nav-item-1 {
   -webkit-animation: fold-up 0.75s ease;
@@ -1278,7 +1416,15 @@ a:visited {
   animation-delay: 0s; }
 
 .small-nav .collapsed-nav {
-  opacity: 1; }
+  -webkit-animation: fade-in-and-down 0.25s ease;
+  -moz-animation: fade-in-and-down 0.25s ease;
+  animation: fade-in-and-down 0.25s ease;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-delay: 0.25s;
+  -moz-animation-delay: 0.25s;
+  animation-delay: 0.25s; }
 
 .nav-items {
   display: flex;
@@ -1289,7 +1435,7 @@ a:visited {
 .nav-item {
   flex: 0 1 100%;
   font-size: 0.8em;
-  font-weight: 600;
+  font-weight: 400;
   letter-spacing: 0.05em;
   line-height: 3.5;
   list-style-type: none;

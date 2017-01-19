@@ -24,6 +24,9 @@ html {
 
    Color variables are stored in _color.scss.
 */
+/* Sizes
+
+*/
 .underline {
   text-decoration: underline; }
 
@@ -43,7 +46,7 @@ a.the-things-title {
   font-size: 3.2175em;
   font-style: italic;
   font-weight: 300;
-  line-height: 1.2em;
+  line-height: 1.16667;
   margin: 0;
   margin-top: 0.5em;
   position: relative;
@@ -119,11 +122,11 @@ a.the-things-title {
     width: 150px; } }
 
 .the-future h1 {
-  font-family: Arial, sans-serif, sans-serif;
+  font-family: NeueHaasUnica, Arial, sans-serif;
   font-size: 2.925em;
   font-style: normal;
   font-weight: 900;
-  line-height: 1.8em;
+  line-height: 1.75;
   margin-left: 25px;
   margin-top: -25%;
   position: relative;
@@ -167,7 +170,7 @@ a.the-things-title {
   width: 150px; }
 
 .have-histories {
-  font-family: "Baskerville", CalendasPlus, Georgia, "Times New Roman", Times, serif;
+  font-family: "Baskerville";
   font-weight: regular;
   margin-left: 15%;
   margin-top: 5%;

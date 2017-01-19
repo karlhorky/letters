@@ -2,8 +2,6 @@
 @import '../../styles/grid-settings';
 @import 'neat';
 @import '../../styles/colors';
-@import '../../styles/font-face/neuehaasunica';
-@import '../../styles/font-face/librecaslon';
 @import '../../styles/typography';
 
 .conferences {
@@ -46,21 +44,14 @@ li {
   line-height: 2;
 }
 
-.neuehaasunica-loaded .upcoming-engagements {
-  font-family: $display-sans-loaded;
-}
-
-.librecaslon-loaded .upcoming-engagements h1, .librecaslon-loaded .past-engagements h1 {
-  font-family: $libre-caslon-loaded;
+.upcoming-engagements h1, .past-engagements h1 {
   font-size: $h1-font-size;
-  font-weight: 300;
 }
 
 .upcoming-engagements li, .past-engagements li {
   border-bottom: 2px solid $brand-gray-dark;
   cursor: pointer;
   display: inline-block;
-  font-family: $display-sans;
   outline-offset: 15px;
   padding-bottom: 3px;
   position: relative;
@@ -134,13 +125,14 @@ li {
 
 .avenirnext-bold-loaded {
   .date {
-    font-family: $avenir-next-bold-loaded;
+    font-family: $avenir-next;
+    font-weight: 700;
   }
 }
 
 .date {
   float: right;
-  font-family: $avenir-next-bold;
+  font-family: $pre-avenir-next;
   font-size: $base-font-size;
   font-weight: bold;
   margin-right: 5%;

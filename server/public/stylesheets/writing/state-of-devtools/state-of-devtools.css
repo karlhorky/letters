@@ -24,6 +24,9 @@ html {
 
    Color variables are stored in _color.scss.
 */
+/* Sizes
+
+*/
 .underline {
   text-decoration: underline; }
 
@@ -36,74 +39,80 @@ html {
 @font-face {
   font-family: AvenirNext;
   font-style: normal;
-  font-weight: 400;
-  src: url("/fonts/avenir-next-regular.eot?#iefix") format("embedded-opentype"), url("/fonts/avenir-next-regular.woff2") format("woff2"), url("/fonts/avenir-next-regular.woff") format("woff"), url("/fonts/avenir-next-regular.ttf") format("truetype"), url("/fonts/avenir-next-regular.svg#AvenirNext") format("svg"); }
+  font-weight: 300;
+  src: url("../fonts/avenir-next-thin.eot?#iefix") format("embedded-opentype"), url("../fonts/avenir-next-thin.woff2") format("woff2"), url("../fonts/avenir-next-thin.woff") format("woff"), url("../fonts/avenir-next-thin.ttf") format("truetype"), url("../fonts/avenir-next-thin.svg#AvenirNext") format("svg"); }
 
 @font-face {
-  font-family: AvenirNextBold;
+  font-family: AvenirNext;
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/avenir-next-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/avenir-next-regular.woff2") format("woff2"), url("../fonts/avenir-next-regular.woff") format("woff"), url("../fonts/avenir-next-regular.ttf") format("truetype"), url("../fonts/avenir-next-regular.svg#AvenirNext") format("svg"); }
+
+@font-face {
+  font-family: AvenirNext;
   font-style: normal;
   font-weight: 700;
-  src: url("/fonts/avenir-next-bold.eot?#iefix") format("embedded-opentype"), url("/fonts/avenir-next-bold.woff2") format("woff2"), url("/fonts/avenir-next-bold.woff") format("woff"), url("/fonts/avenir-next-bold.ttf") format("truetype"), url("/fonts/avenir-next-bold.svg#AvenirNextBold") format("svg"); }
+  src: url("../fonts/avenir-next-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/avenir-next-bold.woff2") format("woff2"), url("../fonts/avenir-next-bold.woff") format("woff"), url("../fonts/avenir-next-bold.ttf") format("truetype"), url("../fonts/avenir-next-bold.svg#AvenirNext") format("svg"); }
 
 @font-face {
-  font-family: CalendasPlus;
-  font-style: normal;
-  font-weight: 400;
-  src: url("/fonts/Calendas-Plus.eot?#iefix") format("embedded-opentype"), url("/fonts/Calendas-Plus.woff") format("woff"), url("/fonts/Calendas-Plus.ttf") format("truetype"), url("/fonts/Calendas-Plus.svg#CalendasPlus") format("svg"); }
-
-@font-face {
-  font-family: CalendasPlus;
+  font-family: AvenirNext;
   font-style: italic;
   font-weight: 400;
-  src: url("/fonts/CalendasPlus-Italic.eot?#iefix") format("embedded-opentype"), url("/fonts/CalendasPlus-Italic.woff") format("woff"), url("/fonts/CalendasPlus-Italic.ttf") format("truetype"), url("/fonts/CalendasPlus-Italic.svg#CalendasPlus") format("svg"); }
+  src: url("../fonts/avenir-next-italic.eot?#iefix") format("embedded-opentype"), url("../fonts/avenir-next-italic.woff2") format("woff2"), url("../fonts/avenir-next-italic.woff") format("woff"), url("../fonts/avenir-next-italic.ttf") format("truetype"), url("../fonts/avenir-next-italic.svg#AvenirNext") format("svg"); }
 
 @font-face {
   font-family: LibreCaslonDisplay;
   font-style: normal;
-  font-weight: 300;
-  src: url("/fonts/librecaslondisplay-regular.eot?#iefix") format("embedded-opentype"), url("/fonts/librecaslondisplay-regular.woff2") format("woff2"), url("/fonts/librecaslondisplay-regular.woff") format("woff"), url("/fonts/librecaslondisplay-regular.ttf") format("truetype"), url("/fonts/librecaslondisplay-regular.svg#LibreCaslonDisplay") format("svg"); }
+  font-weight: 400;
+  src: url("../fonts/libre-caslon-display-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/libre-caslon-display-regular.woff2") format("woff2"), url("../fonts/libre-caslon-display-regular.woff") format("woff"), url("../fonts/libre-caslon-display-regular.ttf") format("truetype"), url("../fonts/libre-caslon-display-regular.svg#LibreCaslonDisplay") format("svg"); }
+
+@font-face {
+  font-family: NeueHaasUnica;
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/neue-haas-unica-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/neue-haas-unica-regular.woff2") format("woff2"), url("../fonts/neue-haas-unica-regular.woff") format("woff"), url("../fonts/neue-haas-unica-regular.ttf") format("truetype"), url("../fonts/neue-haas-unica-regular.svg#NeueHaasUnica") format("svg"); }
 
 @font-face {
   font-family: NeueHaasUnica;
   font-style: normal;
   font-weight: 900;
-  src: url("/fonts/NeueHaasUnicaW1G-Black.eot?#iefix") format("embedded-opentype"), url("/fonts/NeueHaasUnicaW1G-Black.woff") format("woff"), url("/fonts/NeueHaasUnicaW1G-Black.ttf") format("truetype"), url("/fonts/NeueHaasUnicaW1G-Black.svg#NeueHaasUnica") format("svg"); }
-
-@font-face {
-  font-family: NeueHaasUnica;
-  font-style: normal;
-  font-weight: 400;
-  src: url("/fonts/NeueHaasUnicaW1G-Regular.eot?#iefix") format("embedded-opentype"), url("/fonts/NeueHaasUnicaW1G-Regular.woff2") format("woff2"), url("/fonts/NeueHaasUnicaW1G-Regular.woff") format("woff"), url("/fonts/NeueHaasUnicaW1G-Regular.ttf") format("truetype"), url("/fonts/NeueHaasUnicaW1G-Regular.svg#NeueHaasUnica") format("svg"); }
-
-@font-face {
-  font-family: ProximaNova;
-  font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/proxima_nova_reg-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/proxima_nova_reg-webfont.woff2") format("woff2"), url("../fonts/proxima_nova_reg-webfont.woff") format("woff"), url("../fonts/proxima_nova_reg-webfont.ttf") format("truetype"), url("../fonts/proxima_nova_reg-webfont.svg#ProximaNova") format("svg"); }
-
-@font-face {
-  font-family: ProximaNova;
-  font-style: normal;
-  font-weight: 700;
-  src: url("../fonts/proxima_nova_bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/proxima_nova_bold-webfont.woff2") format("woff2"), url("../fonts/proxima_nova_bold-webfont.woff") format("woff"), url("../fonts/proxima_nova_bold-webfont.ttf") format("truetype"), url("../fonts/proxima_nova_bold-webfont.svg#ProximaNova") format("svg"); }
+  src: url("../fonts/neue-haas-unica-black.eot?#iefix") format("embedded-opentype"), url("../fonts/neue-haas-unica-black.woff2") format("woff2"), url("../fonts/neue-haas-unica-black.woff") format("woff"), url("../fonts/neue-haas-unica-black.ttf") format("truetype"), url("../fonts/neue-haas-unica-black.svg#NeueHaasUnica") format("svg"); }
 
 @font-face {
   font-family: ProximaNova;
   font-style: normal;
   font-weight: 300;
-  src: url("../fonts/proxima_nova_light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/proxima_nova_light-webfont.woff2") format("woff2"), url("../fonts/proxima_nova_light-webfont.woff") format("woff"), url("../fonts/proxima_nova_light-webfont.ttf") format("truetype"), url("../fonts/proxima_nova_light-webfont.svg#ProximaNova") format("svg"); }
+  src: url("../fonts/proxima-nova-light.eot?#iefix") format("embedded-opentype"), url("../fonts/proxima-nova-light.woff2") format("woff2"), url("../fonts/proxima-nova-light.woff") format("woff"), url("../fonts/proxima-nova-light.ttf") format("truetype"), url("../fonts/proxima-nova-light.svg#ProximaNova") format("svg"); }
 
 @font-face {
   font-family: ProximaNova;
   font-style: normal;
-  font-weight: 600;
-  src: url("../fonts/proxima_nova_sbold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/proxima_nova_sbold-webfont.woff2") format("woff2"), url("../fonts/proxima_nova_sbold-webfont.woff") format("woff"), url("../fonts/proxima_nova_sbold-webfont.ttf") format("truetype"), url("../fonts/proxima_nova_sbold-webfont.svg#ProximaNova") format("svg"); }
+  font-weight: 400;
+  src: url("../fonts/proxima-nova-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/proxima-nova-regular.woff2") format("woff2"), url("../fonts/proxima-nova-regular.woff") format("woff"), url("../fonts/proxima-nova-regular.ttf") format("truetype"), url("../fonts/proxima-nova-regular.svg#ProximaNova") format("svg"); }
 
 @font-face {
   font-family: ProximaNova;
   font-style: normal;
-  font-weight: 600;
-  src: url("../fonts/proxima_nova_sbold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/proxima_nova_sbold-webfont.woff2") format("woff2"), url("../fonts/proxima_nova_sbold-webfont.woff") format("woff"), url("../fonts/proxima_nova_sbold-webfont.ttf") format("truetype"), url("../fonts/proxima_nova_sbold-webfont.svg#ProximaNova") format("svg"); }
+  font-weight: 700;
+  src: url("../fonts/proxima-nova-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/proxima-nova-bold.woff2") format("woff2"), url("../fonts/proxima-nova-bold.woff") format("woff"), url("../fonts/proxima-nova-bold.ttf") format("truetype"), url("../fonts/proxima-nova-bold.svg#ProximaNova") format("svg"); }
+
+@font-face {
+  font-family: CalendasPlus;
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/calendas-plus-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/calendas-plus-regular.woff2") format("woff2"), url("../fonts/calendas-plus-regular.woff") format("woff"), url("../fonts/calendas-plus-regular.ttf") format("truetype"), url("../fonts/calendas-plus-regular.svg#CalendasPlus") format("svg"); }
+
+@font-face {
+  font-family: CalendasPlus;
+  font-style: italic;
+  font-weight: 400;
+  src: url("../fonts/calendas-plus-italic.eot?#iefix") format("embedded-opentype"), url("../fonts/calendas-plus-italic.woff2") format("woff2"), url("../fonts/calendas-plus-italic.woff") format("woff"), url("../fonts/calendas-plus-italic.ttf") format("truetype"), url("../fonts/calendas-plus-italic.svg#CalendasPlus") format("svg"); }
+
+@font-face {
+  font-family: LeagueSpartan;
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/league-spartan-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/league-spartan-bold.woff2") format("woff2"), url("../fonts/league-spartan-bold.woff") format("woff"), url("../fonts/league-spartan-bold.ttf") format("truetype"), url("../fonts/league-spartan-bold.svg#LeagueSpartan") format("svg"); }
 
 .post {
   margin: auto;
@@ -126,11 +135,11 @@ aside {
 
 .pullout {
   clear: both;
-  font-family: Arial, sans-serif, sans-serif;
+  font-family: NeueHaasUnica, Arial, sans-serif, sans-serif;
   font-size: 1.35em;
   font-weight: 900;
   left: 0;
-  line-height: 1.89em;
+  line-height: 1.8375;
   padding: 4%;
   position: absolute;
   text-align: center;
@@ -182,7 +191,7 @@ aside {
   background-color: indianred;
   display: flex;
   flex: 0 1 45%;
-  font-family: Arial, sans-serif, sans-serif;
+  font-family: NeueHaasUnica, Arial, sans-serif, sans-serif;
   font-size: 1.125em;
   font-weight: 700;
   justify-content: center;
@@ -212,7 +221,7 @@ aside {
 .caption {
   color: #959595;
   flex: 0 1 70%;
-  font-family: Arial, sans-serif, sans-serif;
+  font-family: NeueHaasUnica, Arial, sans-serif, sans-serif;
   font-size: 1.35em;
   font-weight: 500;
   padding: 0 2%;
@@ -243,7 +252,7 @@ aside {
   margin-left: 0.5em; }
 
 .interjection {
-  font-family: Arial, sans-serif, sans-serif;
+  font-family: NeueHaasUnica, Arial, sans-serif, sans-serif;
   font-size: 1.8em;
   font-weight: 900;
   margin: 0 auto;
@@ -298,7 +307,7 @@ aside {
   display: inline; }
 
 .union-neue {
-  font-family: Arial, sans-serif;
+  font-family: NeueHaasUnica, Arial, sans-serif;
   font-size: 0.85em;
   font-style: normal; }
 
@@ -374,7 +383,7 @@ aside {
 
 .union-points .union-point-detail.wysiwyg {
   color: #4a90e2;
-  font-family: Arial, sans-serif;
+  font-family: NeueHaasUnica, Arial, sans-serif;
   font-size: 2em;
   font-weight: bold;
   line-height: 1.25;
@@ -388,7 +397,7 @@ aside {
     flex: 0 1 50%; } }
 
 .union-point-strong {
-  font-family: Arial, sans-serif;
+  font-family: NeueHaasUnica, Arial, sans-serif;
   font-weight: 900; }
 
 .union-sw {
@@ -446,7 +455,7 @@ aside {
 .union-google-improvements {
   margin: 4em auto !important;
   text-align: center !important;
-  font-family: Arial, sans-serif;
+  font-family: NeueHaasUnica, Arial, sans-serif;
   font-size: 1.5em;
   line-height: 1; }
 

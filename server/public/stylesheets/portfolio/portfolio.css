@@ -24,6 +24,9 @@ html {
 
    Color variables are stored in _color.scss.
 */
+/* Sizes
+
+*/
 .underline {
   text-decoration: underline; }
 
@@ -53,12 +56,12 @@ svg {
   background-color: transparent;
   color: indianred;
   flex: 0 0 auto;
-  font-family: sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
   font-size: 4em;
   font-weight: bold;
   position: absolute;
   text-transform: uppercase;
   z-index: 1; }
 
-.avenirnextbold-loaded .teh-text {
-  font-family: AvenirNextBold, sans-serif; }
+.avenirnext-loaded .teh-text {
+  font-weight: 700; }

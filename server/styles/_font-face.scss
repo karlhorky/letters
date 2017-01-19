@@ -7,24 +7,27 @@
 
 @import 'bourbon';
 
-// Avenir Next, <p>
-@include font-face(AvenirNext, '/fonts/avenir-next-regular', 400);
-@include font-face(AvenirNextBold, '/fonts/avenir-next-bold', 700);
+// Avenir Next, paragraphs
+@include font-face(AvenirNext,         '../fonts/avenir-next-thin', 300);
+@include font-face(AvenirNext,         '../fonts/avenir-next-regular', 400);
+@include font-face(AvenirNext,         '../fonts/avenir-next-bold', 700);
+@include font-face(AvenirNext,         '../fonts/avenir-next-italic', 400, italic);
 
-// Calendas Plus, used in past Currentlys
-@include font-face(CalendasPlus, '/fonts/Calendas-Plus', 400, $file-formats: eot svg ttf woff);
-@include font-face(CalendasPlus, '/fonts/CalendasPlus-Italic', 400, italic, $file-formats: eot oft svg ttf woff);
+// Libre Caslon Display, headers
+@include font-face(LibreCaslonDisplay, '../fonts/libre-caslon-display-regular', 400);
 
-// Libre Caslon Display, <h1>
-@include font-face(LibreCaslonDisplay, '/fonts/librecaslondisplay-regular', 300);
-
-// Neue Haas Unica, <ul>
-@include font-face(NeueHaasUnica, '/fonts/NeueHaasUnicaW1G-Black', 900, $file-formats: eot oft svg ttf woff);
-@include font-face(NeueHaasUnica, '/fonts/NeueHaasUnicaW1G-Regular', 400);
+// Neue Haas Unica, unordered lists
+@include font-face(NeueHaasUnica,      '../fonts/neue-haas-unica-regular', 400);
+@include font-face(NeueHaasUnica,      '../fonts/neue-haas-unica-black', 900);
 
 // Proxima Nova, navigation
-@include font-face(ProximaNova, '../fonts/proxima_nova_reg-webfont', 400);
-@include font-face(ProximaNova, '../fonts/proxima_nova_bold-webfont', 700);
-@include font-face(ProximaNova, '../fonts/proxima_nova_light-webfont', 300);
-@include font-face(ProximaNova, '../fonts/proxima_nova_sbold-webfont', 600);
-@include font-face(ProximaNova, '../fonts/proxima_nova_sbold-webfont', 600);
+@include font-face(ProximaNova,        '../fonts/proxima-nova-light', 300);
+@include font-face(ProximaNova,        '../fonts/proxima-nova-regular', 400);
+@include font-face(ProximaNova,        '../fonts/proxima-nova-bold', 700);
+
+// Calendas Plus, previous paragraph typeface
+@include font-face(CalendasPlus,       '../fonts/calendas-plus-regular', 400);
+@include font-face(CalendasPlus,       '../fonts/calendas-plus-italic', 400, italic);
+
+// League Spartan, idk used it somewhere as decoration
+@include font-face(LeagueSpartan,        '../fonts/league-spartan-bold', 700);

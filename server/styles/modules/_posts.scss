@@ -24,7 +24,7 @@ aside {
 
 .pullout {
   clear: both;
-  font-family: $display-sans, sans-serif;
+  font-family: $neue-haas-unica, sans-serif;
   font-size: $h4-font-size;
   font-weight: $extra-bold-weight;
   left: 0;
@@ -87,7 +87,7 @@ aside {
       background-color: $brand-primary;
       display: flex;
       flex: 0 1 45%;
-      font-family: $display-sans, sans-serif;
+      font-family: $neue-haas-unica, sans-serif;
       font-size: $h5-font-size;
       font-weight: $bold-weight;
       justify-content: center;
@@ -125,7 +125,7 @@ aside {
 .caption {
   color: $brand-gray-dark;
   flex: 0 1 70%;
-  font-family: $display-sans, sans-serif;
+  font-family: $neue-haas-unica, sans-serif;
   font-size: $h4-font-size;
   font-weight: 500;
   padding: 0 2%;
@@ -159,7 +159,7 @@ aside {
 }
 
 .interjection {
-  font-family: $display-sans, sans-serif;
+  font-family: $neue-haas-unica, sans-serif;
   font-size: $h2-font-size;
   font-weight: $extra-bold-weight;
   margin: 0 auto;

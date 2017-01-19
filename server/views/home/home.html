@@ -15,6 +15,16 @@
   <link rel="stylesheet" property="stylesheet" href="/stylesheets/home/home.css">
 
   <div class="container">
+    <div id="explosion">
+      <ul id="domExplosionList">
+        <li class="item dei-1 line line-1"></li>
+        <li class="item dei-2 line line-2"></li>
+        <li class="item dei-3 line line-3"></li>
+        <li class="item dei-4 line line-4"></li>
+        <li class="item dei-5 line line-5"></li>
+      </ul>
+    </div>
+
     <img src="/images/home/esta-bien.jpg" class="moi" />
 
     <section class="who-is-helen">
@@ -27,11 +37,13 @@
     <section class="writing">
       <p>A smattering of her writing:</p>
 
-      <div class="">THE NEW AGE MADMEN</div>
+      <div class="mad-men">The New Age Madmen</div>
     </section>
 
     <section class="speaking">
-      <p>She’s given talks all over the world, the following being her latest. If you’re organizing a conference where you think she would be a good fit feel free to <a href="/speakoing">learn more</a> and <a href="mailto:helen.v.holmes@gmail.com">reach out</a>.</p>
+      <p>She’s given talks all over the world, the following being her latest. If you’re organizing a conference where you think she would be a good fit feel free to <a href="/speaking">learn more</a> and <a href="mailto:helen.v.holmes@gmail.com">reach out</a>.</p>
+
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/emLfXChvVPQ?rel=0" frameborder="0" allowfullscreen></iframe>
     </section>
 
     <section class="hobbies">
@@ -47,12 +59,11 @@
     </section>
   </div>
 
-  <script src="/javascripts/fontfaceonload.js"></script>
-  <script src="/javascripts/neuehaasunica.js"></script>
   <script
   src="https://code.jquery.com/jquery-2.2.4.min.js"
   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
   crossorigin="anonymous"></script>
+  <script async src="/javascripts/parallax.js"></script>
   <script type="text/javascript">
     $(window).scroll(function() {
       var scroll = $(window).scrollTop();

@@ -27,7 +27,7 @@ svg {
   background-color: transparent;
   color: $brand-primary;
   flex: 0 0 auto;
-  font-family: $avenir-next-bold;
+  font-family: $pre-avenir-next;
   font-size: 4em;
   font-weight: bold;
   position: absolute;
@@ -35,6 +35,6 @@ svg {
   z-index: 1;
 }
 
-.avenirnextbold-loaded .teh-text {
-  font-family: $avenir-next-bold-loaded
+.avenirnext-loaded .teh-text {
+  font-weight: 700;
 }
