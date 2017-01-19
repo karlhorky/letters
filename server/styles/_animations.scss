@@ -37,6 +37,17 @@
   }
 }
 
+@include keyframe(fade-out-and-up) {
+  0% {
+    opacity: 1;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(0px);
+  }
+}
+
 @include keyframe(fade-in-and-down) {
   0% {
     opacity: 0;
@@ -59,6 +70,20 @@
   100% {
     opacity: 0;
     transform: translateY(-25px);
+  }
+}
+
+@keyframes fold-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-25px);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
   }
 }
 

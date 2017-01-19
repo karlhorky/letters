@@ -71,7 +71,13 @@
 }
 
 $nav-items: 5; // number of nav lines
-$type-width: 20px;
+$big-nav-items: $nav-items; // just a second loop
+
+@for $i from 1 through 5 {
+  .nav-item-#{$i} {
+    opacity: 0;
+  }
+}
 
 @while ($nav-items > 0) {
   .small-nav {
@@ -80,12 +86,34 @@ $type-width: 20px;
       @include animation(fold-up 0.75s ease);
       @include animation-fill-mode(forwards);
       @include animation-delay(($nav-items / 15) + s);
+
+      -webkit-font-smoothing: antialiased;
+      -webkit-backface-visibility: hidden;
+      opacity: 1;
     }
 
     .collapsed-nav {
       @include animation(fade-in-and-down 0.25s ease);
       @include animation-fill-mode(forwards);
       @include animation-delay(0.25s);
+    }
+  }
+}
+
+@while ($big-nav-items > 0) {
+  .big-nav {
+    .nav-item-#{$big-nav-items} {
+      $big-nav-items: $big-nav-items - 1;
+      @include animation(fold-down 0.75s ease);
+      @include animation-fill-mode(forwards);
+      @include animation-delay(($big-nav-items / 15) + s);
+
+      -webkit-font-smoothing: antialiased;
+      -webkit-backface-visibility: hidden;
+    }
+
+    .collapsed-nav {
+      opacity: 0;
     }
   }
 }

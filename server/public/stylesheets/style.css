@@ -640,6 +640,30 @@ caption {
     opacity: 1;
     transform: translateY(0px); } }
 
+@-webkit-keyframes fade-out-and-up {
+  0% {
+    opacity: 1;
+    transform: translateY(10px); }
+  100% {
+    opacity: 0;
+    transform: translateY(0px); } }
+
+@-moz-keyframes fade-out-and-up {
+  0% {
+    opacity: 1;
+    transform: translateY(10px); }
+  100% {
+    opacity: 0;
+    transform: translateY(0px); } }
+
+@keyframes fade-out-and-up {
+  0% {
+    opacity: 1;
+    transform: translateY(10px); }
+  100% {
+    opacity: 0;
+    transform: translateY(0px); } }
+
 @-webkit-keyframes fade-in-and-down {
   0% {
     opacity: 0;
@@ -673,6 +697,16 @@ caption {
   100% {
     opacity: 0;
     transform: translateY(-25px); } }
+
+@keyframes fold-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-25px); }
+  50% {
+    opacity: 1; }
+  100% {
+    opacity: 1;
+    transform: translateY(0px); } }
 
 @-webkit-keyframes link-underlines {
   0% {
@@ -1099,6 +1133,30 @@ a:visited {
     opacity: 1;
     transform: translateY(0px); } }
 
+@-webkit-keyframes fade-out-and-up {
+  0% {
+    opacity: 1;
+    transform: translateY(10px); }
+  100% {
+    opacity: 0;
+    transform: translateY(0px); } }
+
+@-moz-keyframes fade-out-and-up {
+  0% {
+    opacity: 1;
+    transform: translateY(10px); }
+  100% {
+    opacity: 0;
+    transform: translateY(0px); } }
+
+@keyframes fade-out-and-up {
+  0% {
+    opacity: 1;
+    transform: translateY(10px); }
+  100% {
+    opacity: 0;
+    transform: translateY(0px); } }
+
 @-webkit-keyframes fade-in-and-down {
   0% {
     opacity: 0;
@@ -1132,6 +1190,16 @@ a:visited {
   100% {
     opacity: 0;
     transform: translateY(-25px); } }
+
+@keyframes fold-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-25px); }
+  50% {
+    opacity: 1; }
+  100% {
+    opacity: 1;
+    transform: translateY(0px); } }
 
 @-webkit-keyframes link-underlines {
   0% {
@@ -1330,6 +1398,21 @@ a:visited {
   margin-top: 16px;
   position: absolute; }
 
+.nav-item-1 {
+  opacity: 0; }
+
+.nav-item-2 {
+  opacity: 0; }
+
+.nav-item-3 {
+  opacity: 0; }
+
+.nav-item-4 {
+  opacity: 0; }
+
+.nav-item-5 {
+  opacity: 0; }
+
 .small-nav .nav-item-5 {
   -webkit-animation: fold-up 0.75s ease;
   -moz-animation: fold-up 0.75s ease;
@@ -1339,7 +1422,10 @@ a:visited {
   animation-fill-mode: forwards;
   -webkit-animation-delay: 0.26667s;
   -moz-animation-delay: 0.26667s;
-  animation-delay: 0.26667s; }
+  animation-delay: 0.26667s;
+  -webkit-font-smoothing: antialiased;
+  -webkit-backface-visibility: hidden;
+  opacity: 1; }
 
 .small-nav .collapsed-nav {
   -webkit-animation: fade-in-and-down 0.25s ease;
@@ -1361,7 +1447,10 @@ a:visited {
   animation-fill-mode: forwards;
   -webkit-animation-delay: 0.2s;
   -moz-animation-delay: 0.2s;
-  animation-delay: 0.2s; }
+  animation-delay: 0.2s;
+  -webkit-font-smoothing: antialiased;
+  -webkit-backface-visibility: hidden;
+  opacity: 1; }
 
 .small-nav .collapsed-nav {
   -webkit-animation: fade-in-and-down 0.25s ease;
@@ -1383,7 +1472,10 @@ a:visited {
   animation-fill-mode: forwards;
   -webkit-animation-delay: 0.13333s;
   -moz-animation-delay: 0.13333s;
-  animation-delay: 0.13333s; }
+  animation-delay: 0.13333s;
+  -webkit-font-smoothing: antialiased;
+  -webkit-backface-visibility: hidden;
+  opacity: 1; }
 
 .small-nav .collapsed-nav {
   -webkit-animation: fade-in-and-down 0.25s ease;
@@ -1405,7 +1497,10 @@ a:visited {
   animation-fill-mode: forwards;
   -webkit-animation-delay: 0.06667s;
   -moz-animation-delay: 0.06667s;
-  animation-delay: 0.06667s; }
+  animation-delay: 0.06667s;
+  -webkit-font-smoothing: antialiased;
+  -webkit-backface-visibility: hidden;
+  opacity: 1; }
 
 .small-nav .collapsed-nav {
   -webkit-animation: fade-in-and-down 0.25s ease;
@@ -1427,7 +1522,10 @@ a:visited {
   animation-fill-mode: forwards;
   -webkit-animation-delay: 0s;
   -moz-animation-delay: 0s;
-  animation-delay: 0s; }
+  animation-delay: 0s;
+  -webkit-font-smoothing: antialiased;
+  -webkit-backface-visibility: hidden;
+  opacity: 1; }
 
 .small-nav .collapsed-nav {
   -webkit-animation: fade-in-and-down 0.25s ease;
@@ -1439,6 +1537,86 @@ a:visited {
   -webkit-animation-delay: 0.25s;
   -moz-animation-delay: 0.25s;
   animation-delay: 0.25s; }
+
+.big-nav .nav-item-5 {
+  -webkit-animation: fold-down 0.75s ease;
+  -moz-animation: fold-down 0.75s ease;
+  animation: fold-down 0.75s ease;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-delay: 0.26667s;
+  -moz-animation-delay: 0.26667s;
+  animation-delay: 0.26667s;
+  -webkit-font-smoothing: antialiased;
+  -webkit-backface-visibility: hidden; }
+
+.big-nav .collapsed-nav {
+  opacity: 0; }
+
+.big-nav .nav-item-4 {
+  -webkit-animation: fold-down 0.75s ease;
+  -moz-animation: fold-down 0.75s ease;
+  animation: fold-down 0.75s ease;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-delay: 0.2s;
+  -moz-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+  -webkit-font-smoothing: antialiased;
+  -webkit-backface-visibility: hidden; }
+
+.big-nav .collapsed-nav {
+  opacity: 0; }
+
+.big-nav .nav-item-3 {
+  -webkit-animation: fold-down 0.75s ease;
+  -moz-animation: fold-down 0.75s ease;
+  animation: fold-down 0.75s ease;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-delay: 0.13333s;
+  -moz-animation-delay: 0.13333s;
+  animation-delay: 0.13333s;
+  -webkit-font-smoothing: antialiased;
+  -webkit-backface-visibility: hidden; }
+
+.big-nav .collapsed-nav {
+  opacity: 0; }
+
+.big-nav .nav-item-2 {
+  -webkit-animation: fold-down 0.75s ease;
+  -moz-animation: fold-down 0.75s ease;
+  animation: fold-down 0.75s ease;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-delay: 0.06667s;
+  -moz-animation-delay: 0.06667s;
+  animation-delay: 0.06667s;
+  -webkit-font-smoothing: antialiased;
+  -webkit-backface-visibility: hidden; }
+
+.big-nav .collapsed-nav {
+  opacity: 0; }
+
+.big-nav .nav-item-1 {
+  -webkit-animation: fold-down 0.75s ease;
+  -moz-animation: fold-down 0.75s ease;
+  animation: fold-down 0.75s ease;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-delay: 0s;
+  -moz-animation-delay: 0s;
+  animation-delay: 0s;
+  -webkit-font-smoothing: antialiased;
+  -webkit-backface-visibility: hidden; }
+
+.big-nav .collapsed-nav {
+  opacity: 0; }
 
 .nav-items {
   display: flex;
