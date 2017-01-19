@@ -5,6 +5,18 @@
 @import '../../../styles/colors';
 @import '../../../styles/modules/post-ending';
 
+html {
+  p {
+    font-family: $pre-calendas-plus !important;
+  }
+}
+
+.calendasplus-loaded {
+  p, em, ol li {
+    font-family: $calendas-plus !important;
+  }
+}
+
 img {
   width: 100%;
 }
@@ -16,11 +28,11 @@ img {
 }
 
 .title {
-  font-family: $mega-display;
+  font-family: $mega-display !important;
   font-size: 24em;
-  margin-left: -5%;
   font-style: italic;
   line-height: 1;
+  margin-left: -5%;
   text-transform: uppercase;
 }
 
@@ -128,4 +140,8 @@ img {
 .ending {
   margin: 20% auto 20% auto;
   width: 25%;
+}
+
+.twitter {
+  text-align: center;
 }

@@ -33,7 +33,15 @@ html {
 .moi {
   display: block;
   margin-left: 8%;
-  padding-top: 5%; }
+  margin-top: 5%;
+  background-attachment: fixed;
+  background-image: url("/images/about/me_2.jpg");
+  background-position: left top;
+  background-size: auto 75%;
+  height: 480px;
+  margin-left: 3%;
+  margin-top: 3%;
+  width: 720px; }
 
 .container {
   align-items: center;

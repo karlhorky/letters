@@ -7,8 +7,14 @@
 // Homepage
 
 .moi {
-  margin-top: 3%;
+  background-attachment: fixed;
+  background-image: url("/images/home/esta-bien.jpg");
+  background-position: left top;
+  background-size: auto 77%;
+  height: 517px;
   margin-left: 3%;
+  margin-top: 3%;
+  width: 1017px;
 }
 
 .who-is-helen {
@@ -23,6 +29,7 @@
   h1 {
     font-size: $h1-font-size * 1.5;
     margin-bottom: 0;
+    margin-top: 3%;
     line-height: 1;
   }
 }
@@ -36,6 +43,22 @@
     margin-left: 50%;
     margin-bottom: 5%;
   }
+}
+
+.bio-link a {
+  color: $brand-gray-accent;
+  background-image: linear-gradient(transparent, transparent);
+  transition: all 0.25s ease;
+
+  &:hover {
+    color: $brand-gray-dark;
+    background-image: linear-gradient($brand-gray-dark, $brand-gray-dark);
+  }
+}
+
+.hand {
+  display: inline-block;
+  padding-left: 2px;
 }
 
 .youtube {
@@ -63,10 +86,25 @@
   font-family: $mega-display;
   font-size: 14em;
   font-style: italic;
-  line-height: 1;
+  line-height: 1.25;
   padding: 0 5%;
   text-transform: uppercase;
-  z-index: 2;
+  background-image: linear-gradient( 
+    to right,
+    white 12%, $brand-primary 12%,
+    $brand-primary 35%, white 35%,
+    white 36%, $brand-primary 36%,
+    $brand-primary 57%, white 57%,
+    white 57.5%, $brand-primary 57.5%,
+    $brand-primary 62%, white 62%,
+    white 63%, $brand-primary 63%,
+    $brand-primary 65%, white 65%,
+    white 67%, $brand-primary 67%,
+    $brand-primary 67.75%, white 67.75%,
+    white 75%, $brand-primary 75%,
+    $brand-primary 75.25%, white 75.25%,
+    white 76%, $brand-primary 76%,
+    $brand-primary 76.2%, white 76.2% );
 }
 
 .additional-articles {
@@ -81,6 +119,83 @@
     height: 7px;
     margin: auto;
     width: 150px;
+  }
+}
+
+.the-future {
+  align-self: center;
+  background-color: white;
+  clear: both;
+  color: $brand-black;
+  cursor: pointer;
+  flex: 0 1 100%;
+  margin-left: 10%;
+  margin-top: 45%;
+  position: relative;
+
+  @include media($nine-col) {
+    flex: 0 1 50%;
+    margin-top: 10%;
+  }
+
+  &:hover {
+    &::before {
+      animation: spin-color 8s linear forwards;
+    }
+  }
+
+  &::before {
+    background-color: $brand-primary;
+    content: '';
+    display: block;
+    height: 200px;
+    width: 200px;
+
+    @include media($nine-col) {
+      height: 200px;
+      width: 200px;
+    }
+  }
+
+  h1 {
+    font-family: $neue-haas-unica, sans-serif;
+    font-size: $h1-font-size;
+    font-style: normal;
+    font-weight: $extra-bold-weight;
+    line-height: $base-line-height;
+    margin-left: 25px;
+    margin-top: -13.5%;
+    position: relative;
+    text-align: center;
+    text-transform: capitalize;
+
+    @include media($nine-col) {
+      margin-left: 100px;
+      text-align: left;
+    }
+
+    a {
+      background-image: linear-gradient(transparent, transparent);
+      color: $brand-black;
+
+      &:hover {
+        color: $brand-black;
+      }
+    }
+  }
+
+  em {
+    position: relative;
+    font-family: $calendas-plus;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+
+    @include media($nine-col) {
+      margin-left: 120px;
+      text-align: left;
+      top: -110px;
+    }
   }
 }
 

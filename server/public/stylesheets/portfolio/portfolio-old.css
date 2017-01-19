@@ -599,10 +599,10 @@ html {
     flex: 0 1 70%; } }
 
 a.project {
-  color: #434242 !important; }
+  color: #2d2d2d !important; }
 
 a.project:hover {
-  color: #434242;
+  color: #2d2d2d;
   text-decoration: none; }
 
 a.project:hover h2 {

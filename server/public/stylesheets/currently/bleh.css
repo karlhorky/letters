@@ -139,10 +139,10 @@ a.the-things-title {
     text-align: left; } }
 
 .the-future h1 a {
-  color: #434242; }
+  color: #2d2d2d; }
 
 .the-future h1 a:hover {
-  color: #434242; }
+  color: #2d2d2d; }
 
 .the-future em {
   position: relative;
@@ -178,7 +178,7 @@ a.the-things-title {
   text-transform: uppercase; }
 
 .have-histories a {
-  color: #434242; }
+  color: #2d2d2d; }
 
 .have-histories .all {
   font-size: 1em;

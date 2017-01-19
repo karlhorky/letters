@@ -258,7 +258,7 @@ html {
   -webkit-animation-fill-mode: forwards;
   -moz-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
-  background-image: linear-gradient(to bottom, #434242 35%, white 35%, white 35.25%, #434242 35.25%, #434242 57%, white 57%, white 57.5%, #434242 57.5%, #434242 62%, white 62%, white 63%, #434242 63%, #434242 65%, white 65%, white 67%, #434242 67%, #434242 67.75%, white 67.75%, white 75%, #434242 75%, #434242 75.25%, white 75.25%, white 92%, #434242 92%, #434242 92.1%, white 92.1%);
+  background-image: linear-gradient(to bottom, #2d2d2d 35%, white 35%, white 35.25%, #2d2d2d 35.25%, #2d2d2d 57%, white 57%, white 57.5%, #2d2d2d 57.5%, #2d2d2d 62%, white 62%, white 63%, #2d2d2d 63%, #2d2d2d 65%, white 65%, white 67%, #2d2d2d 67%, #2d2d2d 67.75%, white 67.75%, white 75%, #2d2d2d 75%, #2d2d2d 75.25%, white 75.25%, white 92%, #2d2d2d 92%, #2d2d2d 92.1%, white 92.1%);
   background-size: 100% 75%;
   color: white;
   font-family: "Didot 96 A", "Didot 96 B", serif;

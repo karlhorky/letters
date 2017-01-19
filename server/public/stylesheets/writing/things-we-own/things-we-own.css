@@ -41,6 +41,12 @@ html {
   font-size: 1em;
   margin-left: 0.5em; }
 
+html p {
+  font-family: Georgia, "Times New Roman", Times, serif !important; }
+
+.calendasplus-loaded p, .calendasplus-loaded em, .calendasplus-loaded ol li {
+  font-family: CalendasPlus, Georgia, "Times New Roman", Times, serif !important; }
+
 img {
   width: 100%; }
 
@@ -50,11 +56,11 @@ img {
   width: 35%; }
 
 .title {
-  font-family: "Didot 96 A", "Didot 96 B", serif;
+  font-family: "Didot 96 A", "Didot 96 B", serif !important;
   font-size: 24em;
-  margin-left: -5%;
   font-style: italic;
   line-height: 1;
+  margin-left: -5%;
   text-transform: uppercase; }
 
 .basement {
@@ -144,3 +150,6 @@ img {
 .ending {
   margin: 20% auto 20% auto;
   width: 25%; }
+
+.twitter {
+  text-align: center; }

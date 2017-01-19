@@ -31,8 +31,14 @@ html {
   text-decoration: underline; }
 
 .moi {
+  background-attachment: fixed;
+  background-image: url("/images/home/esta-bien.jpg");
+  background-position: left top;
+  background-size: auto 77%;
+  height: 517px;
+  margin-left: 3%;
   margin-top: 3%;
-  margin-left: 3%; }
+  width: 1017px; }
 
 .who-is-helen {
   background-color: white;
@@ -46,6 +52,7 @@ html {
 .who-is-helen h1 {
   font-size: 4.3875em;
   margin-bottom: 0;
+  margin-top: 3%;
   line-height: 1; }
 
 .writing, .speaking {
@@ -56,6 +63,19 @@ html {
   width: 30%;
   margin-left: 50%;
   margin-bottom: 5%; }
+
+.bio-link a {
+  color: #D8D8D8;
+  background-image: linear-gradient(transparent, transparent);
+  transition: all 0.25s ease; }
+
+.bio-link a:hover {
+  color: #959595;
+  background-image: linear-gradient(#959595, #959595); }
+
+.hand {
+  display: inline-block;
+  padding-left: 2px; }
 
 .youtube {
   cursor: pointer;
@@ -79,10 +99,10 @@ html {
   font-family: "Didot 96 A", "Didot 96 B", serif;
   font-size: 14em;
   font-style: italic;
-  line-height: 1;
+  line-height: 1.25;
   padding: 0 5%;
   text-transform: uppercase;
-  z-index: 2; }
+  background-image: linear-gradient(to right, white 12%, indianred 12%, indianred 35%, white 35%, white 36%, indianred 36%, indianred 57%, white 57%, white 57.5%, indianred 57.5%, indianred 62%, white 62%, white 63%, indianred 63%, indianred 65%, white 65%, white 67%, indianred 67%, indianred 67.75%, white 67.75%, white 75%, indianred 75%, indianred 75.25%, white 75.25%, white 76%, indianred 76%, indianred 76.2%, white 76.2%); }
 
 .additional-articles {
   flex: 0 1 100%;
@@ -96,6 +116,74 @@ html {
   height: 7px;
   margin: auto;
   width: 150px; }
+
+.the-future {
+  align-self: center;
+  background-color: white;
+  clear: both;
+  color: #2d2d2d;
+  cursor: pointer;
+  flex: 0 1 100%;
+  margin-left: 10%;
+  margin-top: 45%;
+  position: relative; }
+
+@media screen and (min-width: 850px) {
+  .the-future {
+    flex: 0 1 50%;
+    margin-top: 10%; } }
+
+.the-future:hover::before {
+  animation: spin-color 8s linear forwards; }
+
+.the-future::before {
+  background-color: indianred;
+  content: '';
+  display: block;
+  height: 200px;
+  width: 200px; }
+
+@media screen and (min-width: 850px) {
+  .the-future::before {
+    height: 200px;
+    width: 200px; } }
+
+.the-future h1 {
+  font-family: NeueHaasUnica, Arial, sans-serif, sans-serif;
+  font-size: 2.925em;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 1.75;
+  margin-left: 25px;
+  margin-top: -13.5%;
+  position: relative;
+  text-align: center;
+  text-transform: capitalize; }
+
+@media screen and (min-width: 850px) {
+  .the-future h1 {
+    margin-left: 100px;
+    text-align: left; } }
+
+.the-future h1 a {
+  background-image: linear-gradient(transparent, transparent);
+  color: #2d2d2d; }
+
+.the-future h1 a:hover {
+  color: #2d2d2d; }
+
+.the-future em {
+  position: relative;
+  font-family: CalendasPlus, Georgia, "Times New Roman", Times, serif;
+  display: inline-block;
+  width: 100%;
+  text-align: center; }
+
+@media screen and (min-width: 850px) {
+  .the-future em {
+    margin-left: 120px;
+    text-align: left;
+    top: -110px; } }
 
 .hobbies {
   background-color: white;
