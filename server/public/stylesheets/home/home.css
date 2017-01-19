@@ -57,7 +57,8 @@ html {
 
 .writing, .speaking {
   background-color: white;
-  margin-top: 20%; }
+  margin-top: 20%;
+  position: relative; }
 
 .writing p, .speaking p {
   width: 30%;
@@ -186,12 +187,13 @@ html {
     top: -110px; } }
 
 .hobbies {
-  background-color: white;
+  margin-bottom: 60%;
   margin-top: 15%;
-  margin-bottom: 60%; }
+  position: relative; }
 
 .hobbies p {
   float: left;
+  background-color: white;
   margin-top: 10%;
   margin-bottom: 5%;
   margin-left: 20%;
