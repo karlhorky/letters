@@ -65,6 +65,20 @@
                 'opacity'     : [1, 1],
                 'scale'       : 1,
                 'rotate'      : 0,
+              } , {
+                'selector'    : '.dei-6',
+                'translateY'  : '-75%',
+                'translateX'  : '0%',
+                'opacity'     : [1, 1],
+                'scale'       : 1,
+                'rotate'      : 0,
+              } , {
+                'selector'    : '.dei-7',
+                'translateY'  : '-85%',
+                'translateX'  : '0%',
+                'opacity'     : [1, 1],
+                'scale'       : 1,
+                'rotate'      : 0,
               }
             ]
           } , {

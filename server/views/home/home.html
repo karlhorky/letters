@@ -22,6 +22,8 @@
         <li class="item dei-3 line line-3"></li>
         <li class="item dei-4 line line-4"></li>
         <li class="item dei-5 line line-5"></li>
+        <li class="item dei-6 line line-6"></li>
+        <li class="item dei-7 line line-7"></li>
       </ul>
     </div>
 
@@ -38,24 +40,31 @@
       <p>A smattering of her writing:</p>
 
       <div class="mad-men">The New Age Madmen</div>
+
+      <div class="additional-articles"></div>
     </section>
 
     <section class="speaking">
       <p>She’s given talks all over the world, the following being her latest. If you’re organizing a conference where you think she would be a good fit feel free to <a href="/speaking">learn more</a> and <a href="mailto:helen.v.holmes@gmail.com">reach out</a>.</p>
 
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/emLfXChvVPQ?rel=0" frameborder="0" allowfullscreen></iframe>
+      <div class="youtube">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/emLfXChvVPQ?rel=0" frameborder="0" allowfullscreen id="youtube-video"></iframe>
+        <img src="/images/home/youtube.jpg" id="youtube" />
+      </div>
     </section>
 
     <section class="hobbies">
       <p>She also creates and sells small products as a way to have fun at work and on the internet in general. A somewhat more formalized (and what she actually does for her day job) is available <a href="mailto:helen.v.holmes@gmail.com">upon request</a>, although a few public case studies float around among her <a href="/writing">other writing</a>.</p>
+
+      <img src="/images/home/devtools-pin.jpg" class="devtools-pin" />
     </section>
 
-    <section>
+    <section class="third-person">
       <p>Oh thank god, you’re here.</p>
 
       <p>I’m so tired of writing in the third person.</p>
 
-      <p>Read something?</p>
+      <p><a href="/writing">Read something?</a></p>
     </section>
   </div>
 
@@ -64,11 +73,11 @@
   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
   crossorigin="anonymous"></script>
   <script async src="/javascripts/parallax.js"></script>
+  <script async src="/javascripts/youtube.js"></script>
   <script type="text/javascript">
     $(window).scroll(function() {
       var scroll = $(window).scrollTop();
       if (scroll >= 10) {
-        console.log("hey");
         $(".navigation").addClass("small-nav");
       } else {
         $(".navigation").removeClass("small-nav");

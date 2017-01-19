@@ -28,11 +28,25 @@
   background-color: white;
   z-index: 1;
   position: relative;
+}
+
+.youtube {
+  position: relative;
+  margin: 0 auto 10% auto;
+  width: 560px; // exact size as youtube iframe
+
+  img {
+    display: block;
+    height: 315px; // exact size as youtube iframe
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 560px;
+    z-index: 1;
+  }
 
   iframe {
-    margin-left: 25%;
-    margin-bottom: 2%;
-    margin-top: 2%;
+    z-index: 0;
   }
 }
 

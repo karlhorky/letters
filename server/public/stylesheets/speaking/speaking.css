@@ -52,10 +52,22 @@ html {
   z-index: 1;
   position: relative; }
 
-.past-engagements iframe {
-  margin-left: 25%;
-  margin-bottom: 2%;
-  margin-top: 2%; }
+.youtube {
+  position: relative;
+  margin: 0 auto 10% auto;
+  width: 560px; }
+
+.youtube img {
+  display: block;
+  height: 315px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 560px;
+  z-index: 1; }
+
+.youtube iframe {
+  z-index: 0; }
 
 li {
   clear: both;
