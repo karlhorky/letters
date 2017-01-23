@@ -1,15 +1,14 @@
 @import 'bourbon';
-@import '../../styles/grid-settings';
+@import '../../../styles/grid-settings';
 @import 'neat';
-@import '../../styles/colors';
-@import '../../styles/animations';
-@import '../../styles/typography';
+@import '../../../styles/colors';
+@import '../../../styles/animations';
+@import '../../../styles/typography';
 
-/* March 2015 Currently
-   "There were days when he touched the tip of her nose and it was enough, a miracle of plenty."
+/* Past currentlys
+   Included at the top of each currently page.
 
 */
-
 .past-currentlys {
   align-items: center;
   border-bottom: 1px solid $brand-primary;
@@ -93,6 +92,11 @@
   font-size: $h2-font-size;
 }
 
+
+/* March 2015 Currently
+   "There were days when he touched the tip of her nose and it was enough, a miracle of plenty."
+
+*/
 .sheets {
   clear: both;
   display: table;

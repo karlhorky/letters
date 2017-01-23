@@ -4,6 +4,97 @@
 @import '../../styles/typography';
 @import '../../styles/colors';
 
+/* Past currentlys
+   Included at the top of each currently page.
+
+*/
+.past-currentlys {
+  align-items: center;
+  border-bottom: 1px solid $brand-primary;
+  display: flex;
+  flex-wrap: wrap;
+  height: 100vh;
+  justify-content: center;
+  width: 100%;
+
+  p {
+    width: 30%;
+  }
+
+  ul {
+    display: none;
+    width: 55%;
+    margin-right: 10%;
+  }
+
+  li {
+    border-bottom: 2px solid $brand-gray-dark;
+    cursor: pointer;
+    display: inline-block;
+    outline-offset: 15px;
+    clear: both;
+    color: $brand-gray-dark;
+    display: block;
+    list-style-type: none;
+    line-height: 2;
+    padding-bottom: 3px;
+    position: relative;
+    flex: 0 1 100%;
+
+    &::before {
+      bottom: 0;
+      content: '';
+      display: block;
+      height: 3px;
+      left: 0;
+      position: absolute;
+      transition: width 0s ease, background .5s ease;
+      width: 0;
+    }
+
+    &::after {
+      background: $brand-gray-dark;
+      bottom: 0;
+      content: '';
+      display: block;
+      height: 3px;
+      position: absolute;
+      right: 0;
+      transition: width .5s ease;
+      width: 0;
+    }
+
+    &:hover {
+      border-bottom: 2px solid $brand-primary;
+      color: $brand-primary;
+      
+      .outside-link {
+        opacity: 1;
+      }
+
+      &::before {
+        background: $brand-primary;
+        transition: width .5s ease;
+        width: 100%;
+      }
+
+      &::after {
+        background: transparent;
+        transition: all 0s ease;
+        width: 100%;
+      }
+    }
+  }
+}
+
+.engagement {
+  font-size: $h2-font-size;
+}
+
+/* Past currentlys
+   Included at the top of each currently page.
+
+*/
 .ocean {
   display: none;
   text-align: center;
@@ -30,7 +121,7 @@
   font-weight: $extra-bold-weight;
   margin-top: 8%;
   padding: 5% 4% 20% 5%;
-  position: absolute;
+  // position: absolute;
   right: 0;
   top: 0;
   width: 50%;

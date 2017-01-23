@@ -1,0 +1,536 @@
+/* Grid
+   Grid settings through Bourbon Neat.
+   https://github.com/thoughtbot/neat#using-neat
+
+   Color variables are stored in _color.scss.
+
+   Typography variables are stored in _typography.scss.
+*/
+html {
+  box-sizing: border-box; }
+
+*, *::after, *::before {
+  box-sizing: inherit; }
+
+/* Color
+
+   Grid/breakpoints variables are stored in _grid_settings.scss.
+
+   Typography variables are stored in _typography.scss.
+*/
+/* Animations
+   Animations not "fancy" enough to merit being put into their own separate app pages.
+
+*/
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@-moz-keyframes fade-in {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes fade-in {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@-webkit-keyframes fade-in-and-up {
+  0% {
+    opacity: 0;
+    transform: translateY(10px); }
+  100% {
+    opacity: 1;
+    transform: translateY(0px); } }
+
+@-moz-keyframes fade-in-and-up {
+  0% {
+    opacity: 0;
+    transform: translateY(10px); }
+  100% {
+    opacity: 1;
+    transform: translateY(0px); } }
+
+@keyframes fade-in-and-up {
+  0% {
+    opacity: 0;
+    transform: translateY(10px); }
+  100% {
+    opacity: 1;
+    transform: translateY(0px); } }
+
+@-webkit-keyframes fade-out-and-up {
+  0% {
+    opacity: 1;
+    transform: translateY(10px); }
+  100% {
+    opacity: 0;
+    transform: translateY(0px); } }
+
+@-moz-keyframes fade-out-and-up {
+  0% {
+    opacity: 1;
+    transform: translateY(10px); }
+  100% {
+    opacity: 0;
+    transform: translateY(0px); } }
+
+@keyframes fade-out-and-up {
+  0% {
+    opacity: 1;
+    transform: translateY(10px); }
+  100% {
+    opacity: 0;
+    transform: translateY(0px); } }
+
+@-webkit-keyframes fade-in-and-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px); }
+  100% {
+    opacity: 1;
+    transform: translateY(0px); } }
+
+@-moz-keyframes fade-in-and-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px); }
+  100% {
+    opacity: 1;
+    transform: translateY(0px); } }
+
+@keyframes fade-in-and-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px); }
+  100% {
+    opacity: 1;
+    transform: translateY(0px); } }
+
+@keyframes fold-up {
+  0% {
+    opacity: 1;
+    transform: translateY(0px); }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 0;
+    transform: translateY(-25px); } }
+
+@keyframes fold-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-25px); }
+  50% {
+    opacity: 1; }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+    -webkit-backface-visibility: hidden; } }
+
+@-webkit-keyframes link-underlines {
+  0% {
+    opacity: 0;
+    transform: translateY(0);
+    border-bottom-color: white;
+    border-top-color: white; }
+  50% {
+    border-bottom-color: white;
+    border-top-color: indianred; }
+  100% {
+    opacity: 1;
+    transform: translateY(2px);
+    border-bottom-color: indianred; } }
+
+@-moz-keyframes link-underlines {
+  0% {
+    opacity: 0;
+    transform: translateY(0);
+    border-bottom-color: white;
+    border-top-color: white; }
+  50% {
+    border-bottom-color: white;
+    border-top-color: indianred; }
+  100% {
+    opacity: 1;
+    transform: translateY(2px);
+    border-bottom-color: indianred; } }
+
+@keyframes link-underlines {
+  0% {
+    opacity: 0;
+    transform: translateY(0);
+    border-bottom-color: white;
+    border-top-color: white; }
+  50% {
+    border-bottom-color: white;
+    border-top-color: indianred; }
+  100% {
+    opacity: 1;
+    transform: translateY(2px);
+    border-bottom-color: indianred; } }
+
+@-webkit-keyframes rainbow-colors {
+  0% {
+    color: #4a90e2; }
+  17% {
+    color: #60e6e4; }
+  34% {
+    color: #59e48c; }
+  51% {
+    color: #e1e570; }
+  68% {
+    color: #ea886d; }
+  85% {
+    color: #ea75e3; }
+  100% {
+    color: #8e7fe8; } }
+
+@-moz-keyframes rainbow-colors {
+  0% {
+    color: #4a90e2; }
+  17% {
+    color: #60e6e4; }
+  34% {
+    color: #59e48c; }
+  51% {
+    color: #e1e570; }
+  68% {
+    color: #ea886d; }
+  85% {
+    color: #ea75e3; }
+  100% {
+    color: #8e7fe8; } }
+
+@keyframes rainbow-colors {
+  0% {
+    color: #4a90e2; }
+  17% {
+    color: #60e6e4; }
+  34% {
+    color: #59e48c; }
+  51% {
+    color: #e1e570; }
+  68% {
+    color: #ea886d; }
+  85% {
+    color: #ea75e3; }
+  100% {
+    color: #8e7fe8; } }
+
+@-webkit-keyframes open-up {
+  0% {
+    background-size: 100% 75%; }
+  100% {
+    background-size: 100% 100%; } }
+
+@-moz-keyframes open-up {
+  0% {
+    background-size: 100% 75%; }
+  100% {
+    background-size: 100% 100%; } }
+
+@keyframes open-up {
+  0% {
+    background-size: 100% 75%; }
+  100% {
+    background-size: 100% 100%; } }
+
+@keyframes grow {
+  0% {
+    transform: scale(0); }
+  100% {
+    transform: scale(1); } }
+
+@keyframes shrink {
+  0% {
+    transform: scale(1); }
+  100% {
+    transform: scale(0); } }
+
+@keyframes blinds {
+  100% {
+    background-position: 0 0, 0 -3em;
+    background-size: 0 0, 1em 6em; } }
+
+@keyframes spin-color {
+  0% {
+    background-color: indianred; }
+  20% {
+    background-color: #cdcd5c; }
+  40% {
+    background-color: #5ccd5c; }
+  55% {
+    background-color: #5ccdcd; }
+  75% {
+    background-color: #5c5ccd; }
+  90 {
+    background-color: #cd5ccd; }
+  100% {
+    background-color: indianred; } }
+
+@-webkit-keyframes red-to-blue {
+  0% {
+    fill: indianred; }
+  100% {
+    fill: #4a90e2; } }
+
+@-moz-keyframes red-to-blue {
+  0% {
+    fill: indianred; }
+  100% {
+    fill: #4a90e2; } }
+
+@keyframes red-to-blue {
+  0% {
+    fill: indianred; }
+  100% {
+    fill: #4a90e2; } }
+
+/* Typography
+
+   Grid/breakpoints variables are stored in _grid_settings.scss.
+
+   Color variables are stored in _color.scss.
+*/
+/* Sizes
+
+*/
+.underline {
+  text-decoration: underline; }
+
+/* Past currentlys
+   Included at the top of each currently page.
+
+*/
+.past-currentlys {
+  align-items: center;
+  border-bottom: 1px solid indianred;
+  display: flex;
+  flex-wrap: wrap;
+  height: 100vh;
+  justify-content: center;
+  width: 100%; }
+
+.past-currentlys p {
+  width: 30%; }
+
+.past-currentlys ul {
+  display: none;
+  width: 55%;
+  margin-right: 10%; }
+
+.past-currentlys li {
+  border-bottom: 2px solid #959595;
+  cursor: pointer;
+  display: inline-block;
+  outline-offset: 15px;
+  clear: both;
+  color: #959595;
+  display: block;
+  list-style-type: none;
+  line-height: 2;
+  padding-bottom: 3px;
+  position: relative;
+  flex: 0 1 100%; }
+
+.past-currentlys li::before {
+  bottom: 0;
+  content: '';
+  display: block;
+  height: 3px;
+  left: 0;
+  position: absolute;
+  transition: width 0s ease, background .5s ease;
+  width: 0; }
+
+.past-currentlys li::after {
+  background: #959595;
+  bottom: 0;
+  content: '';
+  display: block;
+  height: 3px;
+  position: absolute;
+  right: 0;
+  transition: width .5s ease;
+  width: 0; }
+
+.past-currentlys li:hover {
+  border-bottom: 2px solid indianred;
+  color: indianred; }
+
+.past-currentlys li:hover .outside-link {
+  opacity: 1; }
+
+.past-currentlys li:hover::before {
+  background: indianred;
+  transition: width .5s ease;
+  width: 100%; }
+
+.past-currentlys li:hover::after {
+  background: transparent;
+  transition: all 0s ease;
+  width: 100%; }
+
+.engagement {
+  font-size: 1.8em; }
+
+/* March 2015 Currently
+   "There were days when he touched the tip of her nose and it was enough, a miracle of plenty."
+
+*/
+.sheets {
+  clear: both;
+  display: table;
+  margin-top: 15%;
+  width: 100%; }
+
+@media screen and (min-width: 850px) {
+  .sheets {
+    margin-top: 0; } }
+
+.sheets-image {
+  -webkit-animation: fade-in 0.5s ease;
+  -moz-animation: fade-in 0.5s ease;
+  animation: fade-in 0.5s ease;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  display: none;
+  float: left;
+  width: 90%; }
+
+@media screen and (min-width: 850px) {
+  .sheets-image {
+    display: block; } }
+
+.sheets-quote {
+  -webkit-animation: fade-in 0.5s ease;
+  -moz-animation: fade-in 0.5s ease;
+  animation: fade-in 0.5s ease;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  display: none;
+  margin: 0;
+  text-indent: -0.5em;
+  vertical-align: middle;
+  width: 35%;
+  padding: 10%; }
+
+@media screen and (min-width: 850px) {
+  .sheets-quote {
+    display: table-cell;
+    padding: 0 15% 0 0; } }
+
+.sheets-quote-attribution {
+  text-align: right; }
+
+.cluster {
+  -webkit-animation: fade-in 0.5s ease;
+  -moz-animation: fade-in 0.5s ease;
+  animation: fade-in 0.5s ease;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  float: right;
+  justify-content: center;
+  margin: 0;
+  width: 100%; }
+
+@media screen and (min-width: 850px) {
+  .cluster {
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    margin: 10% 0 5% 0;
+    width: 95%; } }
+
+.images img, .my-face img, .description img, .corridor img {
+  max-width: 100%; }
+
+.images {
+  display: none;
+  flex: 1 4 10em;
+  order: 3; }
+
+@media screen and (min-width: 850px) {
+  .images {
+    display: block;
+    flex: 2 1 30em;
+    order: 1; } }
+
+.images .cluster-one {
+  margin: auto;
+  width: 80%; }
+
+.images .cluster-two {
+  display: block;
+  float: left;
+  width: 50%; }
+
+.images .cluster-three {
+  display: block;
+  float: left;
+  width: 50%; }
+
+.images img {
+  display: none; }
+
+@media screen and (min-width: 850px) {
+  .images img {
+    display: block; } }
+
+.my-face {
+  flex: 0 2 15em;
+  order: 1; }
+
+@media screen and (min-width: 850px) {
+  .my-face {
+    margin-top: 5%;
+    order: 3; } }
+
+.my-face img {
+  display: block;
+  margin: auto; }
+
+@media screen and (min-width: 850px) {
+  .my-face img {
+    margin: 0;
+    float: right; } }
+
+.description {
+  flex: 1 1 30em;
+  margin-top: -2%;
+  order: 2;
+  padding: 10% 12.5%; }
+
+@media screen and (min-width: 850px) {
+  .description {
+    padding: 0 5% 10% 5%;
+    margin-top: -1.5%; } }
+
+.corridor {
+  -webkit-animation: fade-in 0.75s ease;
+  -moz-animation: fade-in 0.75s ease;
+  animation: fade-in 0.75s ease;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  display: block;
+  margin: 30% auto;
+  width: 70%; }
+
+@media screen and (min-width: 850px) {
+  .corridor {
+    margin: 10% auto; } }
+
+.corridor img {
+  width: 100%; }

@@ -1,0 +1,191 @@
+/* Grid
+   Grid settings through Bourbon Neat.
+   https://github.com/thoughtbot/neat#using-neat
+
+   Color variables are stored in _color.scss.
+
+   Typography variables are stored in _typography.scss.
+*/
+html {
+  box-sizing: border-box; }
+
+*, *::after, *::before {
+  box-sizing: inherit; }
+
+/* Typography
+
+   Grid/breakpoints variables are stored in _grid_settings.scss.
+
+   Color variables are stored in _color.scss.
+*/
+/* Sizes
+
+*/
+.underline {
+  text-decoration: underline; }
+
+/* Color
+
+   Grid/breakpoints variables are stored in _grid_settings.scss.
+
+   Typography variables are stored in _typography.scss.
+*/
+/* Past currentlys
+   Included at the top of each currently page.
+
+*/
+.past-currentlys {
+  align-items: center;
+  border-bottom: 1px solid indianred;
+  display: flex;
+  flex-wrap: wrap;
+  height: 100vh;
+  justify-content: center;
+  width: 100%; }
+
+.past-currentlys p {
+  width: 30%; }
+
+.past-currentlys ul {
+  display: none;
+  width: 55%;
+  margin-right: 10%; }
+
+.past-currentlys li {
+  border-bottom: 2px solid #959595;
+  cursor: pointer;
+  display: inline-block;
+  outline-offset: 15px;
+  clear: both;
+  color: #959595;
+  display: block;
+  list-style-type: none;
+  line-height: 2;
+  padding-bottom: 3px;
+  position: relative;
+  flex: 0 1 100%; }
+
+.past-currentlys li::before {
+  bottom: 0;
+  content: '';
+  display: block;
+  height: 3px;
+  left: 0;
+  position: absolute;
+  transition: width 0s ease, background .5s ease;
+  width: 0; }
+
+.past-currentlys li::after {
+  background: #959595;
+  bottom: 0;
+  content: '';
+  display: block;
+  height: 3px;
+  position: absolute;
+  right: 0;
+  transition: width .5s ease;
+  width: 0; }
+
+.past-currentlys li:hover {
+  border-bottom: 2px solid indianred;
+  color: indianred; }
+
+.past-currentlys li:hover .outside-link {
+  opacity: 1; }
+
+.past-currentlys li:hover::before {
+  background: indianred;
+  transition: width .5s ease;
+  width: 100%; }
+
+.past-currentlys li:hover::after {
+  background: transparent;
+  transition: all 0s ease;
+  width: 100%; }
+
+.engagement {
+  font-size: 1.8em; }
+
+/* Past currentlys
+   Included at the top of each currently page.
+
+*/
+.ocean {
+  display: none;
+  text-align: center;
+  width: 80%; }
+
+@media screen and (min-width: 850px) {
+  .ocean {
+    display: block; } }
+
+.ocean-image {
+  float: left;
+  margin-top: 0;
+  margin-bottom: 1%;
+  width: 100%; }
+
+.ocean-quote {
+  background-color: white;
+  color: #202420;
+  display: block;
+  font-family: NeueHaasUnica, Arial, sans-serif;
+  font-size: 1.575em;
+  font-weight: 900;
+  margin-top: 8%;
+  padding: 5% 4% 20% 5%;
+  right: 0;
+  top: 0;
+  width: 50%; }
+
+.me-i-guess {
+  display: flex;
+  justify-content: space-around; }
+
+@media screen and (min-width: 850px) {
+  .me-i-guess {
+    margin-top: 10%; } }
+
+.intro {
+  flex: 0 1 70%;
+  padding: 0 5%; }
+
+@media screen and (min-width: 850px) {
+  .intro {
+    flex: 0 1 25%;
+    margin-top: 10%;
+    padding: 0; } }
+
+.cool-ass-photos {
+  flex: 0 1 30%; }
+
+.cool-ass-photos > div {
+  margin-top: 25%; }
+
+.cool-ass-photos em {
+  display: block;
+  margin: 2% auto;
+  text-align: center; }
+
+@media screen and (min-width: 850px) {
+  .cool-ass-photos {
+    flex: 0 1 auto; } }
+
+.blank {
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Courier New", Courier, monospace; }
+
+.dead-plant {
+  margin: 0 auto 5% auto;
+  text-align: center;
+  width: 30%; }
+
+.dead-plant em {
+  display: block;
+  margin: 2% auto;
+  text-align: center; }
