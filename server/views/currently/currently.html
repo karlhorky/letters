@@ -1,13 +1,15 @@
 {% extends 'layout.html' %}
 
 {% block content %}
-  <link rel="stylesheet" property="stylesheet" href="/stylesheets/home/index2.css">
+  <link rel="stylesheet" property="stylesheet" href="/stylesheets/currently/currently.css">
+
+  {% include "/partials/past-currentlys.html" %}
 
   <div class="ocean">
     <amp-img
       class="ocean-image"
-      src="images/home/charleston-2015.jpg"
-      srcset="images/home/charleston-2015.jpg 1x, images/home/charleston-2015.jpg 2x"
+      src="/images/currently/charleston-2015.jpg"
+      srcset="/images/currently/charleston-2015.jpg 1x, /images/currently/charleston-2015.jpg 2x"
       placeholder
       alt="Thus passes the glory of the world."
       width="1500px" height="975px" layout="responsive">
@@ -31,8 +33,8 @@
     <div class="cool-ass-photos">
       <div class="bedshaped">
         <amp-img
-          src="images/home/should-have-been-straightened.jpg"
-          srcset="images/home/should-have-been-straightened.jpg 1x, images/home/should-have-been-straightened.jpg 2x"
+          src="/images/currently/should-have-been-straightened.jpg"
+          srcset="/images/currently/should-have-been-straightened.jpg 1x, /images/currently/should-have-been-straightened.jpg 2x"
           placeholder
           alt="Images like this make me sad."
           width="600px" height="600px" layout="responsive">
@@ -43,8 +45,8 @@
 
       <div class="doge">
         <amp-img
-          src="images/home/doge.jpg"
-          srcset="images/home/doge.jpg 1x, images/home/doge.jpg 2x"
+          src="/images/currently/doge.jpg"
+          srcset="/images/currently/doge.jpg 1x, /images/currently/doge.jpg 2x"
           placeholder
           alt="Charlemagne living the life"
           width="600px" height="450px" layout="responsive">
@@ -55,8 +57,8 @@
 
       <div class="clouds">
         <amp-img
-          src="images/home/clouds.jpg"
-          srcset="images/home/clouds.jpg 1x, images/home/clouds.jpg 2x"
+          src="/images/currently/clouds.jpg"
+          srcset="/images/currently/clouds.jpg 1x, /images/currently/clouds.jpg 2x"
           placeholder
           alt="¿Ay, recordas?"
           width="600px" height="390px" layout="responsive">
@@ -67,8 +69,8 @@
 
       <div class="greaseball">
         <amp-img
-          src="images/home/grease.jpg"
-          srcset="images/home/grease.jpg 1x, images/home/grease.jpg 2x"
+          src="/images/currently/grease.jpg"
+          srcset="/images/currently/grease.jpg 1x, /images/currently/grease.jpg 2x"
           placeholder
           alt="Hm."
           width="600px" height="600px" layout="responsive">
@@ -79,8 +81,8 @@
 
       <div class="french">
         <amp-img
-          src="images/home/french.jpg"
-          srcset="images/home/french.jpg 1x, images/home/french.jpg 2x"
+          src="/images/currently/french.jpg"
+          srcset="/images/currently/french.jpg 1x, /images/currently/french.jpg 2x"
           placeholder
           alt="Hm."
           width="600px" height="450px" layout="responsive">
@@ -95,8 +97,8 @@
 
   <div class="dead-plant">
     <amp-img
-      src="images/home/plant-i-killed.jpg"
-      srcset="images/home/plant-i-killed.jpg 1x, images/home/plant-i-killed.jpg 2x"
+      src="images/currently/plant-i-killed.jpg"
+      srcset="images/currently/plant-i-killed.jpg 1x, /images/currently/plant-i-killed.jpg 2x"
       placeholder
       alt="Me and my black thumb."
       width="426px" height="320px" layout="responsive">

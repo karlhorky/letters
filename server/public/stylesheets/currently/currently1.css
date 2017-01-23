@@ -292,6 +292,94 @@ html {
   100% {
     fill: #4a90e2; } }
 
+/* Typography
+
+   Grid/breakpoints variables are stored in _grid_settings.scss.
+
+   Color variables are stored in _color.scss.
+*/
+/* Sizes
+
+*/
+.underline {
+  text-decoration: underline; }
+
+/* March 2015 Currently
+   "There were days when he touched the tip of her nose and it was enough, a miracle of plenty."
+
+*/
+.past-currentlys {
+  align-items: center;
+  border-bottom: 1px solid indianred;
+  display: flex;
+  flex-wrap: wrap;
+  height: 100vh;
+  justify-content: center;
+  width: 100%; }
+
+.past-currentlys p {
+  width: 30%; }
+
+.past-currentlys ul {
+  display: none;
+  width: 55%;
+  margin-right: 10%; }
+
+.past-currentlys li {
+  border-bottom: 2px solid #959595;
+  cursor: pointer;
+  display: inline-block;
+  outline-offset: 15px;
+  clear: both;
+  color: #959595;
+  display: block;
+  list-style-type: none;
+  line-height: 2;
+  padding-bottom: 3px;
+  position: relative;
+  flex: 0 1 100%; }
+
+.past-currentlys li::before {
+  bottom: 0;
+  content: '';
+  display: block;
+  height: 3px;
+  left: 0;
+  position: absolute;
+  transition: width 0s ease, background .5s ease;
+  width: 0; }
+
+.past-currentlys li::after {
+  background: #959595;
+  bottom: 0;
+  content: '';
+  display: block;
+  height: 3px;
+  position: absolute;
+  right: 0;
+  transition: width .5s ease;
+  width: 0; }
+
+.past-currentlys li:hover {
+  border-bottom: 2px solid indianred;
+  color: indianred; }
+
+.past-currentlys li:hover .outside-link {
+  opacity: 1; }
+
+.past-currentlys li:hover::before {
+  background: indianred;
+  transition: width .5s ease;
+  width: 100%; }
+
+.past-currentlys li:hover::after {
+  background: transparent;
+  transition: all 0s ease;
+  width: 100%; }
+
+.engagement {
+  font-size: 1.8em; }
+
 .sheets {
   clear: both;
   display: table;

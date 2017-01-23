@@ -1,9 +1,11 @@
 {% extends 'layout.html' %}
 
 {% block content %}
-  <link rel="stylesheet" property="stylesheet" href="/stylesheets/home/index1.css">
+  <link rel="stylesheet" property="stylesheet" href="/stylesheets/currently/march-2015/march-2015.css">
 
-  <div class="home">
+  {% include "../partials/past-currentlys.html" %}
+
+  <div class="home serif">
     <div class="sheets">
       <amp-img
         class="sheets-image"
@@ -47,9 +49,9 @@
         </amp-img>
       </div>
       <div class="description">
-        <p>Hi friends. Figuring out what to write here has never been my forté, so please be patient. I always liked calling myself a generalist or Helen or nothing at all but most places I’ve worked haven’t let me have any of those as a title. (Most, meaning, that one place did let me be an official ‘Helen’ on staff. Can you imagine? I like to pretend that they had to awkwardly explain it to a client at some point or another, but alas, if they ever did, that particular story never circled back to me.) </p>
-        <p>I’ve wanted nothing more than to create beautiful things; of course, no one tells you how hard it is to create beautiful things. Or maybe they did, and my brain just edited it out. I’m sure you’ve experienced this. Or maybe not. I shouldn’t assume.</p>
-        <p>When I was eight or so, I took apart a cuckoo clock in my grandparents’ house. Instead of getting angry, they thought I would grow up to be an engineer or something akin to it despite that I spent most of my time setting up in the woods to draw with colored pencils and reading books and writing fanfiction. It was fanciful thinking to say the least. Even though I spend a lot of time coding these days I would be lying if I said coding for coding’s sake was what I wanted to be doing. I’m nervous you’ll think me clichéd but I like the storytelling. (Should I have said it?) I should mention I was not able to put the cuckoo clock back together again. Imagine if I’d done that with a bridge or something. Engineer indeed.</p>
+        <p class="serif">Hi friends. Figuring out what to write here has never been my forté, so please be patient. I always liked calling myself a generalist or Helen or nothing at all but most places I’ve worked haven’t let me have any of those as a title. (Most, meaning, that one place did let me be an official ‘Helen’ on staff. Can you imagine? I like to pretend that they had to awkwardly explain it to a client at some point or another, but alas, if they ever did, that particular story never circled back to me.) </p>
+        <p class="serif">I’ve wanted nothing more than to create beautiful things; of course, no one tells you how hard it is to create beautiful things. Or maybe they did, and my brain just edited it out. I’m sure you’ve experienced this. Or maybe not. I shouldn’t assume.</p>
+        <p class="serif">When I was eight or so, I took apart a cuckoo clock in my grandparents’ house. Instead of getting angry, they thought I would grow up to be an engineer or something akin to it despite that I spent most of my time setting up in the woods to draw with colored pencils and reading books and writing fanfiction. It was fanciful thinking to say the least. Even though I spend a lot of time coding these days I would be lying if I said coding for coding’s sake was what I wanted to be doing. I’m nervous you’ll think me clichéd but I like the storytelling. (Should I have said it?) I should mention I was not able to put the cuckoo clock back together again. Imagine if I’d done that with a bridge or something. Engineer indeed.</p>
       </div>
 
       <div class="my-face">
