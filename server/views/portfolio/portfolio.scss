@@ -22,19 +22,36 @@ svg {
   height: 100vh;
 }
 
-.teh-text {
+.canvas-text {
   align-self: center;
-  background-color: transparent;
-  color: $brand-primary;
+  background-color: $brand-primary;
+  padding: 0 2%;
+  color: white;
   flex: 0 0 auto;
   font-family: $pre-avenir-next;
-  font-size: 4em;
-  font-weight: bold;
+  font-size: 4em !important;
   position: absolute;
-  text-transform: uppercase;
   z-index: 1;
 }
 
-.avenirnext-loaded .teh-text {
+.avenirnext-loaded .canvas-text, .avenirnext-loaded .avenir-headers {
   font-weight: 700;
+  font-family: $avenir-next;
+  text-align: center;
+  font-weight: bold;
+  font-size: 2em;
+  text-transform: uppercase;
+}
+
+.container {
+  margin: auto;
+  width: 35%;
+
+  section {
+    margin-top: 20%;
+
+    &:first-of-type {
+      margin-top: 0;
+    }
+  }
 }

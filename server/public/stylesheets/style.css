@@ -706,7 +706,8 @@ caption {
     opacity: 1; }
   100% {
     opacity: 1;
-    transform: translateY(0px); } }
+    transform: translateY(0px);
+    -webkit-backface-visibility: hidden; } }
 
 @-webkit-keyframes link-underlines {
   0% {
@@ -848,6 +849,24 @@ caption {
     background-color: #cd5ccd; }
   100% {
     background-color: indianred; } }
+
+@-webkit-keyframes red-to-blue {
+  0% {
+    fill: indianred; }
+  100% {
+    fill: #4a90e2; } }
+
+@-moz-keyframes red-to-blue {
+  0% {
+    fill: indianred; }
+  100% {
+    fill: #4a90e2; } }
+
+@keyframes red-to-blue {
+  0% {
+    fill: indianred; }
+  100% {
+    fill: #4a90e2; } }
 
 /* Global
    Global helpers such as globally applied styles and containers.
@@ -1199,7 +1218,8 @@ a:visited {
     opacity: 1; }
   100% {
     opacity: 1;
-    transform: translateY(0px); } }
+    transform: translateY(0px);
+    -webkit-backface-visibility: hidden; } }
 
 @-webkit-keyframes link-underlines {
   0% {
@@ -1342,6 +1362,24 @@ a:visited {
   100% {
     background-color: indianred; } }
 
+@-webkit-keyframes red-to-blue {
+  0% {
+    fill: indianred; }
+  100% {
+    fill: #4a90e2; } }
+
+@-moz-keyframes red-to-blue {
+  0% {
+    fill: indianred; }
+  100% {
+    fill: #4a90e2; } }
+
+@keyframes red-to-blue {
+  0% {
+    fill: indianred; }
+  100% {
+    fill: #4a90e2; } }
+
 .header {
   align-items: flex-end;
   display: flex;
@@ -1373,30 +1411,30 @@ a:visited {
   display: flex; }
 
 .collapsed-nav {
-  background-color: indianred;
-  height: 6px;
-  margin-left: 81%;
+  cursor: pointer;
+  height: auto;
+  position: relative;
+  margin-left: 74%;
   opacity: 0;
   transition: opacity 0.25s ease;
   width: 30px; }
 
-.collapsed-nav:before {
-  width: 30px;
-  height: 1px;
-  background-color: indianred;
-  display: block;
+.collapsed-nav::before {
   content: "";
-  margin-top: 8px;
-  position: absolute; }
+  display: block;
+  height: 7px;
+  width: 30px;
+  background-color: white;
+  border-bottom: 1px solid indianred;
+  border-top: 1px solid indianred; }
 
-.collapsed-nav:after {
-  width: 30px;
-  height: 1px;
-  background-color: indianred;
-  display: block;
+.collapsed-nav::after {
   content: "";
-  margin-top: 16px;
-  position: absolute; }
+  display: block;
+  height: 7px;
+  width: 30px;
+  background-color: white;
+  border-bottom: 1px solid indianred; }
 
 .nav-item-1 {
   opacity: 0; }
@@ -1425,6 +1463,7 @@ a:visited {
   animation-delay: 0.26667s;
   -webkit-font-smoothing: antialiased;
   -webkit-backface-visibility: hidden;
+  display: none;
   opacity: 1; }
 
 .small-nav .collapsed-nav {
@@ -1436,7 +1475,8 @@ a:visited {
   animation-fill-mode: forwards;
   -webkit-animation-delay: 0.25s;
   -moz-animation-delay: 0.25s;
-  animation-delay: 0.25s; }
+  animation-delay: 0.25s;
+  -webkit-backface-visibility: hidden; }
 
 .small-nav .nav-item-4 {
   -webkit-animation: fold-up 0.75s ease;
@@ -1450,6 +1490,7 @@ a:visited {
   animation-delay: 0.2s;
   -webkit-font-smoothing: antialiased;
   -webkit-backface-visibility: hidden;
+  display: none;
   opacity: 1; }
 
 .small-nav .collapsed-nav {
@@ -1461,7 +1502,8 @@ a:visited {
   animation-fill-mode: forwards;
   -webkit-animation-delay: 0.25s;
   -moz-animation-delay: 0.25s;
-  animation-delay: 0.25s; }
+  animation-delay: 0.25s;
+  -webkit-backface-visibility: hidden; }
 
 .small-nav .nav-item-3 {
   -webkit-animation: fold-up 0.75s ease;
@@ -1475,6 +1517,7 @@ a:visited {
   animation-delay: 0.13333s;
   -webkit-font-smoothing: antialiased;
   -webkit-backface-visibility: hidden;
+  display: none;
   opacity: 1; }
 
 .small-nav .collapsed-nav {
@@ -1486,7 +1529,8 @@ a:visited {
   animation-fill-mode: forwards;
   -webkit-animation-delay: 0.25s;
   -moz-animation-delay: 0.25s;
-  animation-delay: 0.25s; }
+  animation-delay: 0.25s;
+  -webkit-backface-visibility: hidden; }
 
 .small-nav .nav-item-2 {
   -webkit-animation: fold-up 0.75s ease;
@@ -1500,6 +1544,7 @@ a:visited {
   animation-delay: 0.06667s;
   -webkit-font-smoothing: antialiased;
   -webkit-backface-visibility: hidden;
+  display: none;
   opacity: 1; }
 
 .small-nav .collapsed-nav {
@@ -1511,7 +1556,8 @@ a:visited {
   animation-fill-mode: forwards;
   -webkit-animation-delay: 0.25s;
   -moz-animation-delay: 0.25s;
-  animation-delay: 0.25s; }
+  animation-delay: 0.25s;
+  -webkit-backface-visibility: hidden; }
 
 .small-nav .nav-item-1 {
   -webkit-animation: fold-up 0.75s ease;
@@ -1525,6 +1571,7 @@ a:visited {
   animation-delay: 0s;
   -webkit-font-smoothing: antialiased;
   -webkit-backface-visibility: hidden;
+  display: none;
   opacity: 1; }
 
 .small-nav .collapsed-nav {
@@ -1536,7 +1583,8 @@ a:visited {
   animation-fill-mode: forwards;
   -webkit-animation-delay: 0.25s;
   -moz-animation-delay: 0.25s;
-  animation-delay: 0.25s; }
+  animation-delay: 0.25s;
+  -webkit-backface-visibility: hidden; }
 
 .big-nav .nav-item-5 {
   -webkit-animation: fold-down 0.75s ease;
@@ -1552,6 +1600,7 @@ a:visited {
   -webkit-backface-visibility: hidden; }
 
 .big-nav .collapsed-nav {
+  height: 0;
   opacity: 0; }
 
 .big-nav .nav-item-4 {
@@ -1568,6 +1617,7 @@ a:visited {
   -webkit-backface-visibility: hidden; }
 
 .big-nav .collapsed-nav {
+  height: 0;
   opacity: 0; }
 
 .big-nav .nav-item-3 {
@@ -1584,6 +1634,7 @@ a:visited {
   -webkit-backface-visibility: hidden; }
 
 .big-nav .collapsed-nav {
+  height: 0;
   opacity: 0; }
 
 .big-nav .nav-item-2 {
@@ -1600,6 +1651,7 @@ a:visited {
   -webkit-backface-visibility: hidden; }
 
 .big-nav .collapsed-nav {
+  height: 0;
   opacity: 0; }
 
 .big-nav .nav-item-1 {
@@ -1616,6 +1668,7 @@ a:visited {
   -webkit-backface-visibility: hidden; }
 
 .big-nav .collapsed-nav {
+  height: 0;
   opacity: 0; }
 
 .nav-items {
@@ -1640,15 +1693,5 @@ a:visited {
 .nav-item a {
   background-image: linear-gradient(transparent, transparent); }
 
-.nav-item:hover::after {
-  animation-duration: 0.15s;
-  animation-fill-mode: forwards;
-  animation-name: grow;
-  animation-timing-function: cubic-bezier(0.415, 0.61, 0.855, 1);
-  background-color: indianred;
-  content: "";
-  display: block;
-  height: 1px;
-  float: right;
-  transform-origin: left;
-  width: 100%; }
+.nav-item:hover {
+  color: slateblue; }

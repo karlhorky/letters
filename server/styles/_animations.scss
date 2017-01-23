@@ -84,6 +84,7 @@
   100% {
     opacity: 1;
     transform: translateY(0px);
+    -webkit-backface-visibility: hidden;
   }
 }
 
@@ -193,5 +194,14 @@
 
   100% {
     background-color: adjust-hue($brand-primary, 360);
+  }
+}
+
+@include keyframe(red-to-blue) {
+  0% {
+    fill: $brand-primary;
+  }
+  100% {
+    fill: $devtools-primary;
   }
 }

@@ -42,31 +42,31 @@
 }
 
 .collapsed-nav {
-  background-color: $brand-primary;
-  height: 6px;
-  margin-left: 81%;
+  cursor: pointer;
+  height: auto;
+  position: relative;
+  margin-left: 74%;
   opacity: 0;
   transition: opacity 0.25s ease;
   width: 30px;
-
-  &:before {
-    width: 30px;
-    height: 1px;
-    background-color: $brand-primary;
-    display: block;
+  
+  &::before {
     content: "";
-    margin-top: 8px;
-    position: absolute;
+    display: block;
+    height: 7px;
+    width: 30px;
+    background-color: white;
+    border-bottom: 1px solid $brand-primary;
+    border-top: 1px solid $brand-primary;
   }
-
-  &:after {
-    width: 30px;
-    height: 1px;
-    background-color: $brand-primary;
-    display: block;
+  
+  &::after {
     content: "";
-    margin-top: 16px;
-    position: absolute;
+    display: block;
+    height: 7px;
+    width: 30px;
+    background-color: white;
+    border-bottom: 1px solid $brand-primary;
   }
 }
 
@@ -89,6 +89,7 @@ $big-nav-items: $nav-items; // just a second loop
 
       -webkit-font-smoothing: antialiased;
       -webkit-backface-visibility: hidden;
+      display: none;
       opacity: 1;
     }
 
@@ -96,6 +97,8 @@ $big-nav-items: $nav-items; // just a second loop
       @include animation(fade-in-and-down 0.25s ease);
       @include animation-fill-mode(forwards);
       @include animation-delay(0.25s);
+
+      -webkit-backface-visibility: hidden; // hack for animation bolding problem, whatever's causing that bullshit
     }
   }
 }
@@ -113,6 +116,7 @@ $big-nav-items: $nav-items; // just a second loop
     }
 
     .collapsed-nav {
+      height: 0;
       opacity: 0;
     }
   }
@@ -144,16 +148,17 @@ $big-nav-items: $nav-items; // just a second loop
   }
 }
 
-.nav-item:hover::after {
-  animation-duration: 0.15s;
-  animation-fill-mode: forwards;
-  animation-name: grow;
-  animation-timing-function: cubic-bezier(0.415, 0.610, 0.855, 1.000);
-  background-color: $brand-primary;
-  content: "";
-  display: block;
-  height: 1px;
-  float: right;
-  transform-origin: left;
-  width: 100%;
+.nav-item:hover {
+  // animation-duration: 0.15s;
+  // animation-fill-mode: forwards;
+  // animation-name: grow;
+  // animation-timing-function: cubic-bezier(0.415, 0.610, 0.855, 1.000);
+  // background-color: $brand-primary;
+  // content: "";
+  // display: block;
+  // height: 1px;
+  // float: right;
+  // transform-origin: left;
+  // width: 100%;
+  color: slateblue;
 }

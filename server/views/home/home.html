@@ -39,7 +39,15 @@
     <section class="writing">
       <p>A smattering of her writing:</p>
 
-      <div class="mad-men">The Things We Own</div>
+      <div class="mad-men">
+        <svg width="959" height="678" viewBox="0 0 959 678" xmlns="http://www.w3.org/2000/svg">
+          <g fill-rule="evenodd">
+            <path d="M570 0h40v677.309h-40zM485 0h80v677.309h-80zM322 0h160v677.309H322zM0 0h320v677.309H0zM620 0h20v677.309h-20zM660 0h10v677.309h-10zM710 0h5v677.309h-5zM795 0h3v677.309h-3zM958 0h1v677.309h-1z"/>
+          </g>
+        </svg>
+        <h1><a href="/writing/the-things-we-own">The Things We Own</a></h1>
+        <em>Cleaning up after someone's gone</em>
+      </div>
 
       <div class="additional-articles"></div>
 
@@ -77,21 +85,4 @@
       <p><a href="/writing">Read something?</a></p>
     </section>
   </div>
-
-  <script
-  src="https://code.jquery.com/jquery-2.2.4.min.js"
-  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
-  crossorigin="anonymous"></script>
-  <script async src="/javascripts/parallax.js"></script>
-  <script async src="/javascripts/youtube.js"></script>
-  <script type="text/javascript">
-    $(window).scroll(function() {
-      var scroll = $(window).scrollTop();
-      if (scroll >= 10) {
-        $(".navigation").addClass("small-nav").removeClass("big-nav");
-      } else {
-        $(".navigation").addClass("big-nav").removeClass("small-nav");
-      }
-    });
-  </script>
 {% endblock %}

@@ -33,5 +33,26 @@
     {% block content %}{% endblock %}
 
     {% include "partials/footer.html" %}
+
+    <script
+    src="https://code.jquery.com/jquery-2.2.4.min.js"
+    integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+    crossorigin="anonymous"></script>
+    <script async src="/javascripts/parallax.js"></script>
+    <script async src="/javascripts/youtube.js"></script>
+    <script type="text/javascript">
+      $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+        if (scroll >= 10) {
+          $(".navigation").addClass("small-nav").removeClass("big-nav");
+        } else {
+          $(".navigation").addClass("big-nav").removeClass("small-nav");
+        }
+      });
+
+      $(".collapsed-nav").click(function(){
+        $(".navigation").addClass("big-nav").removeClass("small-nav");
+      });
+    </script>
   </body>
 </html>

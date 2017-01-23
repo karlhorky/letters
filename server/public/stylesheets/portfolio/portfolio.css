@@ -51,17 +51,31 @@ svg {
   width: 100vw;
   height: 100vh; }
 
-.teh-text {
+.canvas-text {
   align-self: center;
-  background-color: transparent;
-  color: indianred;
+  background-color: indianred;
+  padding: 0 2%;
+  color: white;
   flex: 0 0 auto;
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-  font-size: 4em;
-  font-weight: bold;
+  font-size: 4em !important;
   position: absolute;
-  text-transform: uppercase;
   z-index: 1; }
 
-.avenirnext-loaded .teh-text {
-  font-weight: 700; }
+.avenirnext-loaded .canvas-text, .avenirnext-loaded .avenir-headers {
+  font-weight: 700;
+  font-family: AvenirNext, -apple-system, BlinkMacSystemFont, sans-serif;
+  text-align: center;
+  font-weight: bold;
+  font-size: 2em;
+  text-transform: uppercase; }
+
+.container {
+  margin: auto;
+  width: 35%; }
+
+.container section {
+  margin-top: 20%; }
+
+.container section:first-of-type {
+  margin-top: 0; }

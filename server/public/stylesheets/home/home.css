@@ -97,13 +97,43 @@ html {
   z-index: 0; }
 
 .mad-men {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  fill: indianred;
+  position: relative;
+  transition: fill 0.25s ease; }
+
+.mad-men:hover svg {
+  animation: red-to-blue 8s linear infinite; }
+
+.mad-men svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  width: 85%;
+  fill: indianred; }
+
+.mad-men h1 {
   font-family: "Didot 96 A", "Didot 96 B", serif;
   font-size: 14em;
   font-style: italic;
   line-height: 1.25;
   padding: 0 5%;
+  position: relative;
   text-transform: uppercase;
-  background-image: linear-gradient(to right, white 12%, indianred 12%, indianred 35%, white 35%, white 36%, indianred 36%, indianred 57%, white 57%, white 57.5%, indianred 57.5%, indianred 62%, white 62%, white 63%, indianred 63%, indianred 65%, white 65%, white 67%, indianred 67%, indianred 67.75%, white 67.75%, white 75%, indianred 75%, indianred 75.25%, white 75.25%, white 76%, indianred 76%, indianred 76.2%, white 76.2%); }
+  z-index: 1; }
+
+.mad-men h1 a {
+  color: #2d2d2d;
+  background-image: linear-gradient(transparent, transparent); }
+
+.mad-men em {
+  background-color: white;
+  margin-top: 8%;
+  position: absolute;
+  right: 15%; }
 
 .additional-articles {
   flex: 0 1 100%;
@@ -188,8 +218,7 @@ html {
 
 .hobbies {
   margin-bottom: 60%;
-  margin-top: 15%;
-  position: relative; }
+  margin-top: 15%; }
 
 .hobbies p {
   float: left;
