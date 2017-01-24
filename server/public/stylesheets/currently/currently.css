@@ -43,6 +43,9 @@ html {
   justify-content: center;
   width: 100%; }
 
+.past-currentlys a {
+  cursor: pointer; }
+
 .past-currentlys p {
   width: 30%; }
 

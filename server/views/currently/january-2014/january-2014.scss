@@ -1,0 +1,208 @@
+@import 'bourbon';
+@import '../../../styles/grid-settings';
+@import 'neat';
+@import '../../../styles/colors';
+@import '../../../styles/animations';
+@import '../../../styles/typography';
+
+/* Past currentlys
+   Included at the top of each currently page.
+
+*/
+.past-currentlys {
+  align-items: center;
+  border-bottom: 1px solid $brand-primary;
+  display: flex;
+  flex-wrap: wrap;
+  height: 100vh;
+  justify-content: center;
+  width: 100%;
+
+  a {
+    cursor: pointer;
+  }
+
+  p {
+    width: 30%;
+  }
+
+  ul {
+    display: none;
+    width: 55%;
+    margin-right: 10%;
+  }
+
+  li {
+    border-bottom: 2px solid $brand-gray-dark;
+    cursor: pointer;
+    display: inline-block;
+    outline-offset: 15px;
+    clear: both;
+    color: $brand-gray-dark;
+    display: block;
+    list-style-type: none;
+    line-height: 2;
+    padding-bottom: 3px;
+    position: relative;
+    flex: 0 1 100%;
+
+    &::before {
+      bottom: 0;
+      content: '';
+      display: block;
+      height: 3px;
+      left: 0;
+      position: absolute;
+      transition: width 0s ease, background .5s ease;
+      width: 0;
+    }
+
+    &::after {
+      background: $brand-gray-dark;
+      bottom: 0;
+      content: '';
+      display: block;
+      height: 3px;
+      position: absolute;
+      right: 0;
+      transition: width .5s ease;
+      width: 0;
+    }
+
+    &:hover {
+      border-bottom: 2px solid $brand-primary;
+      color: $brand-primary;
+      
+      .outside-link {
+        opacity: 1;
+      }
+
+      &::before {
+        background: $brand-primary;
+        transition: width .5s ease;
+        width: 100%;
+      }
+
+      &::after {
+        background: transparent;
+        transition: all 0s ease;
+        width: 100%;
+      }
+    }
+  }
+}
+
+.engagement {
+  font-size: $h2-font-size;
+}
+
+/* March 2015 Currently
+   "There were days when he touched the tip of her nose and it was enough, a miracle of plenty."
+
+*/
+.manifesto {
+  padding: 1em inherit;
+  width: 40%;
+  margin: 10% auto;
+}
+
+.inspiration-grid {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: auto;
+  overflow-x: hidden;
+  width: 100vw;
+
+  @include media($nine-col) {
+    height: 1350px;
+  }
+
+  @include media($twelve-col) {
+    height: 1950px;
+  }
+}
+
+.inspiration-item {
+  opacity: 0; // animation fill mode forwards, so ends up being 1 after animation is complete
+  width: 100%;
+
+  img {
+    background-color: tomato; 
+  }
+
+  p {
+    text-align: center;
+    margin: 2em auto;
+  }
+
+  @include media($nine-col) {
+    width: 25%;
+  }
+}
+
+$i: 15; // number of items in our inspiration grid halved
+
+@while $i > 0 {
+  .inspiration-item-#{$i} {
+    @include animation(fade-in-and-up 0.5s ease);
+    @include animation-fill-mode(forwards);
+  }
+  $i: $i - 1;
+}
+
+.inspiration-item-5 {
+  @include animation-delay(0.15s);
+}
+
+.inspiration-item-8 {
+  @include animation-delay(0.2s);
+}
+
+.inspiration-item-12 {
+  @include animation-delay(0.22s);
+}
+
+.inspiration-item-3 {
+  @include animation-delay(0.25s);
+}
+
+.inspiration-item-6 {
+  @include animation-delay(0.28s);
+}
+
+.inspiration-item-9 {
+  @include animation-delay(0.30s);
+}
+
+.inspiration-item-13 {
+  @include animation-delay(0.32s);
+}
+
+.inspiration-item-4 {
+  @include animation-delay(0.35s);
+}
+
+.inspiration-item-7 {
+  @include animation-delay(0.38s);
+}
+
+.inspiration-item-10 {
+  @include animation-delay(0.4s);
+}
+
+.inspiration-item-13 {
+  @include animation-delay(0.42s);
+}
+
+.inspiration-item-14 {
+  @include animation-delay(0.44s);
+}
+
+.inspiration-item-11 {
+  @include animation-delay(0.46s);
+}
+
+.inspiration-item-15 {
+  @include animation-delay(0.48s);
+}
