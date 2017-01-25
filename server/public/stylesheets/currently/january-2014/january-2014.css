@@ -383,45 +383,127 @@ html {
 .engagement {
   font-size: 1.8em; }
 
-/* March 2015 Currently
-   "There were days when he touched the tip of her nose and it was enough, a miracle of plenty."
+/* January 2013 Currently
+   "I ride on the backs of giants."
 
 */
-.manifesto {
-  padding: 1em inherit;
-  width: 40%;
-  margin: 10% auto; }
-
-.inspiration-grid {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  height: auto;
-  overflow-x: hidden;
-  width: 100vw; }
-
-@media screen and (min-width: 850px) {
-  .inspiration-grid {
-    height: 1350px; } }
-
-@media screen and (min-width: 1200px) {
-  .inspiration-grid {
-    height: 1950px; } }
-
 .inspiration-item {
-  opacity: 0;
+  opacity: 0; }
+
+.inspiration-item-1 {
+  float: right;
+  margin-top: 0;
+  width: 40%; }
+
+.inspiration-item-2 {
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  justify-content: center; }
+
+.inspiration-item-2 p {
+  clear: both;
+  display: block;
+  flex: 1 1 100%; }
+
+.inspiration-item-2 p:first-of-type {
+  opacity: 0.1; }
+
+.inspiration-item-2 p:nth-of-type(2) {
+  margin-top: -18.5%;
+  opacity: 0.3; }
+
+.inspiration-item-2 p:nth-of-type(3) {
+  margin-top: -18.5%;
+  opacity: 0.5; }
+
+.inspiration-item-2 p:nth-of-type(4) {
+  margin-top: -18.5%; }
+
+.inspiration-item-4 {
+  float: left;
+  margin-top: 30%; }
+
+.bird-erase {
+  float: left;
+  width: 25%;
+  margin-top: 20%; }
+
+.bird-erase img {
   width: 100%; }
 
-.inspiration-item img {
-  background-color: tomato; }
+.bird-erase img:nth-of-type(2) {
+  margin-top: -4%; }
 
-.inspiration-item p {
+.plenty {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  float: right;
+  height: 100vh;
+  justify-content: center;
+  margin-right: 5%;
+  margin-top: 20%;
+  width: 35%; }
+
+.plenty em {
+  flex: 1 1 100%;
+  text-align: right; }
+
+.burnt-toast {
+  align-items: center;
+  clear: both;
+  display: flex;
+  justify-content: center;
+  margin: 100% auto 10% auto;
+  width: 70%; }
+
+.brave {
+  margin: 0 auto 10% auto;
   text-align: center;
-  margin: 2em auto; }
+  width: 40%; }
 
-@media screen and (min-width: 850px) {
-  .inspiration-item {
-    width: 25%; } }
+.brave em {
+  float: right; }
+
+.balloons {
+  margin: auto;
+  width: 70%; }
+
+.balloons img:first-of-type {
+  clear: both;
+  display: block;
+  margin-left: 40%;
+  width: 30%; }
+
+.balloons img:nth-of-type(2) {
+  float: left;
+  width: 33.3%; }
+
+.balloons img:nth-of-type(3) {
+  float: left;
+  width: 33.3%; }
+
+.balloons img:nth-of-type(4) {
+  float: left;
+  width: 33.3%; }
+
+.balloons p {
+  margin-top: 40%;
+  display: block;
+  text-align: center; }
+
+.inspiration-item-6 {
+  width: 30%;
+  margin: 20% 36%; }
+
+.inspiration-item-16 {
+  -webkit-animation: fade-in-and-up 0.5s ease;
+  -moz-animation: fade-in-and-up 0.5s ease;
+  animation: fade-in-and-up 0.5s ease;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards; }
 
 .inspiration-item-15 {
   -webkit-animation: fade-in-and-up 0.5s ease;
