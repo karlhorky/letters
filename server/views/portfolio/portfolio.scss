@@ -45,13 +45,352 @@ svg {
 
 .container {
   margin: auto;
+  clear: both;
   width: 35%;
 
   section {
+    clear: both;
     margin-top: 20%;
 
     &:first-of-type {
       margin-top: 0;
     }
+  }
+}
+
+/* Interactive Firefox Devtools Demo
+   JUST WHEN I THOUGHT I WAS DONE
+
+*/
+$theme-splitter-color: #dde1e4;
+$theme-body-color: #393f4c;
+$theme-toolbar-background: #fcfcfc;
+$theme-selection-background: #0996f8;
+
+// Grays
+$theme-gray-1: #f3f3f3;
+$theme-gray-2: #dde1e4;
+
+@keyframes icon-bounce-in {
+  0% {
+    height: 7px;
+    margin-left: 2px;
+    opacity: 0;
+    transform-origin: bottom bottom;
+    transform: translateY(5px);
+    width: 10px;
+ }
+
+  50% {
+    height: 7px;
+    margin-left: 2px;
+    opacity: 1;
+    transform-origin: bottom bottom;
+    transform: translateY(-3px);
+    width: 10px;
+  }
+  
+  100% {
+    height: 7px;
+    margin-left: 2px;
+    transform-origin: bottom bottom;
+    transform: translateY(0);
+    width: 10px;
+ }
+}
+
+@keyframes icon-bounce-out {
+  0% {
+    height: 7px;
+    margin-left: 2px;
+    opacity: 1;
+    transform-origin: top top;
+    transform: translateY(0);
+    width: 10px;
+ }
+
+  50% {
+    height: 7px;
+    margin-left: 2px;
+    opacity: 1;
+    transform-origin: top top;
+    transform: translateY(-3px);
+    width: 10px;
+  }
+  
+  100% {
+    height: 7px;
+    margin-left: 2px;
+    opacity: 0;
+    transform-origin: top top;
+    transform: translateY(5px);
+    width: 10px;
+  }
+}
+
+@keyframes icon-no-change {
+  from {
+    height: 7px;
+    margin-left: 2px;
+    transform-origin: bottom bottom;
+    transform: scale3d(1, 1, 1);
+    width: 10px;
+ }
+
+  to {
+    height: 7px;
+    margin-left: 2px;
+    transform-origin: bottom bottom;
+    transform: scale3d(1, 1, 1);
+    width: 10px;
+  }
+}
+
+@keyframes icon-grow {
+  0% {
+    height: 7px;
+    margin-left: 2px;
+    transform-origin: bottom bottom;
+    transform: scale3d(1, 1, 1);
+    width: 10px;
+ }
+
+  50% {
+    height: 7px;
+    margin-left: 2px;
+    transform-origin: bottom bottom;
+    transform: scale3d(1.2, 1.2, 1.2);
+    width: 10px;
+  }
+  
+  100% {
+    height: 7px;
+    margin-left: 2px;
+    transform-origin: bottom bottom;
+    transform: scale3d(1, 1, 1);
+    width: 10px;
+ }
+}
+
+.firefox-devtools {
+  margin: 0 auto 7% auto;
+  outline: 1px solid $theme-splitter-color;
+  width: 70vw;
+
+  svg {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.hotspot {
+  cursor: pointer;
+  opacity: 0.75;
+  position: absolute;
+  transition: opacity 0.25s ease-in-out;
+  z-index: 2;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.hotspot-info {
+  display: none;
+  color: $brand-primary;
+  background-color: white;
+  outline: 4px solid $brand-primary;
+  padding: 5px;
+  position: relative;
+  margin-left: -48%;
+  margin-top: 40px;
+  width: 250px;
+
+  &::after {
+    border-bottom: 30px solid white;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    content: "";
+    display: block;
+    height: 0;
+    left: 50%;
+    margin-left: -7.5px;
+    position: absolute;
+    top: -30px;
+    width: 0;
+  }
+
+  &::before {
+    border-bottom: 40px solid $brand-primary;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    content: "";
+    display: block;
+    height: 0;
+    left: 50%;
+    margin-left: -12.5px;
+    position: absolute;
+    top: -40px;
+    width: 0;
+  }
+}
+
+.nav {
+  align-content: center;
+  align-items: stretch;
+  background-color: $theme-toolbar-background;
+  border-bottom: 1px solid $theme-splitter-color;
+  color: #696969;
+  display: flex;
+  flex-direction: row;
+  height: 40px;
+  position: relative;
+  width: 100%;
+  
+  .hotspot:first-of-type {
+    top: 5px;
+    left: 3.5%;
+  }
+  
+  .hotspot:nth-of-type(2) {
+    top: 5px;
+    right: 6.5%;
+  }
+  
+  .hotspot:nth-of-type(3) {
+    top: 7px;
+    left: 32%;
+  }
+}
+
+.command-pick {
+  align-self: center;
+  border-right: 1px solid $theme-splitter-color;
+  float: left;
+  padding: 0 15px;
+  margin-top: 3px;
+}
+
+.panels {
+  flex: 0 1 70%;
+}
+
+.panel-item {
+  cursor: pointer; // in devtools they're links, n'est-ce pas?
+  flex: 0 1 15%;
+  float: left;
+  padding: 7px 0 10px 9px;
+  min-width: 112px;
+  max-width: 117px;
+  position: relative;
+  text-align: center;
+  transition: all 0.5s ease;
+  
+  &:hover {
+    color: $theme-selection-background;
+  }
+  
+  &:active {
+    color: $theme-selection-background;
+  }
+  
+  &.active {
+    color: $theme-selection-background;
+  }
+}
+
+.box {
+  float: left;
+  margin-top: -1px;
+  position: absolute;
+  transform: scale3d(0, 0, 0);
+  transition: all 0.4s easeinout;
+}
+
+.icon-in {
+  animation-name: icon-bounce-in;
+  animation-duration: 0.35s;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.415, 0.610, 0.855, 1.000);
+  height: 7px;
+  margin-left: 7px;
+  transform-origin: bottom bottom;
+  transform: scale3d(1, 1, 1);
+  width: 10px;
+}
+
+.icon-grow {
+  animation-name: icon-grow;
+  animation-duration: 0.25s;
+  animation-fill-mode: forwards;
+  animation-timing-function: easeinout;
+  height: 7px;
+  margin-left: 7px;
+  transform-origin: bottom bottom;
+  transform: scale3d(1.1, 1.1, 1.1);
+  width: 10px;
+}
+
+.icon-out {
+  animation-name: icon-bounce-out;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+  animation-timing-function: easeinout;
+  height: 7px;
+  margin-left: 7px;
+  opacity: 0;
+  transform-origin: bottom bottom;
+  transform: scale3d(1, 1, 1);
+  width: 10px;
+}
+
+.icons {
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: nowrap;
+  display: flex;
+  flex: 0 1 30%;
+  padding-right: 10px;
+}
+
+.icon {
+  flex: 0 1 auto;
+  padding: 0 3px;
+}
+
+.secondary-menu {
+  padding: 0 5px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+.inspector {
+  flex: 1 1 65%;
+  
+  img {
+    width: 100%;
+  }
+}
+
+.rules-area {
+  flex: 1 1 43%;
+  border-left: 1px solid $theme-splitter-color;
+  position: relative;
+  
+  img {
+    width: 100%;
+  }
+  
+  .hotspot:first-of-type {
+    top: 5px;
+    left: 3%;
+  }
+  
+  .hotspot:nth-of-type(2) {
+    top: 76%;
+    left: 23%;
   }
 }
