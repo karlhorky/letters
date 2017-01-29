@@ -73,102 +73,82 @@ $theme-gray-2: #dde1e4;
 
 @keyframes icon-bounce-in {
   0% {
-    height: 7px;
-    margin-left: 2px;
     opacity: 0;
     transform-origin: bottom bottom;
     transform: translateY(5px);
-    width: 10px;
+    width: 15px;
  }
 
   50% {
-    height: 7px;
-    margin-left: 2px;
     opacity: 1;
     transform-origin: bottom bottom;
     transform: translateY(-3px);
-    width: 10px;
+    width: 15px;
   }
   
   100% {
-    height: 7px;
-    margin-left: 2px;
     transform-origin: bottom bottom;
     transform: translateY(0);
-    width: 10px;
+    width: 15px;
  }
 }
 
 @keyframes icon-bounce-out {
   0% {
-    height: 7px;
-    margin-left: 2px;
     opacity: 1;
     transform-origin: top top;
     transform: translateY(0);
-    width: 10px;
+    width: 15px;
  }
 
   50% {
-    height: 7px;
-    margin-left: 2px;
     opacity: 1;
     transform-origin: top top;
     transform: translateY(-3px);
-    width: 10px;
+    width: 15px;
   }
   
   100% {
-    height: 7px;
-    margin-left: 2px;
     opacity: 0;
     transform-origin: top top;
     transform: translateY(5px);
-    width: 10px;
+    width: 15px;
   }
 }
 
 @keyframes icon-no-change {
   from {
-    height: 7px;
-    margin-left: 2px;
     transform-origin: bottom bottom;
     transform: scale3d(1, 1, 1);
-    width: 10px;
+    width: 15px;
  }
 
   to {
-    height: 7px;
-    margin-left: 2px;
     transform-origin: bottom bottom;
     transform: scale3d(1, 1, 1);
-    width: 10px;
+    width: 15px;
   }
 }
 
 @keyframes icon-grow {
   0% {
-    height: 7px;
-    margin-left: 2px;
     transform-origin: bottom bottom;
     transform: scale3d(1, 1, 1);
-    width: 10px;
+    width: 17px;
  }
 
   50% {
-    height: 7px;
-    margin-left: 2px;
     transform-origin: bottom bottom;
     transform: scale3d(1.2, 1.2, 1.2);
-    width: 10px;
+    margin-left: -1px;
+    margin-top: 3px;
+    width: 17px;
   }
   
   100% {
-    height: 7px;
-    margin-left: 2px;
     transform-origin: bottom bottom;
     transform: scale3d(1, 1, 1);
-    width: 10px;
+    width: 17px;
  }
 }
 
@@ -300,48 +280,51 @@ $theme-gray-2: #dde1e4;
 }
 
 .box {
+  @include transform(scale3d(0, 0, 0));
+
   float: left;
   margin-top: -1px;
   position: absolute;
-  transform: scale3d(0, 0, 0);
   transition: all 0.4s easeinout;
 }
 
 .icon-in {
+  @include transform(scale3d(1, 1, 1));
+
   animation-name: icon-bounce-in;
   animation-duration: 0.35s;
   animation-fill-mode: forwards;
   animation-timing-function: cubic-bezier(0.415, 0.610, 0.855, 1.000);
-  height: 7px;
-  margin-left: 7px;
+  height: 20px;
+  margin-top: 2.5px;
   transform-origin: bottom bottom;
-  transform: scale3d(1, 1, 1);
-  width: 10px;
+  width: 30px;
 }
 
 .icon-grow {
+  @include transform(scale3d(1.1, 1.1, 1.1));
+  @include transform-origin(bottom bottom);
+
   animation-name: icon-grow;
   animation-duration: 0.25s;
   animation-fill-mode: forwards;
   animation-timing-function: easeinout;
-  height: 7px;
-  margin-left: 7px;
-  transform-origin: bottom bottom;
-  transform: scale3d(1.1, 1.1, 1.1);
-  width: 10px;
+  margin-top: 3px;
+  margin-left: -1px;
+  width: 17px;
 }
 
 .icon-out {
+  @include transform-origin(bottom bottom);
+
   animation-name: icon-bounce-out;
   animation-duration: 0.3s;
   animation-fill-mode: forwards;
   animation-timing-function: easeinout;
-  height: 7px;
-  margin-left: 7px;
+  margin-top: 2.5px;
   opacity: 0;
-  transform-origin: bottom bottom;
   transform: scale3d(1, 1, 1);
-  width: 10px;
+  width: 15px;
 }
 
 .icons {
@@ -355,7 +338,6 @@ $theme-gray-2: #dde1e4;
 
 .icon {
   flex: 0 1 auto;
-  padding: 0 3px;
 }
 
 .secondary-menu {

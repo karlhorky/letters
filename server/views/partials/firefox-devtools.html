@@ -71,7 +71,7 @@
   var items = document.getElementsByClassName('panel-item');
   var box = document.getElementsByClassName('box');
 
-  if (items[0].className === 'item active') {
+  if (items[0].className === 'panel-item active') {
     // gotta make sure that box comes in on page load
     items[0].getElementsByClassName('box')[0].className+=' icon-in';
   }
@@ -94,7 +94,7 @@
     });
     
     items[i].addEventListener('mouseout', function(){
-      if (this.className === 'item active') {
+      if (this.className === 'panel-item active') {
         // console.log(this.className);
         return;
       } else {
