@@ -44,8 +44,9 @@ svg {
 }
 
 .container {
-  margin: auto;
   clear: both;
+  margin: auto;
+  text-align: justify;
   width: 35%;
 
   section {
@@ -440,4 +441,26 @@ main {
 
 .slide-5 {
   width: 347px !important;
+}
+
+.portfolio-review {
+  margin: 10% auto 100% auto;
+  position: relative;
+  text-align: justify;
+
+  .portfolio-copy {
+    float: left;
+    margin-left: 15%;
+    margin-right: 10%;
+    width: 30%;
+  }
+
+  .portfolio-images {
+    float: left;
+    width: 30%;
+
+    img {
+      width: 100%;
+    }
+  }
 }

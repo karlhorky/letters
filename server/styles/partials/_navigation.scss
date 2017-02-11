@@ -23,8 +23,6 @@
   $color2: $brand-primary;
   $color: peru;
 
-  background-color: white;
-
   &:hover {
     animation: blinds 0.75s linear forwards;
     background: linear-gradient(0deg, $color 25%, transparent 25%) 0 0 / 0.5em 0.5em
@@ -55,7 +53,7 @@
     display: block;
     height: 7px;
     width: 30px;
-    background-color: white;
+    background-color: transparent;
     border-bottom: 1px solid $brand-primary;
     border-top: 1px solid $brand-primary;
   }
@@ -65,7 +63,7 @@
     display: block;
     height: 7px;
     width: 30px;
-    background-color: white;
+    background-color: transparent;
     border-bottom: 1px solid $brand-primary;
   }
 }

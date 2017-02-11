@@ -1393,9 +1393,6 @@ a:visited {
   width: 300px;
   z-index: 2; }
 
-.name a {
-  background-color: white; }
-
 .name a:hover {
   animation: blinds 0.75s linear forwards;
   background: linear-gradient(0deg, peru 25%, transparent 25%) 0 0/0.5em 0.5em, linear-gradient(0deg, indianred 50%, transparent 50%) 0 0/1em 1em;
@@ -1424,7 +1421,7 @@ a:visited {
   display: block;
   height: 7px;
   width: 30px;
-  background-color: white;
+  background-color: transparent;
   border-bottom: 1px solid indianred;
   border-top: 1px solid indianred; }
 
@@ -1433,7 +1430,7 @@ a:visited {
   display: block;
   height: 7px;
   width: 30px;
-  background-color: white;
+  background-color: transparent;
   border-bottom: 1px solid indianred; }
 
 .nav-item-1 {
