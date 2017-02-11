@@ -79,9 +79,6 @@ svg {
   clear: both;
   margin-top: 20%; }
 
-.container section:first-of-type {
-  margin-top: 0; }
-
 /* Interactive Firefox Devtools Demo
    JUST WHEN I THOUGHT I WAS DONE
 
@@ -159,21 +156,29 @@ svg {
   opacity: 0.75;
   position: absolute;
   transition: opacity 0.25s ease-in-out;
+  width: 24px;
   z-index: 2; }
 
 .hotspot:hover {
   opacity: 1; }
 
+.avenirnext-loaded .hotspot-info {
+  font-family: AvenirNext, -apple-system, BlinkMacSystemFont, sans-serif; }
+
 .hotspot-info {
-  display: none;
-  color: indianred;
+  align-items: center;
   background-color: white;
-  outline: 4px solid indianred;
-  padding: 5px;
-  position: relative;
-  margin-left: -48%;
+  color: indianred;
+  display: flex;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: bold;
+  justify-content: center;
+  margin-left: -96px;
   margin-top: 40px;
-  width: 250px; }
+  outline: 4px solid indianred;
+  padding: 5px 10px;
+  position: relative;
+  width: 200px; }
 
 .hotspot-info::after {
   border-bottom: 30px solid white;
@@ -200,6 +205,24 @@ svg {
   position: absolute;
   top: -40px;
   width: 0; }
+
+.hotspot-info a {
+  background-image: none;
+  flex: 1 1 70%; }
+
+.outside-link {
+  flex: 1 1 30%;
+  margin-right: 1%;
+  margin-left: 3px;
+  max-width: 16px;
+  transition: opacity 0.15s ease-in-out; }
+
+.inside-link {
+  flex: 1 1 30%;
+  margin-right: 2%;
+  margin-left: 3px;
+  max-width: 20px;
+  transition: opacity 0.15s ease-in-out; }
 
 .nav {
   align-content: center;
@@ -354,3 +377,31 @@ main {
 .rules-area .hotspot:nth-of-type(2) {
   top: 76%;
   left: 23%; }
+
+/* Carousel Frame styles
+   You'll know soon enough.
+
+*/
+.public-speaking-header {
+  margin-top: 20%; }
+
+.slide {
+  height: 194px !important; }
+
+.slide img {
+  width: 100%; }
+
+.slide-1 {
+  width: 346px !important; }
+
+.slide-2 {
+  width: 343px !important; }
+
+.slide-3 {
+  width: 287px !important; }
+
+.slide-4 {
+  width: 346px !important; }
+
+.slide-5 {
+  width: 347px !important; }
