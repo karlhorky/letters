@@ -35,3 +35,10 @@ FontFaceOnload( "CalendasPlus", {
     docEl.className += " calendasplus-loaded";
   }
 });
+
+FontFaceOnload( "icomoon", {
+  success: function() {
+    var docEl = document.documentElement;
+    docEl.className += " ico-loaded";
+  }
+});

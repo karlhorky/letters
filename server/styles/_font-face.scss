@@ -30,4 +30,7 @@
 @include font-face(CalendasPlus,       '../fonts/calendas-plus-italic', 400, italic);
 
 // League Spartan, idk used it somewhere as decoration
-@include font-face(LeagueSpartan,        '../fonts/league-spartan-bold', 700);
+@include font-face(LeagueSpartan,      '../fonts/league-spartan-bold', 700);
+
+// Icons needed for old portfolio projects
+@include font-face(Icomoon,            '../fonts/icomoon', normal);

@@ -114,6 +114,12 @@ html {
   font-weight: 700;
   src: url("../fonts/league-spartan-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/league-spartan-bold.woff2") format("woff2"), url("../fonts/league-spartan-bold.woff") format("woff"), url("../fonts/league-spartan-bold.ttf") format("truetype"), url("../fonts/league-spartan-bold.svg#LeagueSpartan") format("svg"); }
 
+@font-face {
+  font-family: Icomoon;
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/icomoon.eot?#iefix") format("embedded-opentype"), url("../fonts/icomoon.woff2") format("woff2"), url("../fonts/icomoon.woff") format("woff"), url("../fonts/icomoon.ttf") format("truetype"), url("../fonts/icomoon.svg#Icomoon") format("svg"); }
+
 .post {
   margin: auto;
   text-align: justify;

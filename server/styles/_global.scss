@@ -90,6 +90,20 @@ li {
   }
 }
 
+/* Set icon font
+   Needed for some older portfolio projects.
+
+*/
+.ico {
+  font-family: $pre-ico;
+}
+
+.ico-loaded {
+  .ico {
+    font-family: $ico;
+  }
+}
+
 /* "Explosion" code
    The parallax lines that appear on a lot of pages on the site.
 

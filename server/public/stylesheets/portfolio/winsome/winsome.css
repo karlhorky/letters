@@ -1,0 +1,557 @@
+/* Grid
+   Grid settings through Bourbon Neat.
+   https://github.com/thoughtbot/neat#using-neat
+
+   Color variables are stored in _color.scss.
+
+   Typography variables are stored in _typography.scss.
+*/
+html {
+  box-sizing: border-box; }
+
+*, *::after, *::before {
+  box-sizing: inherit; }
+
+/* Color
+
+   Grid/breakpoints variables are stored in _grid_settings.scss.
+
+   Typography variables are stored in _typography.scss.
+*/
+/* Typography
+
+   Grid/breakpoints variables are stored in _grid_settings.scss.
+
+   Color variables are stored in _color.scss.
+*/
+/* Sizes
+
+*/
+.underline {
+  text-decoration: underline; }
+
+.container {
+  align-items: center;
+  clear: both;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  width: 70%; }
+
+.avenirnext-loaded .avenir-headers {
+  font-weight: 700;
+  font-family: AvenirNext, -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: bold;
+  font-size: 2em;
+  text-transform: uppercase; }
+
+.twitter {
+  margin-bottom: 10em;
+  text-align: center;
+  font-style: italic;
+  width: 100%; }
+
+.project .container {
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+
+.project .well-made-images ~ p {
+  flex: 0 1 100%;
+  padding-left: 10%; }
+
+@media screen and (min-width: 850px) {
+  .project .well-made-images ~ p {
+    flex: 0 1 50%; } }
+
+.project p {
+  flex: 0 1 100%;
+  margin: 10% auto; }
+
+@media screen and (min-width: 850px) {
+  .project p {
+    flex: 0 1 65%; } }
+
+.project p img, .project p video {
+  max-width: 100%;
+  width: 100%; }
+
+.callout {
+  flex: 0 1 100%;
+  position: relative; }
+
+.callout img, .callout video {
+  max-width: 100%;
+  width: 100%; }
+
+.callout p {
+  left: 0;
+  position: absolute;
+  text-align: center;
+  top: 60%;
+  width: 100%;
+  z-index: 2; }
+
+@media screen and (min-width: 850px) {
+  .callout p {
+    top: 80%; } }
+
+.project-description {
+  padding: 3em inherit; }
+
+@media screen and (min-width: 850px) {
+  .project-description {
+    padding: 6em inherit; } }
+
+.project-blurb {
+  flex: 0 1 100%; }
+
+.project-blurb p {
+  margin: 2% auto; }
+
+@media screen and (min-width: 850px) {
+  .project-blurb {
+    flex: 0 1 65%; } }
+
+.detail {
+  display: none;
+  flex: 0 1 20%; }
+
+@media screen and (min-width: 850px) {
+  .detail {
+    display: block; } }
+
+.detail img {
+  max-width: 100%;
+  padding: 2%; }
+
+.project-detail-100 {
+  align-self: flex-start;
+  flex: 0 1 100%;
+  margin-top: 10%; }
+
+.project-detail-50 {
+  align-self: flex-start;
+  flex: 0 1 100%;
+  margin-top: 10%;
+  min-height: 250px;
+  position: relative; }
+
+@media screen and (min-width: 850px) {
+  .project-detail-50 {
+    flex: 0 1 48%; } }
+
+.project-detail-50 img {
+  max-width: 100%; }
+
+.project-detail-50.winsome {
+  background-color: rosybrown;
+  display: flex;
+  justify-content: center;
+  min-height: 300px;
+  position: relative; }
+
+.project-detail-50.winsome:nth-of-type(3) {
+  background-color: rosybrown; }
+
+.project-detail-third {
+  flex: 0 1 100%;
+  margin-top: 10%; }
+
+@media screen and (min-width: 850px) {
+  .project-detail-third {
+    flex: 0 1 30%; } }
+
+.project-detail-third img {
+  max-width: 100%; }
+
+.well-made-images {
+  flex: 0 1 100%;
+  margin: 10% 0; }
+
+@media screen and (min-width: 850px) {
+  .well-made-images {
+    flex: 0 1 50%; } }
+
+.well-made-images .project-detail-third {
+  float: left;
+  width: 100%; }
+
+@media screen and (min-width: 850px) {
+  .well-made-images .project-detail-third {
+    width: 50%; } }
+
+.well-made-images .project-detail-third:nth-of-type(2) {
+  float: left;
+  margin-top: 15%;
+  width: 100%; }
+
+@media screen and (min-width: 850px) {
+  .well-made-images .project-detail-third:nth-of-type(2) {
+    width: 50%; } }
+
+.well-made-images .project-detail-third:nth-of-type(3) {
+  float: left;
+  margin-top: 15%;
+  width: 100%; }
+
+@media screen and (min-width: 850px) {
+  .well-made-images .project-detail-third:nth-of-type(3) {
+    width: 35%;
+    margin-top: -1.75%; } }
+
+/* Anti-aliasing
+   http://maximilianhoffmann.com/posts/better-font-rendering-on-osx
+
+*/
+/* Icon font call
+   Only place this icon font actually gets used.
+   Ugh, what a goddamn waste.
+
+*/
+.ico {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: inline-block;
+  font-size: 2.925em;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  margin: 0 5px;
+  speak: none;
+  text-transform: none; }
+
+.ico.-twitter:before, .ico.-twitter.x:after {
+  content: "\e606"; }
+
+/* Mountain illustration
+   Lots'o'great things happening here, animation-wise
+
+*/
+.illustration {
+  background-color: rosybrown;
+  height: 200px;
+  position: relative; }
+
+@media screen and (min-width: 850px) {
+  .illustration {
+    height: 275px; } }
+
+.illustration svg {
+  bottom: 0;
+  display: block;
+  fill: white;
+  float: left;
+  height: 150px;
+  position: absolute;
+  width: 100%; }
+
+@-webkit-keyframes ripple {
+  0% {
+    opacity: auto; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: auto; } }
+
+@-moz-keyframes ripple {
+  0% {
+    opacity: auto; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: auto; } }
+
+@keyframes ripple {
+  0% {
+    opacity: auto; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: auto; } }
+
+.ring-1,
+.ring-2,
+.ring-3,
+.ring-4,
+.ring-5,
+.ring-6 {
+  -webkit-animation: ripple 3s ease infinite;
+  -moz-animation: ripple 3s ease infinite;
+  animation: ripple 3s ease infinite; }
+
+.ring-1 {
+  opacity: 1; }
+
+.ring-2 {
+  -webkit-animation-delay: 0.25s;
+  -moz-animation-delay: 0.25s;
+  animation-delay: 0.25s;
+  opacity: 0.8; }
+
+.ring-3 {
+  -webkit-animation-delay: 0.5s;
+  -moz-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+  opacity: 0.6; }
+
+.ring-4 {
+  -webkit-animation-delay: 0.75s;
+  -moz-animation-delay: 0.75s;
+  animation-delay: 0.75s;
+  opacity: 0.3; }
+
+.ring-5 {
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+  animation-delay: 1s;
+  opacity: 0.2; }
+
+.ring-6 {
+  -webkit-animation-delay: 1.25s;
+  -moz-animation-delay: 1.25s;
+  animation-delay: 1.25s;
+  opacity: 0.1; }
+
+@-webkit-keyframes glide {
+  0% {
+    -webkit-transform: translateX(0px); }
+  50% {
+    -webkit-transform: translateX(5px); }
+  100% {
+    -webkit-transform: translateX(0px); } }
+
+@-moz-keyframes glide {
+  0% {
+    -moz-transform: translateX(0px); }
+  50% {
+    -moz-transform: translateX(5px); }
+  100% {
+    -moz-transform: translateX(0px); } }
+
+@keyframes glide {
+  0% {
+    -webkit-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    -ms-transform: translateX(0px);
+    -o-transform: translateX(0px);
+    transform: translateX(0px); }
+  50% {
+    -webkit-transform: translateX(5px);
+    -moz-transform: translateX(5px);
+    -ms-transform: translateX(5px);
+    -o-transform: translateX(5px);
+    transform: translateX(5px); }
+  100% {
+    -webkit-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    -ms-transform: translateX(0px);
+    -o-transform: translateX(0px);
+    transform: translateX(0px); } }
+
+.cloud-level-top {
+  -webkit-animation: glide 6s ease-in-out infinite;
+  -moz-animation: glide 6s ease-in-out infinite;
+  animation: glide 6s ease-in-out infinite;
+  -webkit-animation-delay: 0.25s;
+  -moz-animation-delay: 0.25s;
+  animation-delay: 0.25s; }
+
+.cloud-level-middle {
+  -webkit-animation: glide 4s ease-in-out infinite;
+  -moz-animation: glide 4s ease-in-out infinite;
+  animation: glide 4s ease-in-out infinite;
+  -webkit-animation-delay: 0.5s;
+  -moz-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+  opacity: 0.5; }
+
+.cloud-level-bottom {
+  -webkit-animation: glide 8s ease-in-out infinite;
+  -moz-animation: glide 8s ease-in-out infinite;
+  animation: glide 8s ease-in-out infinite;
+  -webkit-animation-delay: 0.75s;
+  -moz-animation-delay: 0.75s;
+  animation-delay: 0.75s;
+  opacity: 0.15; }
+
+/* Poopy browser
+   "Fail to load resource" 404 illustration
+
+*/
+.poopy-browser {
+  -webkit-align-self: center;
+  -moz-align-self: center;
+  align-self: center;
+  -ms-flex-item-align: center;
+  border-radius: 10px;
+  border: 3px solid white;
+  height: 20%;
+  min-height: 175px;
+  overflow: hidden;
+  padding: 10px;
+  position: relative;
+  width: 75%; }
+
+@media screen and (min-width: 850px) {
+  .poopy-browser {
+    width: 55%; } }
+
+.close, .minimize, .maximize {
+  border-radius: 50%;
+  border: 3px solid white;
+  width: 5px;
+  height: 5px;
+  float: left;
+  margin-right: 3%; }
+
+.address-bar {
+  width: 115%;
+  margin-left: -7%;
+  border-top: 3px solid white;
+  margin-top: 20px; }
+
+.x {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  border: 3px solid white;
+  top: 55%;
+  margin-left: -30px;
+  left: 50%;
+  margin-top: -30px;
+  position: absolute; }
+
+.x:before, .x:after {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  width: 40px;
+  height: 3px;
+  position: absolute;
+  top: 50%;
+  margin-top: -1.5px;
+  left: 50%;
+  margin-left: -20px;
+  background-color: white;
+  content: '';
+  display: block; }
+
+.x:after {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg); }
+
+/* Long shadow
+   These were already going out of style in 2013,
+   but yeah whatever we were students
+
+*/
+.action-button {
+  -webkit-align-self: center;
+  -moz-align-self: center;
+  align-self: center;
+  -ms-flex-item-align: center;
+  background-color: #cba9a9;
+  border-radius: 50%;
+  color: white;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+  width: 200px;
+  display: block;
+  z-index: 5; }
+
+@media screen and (min-width: 850px) {
+  .action-button {
+    -webkit-align-self: center;
+    -moz-align-self: center;
+    align-self: center;
+    -ms-flex-item-align: center;
+    height: 210px;
+    width: 210px; } }
+
+.action-button:active:before, .action-button.x:active:after {
+  -webkit-transition: background-color 0.2s ease 0s;
+  -moz-transition: background-color 0.2s ease 0s;
+  transition: background-color 0.2s ease 0s;
+  background-color: #c49c9c;
+  box-shadow: inset -10px -10px 0 #b88989;
+  width: calc(($size * 2.25) - 20%); }
+
+.action-button:before, .action-button.x:after {
+  height: -webkit-calc(200px - 20%);
+  height: calc(200px - 20%);
+  width: -webkit-calc(200px - 20%);
+  width: calc(200px - 20%);
+  box-shadow: 0px 0px #b88989, 1px 1px #b88989, 2px 2px #b88989, 3px 3px #b88989, 4px 4px #b88989, 5px 5px #b88989, 6px 6px #b88989, 7px 7px #b88989, 8px 8px #b88989, 9px 9px #b88989, 10px 10px #b88989, 11px 11px #b88989, 12px 12px #b88989, 13px 13px #b88989, 14px 14px #b88989, 15px 15px #b88989, 16px 16px #b88989, 17px 17px #b88989, 18px 18px #b88989, 19px 19px #b88989, 20px 20px #b88989, 21px 21px #b88989, 22px 22px #b88989, 23px 23px #b88989, 24px 24px #b88989, 25px 25px #b88989, 26px 26px #b88989, 27px 27px #b88989, 28px 28px #b88989, 29px 29px #b88989, 30px 30px #b88989, 31px 31px #b88989, 32px 32px #b88989, 33px 33px #b88989, 34px 34px #b88989, 35px 35px #b88989, 36px 36px #b88989, 37px 37px #b88989, 38px 38px #b88989, 39px 39px #b88989, 40px 40px #b88989, 41px 41px #b88989, 42px 42px #b88989, 43px 43px #b88989, 44px 44px #b88989, 45px 45px #b88989, 46px 46px #b88989, 47px 47px #b88989, 48px 48px #b88989, 49px 49px #b88989, 50px 50px #b88989, 51px 51px #b88989, 52px 52px #b88989, 53px 53px #b88989, 54px 54px #b88989, 55px 55px #b88989, 56px 56px #b88989, 57px 57px #b88989, 58px 58px #b88989, 59px 59px #b88989, 60px 60px #b88989, 61px 61px #b88989, 62px 62px #b88989, 63px 63px #b88989, 64px 64px #b88989, 65px 65px #b88989, 66px 66px #b88989, 67px 67px #b88989, 68px 68px #b88989, 69px 69px #b88989, 70px 70px #b88989, 71px 71px #b88989, 72px 72px #b88989, 73px 73px #b88989, 74px 74px #b88989, 75px 75px #b88989, 76px 76px #b88989, 77px 77px #b88989, 78px 78px #b88989, 79px 79px #b88989, 80px 80px #b88989, 81px 81px #b88989, 82px 82px #b88989, 83px 83px #b88989, 84px 84px #b88989, 85px 85px #b88989, 86px 86px #b88989, 87px 87px #b88989, 88px 88px #b88989, 89px 89px #b88989, 90px 90px #b88989, 91px 91px #b88989, 92px 92px #b88989, 93px 93px #b88989, 94px 94px #b88989, 95px 95px #b88989, 96px 96px #b88989, 97px 97px #b88989, 98px 98px #b88989, 99px 99px #b88989, 100px 100px #b88989, 101px 101px #b88989, 102px 102px #b88989, 103px 103px #b88989, 104px 104px #b88989, 105px 105px #b88989, 106px 106px #b88989, 107px 107px #b88989, 108px 108px #b88989, 109px 109px #b88989, 110px 110px #b88989, 111px 111px #b88989, 112px 112px #b88989, 113px 113px #b88989, 114px 114px #b88989, 115px 115px #b88989, 116px 116px #b88989, 117px 117px #b88989, 118px 118px #b88989, 119px 119px #b88989, 120px 120px #b88989, 121px 121px #b88989, 122px 122px #b88989, 123px 123px #b88989, 124px 124px #b88989, 125px 125px #b88989;
+  -webkit-transition: background-color 0.2s ease 0s;
+  -moz-transition: background-color 0.2s ease 0s;
+  transition: background-color 0.2s ease 0s;
+  background-color: rosybrown;
+  border-radius: 50%;
+  content: '';
+  display: block;
+  margin-top: 10%;
+  position: absolute;
+  margin-left: 28%;
+  margin-left: -webkit-calc(50% - ((200px - 20%)/2));
+  margin-left: calc(50% - ((200px - 20%)/2)); }
+
+@media screen and (min-width: 850px) {
+  .action-button:before, .action-button.x:after {
+    height: -webkit-calc((200px*1.05) - 20%);
+    height: calc((200px*1.05) - 20%);
+    width: -webkit-calc((200px*1.05) - 20%);
+    width: calc((200px*1.05) - 20%);
+    margin-left: 16%;
+    margin-left: -webkit-calc(50% - (((200px*1.05) - 20%)/2));
+    margin-left: calc(50% - (((200px*1.05) - 20%)/2)); } }
+
+.action-button:active .twitter {
+  -webkit-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+  fill: white; }
+
+@media screen and (min-width: 850px) {
+  .action-button:hover {
+    cursor: pointer; }
+  .action-button:hover .twitter {
+    -webkit-transition: all 0.09s ease 0s;
+    -moz-transition: all 0.09s ease 0s;
+    transition: all 0.09s ease 0s;
+    font-size: 6em;
+    margin-left: 27%;
+    margin-top: 28%; } }
+
+@media screen and (min-width: 850px) and (min-width: 850px) {
+  .action-button:hover .twitter {
+    font-size: 2.6em; } }
+
+.action-button .twitter {
+  font-size: 2.35em;
+  margin-left: 28%;
+  margin-top: 29%;
+  overflow: hidden;
+  position: absolute; }
+
+@media screen and (min-width: 850px) {
+  .action-button .twitter {
+    font-size: 2.5em; } }
+
+.action-button .twitter .ico {
+  color: white;
+  overflow: hidden;
+  z-index: 6; }
+
+.login {
+  -webkit-align-self: center;
+  -moz-align-self: center;
+  align-self: center;
+  -ms-flex-item-align: center; }
