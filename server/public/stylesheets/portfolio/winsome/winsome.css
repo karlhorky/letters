@@ -453,10 +453,7 @@ html {
 
 */
 .action-button {
-  -webkit-align-self: center;
-  -moz-align-self: center;
-  align-self: center;
-  -ms-flex-item-align: center;
+  align-items: center;
   background-color: #cba9a9;
   border-radius: 50%;
   color: white;
@@ -469,10 +466,6 @@ html {
 
 @media screen and (min-width: 850px) {
   .action-button {
-    -webkit-align-self: center;
-    -moz-align-self: center;
-    align-self: center;
-    -ms-flex-item-align: center;
     height: 210px;
     width: 210px; } }
 
@@ -499,7 +492,6 @@ html {
   display: block;
   margin-top: 10%;
   position: absolute;
-  margin-left: 28%;
   margin-left: -webkit-calc(50% - ((200px - 20%)/2));
   margin-left: calc(50% - ((200px - 20%)/2)); }
 

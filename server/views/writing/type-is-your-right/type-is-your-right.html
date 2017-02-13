@@ -1,17 +1,6 @@
 {% extends 'layout.html' %}
 
 {% block content %}
-  <script>
-    var cb = function() {
-      var l = document.createElement('link'); l.rel = 'stylesheet';
-      l.href = '//cloud.typography.com/6668652/681922/css/fonts.css';
-      var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h);
-    };
-    var raf = requestAnimationFrame || mozRequestAnimationFrame ||
-        webkitRequestAnimationFrame || msRequestAnimationFrame;
-    if (raf) raf(cb);
-    else window.addEventListener('load', cb);
-  </script>
   <link rel="stylesheet" property="stylesheet" href="/stylesheets/long-form/type-is-your-right/type-is-your-right.css">
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/styles/default.min.css">
 
@@ -621,7 +610,15 @@ html.proxima-nova-loaded {
     </section>
   </main>
 
-  <script async src="/javascripts/highlight.pack.js"></script>
-  <script>hljs.initHighlightingOnLoad();</script>
-
+  <script>
+    var cb = function() {
+      var l = document.createElement('link'); l.rel = 'stylesheet';
+      l.href = 'https://cloud.typography.com/6668652/730364/css/fonts.css';
+      var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h);
+    };
+    var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+        webkitRequestAnimationFrame || msRequestAnimationFrame;
+    if (raf) raf(cb);
+    else window.addEventListener('load', cb);
+  </script>
 {% endblock %}

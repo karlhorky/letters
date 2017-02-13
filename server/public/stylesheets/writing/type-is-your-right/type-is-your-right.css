@@ -158,7 +158,7 @@ ol {
     margin-left: 50%; } }
 
 .title {
-  font-family: "Didot 96 A", "Didot 96 B", serif;
+  font-family: "Didot 96 A", "Didot 96 B", serif !important;
   font-size: 4rem;
   font-style: italic;
   line-height: 1;

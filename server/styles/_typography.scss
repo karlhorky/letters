@@ -31,12 +31,12 @@ $monospace:                     "Courier New", Courier, monospace;
 
 // Didot (large titles/callouts). Doesn't have a font-loading
 // strategy nomenclature because it's hosted through typography.com
-$mega-display:                  "Didot 96 A", "Didot 96 B", serif;
+$didot:                         "Didot 96 A", "Didot 96 B", serif;
 
 // Knockout (idk where I'm using this)
 $knockout:                      "Knockout", $neue-haas-unica;
 
-// Icon Font (idk where I'm using this)
+// Icon Font, needed for Winsome
 $pre-ico:                        Arial;
 $ico:                            Icomoon, $pre-ico;
 
