@@ -1,3 +1,9 @@
+@import 'bourbon';
+@import '../../../styles/grid-settings';
+@import 'neat';
+@import '../../../styles/colors';
+@import '../../../styles/typography';
+
 .baas {
   align-items: center;
   clear: both;
@@ -170,7 +176,7 @@
 .howl {
   color: $brand-primary;
   flex: 0 1 100%;
-  font-family: $display-sans;
+  font-family: $neue-haas-unica;
   margin: 0;
   text-align: center;
 }

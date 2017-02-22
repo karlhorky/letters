@@ -3,7 +3,14 @@
 {% block content %}
   <link rel="stylesheet" property="stylesheet" href="/stylesheets/writing/writing.css">
 
-  <ol class="letters-lot">
+  <ul class="blog-posts">
+    <li class="featured-article">
+      <div class="lightbulb"></div>
+      <h1>The New Age Madmen</h1>
+      <span class="date">January 2017</span>
+      <p>Tech, women, and other shit no one particularly wants to talk about</p>
+      <span class="tag">Featured</span>
+    </li>
     {% for longFormTitle in longFormTitles %}
       {% if longFormTitle == "type-is-your-right" %}
         <a href="/writing/{{ longFormTitle }}">
@@ -19,5 +26,5 @@
         </a>
       {% endif %}
     {% endfor %}
-  </ol>
+  </ul>
 {% endblock %}

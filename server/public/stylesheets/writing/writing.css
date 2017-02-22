@@ -30,62 +30,22 @@ html {
 .underline {
   text-decoration: underline; }
 
-.letters-lot {
-  font-size: 1.575em;
-  line-height: 3;
-  list-style-type: none;
-  padding-left: 0;
-  text-transform: capitalize;
-  width: 80%; }
+.blog-posts {
+  list-style-type: none; }
 
-@media screen and (min-width: 850px) {
-  .letters-lot {
-    padding: auto;
-    width: 60%; } }
+.featured-article {
+  width: 75%; }
 
-.letters-lot a {
-  color: #959595;
-  transition: color 0.5s ease; }
+/* 3D renders 
+   Wow so cool much fance
 
-.letters-lot a:hover {
-  background: transparent;
-  color: #6f6f6f; }
-
-.letters-lot li {
-  border-bottom: 2px solid #959595;
-  display: inline-block;
-  padding-bottom: 3px;
-  position: relative;
+*/
+.lightbulb {
+  background-attachment: fixed;
+  background-image: url("/images/writing/lightbulb.jpg");
+  background-position: left top;
+  background-size: auto 77%;
+  height: 300px;
   width: 100%;
-  outline-offset: 15px; }
-
-.letters-lot li::before {
-  bottom: 0;
-  content: '';
-  display: block;
-  height: 3px;
-  left: 0;
-  position: absolute;
-  transition: width 0s ease, background .5s ease;
-  width: 0; }
-
-.letters-lot li::after {
-  background: #959595;
-  bottom: 0;
-  content: '';
-  display: block;
-  height: 3px;
-  position: absolute;
-  right: 0;
-  transition: width .5s ease;
-  width: 0; }
-
-.letters-lot li:hover::before {
-  background: #959595;
-  transition: width .5s ease;
-  width: 100%; }
-
-.letters-lot li:hover::after {
-  background: transparent;
-  transition: all 0s ease;
-  width: 100%; }
+  outline: 1px solid #F2F2F2;
+  border-radius: 3px; }

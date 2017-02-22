@@ -4,72 +4,26 @@
 @import '../../styles/colors';
 @import '../../styles/typography';
 
-.letters-lot {
-  font-size: $h3-font-size;
-  line-height: 3;
+.blog-posts {
   list-style-type: none;
-  padding-left: 0;
-  text-transform: capitalize;
-  width: 80%;
+}
 
-  @include media($nine-col) {
-    padding: auto;
-    width: 60%;
-  }
+.featured-article {
+  width: 75%;
+}
 
-  a {
-    color: $brand-gray-dark;
-    transition: color 0.5s ease;
+/* 3D renders 
+   Wow so cool much fance
 
-    &:hover {
-      background: transparent;
-      color: darken($brand-gray-dark, 15%);
-    }
-  }
+*/
 
-  li {
-    border-bottom: 2px solid $brand-gray-dark;
-    display: inline-block;
-    padding-bottom: 3px;
-    position: relative;
-    width: 100%;
-    outline-offset: 15px;
-
-    &::before {
-      bottom: 0;
-      content: '';
-      display: block;
-      height: 3px;
-      left: 0;
-      position: absolute;
-      transition: width 0s ease, background .5s ease;
-      width: 0;
-    }
-
-    &::after {
-      background: $brand-gray-dark;
-      bottom: 0;
-      content: '';
-      display: block;
-      height: 3px;
-      position: absolute;
-      right: 0;
-      transition: width .5s ease;
-      width: 0;
-    }
-
-    &:hover {
-      &::before {
-        background: $brand-gray-dark;
-        transition: width .5s ease;
-        width: 100%;
-      }
-
-      &::after {
-        background: transparent;
-        transition: all 0s ease;
-        width: 100%;
-      }
-    }
-  }
+.lightbulb {
+  background-attachment: fixed;
+  background-image: url("/images/writing/lightbulb.jpg");
+  background-position: left top;
+  background-size: auto 77%;
+  height: 300px;
+  width: 100%;
+  outline: 1px solid $brand-gray-light;
+  border-radius: 3px;
 }
