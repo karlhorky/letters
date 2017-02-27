@@ -4,12 +4,74 @@
 @import '../../styles/colors';
 @import '../../styles/typography';
 
-.blog-posts {
-  list-style-type: none;
+.featured-article {
+  margin: 10% 10% 7% 10%;
+  width: 73%;
+
+  p {
+    width: 30%;
+  }
 }
 
-.featured-article {
-  width: 75%;
+.blog-posts {
+  list-style-type: none;
+  padding: 0 10%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.post {
+  color: $brand-black;
+  flex: 0 1 30%;
+  margin-bottom: 7%;
+  background-image: linear-gradient(transparent, transparent);
+
+  &:visited {
+    color: $brand-black;
+  }
+
+  &:first-of-type {
+    flex: 0 1 44%;
+  }
+
+  &:nth-of-type(2) {
+    flex: 0 1 44%;
+    margin-right: 6%;
+  }
+}
+
+.title-and-date {
+  align-items: center;
+  display: flex;
+}
+
+.title {
+  font-size: 3.5em;
+  line-height: 1.25;
+  margin: 3% 0 0 0;
+}
+
+.date {
+  color: $brand-gray-accent;
+  font-family: $avenir-next;
+  font-size: 0.75em;
+  font-weight: bold;
+  margin-left: 3%;
+  margin-top: 40px;
+}
+
+.post-description {
+  align-items: center;
+  display: flex;
+}
+
+.tag {
+  background-color: $brand-tertiary;
+  border-radius: 3px;
+  color: white;
+  padding: 3px 10px 1px 8px; // fuck Calendas
+  margin-left: 5%;
 }
 
 /* 3D renders 
@@ -17,13 +79,52 @@
 
 */
 
-.lightbulb {
+.post-image {
   background-attachment: fixed;
-  background-image: url("/images/writing/lightbulb.jpg");
-  background-position: left top;
-  background-size: auto 77%;
-  height: 300px;
-  width: 100%;
-  outline: 1px solid $brand-gray-light;
+  background-size: auto 50%;
   border-radius: 3px;
+  height: 150px;
+  outline: 1px solid $brand-gray-light;
+  width: 100%;
+}
+
+.baas {
+  background-size: auto 35%;
+  background-position: left bottom;
+  background-image: url("/images/partials/writing/baas.jpg");
+}
+
+.jungle-gym {
+  background-size: auto 35%;
+  background-position: center top;
+  background-image: url("/images/partials/writing/jungle-gym.jpg");
+}
+
+.lightbulb {
+  background-position: center top;
+  background-image: url("/images/writing/lightbulb.jpg");
+}
+
+.orb {
+  background-image: url("/images/partials/writing/orb.jpg");
+  background-position: center top;
+}
+
+.printing-press {
+  background-size: auto 100%;
+  background-position: center center;
+  background-image: url("/images/partials/writing/printing-press.jpg");
+}
+
+.splash {
+  background-image: url("/images/partials/writing/splash.jpg");
+}
+
+.spiral {
+  background-image: url("/images/partials/writing/spiral.jpg");
+}
+
+.words {
+  background-image: url("/images/partials/writing/words.jpg");
+  background-position: left top;
 }

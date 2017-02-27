@@ -51,7 +51,7 @@ svg.selectAll("circle")
     .data(circles.splice(1))
   .enter().append("circle")
     .attr("r", function() { return 15; })
-    .style("stroke", function(d, i) { return "#cd5c5c"; })
+    .style("stroke", function(d, i) { return "#240eba"; })
     .style("stroke-width", function(d, i) { return "2px"; })
     .style("fill", "transparent");
 
@@ -60,7 +60,7 @@ var triangleWidth = 25;
 svg.selectAll("polygon")
     .data(triangles.splice(1))
   .enter().append("polygon")
-    .style("stroke", function(d, i) { return "#cd5c5c"; })
+    .style("stroke", function(d, i) { return "#240eba"; })
     .style("stroke-width", function(d, i) { return "2px"; })
     .style("stroke-linejoin", function(d, i) { return "round"; })
     .attr("transform", function(d, i) { 
@@ -81,7 +81,7 @@ svg.selectAll("path")
       return "rotate(" + rotation + ", " + rotation + ", " + rotation + ")";
     })
     .style("transform-origin", function(d, i) {return "center center";})
-    .style("stroke", function(d, i) { return "#cd5c5c"; })
+    .style("stroke", function(d, i) { return "#240eba"; })
     .style("stroke-width", function(d, i) { return "2px"; })
     .style("stroke-linejoin", function(d, i) { return "round"; })
     .style("stroke-linecap", function(d, i) { return "round"; })

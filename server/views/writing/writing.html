@@ -3,26 +3,38 @@
 {% block content %}
   <link rel="stylesheet" property="stylesheet" href="/stylesheets/writing/writing.css">
 
+  <a href="#" class="post">
+    <div class="featured-article">
+      <div class="post-image lightbulb"></div>
+
+      <div class="title-and-date">
+        <h1 class="title">The New Age Madmen</h1>
+        <span class="date">January 2017</span>
+      </div>
+
+      <div class="post-description">
+        <p>Tech, women, and other shit no one particularly wants to talk about</p>
+
+        <span class="tag serif">
+          <em>Featured</em>
+        </span>
+      </div>
+    </div>
+  </a>
+
   <ul class="blog-posts">
-    <li class="featured-article">
-      <div class="lightbulb"></div>
-      <h1>The New Age Madmen</h1>
-      <span class="date">January 2017</span>
-      <p>Tech, women, and other shit no one particularly wants to talk about</p>
-      <span class="tag">Featured</span>
-    </li>
     {% for longFormTitle in longFormTitles %}
       {% if longFormTitle == "type-is-your-right" %}
-        <a href="/writing/{{ longFormTitle }}">
-          <li>{{ longFormTitle | replace("-", " ")}}!</li>
+        <a href="/writing/{{ longFormTitle }}" class="post">
+          {% include "partials/writing/" + longFormTitle + "-description.html" %}
         </a>
       {% elif longFormTitle == "baas" %}
-        <a href="/writing/{{ longFormTitle }}">
-          <li>{{ longFormTitle | replace("-", " ")}}</li>
+        <a href="/writing/{{ longFormTitle }}" class="post">
+          {% include "partials/writing/" + longFormTitle + "-description.html" %}
         </a>
       {% else %}
-        <a href="/writing/the-{{ longFormTitle }}">
-          <li>The {{ longFormTitle | replace("-", " ")}}</li>
+        <a href="/writing/the-{{ longFormTitle }}" class="post">
+          {% include "partials/writing/" + longFormTitle + "-description.html" %}
         </a>
       {% endif %}
     {% endfor %}

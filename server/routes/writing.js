@@ -7,13 +7,13 @@ var glob     = require("glob");
 
 var pathToLongFormContent = "./views/writing/";
 var shorturls = [];
-var shorturlTitles = [];
+var blogPostTitles = [];
 
 var files = glob.sync("**/*.html", {cwd: pathToLongFormContent});
 
 function indexLongformWriting() {
   var shorturl;
-  var shorturlTitle;
+  var blogPostTitle;
 
   files.forEach(file => {
     if (file === "writing.html") {
@@ -24,11 +24,11 @@ function indexLongformWriting() {
     shorturl = shorturl.substring(shorturl.indexOf("/") + 1);
     shorturls.push(shorturl);
 
-    shorturls = shorturls.reverse();
+    shorturls = shorturls.sort().reverse();
 
-    shorturlTitle = shorturl.substring(6);
-    shorturlTitles.push(shorturlTitle);
-    shorturlTitles = shorturlTitles.reverse();
+    blogPostTitle = shorturl.substring(6);
+    blogPostTitles.push(blogPostTitle);
+    blogPostTitles = blogPostTitles.sort().reverse();
   });
 }
 
@@ -38,24 +38,26 @@ indexLongformWriting();
 router.get('/', function(req, res, next) {
   res.render('writing/writing.html', { 
     title: 'Writing',
-    longFormTitles: shorturlTitles
+    longFormTitles: blogPostTitles
   });
 });
 
 shorturls.forEach(shorturl => {
-  var shorturlTitle = shorturl.substring(6);
+  var blogPostTitle = shorturl.substring(6);
+
+  console.log(blogPostTitle);
 
   if (shorturl === '16-08-type-is-your-right') {
-    router.get('/' + shorturlTitle, function(req, res, next) {
-      res.render('writing/' + shorturlTitle + '/' + shorturl + '.html', { title: 'Type is Your Right!' });
+    router.get('/' + blogPostTitle, function(req, res, next) {
+      res.render('writing/' + blogPostTitle + '/' + shorturl + '.html', { title: 'Type is Your Right!' });
     });
   } else if (shorturl === '15-11-baas') {
-    router.get('/' + shorturlTitle, function(req, res, next) {
-      res.render('writing/' + shorturlTitle + '/' + shorturl + '.html', { title: 'Baas' });
+    router.get('/' + blogPostTitle, function(req, res, next) {
+      res.render('writing/' + blogPostTitle + '/' + shorturl + '.html', { title: 'Baas' });
     });
   } else { // most articles are 'the'-something
-    router.get('/the-' + shorturlTitle, function(req, res, next) {
-      res.render('writing/' + shorturlTitle + '/' + shorturl + '.html', { title: shorturlTitle.replace(/-/g, ' ') });
+    router.get('/the-' + blogPostTitle, function(req, res, next) {
+      res.render('writing/' + blogPostTitle + '/' + shorturl + '.html', { title: blogPostTitle.replace(/-/g, ' ') });
     });
   }
 });
