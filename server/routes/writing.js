@@ -45,8 +45,6 @@ router.get('/', function(req, res, next) {
 shorturls.forEach(shorturl => {
   var blogPostTitle = shorturl.substring(6);
 
-  console.log(blogPostTitle);
-
   if (shorturl === '16-08-type-is-your-right') {
     router.get('/' + blogPostTitle, function(req, res, next) {
       res.render('writing/' + blogPostTitle + '/' + shorturl + '.html', { title: 'Type is Your Right!' });

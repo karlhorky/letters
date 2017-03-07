@@ -26,6 +26,24 @@
   }
 }
 
+@include keyframe(fade-in-half) {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+
+@include keyframe(fade-out-half) {
+  0% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 @include keyframe(fade-in-and-up) {
   0% {
     opacity: 0;

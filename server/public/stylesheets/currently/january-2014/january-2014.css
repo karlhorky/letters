@@ -40,6 +40,42 @@ html {
   100% {
     opacity: 1; } }
 
+@-webkit-keyframes fade-in-half {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 0.5; } }
+
+@-moz-keyframes fade-in-half {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 0.5; } }
+
+@keyframes fade-in-half {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 0.5; } }
+
+@-webkit-keyframes fade-out-half {
+  0% {
+    opacity: 0.5; }
+  100% {
+    opacity: 0; } }
+
+@-moz-keyframes fade-out-half {
+  0% {
+    opacity: 0.5; }
+  100% {
+    opacity: 0; } }
+
+@keyframes fade-out-half {
+  0% {
+    opacity: 0.5; }
+  100% {
+    opacity: 0; } }
+
 @-webkit-keyframes fade-in-and-up {
   0% {
     opacity: 0;

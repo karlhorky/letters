@@ -31,7 +31,7 @@ html {
   text-decoration: underline; }
 
 .featured-article {
-  margin: 10% 10% 7% 10%;
+  margin: 7% 10% 7% 10%;
   width: 73%; }
 
 .featured-article p {
@@ -43,6 +43,59 @@ html {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between; }
+
+.outside-link .post-image {
+  position: relative; }
+
+.outside-link .post-image::before {
+  -webkit-animation: fade-out-half 0.25s ease;
+  -moz-animation: fade-out-half 0.25s ease;
+  animation: fade-out-half 0.25s ease;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  background: url("/images/outside-link.png");
+  content: '';
+  display: block;
+  height: 31px;
+  margin-left: calc(50% - 17.5px);
+  margin-top: calc(100px - 17.5px);
+  opacity: 0;
+  position: absolute;
+  width: 31px;
+  z-index: 1; }
+
+.outside-link .post-image::after {
+  -webkit-animation: fade-out 0.25s ease;
+  -moz-animation: fade-out 0.25s ease;
+  animation: fade-out 0.25s ease;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  background-color: #240eba;
+  border-radius: 3px;
+  content: '';
+  display: block;
+  height: 200px;
+  opacity: 0;
+  width: 100%;
+  z-index: 0; }
+
+.outside-link:hover .post-image::before {
+  -webkit-animation: fade-in 0.25s ease;
+  -moz-animation: fade-in 0.25s ease;
+  animation: fade-in 0.25s ease;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards; }
+
+.outside-link:hover .post-image::after {
+  -webkit-animation: fade-in-half 0.25s ease;
+  -moz-animation: fade-in-half 0.25s ease;
+  animation: fade-in-half 0.25s ease;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards; }
 
 .post {
   color: #2d2d2d;
@@ -93,42 +146,40 @@ html {
 
 */
 .post-image {
-  background-attachment: fixed;
-  background-size: auto 50%;
+  background-size: auto 100%;
   border-radius: 3px;
-  height: 150px;
+  height: 200px;
   outline: 1px solid #F2F2F2;
   width: 100%; }
 
 .baas {
-  background-size: auto 35%;
-  background-position: left bottom;
   background-image: url("/images/partials/writing/baas.jpg"); }
 
 .jungle-gym {
-  background-size: auto 35%;
-  background-position: center top;
+  background-size: auto 150%;
   background-image: url("/images/partials/writing/jungle-gym.jpg"); }
 
 .lightbulb {
-  background-position: center top;
-  background-image: url("/images/writing/lightbulb.jpg"); }
+  background-image: url("/images/partials/writing/lightbulb.jpg");
+  background-size: auto 300%;
+  background-position: center 15%; }
 
 .orb {
   background-image: url("/images/partials/writing/orb.jpg");
-  background-position: center top; }
+  background-size: auto 220%; }
 
 .printing-press {
-  background-size: auto 100%;
-  background-position: center center;
+  background-size: auto 200%;
+  background-position: center 50%;
   background-image: url("/images/partials/writing/printing-press.jpg"); }
 
 .splash {
   background-image: url("/images/partials/writing/splash.jpg"); }
 
 .spiral {
+  background-size: auto 125%;
+  background-position: center 100%;
   background-image: url("/images/partials/writing/spiral.jpg"); }
 
 .words {
-  background-image: url("/images/partials/writing/words.jpg");
-  background-position: left top; }
+  background-image: url("/images/partials/writing/words.jpg"); }
