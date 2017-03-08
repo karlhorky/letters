@@ -30,6 +30,9 @@ html {
 .underline {
   text-decoration: underline; }
 
+img {
+  width: 100%; }
+
 .baas {
   align-items: center;
   clear: both;
@@ -181,6 +184,10 @@ html {
   font-family: NeueHaasUnica, Arial, sans-serif;
   margin: 0;
   text-align: center; }
+
+.neuehaasunica-loaded h1.howl {
+  font-family: NeueHaasUnica, Arial, sans-serif;
+  font-weight: 700; }
 
 .tanta {
   align-items: flex-start;

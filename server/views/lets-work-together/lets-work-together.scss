@@ -183,14 +183,14 @@ $theme-gray-2: #dde1e4;
 .hotspot-info {
   align-items: center;
   background-color: white;
-  color: $brand-primary;
+  color: $brand-tertiary;
   display: flex;
   font-family: $pre-avenir-next;
   font-weight: bold;
   justify-content: center;
   margin-left: -96px;
   margin-top: 40px;
-  outline: 4px solid $brand-primary;
+  outline: 4px solid $brand-tertiary;
   padding: 5px 10px;
   position: relative;
   width: 200px;
@@ -210,7 +210,7 @@ $theme-gray-2: #dde1e4;
   }
 
   &::before {
-    border-bottom: 40px solid $brand-primary;
+    border-bottom: 40px solid $brand-tertiary;
     border-left: 20px solid transparent;
     border-right: 20px solid transparent;
     content: "";

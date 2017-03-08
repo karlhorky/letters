@@ -169,14 +169,14 @@ svg {
 .hotspot-info {
   align-items: center;
   background-color: white;
-  color: indianred;
+  color: #240eba;
   display: flex;
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
   font-weight: bold;
   justify-content: center;
   margin-left: -96px;
   margin-top: 40px;
-  outline: 4px solid indianred;
+  outline: 4px solid #240eba;
   padding: 5px 10px;
   position: relative;
   width: 200px; }
@@ -195,7 +195,7 @@ svg {
   width: 0; }
 
 .hotspot-info::before {
-  border-bottom: 40px solid indianred;
+  border-bottom: 40px solid #240eba;
   border-left: 20px solid transparent;
   border-right: 20px solid transparent;
   content: "";

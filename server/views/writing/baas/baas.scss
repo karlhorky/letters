@@ -4,6 +4,10 @@
 @import '../../../styles/colors';
 @import '../../../styles/typography';
 
+img {
+  width: 100%;
+}
+
 .baas {
   align-items: center;
   clear: both;
@@ -179,6 +183,13 @@
   font-family: $neue-haas-unica;
   margin: 0;
   text-align: center;
+}
+
+.neuehaasunica-loaded {
+  h1.howl {
+    font-family: $neue-haas-unica;
+    font-weight: $bold-weight;
+  }
 }
 
 .tanta {

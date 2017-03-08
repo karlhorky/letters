@@ -1,17 +1,6 @@
 {% extends 'layout.html' %}
 
 {% block content %}
-  <script>
-    var cb = function() {
-      var l = document.createElement('link'); l.rel = 'stylesheet';
-      l.href = '//cloud.typography.com/6668652/681922/css/fonts.css';
-      var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h);
-    };
-    var raf = requestAnimationFrame || mozRequestAnimationFrame ||
-        webkitRequestAnimationFrame || msRequestAnimationFrame;
-    if (raf) raf(cb);
-    else window.addEventListener('load', cb);
-  </script>
   <link rel="stylesheet" property="stylesheet" href="/stylesheets/long-form/state-of-devtools/state-of-devtools.css">
 
   <div class='union-header'>
@@ -367,4 +356,16 @@
   <div class='post union'>
     <p>After Mozlando I feel all the more encouraged to say this: I think that our priority should be ensuring that the UX of our existing products is great. Maintaining, I understand, not nearly as fun as creating new things, but the community we serve is built mostly of web developers just trying to get websites built for work, or school, or their hobby. They are in the majority, and their needs, in my mind, supercede the needs of a few developers who think that the new tools we build on top of devtools would be really <em>cool</em>. And I think you’d all be surprised at the kind of love we can get just by making things we already have better.</p>
   </div>
+
+  <script>
+    var cb = function() {
+      var l = document.createElement('link'); l.rel = 'stylesheet';
+      l.href = 'https://cloud.typography.com/6668652/730364/css/fonts.css';
+      var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h);
+    };
+    var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+        webkitRequestAnimationFrame || msRequestAnimationFrame;
+    if (raf) raf(cb);
+    else window.addEventListener('load', cb);
+  </script>
 {% endblock %}
