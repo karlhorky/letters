@@ -53,6 +53,14 @@ shorturls.forEach(shorturl => {
     router.get('/' + blogPostTitle, function(req, res, next) {
       res.render('writing/' + blogPostTitle + '/' + shorturl + '.html', { title: 'Baas' });
     });
+  } else if (shorturl === '29-12-2016-in-review') {
+    router.get('/' + blogPostTitle, function(req, res, next) {
+      res.render('writing/' + blogPostTitle + '/' + shorturl + '.html', { title: '2016, Impassioned' });
+    });
+  } else if (shorturl === '03-14-design-resources') {
+    router.get('/the-' + blogPostTitle, function(req, res, next) {
+      res.redirect('https://medium.com/@helenvholmes/design-resources-d6942068448a');
+    });
   } else { // most articles are 'the'-something
     router.get('/the-' + blogPostTitle, function(req, res, next) {
       res.render('writing/' + blogPostTitle + '/' + shorturl + '.html', { title: blogPostTitle.replace(/-/g, ' ') });

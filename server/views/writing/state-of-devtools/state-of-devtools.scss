@@ -6,9 +6,6 @@
 @import '../../../styles/font-face';
 @import '../../../styles/modules/posts';
 
-@include font-face(LeagueSpartan, '/fonts/leaguespartan-bold', 600);
-@include font-face(NeueHaasUnica, '/fonts/NeueHaasUnicaW1G', 600);
-
 .union-header {
   display: flex;
   flex-wrap: wrap;
@@ -45,7 +42,6 @@
 }
 
 .union-neue {
-  font-family: $neue-haas-unica;
   font-size: 0.85em;
   font-style: normal;
 
@@ -54,8 +50,14 @@
   }
 }
 
+.neuehaasunica-loaded {
+  .union-neue {
+    font-family: $neue-haas-unica;
+  }
+}
+
 .union-important-questions {
-  font-family: LeagueSpartan, Helvetica, Arial, sans-serif;
+  // font-family: LeagueSpartan, Helvetica, Arial, sans-serif;
   font-size: 1em;
   line-height: 1;
   font-weight: bold;
@@ -132,7 +134,6 @@
 
     &.wysiwyg {
       color: $devtools-primary;
-      font-family: $neue-haas-unica;
       font-size: 2em;
       font-weight: bold;
       line-height: 1.25;
@@ -150,8 +151,19 @@
   }
 }
 
+.neuehaasunica-loaded {
+  .wysiwyg {
+    font-family: $neue-haas-unica;
+  }
+}
+
+.neuehaasunica-loaded {
+  .union-point-strong {
+    font-family: $neue-haas-unica;
+  }
+}
+
 .union-point-strong {
-  font-family: $neue-haas-unica;
   font-weight: 900;
 }
 
@@ -211,10 +223,15 @@
   }
 }
 
+.neuehaasunica-loaded {
+  .union-google-improvements {
+    font-family: $neue-haas-unica;
+  }
+}
+
 .union-google-improvements {
   margin: 4em auto !important;
   text-align: center !important;
-  font-family: $neue-haas-unica;
   font-size: 1.5em;
   line-height: 1;
 }

@@ -270,18 +270,6 @@ aside {
     margin: 0 auto 2em auto;
     width: 50%; } }
 
-@font-face {
-  font-family: LeagueSpartan;
-  font-style: normal;
-  font-weight: 600;
-  src: url("/fonts/leaguespartan-bold.eot?#iefix") format("embedded-opentype"), url("/fonts/leaguespartan-bold.woff2") format("woff2"), url("/fonts/leaguespartan-bold.woff") format("woff"), url("/fonts/leaguespartan-bold.ttf") format("truetype"), url("/fonts/leaguespartan-bold.svg#LeagueSpartan") format("svg"); }
-
-@font-face {
-  font-family: NeueHaasUnica;
-  font-style: normal;
-  font-weight: 600;
-  src: url("/fonts/NeueHaasUnicaW1G.eot?#iefix") format("embedded-opentype"), url("/fonts/NeueHaasUnicaW1G.woff2") format("woff2"), url("/fonts/NeueHaasUnicaW1G.woff") format("woff"), url("/fonts/NeueHaasUnicaW1G.ttf") format("truetype"), url("/fonts/NeueHaasUnicaW1G.svg#NeueHaasUnica") format("svg"); }
-
 .union-header {
   display: flex;
   flex-wrap: wrap;
@@ -313,7 +301,6 @@ aside {
   display: inline; }
 
 .union-neue {
-  font-family: NeueHaasUnica, Arial, sans-serif;
   font-size: 0.85em;
   font-style: normal; }
 
@@ -321,8 +308,10 @@ aside {
   .union-neue {
     font-size: 1em; } }
 
+.neuehaasunica-loaded .union-neue {
+  font-family: NeueHaasUnica, Arial, sans-serif; }
+
 .union-important-questions {
-  font-family: LeagueSpartan, Helvetica, Arial, sans-serif;
   font-size: 1em;
   line-height: 1;
   font-weight: bold;
@@ -389,7 +378,6 @@ aside {
 
 .union-points .union-point-detail.wysiwyg {
   color: #4a90e2;
-  font-family: NeueHaasUnica, Arial, sans-serif;
   font-size: 2em;
   font-weight: bold;
   line-height: 1.25;
@@ -402,8 +390,13 @@ aside {
   .union-points li {
     flex: 0 1 50%; } }
 
+.neuehaasunica-loaded .wysiwyg {
+  font-family: NeueHaasUnica, Arial, sans-serif; }
+
+.neuehaasunica-loaded .union-point-strong {
+  font-family: NeueHaasUnica, Arial, sans-serif; }
+
 .union-point-strong {
-  font-family: NeueHaasUnica, Arial, sans-serif;
   font-weight: 900; }
 
 .union-sw {
@@ -458,10 +451,12 @@ aside {
   .union-blockquote-attribution {
     margin-right: 20em; } }
 
+.neuehaasunica-loaded .union-google-improvements {
+  font-family: NeueHaasUnica, Arial, sans-serif; }
+
 .union-google-improvements {
   margin: 4em auto !important;
   text-align: center !important;
-  font-family: NeueHaasUnica, Arial, sans-serif;
   font-size: 1.5em;
   line-height: 1; }
 

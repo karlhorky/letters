@@ -34,26 +34,37 @@ html {
   background-attachment: fixed;
   background-image: url("/images/home/esta-bien.jpg");
   background-position: left top;
-  background-size: auto 77%;
-  height: 517px;
-  margin-left: 3%;
-  margin-top: 3%;
-  width: 1017px; }
+  background-size: contain;
+  height: 300px;
+  width: 100%; }
+
+@media screen and (min-width: 850px) {
+  .moi {
+    background-size: auto 77%;
+    background-position: left top;
+    height: 517px;
+    margin-left: 3%;
+    margin-top: 3%;
+    width: 1017px; } }
 
 .who-is-helen {
   background-color: white;
-  margin-left: 10%;
+  margin-left: 8%;
   margin-top: -8%;
   padding: 2%;
-  padding-top: 0.15%;
-  width: 50%;
-  position: relative; }
+  position: relative;
+  width: 81%; }
+
+@media screen and (min-width: 850px) {
+  .who-is-helen {
+    margin-left: 10%;
+    width: 50%; } }
 
 .who-is-helen h1 {
   font-size: 4.3875em;
+  line-height: 1;
   margin-bottom: 0;
-  margin-top: 3%;
-  line-height: 1; }
+  margin-top: 3%; }
 
 .writing, .speaking {
   background-color: white;
@@ -117,13 +128,17 @@ html {
 
 .mad-men h1 {
   font-family: "Didot 96 A", "Didot 96 B", serif;
-  font-size: 14em;
+  font-size: 5em;
   font-style: italic;
   line-height: 1.25;
   padding: 0 5%;
   position: relative;
   text-transform: uppercase;
   z-index: 1; }
+
+@media screen and (min-width: 850px) {
+  .mad-men h1 {
+    font-size: 14em; } }
 
 .mad-men h1 a {
   color: #2d2d2d;
