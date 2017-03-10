@@ -22,21 +22,23 @@
     </div>
   </a>
 
+  <!-- <a href="/writing/{{ longFormTitle }}" class="post">
+  </a> -->
+
   <ul class="blog-posts">
     {% for longFormTitle in longFormTitles %}
-      {% if longFormTitle == "type-is-your-right" %}
-        <a href="/writing/{{ longFormTitle }}" class="post">
-          {% include "partials/writing/" + longFormTitle + "-description.html" %}
-        </a>
-      {% elif longFormTitle == "baas" %}
-        <a href="/writing/{{ longFormTitle }}" class="post">
-          {% include "partials/writing/" + longFormTitle + "-description.html" %}
-        </a>
-      {% else %}
-        <a href="/writing/the-{{ longFormTitle }}" class="post">
-          {% include "partials/writing/" + longFormTitle + "-description.html" %}
-        </a>
-      {% endif %}
+      <li class="article">
+        <div class="post-image {{ longFormTitle.imageClass }}"></div>
+
+        <div class="title-and-date">
+          <h1 class="title">{{ longFormTitle.title }}</h1>
+          <span class="date">{{ longFormTitle.date }}</span>
+        </div>
+
+        <div class="post-description">
+          <p>{{ longFormTitle.description }}</p>
+        </div>
+      </li>
     {% endfor %}
   </ul>
 {% endblock %}
