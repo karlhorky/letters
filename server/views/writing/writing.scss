@@ -4,15 +4,6 @@
 @import '../../styles/colors';
 @import '../../styles/typography';
 
-.featured-article {
-  margin: 7% 10% 7% 10%;
-  width: 73%;
-
-  p {
-    width: 30%;
-  }
-}
-
 .post {
   &:hover {
     .title {
@@ -98,8 +89,12 @@
 .post {
   background-image: linear-gradient(transparent, transparent);
   color: $brand-black;
-  flex: 0 1 30%;
-  margin-bottom: 7%;
+  flex: 0 1 80%;
+  margin: 0 auto 7% auto;
+
+  @include media($nine-col) {
+    flex: 0 1 30%;
+  }
 
   &:visited {
     color: $brand-black;
@@ -123,6 +118,7 @@
 .title-and-date {
   align-items: center;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .title {
@@ -136,8 +132,12 @@
   font-family: $avenir-next;
   font-size: 0.75em;
   font-weight: bold;
-  margin-left: 3%;
-  margin-top: 40px;
+  margin-top: 10px;
+
+  @include media($nine-col) {
+    margin-left: 3%;
+    margin-top: 40px;
+  }
 }
 
 .post-description {

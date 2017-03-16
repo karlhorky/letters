@@ -30,13 +30,6 @@ html {
 .underline {
   text-decoration: underline; }
 
-.featured-article {
-  margin: 7% 10% 7% 10%;
-  width: 73%; }
-
-.featured-article p {
-  width: 30%; }
-
 .post:hover .title:after {
   animation-duration: 0.2s;
   animation-fill-mode: forwards;
@@ -118,8 +111,12 @@ html {
 .post {
   background-image: linear-gradient(transparent, transparent);
   color: #2d2d2d;
-  flex: 0 1 30%;
-  margin-bottom: 7%; }
+  flex: 0 1 80%;
+  margin: 0 auto 7% auto; }
+
+@media screen and (min-width: 850px) {
+  .post {
+    flex: 0 1 30%; } }
 
 .post:visited {
   color: #2d2d2d; }
@@ -137,7 +134,8 @@ html {
 
 .title-and-date {
   align-items: center;
-  display: flex; }
+  display: flex;
+  flex-wrap: wrap; }
 
 .title {
   font-size: 3.5em;
@@ -149,8 +147,12 @@ html {
   font-family: AvenirNext, -apple-system, BlinkMacSystemFont, sans-serif;
   font-size: 0.75em;
   font-weight: bold;
-  margin-left: 3%;
-  margin-top: 40px; }
+  margin-top: 10px; }
+
+@media screen and (min-width: 850px) {
+  .date {
+    margin-left: 3%;
+    margin-top: 40px; } }
 
 .post-description {
   align-items: center;

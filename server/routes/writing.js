@@ -26,12 +26,12 @@ function indexLongformWriting() {
     var contents = fs.readFileSync(path.join(dirpath, file));
     result = yamlFront.loadFront(contents);
     results.push(result);
-
-    results = results.sort();
   });
 }
 
 indexLongformWriting();
+
+results = results.reverse();
 
 /* GET writing page. */
 router.get('/', function(req, res, next) {
@@ -43,7 +43,10 @@ router.get('/', function(req, res, next) {
 
 results.forEach(result => {
   router.get('/' + result.url, function(req, res, next) {
-    res.render('writing/' + result.url + '/' + result.file + '.html', { title: result.title });
+    res.render('writing/' + result.file + '/' + result.file + '.html', { 
+        title: result.title,
+        date: result.date
+      });
   });
 });
 

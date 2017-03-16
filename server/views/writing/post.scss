@@ -1,0 +1,33 @@
+@import 'bourbon';
+@import '../../styles/grid-settings';
+@import 'neat';
+@import '../../styles/colors';
+@import '../../styles/typography';
+
+.post {
+  line-height: 2.5;
+  margin: 10% auto;
+  width: 80%;
+
+  @include media($nine-col) {
+    margin: 10% 13%;
+    width: 45%;
+  }
+
+  p {
+    margin: 2em auto;
+  }
+}
+
+.title {
+  font-size: 5em;
+  margin: 0;
+  line-height: 1;
+}
+
+.proximanova-loaded .date {
+  color: $brand-gray-dark;
+  font-family: $proxima-nova !important;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}

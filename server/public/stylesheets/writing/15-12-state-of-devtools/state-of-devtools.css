@@ -1,0 +1,506 @@
+/* Grid
+   Grid settings through Bourbon Neat.
+   https://github.com/thoughtbot/neat#using-neat
+
+   Color variables are stored in _color.scss.
+
+   Typography variables are stored in _typography.scss.
+*/
+html {
+  box-sizing: border-box; }
+
+*, *::after, *::before {
+  box-sizing: inherit; }
+
+/* Color
+
+   Grid/breakpoints variables are stored in _grid_settings.scss.
+
+   Typography variables are stored in _typography.scss.
+*/
+/* Typography
+
+   Grid/breakpoints variables are stored in _grid_settings.scss.
+
+   Color variables are stored in _color.scss.
+*/
+/* Sizes
+
+*/
+.underline {
+  text-decoration: underline; }
+
+/* Font-face
+   Calls for webfonts used, alphabetically.
+   
+   Typefaces are not downloaded until they're added to a font-stack.
+
+*/
+@font-face {
+  font-family: AvenirNext;
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/avenir-next-thin.eot?#iefix") format("embedded-opentype"), url("../fonts/avenir-next-thin.woff2") format("woff2"), url("../fonts/avenir-next-thin.woff") format("woff"), url("../fonts/avenir-next-thin.ttf") format("truetype"), url("../fonts/avenir-next-thin.svg#AvenirNext") format("svg"); }
+
+@font-face {
+  font-family: AvenirNext;
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/avenir-next-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/avenir-next-regular.woff2") format("woff2"), url("../fonts/avenir-next-regular.woff") format("woff"), url("../fonts/avenir-next-regular.ttf") format("truetype"), url("../fonts/avenir-next-regular.svg#AvenirNext") format("svg"); }
+
+@font-face {
+  font-family: AvenirNext;
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/avenir-next-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/avenir-next-bold.woff2") format("woff2"), url("../fonts/avenir-next-bold.woff") format("woff"), url("../fonts/avenir-next-bold.ttf") format("truetype"), url("../fonts/avenir-next-bold.svg#AvenirNext") format("svg"); }
+
+@font-face {
+  font-family: AvenirNext;
+  font-style: italic;
+  font-weight: 400;
+  src: url("../fonts/avenir-next-italic.eot?#iefix") format("embedded-opentype"), url("../fonts/avenir-next-italic.woff2") format("woff2"), url("../fonts/avenir-next-italic.woff") format("woff"), url("../fonts/avenir-next-italic.ttf") format("truetype"), url("../fonts/avenir-next-italic.svg#AvenirNext") format("svg"); }
+
+@font-face {
+  font-family: LibreCaslonDisplay;
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/libre-caslon-display-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/libre-caslon-display-regular.woff2") format("woff2"), url("../fonts/libre-caslon-display-regular.woff") format("woff"), url("../fonts/libre-caslon-display-regular.ttf") format("truetype"), url("../fonts/libre-caslon-display-regular.svg#LibreCaslonDisplay") format("svg"); }
+
+@font-face {
+  font-family: NeueHaasUnica;
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/neue-haas-unica-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/neue-haas-unica-regular.woff2") format("woff2"), url("../fonts/neue-haas-unica-regular.woff") format("woff"), url("../fonts/neue-haas-unica-regular.ttf") format("truetype"), url("../fonts/neue-haas-unica-regular.svg#NeueHaasUnica") format("svg"); }
+
+@font-face {
+  font-family: NeueHaasUnica;
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/neue-haas-unica-black.eot?#iefix") format("embedded-opentype"), url("../fonts/neue-haas-unica-black.woff2") format("woff2"), url("../fonts/neue-haas-unica-black.woff") format("woff"), url("../fonts/neue-haas-unica-black.ttf") format("truetype"), url("../fonts/neue-haas-unica-black.svg#NeueHaasUnica") format("svg"); }
+
+@font-face {
+  font-family: ProximaNova;
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/proxima-nova-light.eot?#iefix") format("embedded-opentype"), url("../fonts/proxima-nova-light.woff2") format("woff2"), url("../fonts/proxima-nova-light.woff") format("woff"), url("../fonts/proxima-nova-light.ttf") format("truetype"), url("../fonts/proxima-nova-light.svg#ProximaNova") format("svg"); }
+
+@font-face {
+  font-family: ProximaNova;
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/proxima-nova-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/proxima-nova-regular.woff2") format("woff2"), url("../fonts/proxima-nova-regular.woff") format("woff"), url("../fonts/proxima-nova-regular.ttf") format("truetype"), url("../fonts/proxima-nova-regular.svg#ProximaNova") format("svg"); }
+
+@font-face {
+  font-family: ProximaNova;
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/proxima-nova-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/proxima-nova-bold.woff2") format("woff2"), url("../fonts/proxima-nova-bold.woff") format("woff"), url("../fonts/proxima-nova-bold.ttf") format("truetype"), url("../fonts/proxima-nova-bold.svg#ProximaNova") format("svg"); }
+
+@font-face {
+  font-family: CalendasPlus;
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/calendas-plus-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/calendas-plus-regular.woff2") format("woff2"), url("../fonts/calendas-plus-regular.woff") format("woff"), url("../fonts/calendas-plus-regular.ttf") format("truetype"), url("../fonts/calendas-plus-regular.svg#CalendasPlus") format("svg"); }
+
+@font-face {
+  font-family: CalendasPlus;
+  font-style: italic;
+  font-weight: 400;
+  src: url("../fonts/calendas-plus-italic.eot?#iefix") format("embedded-opentype"), url("../fonts/calendas-plus-italic.woff2") format("woff2"), url("../fonts/calendas-plus-italic.woff") format("woff"), url("../fonts/calendas-plus-italic.ttf") format("truetype"), url("../fonts/calendas-plus-italic.svg#CalendasPlus") format("svg"); }
+
+@font-face {
+  font-family: LeagueSpartan;
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/league-spartan-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/league-spartan-bold.woff2") format("woff2"), url("../fonts/league-spartan-bold.woff") format("woff"), url("../fonts/league-spartan-bold.ttf") format("truetype"), url("../fonts/league-spartan-bold.svg#LeagueSpartan") format("svg"); }
+
+@font-face {
+  font-family: Icomoon;
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/icomoon.eot?#iefix") format("embedded-opentype"), url("../fonts/icomoon.woff2") format("woff2"), url("../fonts/icomoon.woff") format("woff"), url("../fonts/icomoon.ttf") format("truetype"), url("../fonts/icomoon.svg#Icomoon") format("svg"); }
+
+.post {
+  margin: auto;
+  text-align: justify;
+  width: 75%; }
+
+@media screen and (min-width: 850px) {
+  .post {
+    width: 35%; } }
+
+.post img, .post video {
+  width: 100%; }
+
+aside {
+  opacity: 0; }
+
+@media screen and (min-width: 850px) {
+  aside {
+    opacity: 1; } }
+
+.pullout {
+  clear: both;
+  font-family: NeueHaasUnica, Arial, sans-serif, sans-serif;
+  font-size: 1.35em;
+  font-weight: 900;
+  left: 0;
+  line-height: 1.8375;
+  padding: 4%;
+  position: absolute;
+  text-align: center;
+  width: 20%; }
+
+.pullout:before {
+  border-bottom: 2px solid indianred;
+  border-top: 1px solid indianred;
+  content: '';
+  display: block;
+  height: 7px;
+  margin-bottom: 10%;
+  margin-left: 20%;
+  width: 60%; }
+
+.pullout:after {
+  border-bottom: 1px solid indianred;
+  border-top: 2px solid indianred;
+  content: '';
+  display: block;
+  height: 7px;
+  margin-left: 20%;
+  margin-top: 10%;
+  width: 60%; }
+
+.pullout-right {
+  position: absolute;
+  clear: both;
+  width: 20%;
+  padding: 5%;
+  right: 0; }
+
+.pullout-right img {
+  max-width: 100%; }
+
+.breakout {
+  align-items: stretch;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 5% 0; }
+
+.breakout.two img {
+  flex: 0 1 45%;
+  max-width: 100%; }
+
+.breakout.two blockquote {
+  align-items: center;
+  background-color: indianred;
+  display: flex;
+  flex: 0 1 45%;
+  font-family: NeueHaasUnica, Arial, sans-serif, sans-serif;
+  font-size: 1.125em;
+  font-weight: 700;
+  justify-content: center;
+  margin: 0; }
+
+.breakout .breakout-image {
+  flex: 0 1 45%; }
+
+.breakout .breakout-image img {
+  max-width: 100%; }
+
+.post-video {
+  display: block;
+  margin: 2em auto;
+  max-width: 50%; }
+
+.large-image {
+  flex: 0 1 100%; }
+
+.large-image img {
+  max-width: 100%; }
+
+@media screen and (min-width: 850px) {
+  .large-image {
+    flex: 0 1 70%; } }
+
+.caption {
+  color: #959595;
+  flex: 0 1 70%;
+  font-family: NeueHaasUnica, Arial, sans-serif, sans-serif;
+  font-size: 1.35em;
+  font-weight: 500;
+  padding: 0 2%;
+  text-align: center; }
+
+@media screen and (min-width: 850px) {
+  .caption {
+    flex: 0 1 30%;
+    text-align: left; } }
+
+.caption:before {
+  border-bottom: 2px solid indianred;
+  border-top: 1px solid indianred;
+  content: '';
+  display: block;
+  height: 7px;
+  margin-bottom: 5%; }
+
+.post-ending:after {
+  -webkit-font-feature-settings: "ornm" 7;
+  -moz-font-feature-settings: "ornm" 7;
+  -ms-font-feature-settings: "ornm" 7;
+  font-feature-settings: "ornm" 7;
+  color: indianred;
+  content: '\0041';
+  display: inline-block;
+  font-size: 1em;
+  margin-left: 0.5em; }
+
+.interjection {
+  font-family: NeueHaasUnica, Arial, sans-serif, sans-serif;
+  font-size: 1.8em;
+  font-weight: 900;
+  margin: 0 auto;
+  width: 75%;
+  text-align: center; }
+
+@media screen and (min-width: 850px) {
+  .interjection {
+    margin: 0 auto 2em auto;
+    width: 50%; } }
+
+.union-header {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 5em auto 3em auto;
+  width: 80%; }
+
+.union-header-emoji {
+  flex: 0 1 30%;
+  align-self: center; }
+
+.union-header-emoji img {
+  max-width: 150px;
+  width: 100%; }
+
+.union-didot {
+  font-family: 'Didot 96 A', 'Didot 96 B', serif;
+  font-size: 5em;
+  font-style: italic;
+  line-height: 1;
+  margin-top: 0;
+  margin-bottom: 0;
+  flex: 0 1 70%; }
+
+@media screen and (min-width: 1200px) {
+  .union-didot {
+    font-size: 10em; } }
+
+.union-didot .union-strikeout {
+  display: inline; }
+
+.union-neue {
+  font-size: 0.85em;
+  font-style: normal; }
+
+@media screen and (min-width: 1200px) {
+  .union-neue {
+    font-size: 1em; } }
+
+.neuehaasunica-loaded .union-neue {
+  font-family: NeueHaasUnica, Arial, sans-serif; }
+
+.union-important-questions {
+  font-size: 1em;
+  line-height: 1;
+  font-weight: bold;
+  text-align: left;
+  margin: 2em auto;
+  width: 60%; }
+
+@media screen and (min-width: 1200px) {
+  .union-important-questions {
+    font-size: 2em;
+    width: 40%; } }
+
+.union-important-questions li {
+  margin-bottom: 2em; }
+
+.union-logo {
+  display: block;
+  margin: 10em auto;
+  width: 20%; }
+
+.union-points {
+  list-style-type: decimal;
+  margin: 4em auto;
+  padding: 0;
+  width: 70%; }
+
+.union-points .union-point {
+  display: flex;
+  align-items: center;
+  margin-top: 5em;
+  flex-wrap: wrap; }
+
+.union-points .union-point.improvement li {
+  order: 1; }
+
+.union-points .union-point.improvement .union-point-detail {
+  margin-right: 8%;
+  margin-top: 2%;
+  order: 2; }
+
+@media screen and (min-width: 1200px) {
+  .union-points .union-point.improvement .union-point-detail {
+    margin-left: 10%;
+    margin-right: 0; } }
+
+.union-points .union-point-detail {
+  flex: 0 1 100%;
+  justify-content: center;
+  margin-right: 10%;
+  text-align: center; }
+
+@media screen and (min-width: 1200px) {
+  .union-points .union-point-detail {
+    flex: 0 1 40%; } }
+
+.union-points .union-point-detail video, .union-points .union-point-detail img {
+  border: 1px solid #F5F5F5;
+  margin: auto;
+  max-width: 70%;
+  width: 70%; }
+
+.union-points .union-point-detail video.no-border, .union-points .union-point-detail img.no-border {
+  border: 0; }
+
+.union-points .union-point-detail.wysiwyg {
+  color: #4a90e2;
+  font-size: 2em;
+  font-weight: bold;
+  line-height: 1.25;
+  padding: 0 8%; }
+
+.union-points li {
+  list-style-type: decimal; }
+
+@media screen and (min-width: 1200px) {
+  .union-points li {
+    flex: 0 1 50%; } }
+
+.neuehaasunica-loaded .wysiwyg {
+  font-family: NeueHaasUnica, Arial, sans-serif; }
+
+.neuehaasunica-loaded .union-point-strong {
+  font-family: NeueHaasUnica, Arial, sans-serif; }
+
+.union-point-strong {
+  font-weight: 900; }
+
+.union-sw {
+  margin: -0.75em;
+  font-family: Avenir;
+  font-size: 2em; }
+
+.union-sw:first-of-type, .union-sw:last-of-type {
+  opacity: 0.2; }
+
+.union-sw:nth-of-type(2), .union-sw:nth-of-type(6) {
+  opacity: 0.4; }
+
+.union-sw:nth-of-type(3), .union-sw:nth-of-type(5) {
+  opacity: 0.7; }
+
+.union-sw:last-of-type {
+  margin-bottom: 1em; }
+
+@media screen and (min-width: 1200px) {
+  .union-sw {
+    margin-bottom: 0; } }
+
+.union-newb-callout {
+  -webkit-animation: rainbow-colors 12s ease-out;
+  -moz-animation: rainbow-colors 12s ease-out;
+  animation: rainbow-colors 12s ease-out;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  color: #4a90e2;
+  font-family: 'Harriet Display', 'Didot 96 A', 'Didot 96 B', serif;
+  font-size: 4em;
+  font-style: italic;
+  font-weight: 900;
+  line-height: 1.2;
+  margin: auto;
+  max-width: 8em;
+  padding: 0 10px;
+  text-align: center; }
+
+@media screen and (min-width: 1200px) {
+  .union-newb-callout {
+    font-size: 10em;
+    padding: 0; } }
+
+.union-blockquote-attribution {
+  float: right;
+  margin-right: 3em; }
+
+@media screen and (min-width: 1200px) {
+  .union-blockquote-attribution {
+    margin-right: 20em; } }
+
+.neuehaasunica-loaded .union-google-improvements {
+  font-family: NeueHaasUnica, Arial, sans-serif; }
+
+.union-google-improvements {
+  margin: 4em auto !important;
+  text-align: center !important;
+  font-size: 1.5em;
+  line-height: 1; }
+
+.union-less {
+  display: block;
+  margin: 45em auto;
+  text-align: center;
+  width: 10em;
+  font-style: italic; }
+
+.union-inline-video {
+  border: 1px solid #F5F5F5; }
+
+.union-products {
+  color: black;
+  font-family: "Avenir Next", sans-serif;
+  font-size: 2em;
+  font-weight: 900;
+  line-height: 1;
+  margin: 5em auto;
+  max-width: 10em;
+  width: 50%; }
+
+@media screen and (min-width: 1200px) {
+  .union-products {
+    font-size: 3em;
+    width: 50%; } }
+
+.union-devtools-current {
+  padding-top: 10em; }
+
+.union-goals {
+  font-family: 'Didot 96 A', 'Didot 96 B', serif;
+  font-size: 10em;
+  overflow: hidden;
+  margin: 0 0 0 -10%;
+  font-style: italic;
+  text-transform: uppercase;
+  line-height: 1; }
+
+@media screen and (min-width: 1200px) {
+  .union-goals {
+    font-size: 30em;
+    margin: 0 0 0 -5%; } }
+
+.post.union {
+  margin-bottom: 10em; }

@@ -51,9 +51,15 @@
   position: relative;
 
   p {
-    width: 30%;
-    margin-left: 50%;
-    margin-bottom: 5%;
+    width: 65%;
+    margin-left: 15%;
+    margin-bottom: 10%;
+
+    @include media($nine-col) {
+      margin-bottom: 5%;
+      margin-left: 50%;
+      width: 30%;
+    }
   }
 }
 
@@ -76,17 +82,26 @@
 .youtube {
   cursor: pointer;
   position: relative;
+  height: 315px !important; // exact size as youtube iframe
   margin: 0 auto 10% auto;
-  width: 560px; // exact size as youtube iframe
+  width: 100%;
+
+  @include media($nine-col) {
+    width: 560px; // exact size as youtube iframe
+  }
 
   img {
     display: block;
-    height: 315px; // exact size as youtube iframe
     left: 0;
     position: absolute;
     top: 0;
-    width: 560px;
+    width: 100%;
     z-index: 1;
+    
+    @include media($nine-col) {
+      height: 315px; // exact size as youtube iframe
+      width: 560px; // exact size as youtube iframe
+    }
   }
 
   iframe {
@@ -109,26 +124,33 @@
   }
 
   svg {
+    fill: $brand-primary;
+    left: 0;
     position: absolute;
     top: 0;
-    left: 0;
-    z-index: 0;
     width: 85%;
-    fill: $brand-primary;
+    z-index: 0;
+
+    @include media($nine-col) {
+      height: 675px;
+    }
   }
 
   h1 {
     font-family: $didot;
     font-size: 5em;
     font-style: italic;
-    line-height: 1.25;
+    line-height: 1;
     padding: 0 5%;
+    margin: 0 auto 5% auto;
     position: relative;
     text-transform: uppercase;
     z-index: 1;
     
     @include media($nine-col) {
       font-size: 14em;
+      padding: 0 5%;
+      line-height: 1.25;
     }
 
     a {
@@ -140,8 +162,13 @@
   em {
     background-color: white;
     margin-top: 8%;
+    display: none;
     position: absolute;
     right: 15%;
+    
+    @include media($nine-col) {
+      display: block;
+    }
   }
 }
 
@@ -168,7 +195,7 @@
   cursor: pointer;
   flex: 0 1 100%;
   margin-left: 10%;
-  margin-top: 45%;
+  margin-top: 15%;
   position: relative;
 
   @include media($nine-col) {
@@ -202,13 +229,14 @@
     font-weight: $extra-bold-weight;
     line-height: $base-line-height;
     margin-left: 25px;
-    margin-top: -13.5%;
+    margin-top: -50%;
     position: relative;
     text-align: center;
     text-transform: capitalize;
 
     @include media($nine-col) {
       margin-left: 100px;
+      margin-top: -13.5%;
       text-align: left;
     }
 
@@ -246,8 +274,14 @@
     background-color: white;
     margin-top: 10%;
     margin-bottom: 5%;
-    margin-left: 20%;
-    width: 30%;
+    margin-left: 6%;
+    position: relative;
+    width: 60%;
+
+    @include media($nine-col) {
+      margin-left: 20%;
+      width: 30%;
+    }
   }
 }
 
@@ -257,7 +291,14 @@
 }
 
 .third-person {
+  background-color: white; 
   clear: both;
-  margin: 10% auto;
-  width: 30%;
+  margin: 125% auto 10% auto;
+  position: relative;
+  width: 65%;
+
+  @include media($nine-col) {
+    margin: 10% auto;
+    width: 30%;
+  }
 }
