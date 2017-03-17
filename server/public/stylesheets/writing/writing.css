@@ -111,7 +111,7 @@ html {
 .post {
   background-image: linear-gradient(transparent, transparent);
   color: #2d2d2d;
-  flex: 0 1 80%;
+  flex: 0 1 100%;
   margin: 0 auto 7% auto; }
 
 @media screen and (min-width: 850px) {
@@ -122,15 +122,27 @@ html {
   color: #2d2d2d; }
 
 .post:first-of-type {
-  flex: 0 1 85%;
+  flex: 0 1 100%;
   margin: 7% 0 7% 0; }
 
+@media screen and (min-width: 850px) {
+  .post:first-of-type {
+    flex: 0 1 85%; } }
+
 .post:first-of-type p {
-  width: 30%; }
+  width: 100%; }
+
+@media screen and (min-width: 850px) {
+  .post:first-of-type p {
+    width: 30%; } }
 
 .post:nth-of-type(2), .post:nth-of-type(3) {
-  flex: 0 1 44%;
-  margin-right: 6%; }
+  flex: 0 1 100%; }
+
+@media screen and (min-width: 850px) {
+  .post:nth-of-type(2), .post:nth-of-type(3) {
+    flex: 0 1 44%;
+    margin-right: 6%; } }
 
 .title-and-date {
   align-items: center;

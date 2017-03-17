@@ -68,6 +68,9 @@ html {
 
 .writing, .speaking {
   background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   margin-top: 20%;
   position: relative; }
 
@@ -127,6 +130,7 @@ html {
   cursor: pointer;
   display: flex;
   fill: indianred;
+  flex: 0 1 100%;
   position: relative;
   transition: fill 0.25s ease; }
 
@@ -197,13 +201,12 @@ html {
   color: #2d2d2d;
   cursor: pointer;
   flex: 0 1 100%;
-  margin-left: 10%;
   margin-top: 15%;
   position: relative; }
 
 @media screen and (min-width: 850px) {
   .the-future {
-    flex: 0 1 50%;
+    flex: 0 1 40%;
     margin-top: 10%; } }
 
 .the-future:hover::before {
@@ -251,7 +254,8 @@ html {
   font-family: CalendasPlus, Georgia, "Times New Roman", Times, serif;
   display: inline-block;
   width: 100%;
-  text-align: center; }
+  text-align: center;
+  top: -25px; }
 
 @media screen and (min-width: 850px) {
   .the-future em {

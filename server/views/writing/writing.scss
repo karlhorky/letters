@@ -89,7 +89,7 @@
 .post {
   background-image: linear-gradient(transparent, transparent);
   color: $brand-black;
-  flex: 0 1 80%;
+  flex: 0 1 100%;
   margin: 0 auto 7% auto;
 
   @include media($nine-col) {
@@ -101,17 +101,29 @@
   }
 
   &:first-of-type {
-    flex: 0 1 85%;
+    flex: 0 1 100%;
     margin: 7% 0 7% 0;
 
+    @include media($nine-col) {
+      flex: 0 1 85%;
+    }
+
     p {
-      width: 30%;
+      width: 100%;
+
+      @include media($nine-col) {
+        width: 30%;
+      }
     }
   }
 
   &:nth-of-type(2), &:nth-of-type(3) {
-    flex: 0 1 44%;
-    margin-right: 6%;
+    flex: 0 1 100%;
+
+     @include media($nine-col) {
+      flex: 0 1 44%;
+      margin-right: 6%;
+    }
   }
 }
 

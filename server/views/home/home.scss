@@ -47,6 +47,9 @@
 
 .writing, .speaking {
   background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   margin-top: 20%;
   position: relative;
 
@@ -114,6 +117,7 @@
   cursor: pointer;
   display: flex;
   fill: $brand-primary;
+  flex: 0 1 100%;
   position: relative;
   transition: fill 0.25s ease;
 
@@ -194,12 +198,11 @@
   color: $brand-black;
   cursor: pointer;
   flex: 0 1 100%;
-  margin-left: 10%;
   margin-top: 15%;
   position: relative;
 
   @include media($nine-col) {
-    flex: 0 1 50%;
+    flex: 0 1 40%;
     margin-top: 10%;
   }
 
@@ -256,6 +259,7 @@
     display: inline-block;
     width: 100%;
     text-align: center;
+    top: -25px;
 
     @include media($nine-col) {
       margin-left: 120px;
