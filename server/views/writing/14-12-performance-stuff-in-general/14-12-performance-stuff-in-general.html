@@ -1,0 +1,86 @@
+---
+file: 17-03-when-you-realize
+title: When You Realize Living Forever Sucks
+date: March 2017
+imageClass: goya
+description: You've finally managed to discover the secret to immortality.
+url: when-you-realize
+---
+
+{% extends "layout.html" %}
+
+{% block content %}
+  <link rel="stylesheet" property="stylesheet" href="/stylesheets/writing/post.css">
+
+  <main class="post">
+    <h1 class="title">{{ title }}</h1>
+    <h5 class="date">{{ date }}</h5>
+---
+layout: post
+title: Performance Stuff in General
+description: What can we do to make pages fast?
+tags: [css, conf, oakland, performance]
+---
+
+[@benschwarz](https://twitter.com/benschwarz), Ben Schwarz.
+
+[Slides](https://speakerdeck.com/benschwarz/useful-performance-metrics)
+
+On the internet, time is money. Queue the stats!
+
+47% of consumers expect a web page to load in two seconds or less.
+
+"After a second of so, the user's flow and engagement with the initiated task is broken." -Ilya Grigorik.
+
+## Everyone on your team is responsible for the speed of your site.
+Perceived speed is on the front-end. _Speed is perceived._ 
+
+So what can we do to make pages fast?
+
+Minify.
+
+Use AJAX.
+
+Base-64 things.
+
+Animate using CSS.
+
+Use requestAnimationFrame for JS-based animation.
+
+Use video rather than gifs. :(
+
+```position:fixed``` can cause uncessary paints while scrolling. (So can a lot of other things.)
+
+```box-shadow``` can be kiiiinnnd of evil.
+
+Make animations small.
+
+tl;dr:
+
+## Only load what you need.
+Inlining critical styles will give you big boosts in speed.
+
+_So what else do I need to know?_
+
+1. *Set a budget.* How much is too much? If you set budgets for images, you can have interesting talks with your designers. (Designers like constraints.)
+
+2. *Use real-time analytics.* GA has the average page load time: this is what will give you data on using CDNs, etc.
+
+3. *Do your own metrics.* ```window.performance.timing``` is a thing you can use in browsers and show you how long it took everything to load. If your site goes beyond a certain number, you can get alerts. You don't even need to fight to use GA or anything else; you have access to these metrics yourself.
+
+```window.performance.getEntries()```
+
+```window.performance.mark("foo")``` set marks and get them and see how long they took to load. (Realize how slow Disqus is on your site!)
+
+[Pingdom](https://www.pingdom.com/), [New Relic](http://newrelic.com/), [CSSStats](http://cssstats.com/), [CalibreApp](http://calibreapp.com/)
+
+_Don't rely on what you think you know. Prove it._
+
+  </p>
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@helenvholmes" />
+  <meta name="twitter:title" content="When You Realize" />
+  <meta name="twitter:description" content="You've finally managed to discover the secret to immortality." />
+  <meta name="twitter:image" content="http://helenvholmes.com/images/partials/writing/orb.jpg" />
+{% endblock %}

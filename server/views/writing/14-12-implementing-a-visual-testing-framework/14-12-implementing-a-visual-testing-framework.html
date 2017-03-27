@@ -1,0 +1,59 @@
+---
+file: 17-03-when-you-realize
+title: When You Realize Living Forever Sucks
+date: March 2017
+imageClass: goya
+description: You've finally managed to discover the secret to immortality.
+url: when-you-realize
+---
+
+{% extends "layout.html" %}
+
+{% block content %}
+  <link rel="stylesheet" property="stylesheet" href="/stylesheets/writing/post.css">
+
+  <main class="post">
+    <h1 class="title">{{ title }}</h1>
+    <h5 class="date">{{ date }}</h5>
+---
+layout: post
+title: Implementing a Visual CSS Testing Framework
+description: Automatic image capture
+tags: [css, conf, oakland, testing]
+---
+
+[@jessicard](https://twitter.com/jessicard), Jessica Dillon.
+
+[Slides](http://www.slideshare.net/jessicardillon/implementing-a-visual-css-testing-framework)
+
+We want image diffs to see when pages don't load properly. Why? Because CSS is frickin' hard to refactor! And writing tests to describe something visual is really, really hard.
+
+They wanted something that took full-page screenshots, not just the fold.
+
+They wanted a place to store these screenshots.
+
+They needed a want to view the diff screenshots.
+
+## Building the Framework
+
+Testing with [rspec](http://rspec.info/)
+
+[Buildbox](https://buildbox.io/)
+
+[Selenium](http://www.seleniumhq.org/)
+
+[Browserstack](http://www.browserstack.com/)
+
+[Imagemagick](http://www.imagemagick.org/) (What's up with wizards for web tools, anyway?)
+
+## Update, 12/10/14
+@jessicard wrote a [blog post](https://bugsnag.com/blog/implementing-a-visual-css-testing-framework) outlining this in much better detail than I was able to in my notes. Please check it out!
+
+  </p>
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@helenvholmes" />
+  <meta name="twitter:title" content="When You Realize" />
+  <meta name="twitter:description" content="You've finally managed to discover the secret to immortality." />
+  <meta name="twitter:image" content="http://helenvholmes.com/images/partials/writing/orb.jpg" />
+{% endblock %}

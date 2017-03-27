@@ -1,0 +1,35 @@
+---
+file: 17-03-when-you-realize
+title: When You Realize Living Forever Sucks
+date: March 2017
+imageClass: goya
+description: You've finally managed to discover the secret to immortality.
+url: when-you-realize
+---
+
+{% extends "layout.html" %}
+
+{% block content %}
+  <link rel="stylesheet" property="stylesheet" href="/stylesheets/writing/post.css">
+
+  <main class="post">
+    <h1 class="title">{{ title }}</h1>
+    <h5 class="date">{{ date }}</h5>
+---
+layout: post
+title: Install Craft with Curl
+description: URL to get Craft zip on, say, a Digital Ocean server
+tags: [craft, curl, wget]
+---
+
+Sometimes you need to install something programmatically, such as when you're setting up a server from scratch (as you might if you were working with Digital Ocean). In those instances, you want to use ```wget``` or ```curl```. 
+
+If you're installing Craft, you can get the zip file at ```http://buildwithcraft.com/latest.zip?accept_license=yes```. A stack exchange post with more specifics can be found [here](http://craftcms.stackexchange.com/questions/225/is-there-a-way-i-can-programmatically-download-the-latest-version-of-craft).
+  </p>
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@helenvholmes" />
+  <meta name="twitter:title" content="When You Realize" />
+  <meta name="twitter:description" content="You've finally managed to discover the secret to immortality." />
+  <meta name="twitter:image" content="http://helenvholmes.com/images/partials/writing/orb.jpg" />
+{% endblock %}

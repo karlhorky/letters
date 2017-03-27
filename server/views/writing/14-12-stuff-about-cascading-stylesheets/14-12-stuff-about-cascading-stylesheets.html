@@ -1,0 +1,68 @@
+---
+file: 17-03-when-you-realize
+title: When You Realize Living Forever Sucks
+date: March 2017
+imageClass: goya
+description: You've finally managed to discover the secret to immortality.
+url: when-you-realize
+---
+
+{% extends "layout.html" %}
+
+{% block content %}
+  <link rel="stylesheet" property="stylesheet" href="/stylesheets/writing/post.css">
+
+  <main class="post">
+    <h1 class="title">{{ title }}</h1>
+    <h5 class="date">{{ date }}</h5>
+---
+layout: post
+title: Stuff About Cascading Style Sheets
+description: Better product design with HTML & CSS
+tags: [css, conf, oakland]
+---
+
+[@mdo](https://twitter.com/mdo) and [@connors](https://twitter.com/connors).
+
+[Bootstrap](http://getbootstrap.com/) + [Ratchet](http://goratchet.com/)
+
+_Design is a process._ At every step in the process, you're constantly re-doing the same thing, trying to figure out what's actually write.
+
+_Product design greatly improves when you get to code faster._ Er, why? 
+
+It elevates the conversation. Real data! Real feels! Real interactions! With prototypes, you can actual test it. 
+
+It protomotes systemic design. Design components across pages, not pages of components.
+
+It allows us to speak the same language. Coded components instead of pixels and design specs allow us to work together.
+
+## #NewNewTwitter
+This refers to the mobile clients that came out three years and a day ago on twitter.com.
+
+_They did a bajillion Photoshop mockups._ Whenever you had to update one, you had to update _ALL OF THEM_. Terrible.
+
+Then, they prototyped. EXCEPT THEY WEREN'T BECAUSE NO TIME FOR PRODUCTION-WORTHY CODE.
+
+In essense:
+
+## A set of PSDs can't encapsulate the entire web.
+
+So, learned:
+
+_Consolidate similar design components into one._ Getting into code faster allows you to find these things faster. Instead of having six slightly different things, just have one. Less time!
+
+_Speed is a feature._ Having those components made them move faster so that they _could_ worry about speed, because on a site like Twitter, speed is hella important.
+
+## Having something actually coded helps with momentum.
+If you have something prototyped, you can get it approved.
+
+It's not that old design techniques are antiquated and you should code in the browser and blah blah blah. Because sketching is awesome. It's just that you _should_ try to move into code faster to get things shipped faster.
+
+  </p>
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@helenvholmes" />
+  <meta name="twitter:title" content="When You Realize" />
+  <meta name="twitter:description" content="You've finally managed to discover the secret to immortality." />
+  <meta name="twitter:image" content="http://helenvholmes.com/images/partials/writing/orb.jpg" />
+{% endblock %}

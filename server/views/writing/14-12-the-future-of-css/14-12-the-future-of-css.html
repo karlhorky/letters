@@ -1,0 +1,84 @@
+---
+file: 17-03-when-you-realize
+title: When You Realize Living Forever Sucks
+date: March 2017
+imageClass: goya
+description: You've finally managed to discover the secret to immortality.
+url: when-you-realize
+---
+
+{% extends "layout.html" %}
+
+{% block content %}
+  <link rel="stylesheet" property="stylesheet" href="/stylesheets/writing/post.css">
+
+  <main class="post">
+    <h1 class="title">{{ title }}</h1>
+    <h5 class="date">{{ date }}</h5>
+---
+layout: post
+title: The Future of CSS
+description: Tab Atkins
+tags: [css, conf, oakland]
+---
+
+[@tabatkins](https://twitter.com/tabatkins), Tab Atkins. 
+
+[Link to slides](http://www.xanthir.com/talks/2014-12-09/)
+
+```image()```: fallbacks to color and a [bunch of other things](http://dev.w3.org/csswg/css-images-3/)
+
+```image-set()```: Lets you specify multiple resolutions of an image, i.e. for retina
+
+```cross-fade```: smoothly tweet between two images.
+
+``image-rendering```: Lets browser understand how it should scale up images. Crisp edges! Oh baby!
+
+```flex-box()```: Hey, you should be [using it already!](http://dev.w3.org/csswg/css-flexbox/) Basically, it destroys grids with all their terrible math. Yay!
+
+[Grid by Example](http://gridbyexample.com/), Rachel Andrew
+[Grid](http://css-tricks.com/snippets/css/complete-guide-grid/), CSS-Tricks 
+[Solved by Flexbox](https://philipwalton.github.io/solved-by-flexbox/), Philip Walton
+[Flexbox](http://css-tricks.com/snippets/css/a-guide-to-flexbox/), CSS-Tricks
+
+```:nth-child()```, ```:matches()```: Selecting children is [getting smarter](http://dev.w3.org/csswg/selectors/).
+
+_Variables_: CSS will have them! They currently [work in Firefox](http://dev.w3.org/csswg/css-variables/).
+
+_Colors_: [Spec](http://dev.w3.org/csswg/css-color/) There will be 4/8 fihiy hex colors for alpha instead of converting to ```rgba```, and other fun stuff. 
+
+```hwb()```: hue-whiteness-blackness
+```gray()```: grays without repeating yourself. Nice! No more bajillion ```$brand-gray-light```s or whatever.
+```color()```: lets you adjust colors but without a preprocessor. Nice.
+
+_Media Queries_: They're [getting smarter!](http://dev.w3.org/csswg/mediaqueries/) Ability to target phones used as night, or in bright light, or on e-ink screens. ```bada$$```, amirite???
+
+_Animation!_: [Web Animations spec](https://w3c.github.io/web-animations/), [Motion Path](http://dev.w3.org/FXTF/motion-1/). Exposing CSS animations to JS in a more direct + easy way, and animations an element around the page in 2D with the ```motion``` property.
+
+_Polyfilling CSS_: No language can grow forever. CSS is huge, and getting larger and larger. Cycle times to get new things into spec is really long (~5 years, yikes!). Doesn't mean we can't polyfill our solutions, though, such as with Media Queries, such as variables for media queries:
+
+```
+  @custom-media foo (500px <= width <= 1200px);
+  @media ("foo") { ... }
+  CSS.customMedia.set("bar", true);
+  CSS.customMedia.set("baz", 500);
+  CSS.customMedia.set(
+        "qux",
+        MediaQueryList("(min-width: 500px)"))
+  @media ("bar") { ... }
+  @media ("baz" < 600) { ... }
+  @media ("qux") { ... }
+```
+
+_More Polyfilling_: Custom psuedo-classes, custom functions, mix-ins (functions on the block level, rather than value level), custom at-rules, custom layout???
+
+
+
+  </p>
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@helenvholmes" />
+  <meta name="twitter:title" content="When You Realize" />
+  <meta name="twitter:description" content="You've finally managed to discover the secret to immortality." />
+  <meta name="twitter:image" content="http://helenvholmes.com/images/partials/writing/orb.jpg" />
+{% endblock %}

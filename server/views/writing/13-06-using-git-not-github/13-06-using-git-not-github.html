@@ -1,0 +1,84 @@
+---
+file: 13-06-using-git-not-github
+title: Using Git Not Github
+date: June 2013
+imageClass: orb
+description: Baby Helen Writes.
+url: using-git-not-github
+---
+
+{% extends "layout.html" %}
+
+{% block content %}
+  <link rel="stylesheet" property="stylesheet" href="/stylesheets/writing/post.css">
+
+  <main class="post">
+    <h1 class="title">{{ title }}</h1>
+    <h5 class="date">{{ date }}</h5>
+    <p>This is embarrassing because this is a pretty important concept that obviously just… escaped me. I figured I might as well do a quick write-up for anyone else who didn’t really get this because, well, I figure I’m not the only one:</p>
+
+    <p>Git and Github are not the same thing.</p>
+
+    <p>While I thought I understood this distinction, for a long time I thought that you needed both in order to actually use git. Turns out this isn't true. You can get the full benefits of git and all it’s versioning, merging, cloning glory without ever pushing your repo to Github or any other public storage site unless that’s what you wanted to do. This is great because for the longest time, while under this misconception, I was putting public repos up on GitHub to store them when they weren’t really open-source projects or anything useful to others like that: they were just things I needed to put somewhere, and I thought that GitHub was how I was supposed to store my git repos.</p>
+
+    <p>Anyway, here’s an example of how you might set up a remote repo with Dropbox if it was installed on your local machine:</p>
+
+    <p>Start with the files you’d like to make your local repo. I’m doing it with an Ember starter kit that eventually I want to store on Dropbox:</p>
+
+    <code>
+      cd code
+      mkdir ember-starter
+      cd ember-starter
+      git init
+      touch README.md
+      git commit -m "First commit"
+    </code>
+
+    <p>Somewhere else, be it Dropbox, a harddrive, or some other cloud solution make a remote repo. I'm doing it by just making a folder on Dropbox to push to:</p>
+
+    <code>
+      cd ~/Dropbox
+      mkdir ember-starter
+      cd ember-starter
+      git init --bare
+      </code>
+
+    <p>(The <code>-—bare</code> is important. What we’re doing is creating an empty repo to push our already created repo to.)*</p>
+
+    <p>Now that we’ve made the directory where are remote is, switch back to where all your starter files are. Mine are at <code>~/code</code>. We’re going to tell it where its remote repo is:</p>
+
+    <code>
+      cd ~/code/ember-starter
+      git remote add origin ~/Dropbox/ember-starter
+    </code>
+
+    <p>Now that we’ve pointed it to our remote repo, we can push our files:</p>
+
+    <code>
+      git push -u origin master
+    </code>
+
+    <p>Finished. Pretty simple, really.</p>
+
+    <h2>Some articles that helped me write this:</h2>
+
+    <ul>
+      <li><a href="http://thelucid.com/2008/12/02/git-setting-up-a-remote-repository-and-doing-an-initial-push/">@thelucid's post on Git</a> - Setting Up a Remote Repository and Doing an Initial Push</li>
+      <li><a href="http://git-scm.com/">git-scm.com</a> - The official Git docs</li>
+      <li><a href="http://twitter.com/wlaurance">@wlaurance</a> - Coworker who helped teach me git in the first place</li>
+    </ul>
+
+    <h2>Alternatives</h2>
+    <p>Hosting your remote repos on Github is a pretty good idea - you have the ability to easily add collaborators, track stats, and it's all with the good vibes of open source. That said, if you really need private repos, their micro plans are pretty cheap, <a href="https://github.com/pricing">starting at $7/month</a>. If you're a student, you can get <a href="https://github.com/edu">two years of micro for free</a>. There also is <a href="http://gitlab.org/">Git Lab</a>, which is an open-source version of Github that seems promising (although I haven't tried it myself).</p>
+  </main>
+
+  <p class="center">
+    <em>If you thought this was helpful, <a href="https://twitter.com/helenvholmes">tell me on Twitter</a>.</em>
+  </p>
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@helenvholmes" />
+  <meta name="twitter:title" content="{{ title }}" />
+  <meta name="twitter:description" content="{{ description }}" />
+  <meta name="twitter:image" content="http://helenvholmes.com/images/partials/writing/orb.jpg" />
+{% endblock %}

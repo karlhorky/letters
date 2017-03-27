@@ -1,0 +1,66 @@
+---
+file: 17-03-when-you-realize
+title: When You Realize Living Forever Sucks
+date: March 2017
+imageClass: goya
+description: You've finally managed to discover the secret to immortality.
+url: when-you-realize
+---
+
+{% extends "layout.html" %}
+
+{% block content %}
+  <link rel="stylesheet" property="stylesheet" href="/stylesheets/writing/post.css">
+
+  <main class="post">
+    <h1 class="title">{{ title }}</h1>
+    <h5 class="date">{{ date }}</h5>
+---
+layout: post
+title: Things I've Learned About CSS
+description: Basically over 10 years of typing it
+tags: [css, conf, oakland]
+---
+
+[@mrmrs](https://twitter.com/mrmrs_), Adam Morse
+
+[Slides](https://github.com/mrmrs/slides-cssconfoakland-2014)
+
+[Opower](http://www.opower.com/)
+
+"In mathematics, if it's been done it's trivial. If it hasn't been done it's impossible. I'm only concerned with things that are impossible."
+
+## Empathy
+We want people to have better lives. We shouldn't care about code, we should care about the people using the things we've built.
+
+_Veil of Ignorance_: We don't think about what other people go through. You might not have a fast connection. Performance matters. Try to write CSS that doesn't degrade the experience.
+
+_How much CSS is too much CSS for a website?_ (What a great question)
+
+_Everything should be readable on any device._
+_Everything should be as performant as possible._
+_Designing in the browser should be easy._
+_Doing one thing extremely well promotes reusability._ (Nicholas Gallagher + [clearfix](http://nicolasgallagher.com/micro-clearfix-hack/))
+
+## Inline Styles Are Terrible!...?
+Inline styles are frickin' _fast_.
+
+## CSS is like, 20kb.
+Huh? 
+
+CSS is finite. Most of what you're doing has been done before, and there are only so many options you could possibly have. (Literally, @mrmrs put all of the different options and applied them to classes and weighed them - and it's smaller than what most sites have for CSS.)
+
+_40% of sites breaks down to floats, colors, etc._ So how much CSS is too much? How much CSS is redundant?
+
+[@jxnblk](https://twitter.com/jxnblk) + [cssstats.com](http://cssstats.com/)
+
+In the end, we want to make things better for our users. Worry less about solving things creatively and worry more about them.
+
+  </p>
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@helenvholmes" />
+  <meta name="twitter:title" content="When You Realize" />
+  <meta name="twitter:description" content="You've finally managed to discover the secret to immortality." />
+  <meta name="twitter:image" content="http://helenvholmes.com/images/partials/writing/orb.jpg" />
+{% endblock %}

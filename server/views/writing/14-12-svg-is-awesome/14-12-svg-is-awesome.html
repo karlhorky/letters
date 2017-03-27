@@ -1,0 +1,80 @@
+---
+file: 17-03-when-you-realize
+title: When You Realize Living Forever Sucks
+date: March 2017
+imageClass: goya
+description: You've finally managed to discover the secret to immortality.
+url: when-you-realize
+---
+
+{% extends "layout.html" %}
+
+{% block content %}
+  <link rel="stylesheet" property="stylesheet" href="/stylesheets/writing/post.css">
+
+  <main class="post">
+    <h1 class="title">{{ title }}</h1>
+    <h5 class="date">{{ date }}</h5>
+---
+layout: post
+title: SVG Is Awesome
+description: Fun stuff you didn't know about
+tags: [svg, css, conf, oakland]
+---
+
+[@brnnbrn](https://twitter.com/brnnbrn), Brenna O'Brien
+
+[Slides](http://talks.brennaobrien.com/svg/#/)
+
+# Anatomy of an SVG Element
+Everything is relative to the viewBox. viewBox Rules Everything Around Me! (V.R.E.A.M!)
+
+_Editorialized ```<text>```: allows you to have huge display type that's completely responsive.
+
+_Curved text_: Create a path, and then curve type to that path. 
+
+```<defs>```: like SVG variables.
+
+_Fancy Fills_: SVG has its own gradient syntax. Sweet! Add it to a ```<def>```, and _literally anything you want can have a gradient_. Same with having images as background colors!
+
+```<pattern>```: Turns any SVG element into a fill. Most fun with images, because you can fill _anything with gifs_. 
+
+```<image>```: they _need_ a width and height. If not they'll disappear :(
+
+```preserveAspectRatio```: It can fill fill shapes automatically if you get the values right.
+
+## So, what have we learned?
+
+_Editorialized text_ + _gradients_ = Gradient text for all* the browsers!
+
+_Editorialize text_ + _gif fill_ = Fill text with gifs! AGH! "I don't know what you would do with that on a production website, but I hope one of you finds a use case."
+
+```<mask>```: like a cookie cutter. ```clipPath```: stamps out with hard edges. With ```<mask>```s, you can fade out, like if you had a gradient. 
+
+_Filter Effects_: You can have blurred backgrounds with SVG filters. 
+
+_SVG Instagram!_: you can combine filters (```feTurbulence``` for noise, ```feComponentTransfer``` for RGB channel adjustments, ```feGaussianBlur```) to get rad Instagram filters. Whoo!
+
+_SVGs that draw themselves_: You can have beautiful line art that draw themselves, like Vox's [playstation that drew itself](http://product.voxmedia.com/2013/11/25/5426880/polygon-feature-design-svg-animations-for-fun-and-profit): long ```stroke-dasharray``` + animated ```stroke-dashoffset```. That's gorgeous.
+
+## But... why not just ```<animate>``` with CSS & JS?
+Er, normally that's way better, BUT:
+
+```tweans```! [Morphing Quarters](http://codepen.io/brenna/details/tHpBh) ```<animate>``` a path's ```d``` attribute. 
+
+## Go Exploring!
+- [Pocket Guide to Writing SVG](http://svgpocketguide.com/)
+- [SVG on MDN](https://developer.mozilla.org/en-US/docs/Web/SVG)
+- [Jenkov](http://tutorials.jenkov.com/svg/index.html)
+
+
+Relevant: [PS4 Review](http://www.polygon.com/a/ps4-review) from Polygon, [XBox One Review](http://www.polygon.com/a/xbox-one-review)
+
+  </p>
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@helenvholmes" />
+  <meta name="twitter:title" content="When You Realize" />
+  <meta name="twitter:description" content="You've finally managed to discover the secret to immortality." />
+  <meta name="twitter:image" content="http://helenvholmes.com/images/partials/writing/orb.jpg" />
+{% endblock %}

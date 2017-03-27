@@ -1,0 +1,54 @@
+---
+file: 17-03-when-you-realize
+title: When You Realize Living Forever Sucks
+date: March 2017
+imageClass: goya
+description: You've finally managed to discover the secret to immortality.
+url: when-you-realize
+---
+
+{% extends "layout.html" %}
+
+{% block content %}
+  <link rel="stylesheet" property="stylesheet" href="/stylesheets/writing/post.css">
+
+  <main class="post">
+    <h1 class="title">{{ title }}</h1>
+    <h5 class="date">{{ date }}</h5>
+---
+layout: post
+title: Git Subtrees
+description: Deploy to Gh-pages
+tags: [ghpages, git, github]
+---
+
+I've been trying for a while to figure out how it was best to deploy to Github pages. I'd refactored my portfolio probably over a month ago to have a [nice Gulp setup](https://github.com/greypants/gulp-starter) and use Angular but I'd grounded to a halt with [gulp-gh-pages](https://github.com/rowoot/gulp-gh-pages/issues) - either I would run the command and nothing would happen or I'd run into memory issues set in place by Node. Ultimately I found a more elegant solution from [cobyism](https://gist.github.com/cobyism/4730490) that used Git. Enter [gulp-shell](https://www.npmjs.com/package/gulp-shell) and we're off to the races!
+
+{% highlight js linenos %}
+var gulp        = require('gulp');
+var shell       = require('gulp-shell');
+
+gulp.task('deploy', shell.task([
+  'git subtree push --prefix build origin master'
+]));
+{% endhighlight %}
+
+{% highlight html linenos %}
+<figure>
+  <img src="/images/image-filename-1.jpg">
+  <figcaption>Caption describing these two images.</figcaption>
+</figure>
+{% endhighlight %}
+
+The Gulp Starter I referenced above splits all of its tasks into separate files which is why I only have one thing in here and I'm requiring gulp again.
+
+After we require gulp we require gulp-shell, which lets us enter bash commands into our task declarations. We then specify the subfolder we want to push (```build```), the remote (```origin```), and then the branch (```master```). I'm defining master, not gh-pages, because the ```yourUserName.github.io``` repo works off of master instead of gh-pages.
+
+  </p>
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@helenvholmes" />
+  <meta name="twitter:title" content="When You Realize" />
+  <meta name="twitter:description" content="You've finally managed to discover the secret to immortality." />
+  <meta name="twitter:image" content="http://helenvholmes.com/images/partials/writing/orb.jpg" />
+{% endblock %}

@@ -1,0 +1,107 @@
+---
+file: 17-03-when-you-realize
+title: When You Realize Living Forever Sucks
+date: March 2017
+imageClass: goya
+description: You've finally managed to discover the secret to immortality.
+url: when-you-realize
+---
+
+{% extends "layout.html" %}
+
+{% block content %}
+  <link rel="stylesheet" property="stylesheet" href="/stylesheets/writing/post.css">
+
+  <main class="post">
+    <h1 class="title">{{ title }}</h1>
+    <h5 class="date">{{ date }}</h5>
+---
+layout: post
+title: Tonight We're Gonna Code Like It's 1999
+description: Creating responsive emails
+tags: [css, conf, oakland, emails, responsive]
+---
+
+[@mybluewristband](https://twitter.com/mybluewristband), Jennifer Wong
+
+[Slides](http://jennz0r.github.io/1999/#/)
+
+So, emails are evil. Story of one woman trying to make nicer emails.
+
+## Design
+Started with research. [Indiegogo](https://www.indiegogo.com/) had really nice emails, and lots of places didn't (looking at you, HackerLeague).
+
+_Takeaways_: Keep copy light, image heavy, huge top anchored logos, and set a max width.
+
+So, the hotpads email she was working with: [email](http://jennz0r.github.io/1999/#/6/1)
+
+_Problems_: No unsubscribe, why is the logo in the middle?? not very attractive.
+
+_Goals_: Consistency, brand awareness.
+
+## Sketching
+Do lots of them. (Your later ones are always better.)
+
+## Images
+'Rule of Thumbs': Minimum touchable area is ```44px``` by ```44px```?? No! They're all different at this point! 
+
+[Finger Friendly Design: Ideal Mobile Touchscreen Target Sizes](http://www.smashingmagazine.com/2012/02/21/finger-friendly-design-ideal-mobile-touchscreen-target-sizes/)
+[Minimum Touchable Area On Mobile Devices](http://pugetworks.com/blog/2012/02/minimum-touchable-area-on-mobile-devices/)
+
+_ Why Templates?_: You can keep your code DRY, for one. A little abstraction goes a long way.
+
+_Tables_: They're coming. Specify your tables as ```block``` or Chrome will ignore your ```max-width```. Whaaaat?
+
+_Inline styles_: You have to use them :(
+
+[Campaign Monitor](https://www.campaignmonitor.com/css/)
+
+_Max Width_: ```550-600px``` is ideal.
+
+## You _will_ have tables everywhere.
+So use comments!
+
+_Image Alternatives_: Have ```alt```s and background-color fallbacks. Seems like Outlook and different email providers just won't... display things.
+
+_Media Queries_: Awesome for things like readability/targeting devices. In conjunction with fluid layouts, you _can_ have nice things.
+
+_Device Pixel Ratio_: Target retina/high-res devies separately.
+
+_!importants_: Sometimes you have to use them. Sometimes inline styles overwrite media queries, so you just have to.
+
+_```<img>``` and ```<a>```_: Sometimes images will appear with a thin gray border. If you put your images on the same line as your anchor element, it will go away. Weeeiirrrddd.
+
+_High-res Images_: Outlook 2007, 2010, 2013, and Outlook in IE don't allow HTML or CSS image sizing. [Solution](http://jennz0r.github.io/1999/#/24/1)
+
+## Outlook 2007, 2010, 2013: WTF?
+They all use Microsoft Word as their rendering engine. Whhhaaatt?
+
+## Gmail
+You have to style all your ```<a>``` tags inline. Wah.
+
+# Blogs
+- [Style Campaign](http://stylecampaign.com/)
+- [Responsive Email Design](http://stylecampaign.com/blog/2013/03/responsive-email-design-red/)
+- [Litmus](https://litmus.com/)
+- [Anatomy of a Mobile Email](https://litmus.com/blog/anatomy-mobile-email/anatomy-mobile-email-24-1000px)
+- [Holiday Reading to Help You Send Better Email](https://www.campaignmonitor.com/blog/)
+- [Mailchimp](http://blog.mailchimp.com/)
+
+# Templates
+- [Zurb Ink](http://zurb.com/ink/)
+- [Campaign Monitor](https://www.campaignmonitor.com/resources/)
+- [Mailchimp](http://templates.mailchimp.com/)
+- [HTML Email Boilerplate](http://htmlemailboilerplate.com/)
+
+# Testing
+- [Email on Acid](http://www.emailonacid.com/)
+- [Litmus](https://litmus.com/)
+
+  </p>
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@helenvholmes" />
+  <meta name="twitter:title" content="When You Realize" />
+  <meta name="twitter:description" content="You've finally managed to discover the secret to immortality." />
+  <meta name="twitter:image" content="http://helenvholmes.com/images/partials/writing/orb.jpg" />
+{% endblock %}

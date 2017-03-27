@@ -53,3 +53,8 @@ html {
   font-family: ProximaNova, Helvetica, Arial, sans-serif !important;
   letter-spacing: 1px;
   text-transform: uppercase; }
+
+blockquote {
+  background-color: #F5F5F5;
+  font-family: "Courier New", Courier, monospace;
+  padding: 1% 0 1% 3%; }

@@ -5,6 +5,7 @@ var favicon        = require('serve-favicon');
 var logger         = require('morgan');
 var marked         = require('marked');
 var nunjucks       = require('nunjucks')
+var paginate       = require('express-paginate');
 var path           = require('path');
 var sassMiddleware = require('node-sass-middleware');
 
@@ -58,6 +59,9 @@ app.use(function(req, res, next) {
   err.status = 404;
   next(err);
 });
+
+// Use paginate middleware
+app.use(paginate.middleware(10, 50));
 
 // error handlers
 

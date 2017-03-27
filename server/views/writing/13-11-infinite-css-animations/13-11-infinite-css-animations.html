@@ -1,0 +1,141 @@
+---
+file: 17-03-when-you-realize
+title: When You Realize Living Forever Sucks
+date: March 2017
+imageClass: goya
+description: You've finally managed to discover the secret to immortality.
+url: when-you-realize
+---
+
+{% extends "layout.html" %}
+
+{% block content %}
+  <link rel="stylesheet" property="stylesheet" href="/stylesheets/writing/post.css">
+
+  <main class="post">
+    <h1 class="title">{{ title }}</h1>
+    <h5 class="date">{{ date }}</h5>
+You may have seen my [other article about Ampersand Conference](http://blog.helenvholmes.co/2013/11/02/ampersand-conference-links/), which really just goes to show that I learned a lot. In any case, [Trent Walton](http://trentwalton.com/)’s talk on various CSS tricks was very informative and I wanted to try out some of the things he went over right away, hence, [the lab](http://helenvholmes.github.io/the-lab/).
+
+## Icon Fonts
+You’ve probably already heard all about how icon fonts are amazing, but what I hadn't understood was how to make one or how they worked. Turns how it’s fairly simple. Here’s how [Font Awesome](http://fontawesome.io/), an open-source icon font from Twitter, structures their font.
+
+First, they link up their files with the expected ```@font-face``` stuff:
+    
+    {% highlight scss linenos %}
+    @font-face {
+        font-family: 'FontAwesome';
+        src: url('@{fa-font-path}/fontawesome-webfont.eot?v=@{fa-version}');
+        src: url('@{fa-font-path}/fontawesome-webfont.eot?#iefix&v=@{fa-version}') format('embedded-opentype'),
+            url('@{fa-font-path}/fontawesome-webfont.woff?v=@{fa-version}') format('woff'),
+            url('@{fa-font-path}/fontawesome-webfont.ttf?v=@{fa-version}') format('truetype'),
+            url('@{fa-font-path}/fontawesome-webfont.svg?v=@{fa-version}#fontawesomeregular') format('svg');
+        font-weight: normal;
+        font-style: normal;
+    }{% endhighlight %}
+
+The ```.fa``` class is where they make the font declaration:
+    
+    {% highlight scss linenos %}
+    .fa {
+        font-family: ’font-awesome’;
+    }{% endhighlight %}
+
+Finally, a few of the icons themselves: 
+
+    {% highlight scss linenos %}
+    .fa-camera:before {
+        content: "\f030";
+    }
+
+    .fa-headphones:before {
+        content: "\f025";
+    }
+
+    .fa-search:before {
+        content: "\f002";
+    }{% endhighlight %}
+
+The logic here is that you can hide the weird, unicode strings that don't really map to anything in more semantic classes (e.g., <code>.fa-headphones</code>). Neat! Using this, we have a basis for our glowing lightning bolt.
+
+When I set out to make this, I knew I wanted it to glow forever, to use the icon font jazz I'd just learned about, and for it to me scalable. (If it's not scalable, what's the point). 
+
+I decided to make the lightning bolt glow using Trent Walton's [fake stroke effect](https://dl.dropboxusercontent.com/u/3648990/Ampersand-Demo/stroke.html), which essentially is just a text-shadow on all sides of the bolt:
+
+    {% highlight scss linenos %}
+    text-shadow: 5px 5px 10px darken($secondary-color,10%),
+                   -5px -5px 10px darken($secondary-color,10%),
+                    5px -4px 10px darken($secondary-color,10%),
+                   -5px 5px 10px darken($secondary-color,10%);{% endhighlight %}
+                   
+To make the bolt scalable, I used percentages, although there's a hearty debate on what the best practice for setting type size is (check the comments in [this blog post](http://kyleschaeffer.com/development/css-font-size-em-vs-px-vs-pt-vs/) for a taste). Seems like the verdict in 2013 is that pixels are global while ems and percentages are local. I went with percentages since the bolt is relative to the viewport anyway:
+
+    {% highlight scss linenos %}
+    // Sizing
+    $base-font: 3500%;{% endhighlight %}
+    
+To then make our lightning bolt glow and pulse, we define the animation and then apply it:
+
+    {% highlight scss linenos %}
+    @-webkit-keyframes pulse {
+    // Fake stroke with text shadows code
+    0% { text-shadow: 5px 5px 10px darken($secondary-color,10%),
+                   -5px -5px 10px darken($secondary-color,10%),
+                    5px -4px 10px darken($secondary-color,10%),
+                   -5px 5px 10px darken($secondary-color,10%); }
+    50% { text-shadow: none; }
+    100% { text-shadow: 5px 5px 10px darken($secondary-color,10%),
+                     -5px -5px 10px darken($secondary-color,10%),
+                      5px -4px 10px darken($secondary-color,10%),
+                     -5px 5px 10px darken($secondary-color,10%); }
+    }{% endhighlight %}
+
+Here's where I set the icon (```:after```) and then called the animation:
+
+    {% highlight scss linenos %}
+    i {
+    // Positioning
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -0.25em;
+    margin-top: -0.51em;
+        &:after {
+            content: '\f0e7';
+
+            // Position it
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+        }
+
+    // Transitions
+    transition: text-shadow 0.7s ease;
+    -webkit-transition: text-shadow 0.7s ease;
+
+    // Handles the pulse
+    -webkit-animation-name: pulse;
+    -webkit-animation-duration: 1.2s;
+    -webkit-transform-origin: 50% 50%;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    }{% endhighlight %}
+
+ Obviously I don't have all of the browser prefixes in there, which you'd need if you were being serious about implementing something like this. That's why it's called The Lab.
+ 
+Anyway, you can check out more crazy things to do with type over on Trent Walton's [example page*](https://dl.dropboxusercontent.com/u/3648990/Ampersand-Demo/index.html). If you want to keep an eye on [The Lab](https://github.com/helenvholmes/the-lab), please watch the repo (or fork it and show me some cool things). If you want to chat with me, [talk to me on Twitter @helenvholmes](http://twitter.com/helenvholmes). If you missed the [Ampersand Conf](http://ampersandconf.com/) links (which is where I learned all this cool stuff), [check out my other post](http://helenvholmes.tumblr.com/post/65843677086/ampersand-conference-links). 
+
+    * I think my next experiment totally needs to be with long shadows. If Trent Walton has inadvertedly endorsed them, they must be a good idea.
+  </main>
+
+  <p class="center">
+    <em>Congrats, you've finished one of my awkward attempts at creative writing. I didn't go to school for this crap. Follow me on <a href="https://twitter.com/helenvholmes">Twitter</a>.</em>
+  </p>
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@helenvholmes" />
+  <meta name="twitter:title" content="When You Realize" />
+  <meta name="twitter:description" content="You've finally managed to discover the secret to immortality." />
+  <meta name="twitter:image" content="http://helenvholmes.com/images/partials/writing/orb.jpg" />
+{% endblock %}

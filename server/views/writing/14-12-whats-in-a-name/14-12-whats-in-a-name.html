@@ -1,0 +1,75 @@
+---
+file: 17-03-when-you-realize
+title: When You Realize Living Forever Sucks
+date: March 2017
+imageClass: goya
+description: You've finally managed to discover the secret to immortality.
+url: when-you-realize
+---
+
+{% extends "layout.html" %}
+
+{% block content %}
+  <link rel="stylesheet" property="stylesheet" href="/stylesheets/writing/post.css">
+
+  <main class="post">
+    <h1 class="title">{{ title }}</h1>
+    <h5 class="date">{{ date }}</h5>
+---
+layout: post
+title: What's in a Name
+description: Exploring the origins of CSS Namespace Colors
+tags: [css, namespace, colors, conf, oakland]
+---
+
+[@ainsleywagon](https://twitter.com/ainsleywagon), Ainsley Wagoner
+
+_Stories behind the hex values._ e.g., ```darkred```. (Or my favorite, ```tomato```!) For example, ```Rebecca Purple```.
+
+[Color Chart](http://ainsleywagon.github.io/color-chart)
+
+## So, how did we get these names?
+First of all, they're not CSS originals, but web standard originals (which is why you can use them with SVG). X-Window System: they come from one of the first GUI interfaces. 
+
+_Late 80s_: Lots of color names weren't standardized until [X11](http://en.wikipedia.org/wiki/X11_color_names). Then, Netspace > HTML Browsers > CSS.
+
+## So why did it take so long?
+It takes a long time to get things into spec! Also, we're all familiar with hex values, which has so many possibilities.
+
+_But you should still use them!_ Why? They were put through the ringer for web accessibility. They're not case sensitive, recognized cross-browser, work across HTML & SVG, and last but not least: they have fun names <3
+
+```navajowhite```: why is it named this and why is it orange?
+
+## So who was behind this?
+Paul Ravelling, who got them from Sinclair paint swatches! So why the silly names? Because paint swatches have insane names because there really so many different kinds of beige/off-white.
+
+_So why so many beiges/off-whites, anyway?_: Because there are so many options for desktop backgrounds. 
+
+A lot of our color names come from Crayola. Are you surprised?
+
+## Adding Colors
+This is actually fairly rare. (We're still working off the list published in 1989, with the exception of ```Rebecca Purple```). Even this was added fairly quickly, but to lots of controversy. Web standards people take their jobs very seriously; but should this be something we're allowed to change as a community? Default is boring! Shouldn't we question standards to improve them?
+
+## Accessibility
+Hey, people gotta read. Color shouldn't be the only visual means of conveying information.
+
+_Color should be used to have fun!_: 
+
+[Kocha](http://kocha.com.au/)
+
+_But... I work on serious stuff. Like banks._: So use illustrations as an opportunity to make things beautiful. Don't ask permission, just use pastels.
+
+(Also, ```thistle``` is a beautiful CSS color.)
+
+We should push for more colors. Because color just comes along with creativity! <3
+
+## Update, 1/28/15
+You can now watch [@ainsleywagon's](https://twitter.com/ainsleywagon) talk on [Youtube!](https://www.youtube.com/watch?v=ciGmOlxRxeg&feature=youtu.be)
+  </p>
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@helenvholmes" />
+  <meta name="twitter:title" content="When You Realize" />
+  <meta name="twitter:description" content="You've finally managed to discover the secret to immortality." />
+  <meta name="twitter:image" content="http://helenvholmes.com/images/partials/writing/orb.jpg" />
+{% endblock %}

@@ -5,7 +5,6 @@
 
   <ul class="blog-posts">
     {% for longFormTitle in longFormTitles %}
-
       <a href="{{ longFormTitle.url if longFormTitle.outsideLink else '/writing/' + longFormTitle.url }}" class="{{ 'outside-link' if longFormTitle.outsideLink else '' }} post">
         <li class="article">
           <div class="post-image {{ longFormTitle.imageClass }}"></div>

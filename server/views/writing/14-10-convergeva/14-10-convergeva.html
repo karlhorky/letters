@@ -1,0 +1,158 @@
+---
+file: 17-03-when-you-realize
+title: When You Realize Living Forever Sucks
+date: March 2017
+imageClass: goya
+description: You've finally managed to discover the secret to immortality.
+url: when-you-realize
+---
+
+{% extends "layout.html" %}
+
+{% block content %}
+  <link rel="stylesheet" property="stylesheet" href="/stylesheets/writing/post.css">
+
+  <main class="post">
+    <h1 class="title">{{ title }}</h1>
+    <h5 class="date">{{ date }}</h5>
+---
+layout: post
+title: ConvergeRVA Notes
+tags: [conf, design]
+description: "ConvergeRVA 2014, Convergerva.com"
+image:
+  feature: soft-trees.jpg
+---
+
+## Designers Can Open Source
+
+### Garth Braithwaite, @GarthDB
+
+- Open Source software, how it affects design
+- As designers, we’re trying to solve problems, like developers
+- Adopt practices of open source development, we can adapt faster
+- Better collusions of ideas
+
+“Designers are the most overworked group of people I know of in this industry.”
+
+### So, how?
+- Open source software for everybody! Er, maybe not
+- Actually blog about your process
+- Share your source files
+- Use code as a design tool
+
+- “Designers are often guilted to learn to code.”
+- Not trying to do that
+- "Don’t be the designer that codes, be the designer with the bigger tool box.”
+- It’s easier to collaborate with code than design.
+- Collaborate! Find a designer you’d like to work with.
+- Don’t break each other down, but talk through problems.
+- Donate! If you have useful things, friggin’ open-source it. If the client didn’t like it, give it away.
+- Contribute. Even if you can’t use git, developers will work with you.
+- To work collaboratively with designers, you need to work with other designers.
+- HOLY SHIT I WANT TO CONTRIBUTE TO BROWSERIFY OR SOMETHING ELSE. IT WILL BE FUN.
+- Don’t let pride, fear of committee, tooling, file formats, lack of desire, or unreasonable greed get in the way of being happy and sharing.
+- A Humble Manifesto:
+  - designopen.org, @designopen
+  - You should contribute!!
+- Designers can open source, and we should.
+- Everyone needs to make money, so worry about that before coding :)
+
+## Single page applications. A general overview.
+
+### Tiffany France, @tiffanylou
+- ?? She works at C1? I should talk to her/>???
+- Angular, KnockoutJS
+a web application, single web page, desktop app-like experience
+- I SHOULD TALK TO HER ABOUT MICHAEL WARREN AND GIVING THE INTERNAL TALK ON THIS
+- Latency: how long does it take to load? How long does it take the user to accomplish what they want to do?
+- half a second caused a 20% drop in traffic at Google loading 30 results instead of 10
+- Amazon, Shopzilla: all did speed tests
+- It was a direct correlation to revenue in most causes. Users respond to speed
+
+### So, SPAs + Latency?
+- offset server work to client
+- selectively load page fragments
+- arguably, it helps if you never leave your presentation, or that transition is really smooth
+- predict users' next actions
+- use localStorage to remember users' actions
+- reduce load time with templates
+- AJAX for tasks, like signing up for emails
+- localStorage: preload data for faster experience
+- Quick Mobile Apps: offline apps
+- lack of page refreshes and dump it into PhoneGap. [Tutorial](http://goo.gl/O3HTaa)
+
+
+## Nick Wilson, @@TheHalfandHalf
+- Analog Research Lab
+- Make posters, books, stickers, etc. for internal stuff
+- Make beautiful fucking shit
+- The 10 Commandments of Transit, [Transit Commandments](http://www.transitcommandments.com/)
+
+## The Power of Side Projects
+
+### Matt Keas, @matthiasak
+- Leverage them to make your day job better.
+- No boss. You can choose your own challenges
+- Build the skills you need
+- "Adapt what is useful, reject what is useless, and add what is specifically your own."
+- Progression of Mastery: learning something very deeply. Specialization.
+- Keys to Survival: respect your own damn time.
+- Turn on do-not-disturb.
+- Documents things. When things work, he documents them. When they don't, he documents them.
+- I like the idea of reading everything, and publishing notes on them
+- Publishing your thoughts on articles
+- Publishing your attempts to solve problems even if you don't understand _why_ they worked or didn't
+- Next idea: talking about designing something that's super, super ugly
+- Saying no to design work, which feels weird
+
+## Making Musical Instruments & Music also My Successful Kickstarter (+ a live performance)
+
+### Moldover, @moldover
+- He's singing
+- You can use software to make music
+- this was bizarre and very cool
+
+## Design Rebel
+
+### Noah Scalin, @NoahScalin
+- Ethics into action for design
+- You won't make a lot of money or even a living in the beginning, but you shouldn't have to choose between your ethics and your work
+- On your deathbed, will you be happy you sold crap to people?
+  - Idk, probably'll be happy I was able to feed my family
+- Are you the gun (killing) or the megaphone (getting ethics across)?
+- Make a commitment to yourself to do an action
+- [Resources](alrdesign.com/resources)
+- Working with your hands is important. You shouldn't start on the computer.
+- We talked about this all the time in school, but most designers don't do this
+- Nick saying in SF that they were having this problem: all the designers wanted to start high fidelity
+- It takes a long time to have a good idea, and you have to shift through a lot of shitty ones because you even have that first grain of a good idea. Might as well do all that shit on paper.
+- It's bizarre to be that creative but to be scared of paper
+
+
+## The Wordless News Creation Process
+
+### Maria Fabrizio, @StudioRia
+- Another sketch-a-day project
+- Illustrations for news stories every day
+- Sometimes there's nothing good, or... nothing, or only negative
+- She wakes up mad early
+- Is waking up this early the secret to success or something?
+- Grrr
+
+## The Journey Not The Destination
+
+### James White, @signalnoise
+- Showed all of his old, _old_ drawings. It's pretty awesome to see this stuff.
+- Like me with Pokémon
+- Photoshop + Illustrator, same tools
+- Like everyone else, does cool stuff, gave us his life story, made us laugh, but I haven't really learned anything
+- Don't lose sight of the things you wanted to do as a kid that were ridiculous
+  </p>
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@helenvholmes" />
+  <meta name="twitter:title" content="When You Realize" />
+  <meta name="twitter:description" content="You've finally managed to discover the secret to immortality." />
+  <meta name="twitter:image" content="http://helenvholmes.com/images/partials/writing/orb.jpg" />
+{% endblock %}

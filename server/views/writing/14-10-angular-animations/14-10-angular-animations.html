@@ -1,0 +1,52 @@
+---
+file: 17-03-when-you-realize
+title: When You Realize Living Forever Sucks
+date: March 2017
+imageClass: goya
+description: You've finally managed to discover the secret to immortality.
+url: when-you-realize
+---
+
+{% extends "layout.html" %}
+
+{% block content %}
+  <link rel="stylesheet" property="stylesheet" href="/stylesheets/writing/post.css">
+
+  <main class="post">
+    <h1 class="title">{{ title }}</h1>
+    <h5 class="date">{{ date }}</h5>
+---
+layout: post
+title: Angular Animations
+tags: [thoughts, angular, code-snippets]
+description: "I've typed ng-something enough times to make me want to blow my brains out."
+image:
+  feature: soft-trees.jpg
+---
+
+Couldn't get Angular animations working. Why? Because I hadn't defined ```'ngAnimate'``` in my app module.
+
+I wanted the receipt to animate in, a simple slide-down-and-in type thing. Most of the angular tutorials look god awful, so this is how you want to do it ifyou're not writing plain CSS:
+
+```
+  .receipt {
+      // Animations
+      &.ng-hide-remove {
+        @include animation(fade-in-and-down .35s ease-in);
+        // @include animation-fill-mode(forwards);
+      }
+    }
+  }
+```
+
+Angular works by applying ```.ng-hide-remove```, or ```.ng-hide-add``` for when you're toggling a box. (Seems like a roundabout naming schema, but whatever).
+
+Unfortunately applying Bourbon's ```@include animation-fill-mode(forwards)``` didn't work in the way I was expecting it to. However, applying a ```transform: translateY(10px);``` in the base class did. Meh.
+  </p>
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@helenvholmes" />
+  <meta name="twitter:title" content="When You Realize" />
+  <meta name="twitter:description" content="You've finally managed to discover the secret to immortality." />
+  <meta name="twitter:image" content="http://helenvholmes.com/images/partials/writing/orb.jpg" />
+{% endblock %}

@@ -1,0 +1,54 @@
+---
+file: 17-03-when-you-realize
+title: When You Realize Living Forever Sucks
+date: March 2017
+imageClass: goya
+description: You've finally managed to discover the secret to immortality.
+url: when-you-realize
+---
+
+{% extends "layout.html" %}
+
+{% block content %}
+  <link rel="stylesheet" property="stylesheet" href="/stylesheets/writing/post.css">
+
+  <main class="post">
+    <h1 class="title">{{ title }}</h1>
+    <h5 class="date">{{ date }}</h5>
+---
+layout: post
+title: Creating New Jekyll Posts with Bash
+description: Executables are nifty
+tags: [bash, shell, jekyll]
+---
+
+[Jekyll's](http://jekyllrb.com/) pretty damn sweet, but I found myself hating this part of the blogging process:
+
+```touch 2014-12-01-my-cool-blog-title.md```
+
+or
+
+![list items padding]({{ site.url }}/images/jekyll-posts.png)
+
+Since I'm normally on the command line anyway for my blog posts, this seemed like a good opportunity to create an executable:
+
+<script src="https://gist.github.com/helenvholmes/04a8c2bc909ffcd8334b.js"></script>
+
+A few things here should be customized for your needs:
+
+```blogFolder``` should be the path to your own Jekyll blog.
+
+```YAML``` should be the YAML matter you want at the top of your blog posts.
+
+```vim``` can be interchanged with whatever symlink you have to your favorite editor. I'm currently digging Vim for blogging, but Sublime's pretty great too!
+
+In order to make it executable so you can access it from anywhere on the command line, throw the script into ```/usr/local/bin/new-post``` and make it executable with the command ```chmod 755 new-post```.
+
+  </p>
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@helenvholmes" />
+  <meta name="twitter:title" content="When You Realize" />
+  <meta name="twitter:description" content="You've finally managed to discover the secret to immortality." />
+  <meta name="twitter:image" content="http://helenvholmes.com/images/partials/writing/orb.jpg" />
+{% endblock %}

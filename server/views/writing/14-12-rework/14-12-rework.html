@@ -1,0 +1,73 @@
+---
+file: 17-03-when-you-realize
+title: When You Realize Living Forever Sucks
+date: March 2017
+imageClass: goya
+description: You've finally managed to discover the secret to immortality.
+url: when-you-realize
+---
+
+{% extends "layout.html" %}
+
+{% block content %}
+  <link rel="stylesheet" property="stylesheet" href="/stylesheets/writing/post.css">
+
+  <main class="post">
+    <h1 class="title">{{ title }}</h1>
+    <h5 class="date">{{ date }}</h5>
+---
+layout: post
+title: Rework
+description: What's reusable and what's not?
+tags: [css, conf, oakland]
+---
+
+[@hazelcough](https://twitter.com/hazelcough), Michelle Bu
+
+[Slides](http://michelle.github.io/css-first/#/)
+
+At Stripe, there were a lot of developers who needed that tiny bit of CSS to ship something.
+
+_There was a lot of nesting._ Almost arbitarily, causing things to be designed three times over. Meant you could never grep for anything. This problem caused the three levels of CSS degredation:
+
+## Determination
+MVP features. Yay, we brought in Sass and we shipped the thing!
+
+## Development
+We improve features, introduce a few bugs, and there's some code stink but it's okay! We'll fix it later.
+
+## Denial
+Everything still works! Errr monkey no see/no hear/whatever, it's fine. _It's fine._
+
+## Despair
+Everything is growing so friggin' fast. CSS is growing at three poops per week.
+
+_We need to treat CSS like a first-class tool._ We write Javascript with linters and with tests; CSS needs these things too!
+
+_We need conventions._ So, at Stripe they started a component library.
+
+_Developers who didn't know CSS used it in their other internal projects._ It meant that they didn't have to bother designers for it when they just wanted to get something up quickly.
+
+## -No- Conventions
+Coming up with a convention style speed up developers and kept people from arbitarily adding CSS to the bottoms of Sass files.
+
+Abstracting away components allows them to easily change things.
+
+Enter the [Rework](https://github.com/reworkcss/rework) framework!
+
+## -No- Tests
+Testing is hard because of all of the states CSS has. 
+
+## So, why care?
+There are already a bajillion component libraries, I thought!
+
+With your own component library, you're able to spend 90% of your time building the components and 10% on polish. If we think about CSS first, we can think about CSS _less_.
+
+  </p>
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@helenvholmes" />
+  <meta name="twitter:title" content="When You Realize" />
+  <meta name="twitter:description" content="You've finally managed to discover the secret to immortality." />
+  <meta name="twitter:image" content="http://helenvholmes.com/images/partials/writing/orb.jpg" />
+{% endblock %}

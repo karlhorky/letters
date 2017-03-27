@@ -1,0 +1,45 @@
+---
+file: 17-03-when-you-realize
+title: When You Realize Living Forever Sucks
+date: March 2017
+imageClass: goya
+description: You've finally managed to discover the secret to immortality.
+url: when-you-realize
+---
+
+{% extends "layout.html" %}
+
+{% block content %}
+  <link rel="stylesheet" property="stylesheet" href="/stylesheets/writing/post.css">
+
+  <main class="post">
+    <h1 class="title">{{ title }}</h1>
+    <h5 class="date">{{ date }}</h5>
+---
+layout: post
+title: SVN Thus Far
+tags: [thoughts, svn, version-control]
+description: "tl;dr: SVN is fucking the worst"
+image:
+  feature: soft-trees.jpg
+---
+
+I have by no means conquered SVN in the way that I normally barge into things, wanting to conqueror anything, everything, breaking shit, and peacing out. (Hey guys, want to hire me?) Anyway, SVN from what I can tell is Git's easier little brother that is terrible if you're a control freak and want intelligent version control. (I'm being disengenous because I obviously have a favorite, but whatever.)
+
+Learned as of now:
+
+```git clone  [repo-url]```: ```svn checkout [repo-url]```
+
+```git pull```: ```svn up```
+
+```git commit -m "[message]" && git push```: ```svn commit -m "[message]"```
+
+Also learned: old male developers will tell you not to use things unless you're a 'command line wizard' because they don't know how to use the command line. Leaving it at that.
+  </p>
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@helenvholmes" />
+  <meta name="twitter:title" content="When You Realize" />
+  <meta name="twitter:description" content="You've finally managed to discover the secret to immortality." />
+  <meta name="twitter:image" content="http://helenvholmes.com/images/partials/writing/orb.jpg" />
+{% endblock %}

@@ -31,3 +31,9 @@
   letter-spacing: 1px;
   text-transform: uppercase;
 }
+
+blockquote {
+  background-color: $brand-gray;
+  font-family: $monospace;
+  padding: 1% 0 1% 3%;
+}

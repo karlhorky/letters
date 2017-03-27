@@ -1,0 +1,37 @@
+---
+file: 17-03-when-you-realize
+title: When You Realize Living Forever Sucks
+date: March 2017
+imageClass: goya
+description: You've finally managed to discover the secret to immortality.
+url: when-you-realize
+---
+
+{% extends "layout.html" %}
+
+{% block content %}
+  <link rel="stylesheet" property="stylesheet" href="/stylesheets/writing/post.css">
+
+  <main class="post">
+    <h1 class="title">{{ title }}</h1>
+    <h5 class="date">{{ date }}</h5>
+---
+layout: post
+title: Animations on Transition with Angular
+tags: [thoughts, angular, code-snippets]
+description: "tl;dr won't work on init."
+image:
+  feature: soft-trees.jpg
+---
+
+Most Angular animations work by appending and removing CSS classes, which means that ```transitions``` don't work for shit. (Not entirely true; they'll work, but only on second fire. Annoying.) According to this [SO post]() it might be because the browser doesn't have the chance to render it fast enough, as if it isn't aware of its initial state beforehand. Idk, friends.
+
+If you need/want to have a nice fade in on enter, you need to do it with keyframes. Always, essentially.
+  </p>
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@helenvholmes" />
+  <meta name="twitter:title" content="When You Realize" />
+  <meta name="twitter:description" content="You've finally managed to discover the secret to immortality." />
+  <meta name="twitter:image" content="http://helenvholmes.com/images/partials/writing/orb.jpg" />
+{% endblock %}

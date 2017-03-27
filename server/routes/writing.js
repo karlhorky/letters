@@ -1,9 +1,9 @@
 var express   = require('express');
-var router    = express.Router();
-var nunjucks  = require('nunjucks');
 var fs        = require('fs');
-var path      = require('path');
 var glob      = require("glob");
+var nunjucks  = require('nunjucks');
+var path      = require('path');
+var router    = express.Router();
 var yamlFront = require("yaml-front-matter");
 
 var dirpath = "./views/writing/";
