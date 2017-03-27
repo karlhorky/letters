@@ -39,6 +39,8 @@ router.get('/', function(req, res, next) {
     title: 'Writing',
     longFormTitles: results
   });
+
+  
 });
 
 results.forEach(result => {
