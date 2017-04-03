@@ -41,6 +41,9 @@ app.use(cookieParser());
 
 app.use(express.static(path.join(__dirname, 'public')));
 
+// Use paginate middleware
+app.use(paginate.middleware(10, 50));
+
 app.use('/', routes);
 app.use('/about', about);
 app.use('/currently', currently);
@@ -59,9 +62,6 @@ app.use(function(req, res, next) {
   err.status = 404;
   next(err);
 });
-
-// Use paginate middleware
-app.use(paginate.middleware(10, 50));
 
 // error handlers
 

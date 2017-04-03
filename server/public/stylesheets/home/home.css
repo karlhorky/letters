@@ -183,7 +183,7 @@ html {
 
 .additional-articles {
   flex: 0 1 100%;
-  margin-top: 5%; }
+  margin-top: 15%; }
 
 .additional-articles:before {
   border-bottom: indianred 2px solid;

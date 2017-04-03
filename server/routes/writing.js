@@ -40,7 +40,30 @@ router.get('/', function(req, res, next) {
     longFormTitles: results
   });
 
-  
+  // results.paginate({}, { page: req.query.page, limit: req.query.limit }, function(err, results, pageCount, itemCount) {
+
+  //   if (err) return next(err);
+
+  //   res.format({  
+  //     html: function() {
+  //       res.render('results', {
+  //         results: results,
+  //         pageCount: pageCount,
+  //         itemCount: itemCount,
+  //         pages: paginate.getArrayPages(req)(3, pageCount, req.query.page)
+  //       });
+  //     },
+  //     json: function() {
+  //       // inspired by Stripe's API response for list objects
+  //       res.json({
+  //         object: 'list',
+  //         has_more: paginate.hasNextPages(req)(pageCount),
+  //         data: results
+  //       });
+  //     }
+  //   });
+
+  // });
 });
 
 results.forEach(result => {
