@@ -17,6 +17,35 @@
   justify-content: center;
 }
 
+// color resets for this page ONLY
+a {
+  background-image: linear-gradient($brand-tertiary, $brand-tertiary) !important;
+  color: $brand-tertiary !important;
+}
+
+.line, .decoration-line {
+  background-color: $brand-tertiary !important;
+}
+
+.profile-image {
+  border: 1px solid $brand-tertiary !important;
+}
+
+.nav-item {
+  a {
+    background-image: none !important;
+  }
+}
+
+.collapsed-nav::before {
+  border-bottom: 1px solid $brand-tertiary !important;
+  border-top: 1px solid $brand-tertiary !important;
+}
+
+.collapsed-nav::after {
+  border-bottom: 1px solid $brand-tertiary !important;
+}
+
 svg {
   fill: $brand-tertiary;
   width: 100vw;
@@ -224,7 +253,7 @@ $theme-gray-2: #dde1e4;
   }
 
   a {
-    background-image: none;
+    background-image: none !important;
     flex: 1 1 70%;
   }
 }
@@ -445,20 +474,18 @@ main {
 }
 
 .portfolio-review {
-  margin: 10% auto 100% auto;
-  position: relative;
-  text-align: justify;
-
-  .portfolio-copy {
-    float: left;
-    margin-left: 15%;
-    margin-right: 10%;
-    width: 30%;
-  }
+  margin: auto;
+  width: 80%;
 
   .portfolio-images {
-    float: left;
-    width: 30%;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    a {
+      flex: 0 1 30%;
+    }
 
     img {
       width: 100%;

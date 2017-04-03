@@ -18,4 +18,8 @@ router.get('/winsome', function(req, res, next) {
   res.render('portfolio/winsome/winsome.html', { title: "Winsome Webapp" });
 });
 
+router.get('/firefox', function(req, res, next) {
+  res.render('portfolio/firefox/firefox.html', { title: "Firefox Swag" });
+});
+
 module.exports = router;
