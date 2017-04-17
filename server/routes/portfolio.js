@@ -18,8 +18,12 @@ router.get('/winsome', function(req, res, next) {
   res.render('portfolio/winsome/winsome.html', { title: "Winsome Webapp" });
 });
 
-router.get('/firefox', function(req, res, next) {
-  res.render('portfolio/firefox/firefox.html', { title: "Firefox Swag" });
+router.get('/firefox-swag', function(req, res, next) {
+  res.render('portfolio/firefox-swag/firefox-swag.html', { title: "Firefox Swag" });
+});
+
+router.get('/firefox-social-media-campaign', function(req, res, next) {
+  res.render('portfolio/firefox-social-media-campaign/firefox-social-media-campaign.html', { title: "Firefox Social Media Campaign" });
 });
 
 module.exports = router;

@@ -81,10 +81,10 @@ $illustration-color: rosybrown;
 }
 
 .project-description {
-  padding: 3em inherit;
+  padding: 3em;
 
   @include media($nine-col) {
-    padding: 6em inherit;
+    padding: 3em;
   }
 }
 
@@ -97,6 +97,7 @@ $illustration-color: rosybrown;
 
   @include media($nine-col) {
     flex: 0 1 65%;
+    margin-top: 5%;
   }
 }
 

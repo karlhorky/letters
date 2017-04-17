@@ -97,11 +97,11 @@ html {
     top: 80%; } }
 
 .project-description {
-  padding: 3em inherit; }
+  padding: 3em; }
 
 @media screen and (min-width: 850px) {
   .project-description {
-    padding: 6em inherit; } }
+    padding: 6em; } }
 
 .project-blurb {
   flex: 0 1 100%; }
@@ -111,7 +111,8 @@ html {
 
 @media screen and (min-width: 850px) {
   .project-blurb {
-    flex: 0 1 65%; } }
+    flex: 0 1 65%;
+    margin-top: 5%; } }
 
 .detail {
   display: none;

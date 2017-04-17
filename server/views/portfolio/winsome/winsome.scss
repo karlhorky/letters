@@ -3,7 +3,209 @@
 @import 'neat';
 @import '../../../styles/colors';
 @import '../../../styles/typography';
-@import '../../../styles/modules/college-portfolio';
+
+// Callouts on the portfolio page (huge images)
+
+$illustration-color: rosybrown;
+
+.container { // global container for app
+  align-items: center;
+  clear: both;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  width: 70%;
+}
+
+.avenirnext-loaded .avenir-headers {
+  font-weight: 700;
+  font-family: $avenir-next;
+  font-weight: bold;
+  font-size: 2em;
+  text-transform: uppercase;
+}
+
+.twitter {
+  margin-bottom: 10em;
+  text-align: center;
+  font-style: italic;
+  width: 100%;
+}
+
+.project {
+  .container {
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .well-made-images ~ p {
+    flex: 0 1 100%;
+    padding-left: 10%;
+
+    @include media($nine-col) {
+      flex: 0 1 50%;
+    }
+  }
+
+  p {
+    flex: 0 1 100%;
+    margin: 10% auto;
+
+    @include media($nine-col) {
+      flex: 0 1 65%;
+    }
+
+    img, video {
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+}
+
+.callout {
+  flex: 0 1 100%;
+  position: relative;
+
+  img, video {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  p {
+    left: 0;
+    position: absolute;
+    text-align: center;
+    top: 60%;
+    width: 100%;
+    z-index: 2; 
+
+    @include media($nine-col) {
+      top: 80%;
+    }
+  }
+}
+
+.project-description {
+  padding: 3em;
+
+  @include media($nine-col) {
+    padding: 6em;
+  }
+}
+
+.project-blurb {
+  flex: 0 1 100%;
+
+  p {
+    margin: 2% auto;
+  }
+
+  @include media($nine-col) {
+    flex: 0 1 65%;
+    margin-top: 5%;
+  }
+}
+
+.detail {
+  display: none;
+  flex: 0 1 20%;
+
+  @include media($nine-col) {
+    display: block;
+  }
+
+  img {
+    max-width: 100%;
+    padding: 2%;
+  }
+}
+
+.project-detail-100 {
+  align-self: flex-start;
+  flex: 0 1 100%;
+  margin-top: 10%;
+}
+
+.project-detail-50 {
+  align-self: flex-start;
+  flex: 0 1 100%;
+  margin-top: 10%;
+  min-height: 250px;
+  position: relative;
+
+  @include media($nine-col) {
+    flex: 0 1 48%;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  &.winsome {
+    background-color: $illustration-color;
+    display: flex;
+    justify-content: center;
+    min-height: 300px;
+    position: relative;
+
+    &:nth-of-type(3) {
+      background-color: $illustration-color; 
+    }
+  }
+}
+
+.project-detail-third {
+  flex: 0 1 100%;
+  margin-top: 10%;
+
+  @include media($nine-col) {
+    flex: 0 1 30%;
+  }
+
+  img {
+    max-width: 100%;
+  }
+}
+
+.well-made-images {
+  flex: 0 1 100%;
+  margin: 10% 0;
+
+  @include media($nine-col) {
+    flex: 0 1 50%;
+  }
+
+  .project-detail-third {
+    float: left;
+    width: 100%;
+
+    @include media($nine-col) {
+      width: 50%;
+    }
+
+    &:nth-of-type(2) {
+      float: left;
+      margin-top: 15%;
+      width: 100%;
+      
+      @include media($nine-col) {
+        width: 50%;
+      }
+    }
+
+    &:nth-of-type(3) {
+      float: left;
+      margin-top: 15%;
+      width: 100%;
+
+      @include media($nine-col) {
+        width: 35%;
+        margin-top: -1.75%;
+      }
+    }
+  }
+}
 
 /* Anti-aliasing
    http://maximilianhoffmann.com/posts/better-font-rendering-on-osx

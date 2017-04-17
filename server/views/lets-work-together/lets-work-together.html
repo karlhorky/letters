@@ -20,91 +20,56 @@
 
   <div class="container">
     <section class="about-me">
-      <p>I run a design firm specializing in experience and interaction design—web, native, and hardware experiences. Some of my previous clients have included <a href="https://githubuniverse.com/satellite/" target="_blank">Github</a>, Heroku, <a href="https://hacks.mozilla.org/2016/12/css-grid-and-grid-highlighter-now-in-firefox-developer-edition/" target="_blank">Mozilla</a> <a href="https://hacks.mozilla.org/2016/11/new-responsive-design-mode-rdm-lands-in-firefox-dev-tools/" target="_blank">Firefox</a>, and Capital One. I also do branding and illustration.</p>
+      <p>I specialize in experience and interaction design—web, native, and hardware experiences. Some of my previous clients have included <a href="https://githubuniverse.com/satellite/" target="_blank">Github</a>, Heroku, <a href="https://hacks.mozilla.org/2016/12/css-grid-and-grid-highlighter-now-in-firefox-developer-edition/" target="_blank">Mozilla</a> <a href="https://hacks.mozilla.org/2016/11/new-responsive-design-mode-rdm-lands-in-firefox-dev-tools/" target="_blank">Firefox</a>, and Capital One. I also do branding and illustration.</p>
 
       <p>If you think I’d be a good fit for your project, I encourage you to check out my case studies below. If you’re already convinced, let’s chat via <a href="mailto:helen.v.holmes@gmail.com">email</a>.</p>
     </section>
   </div>
 
   <section class="portfolio-review">
-    <h2 class="avenir-headers">Portfolio Review</h2>
+    <a href="/portfolio/firefox-swag">
+      <img src="/images/lets-work-together/firefox.jpg" />
+    </a>
 
-    <div class="portfolio-images">
-      <a href="/portfolio/game-of-thrones">
-        <img src="/images/lets-work-together/gameofthrones.jpg" />
-      </a>
+    <a href="https://githubuniverse.com/satellite/" target="_blank" class="outside-link">
+      <div class="project-role">
+        <img src="/images/outside-link-white.png" />
+        <span>Front End Developer</span>
+      </div>
 
-      <a href="/portfolio/united">
-        <img src="/images/lets-work-together/united.jpg" />
-      </a>
+      <img src="/images/lets-work-together/satellite.png" class="screenshot" />
+    </a>
 
-      <a href="/portfolio/well-made-co">
-        <img src="/images/lets-work-together/wellmadeco.jpg" />
-      </a>
+    <a href="https://hacks.mozilla.org/2016/12/css-grid-and-grid-highlighter-now-in-firefox-developer-edition/" target="_blank" class="outside-link">
+      <div class="project-role">
+        <img src="/images/outside-link-white.png" />
+        <span>Senior UX Designer</span>
+      </div>
 
-      <a href="/portfolio/winsome">
-        <img src="/images/lets-work-together/winsome.jpg" />
-      </a>
+      <img src="/images/lets-work-together/grid-tooling.png" class="screenshot" />
+    </a>
 
-      <a href="/portfolio/firefox">
-        <img src="/images/lets-work-together/firefox.jpg" />
-      </a>
-    </div>
+    <a href="/portfolio/firefox-social-media-campaign">
+      <img src="/images/lets-work-together/firefox-social-media.jpg" />
+    </a>
+
+    <a href="/portfolio/game-of-thrones">
+      <img src="/images/lets-work-together/gameofthrones.jpg" />
+    </a>
+
+    <a href="/portfolio/united">
+      <img src="/images/lets-work-together/united.jpg" />
+    </a>
+
+    <a href="/portfolio/well-made-co">
+      <img src="/images/lets-work-together/wellmadeco.jpg" />
+    </a>
+
+    <a href="/portfolio/winsome">
+      <img src="/images/lets-work-together/winsome.jpg" />
+    </a>
   </section>
-
-  <div class="container public-speaking-header">
-    <h2 class="avenir-headers">Public Speaking</h2>
-  </div>
-
-  <div class="public-speaking-carousel">
-    <div class="slide slide-1">
-      <a href="https://viewsourceconf.org/berlin-2016/#typography_summary" target="_blank">
-        <img src="/images/lets-work-together/viewsource.jpg" />
-      </a>
-    </div>
-    <div class="slide slide-2">
-      <a href="https://realm.io/news/tryswift-helen-holmes-10-ways-designers-swift-codebase/" target="_blank">
-        <img src="/images/lets-work-together/tryswift.jpg" />
-      </a>
-    </div>
-    <div class="slide slide-3">
-      <a href="http://conference.awwwards.com/los-angeles-2017/" target="_blank">
-        <img src="/images/lets-work-together/awwwards.jpg" />
-      </a>
-    </div>
-    <div class="slide slide-4">
-      <a href="http://2015.cascadiajs.com/speakers/helen-v-holmes" target="_blank">
-        <img src="/images/lets-work-together/cascadia.jpg" />
-      </a>
-    </div>
-    <div class="slide slide-5">
-      <a href="https://www.youtube.com/watch?v=VFU1r8uNtQk" target="_blank">
-        <img src="/images/lets-work-together/braziljs.jpg" />
-      </a>
-    </div>
-  </div>
-
-  <div class="container">
-    <section class="public-speaking">
-      <p>I’ve done a small amount of public speaking—and looking at the body of my work, you’ll find that most of it is about figuring out how to make design concerns and engineering concerns play nice, with a small bit of human advice thrown in.</p>
-
-      <p>If you’re hosting a conference and think I’d be a good fit, more information can be found on my <a href="/speaking">Speaking</a> page.</p>
-    </section>
-  </div>
 
   <script src="https://d3js.org/d3.v3.min.js"></script>
   <script src="/javascripts/petri.js"></script>
-  <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
-  <script>
-    $('.public-speaking-carousel').slick({
-      dots: false,
-      infinite: true,
-      speed: 300,
-      slidesToShow: 2,
-      centerMode: true,
-      variableWidth: true,
-      prevArrow: false,
-      nextArrow: false
-    });
-  </script>
 {% endblock %}
