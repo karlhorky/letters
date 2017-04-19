@@ -1,10 +1,10 @@
 ---
-file: 17-03-when-you-realize
-title: When You Realize Living Forever Sucks
-date: March 2017
-imageClass: goya
-description: You've finally managed to discover the secret to immortality.
-url: when-you-realize
+file: 14-12-rework
+title: Rework
+date: December 2014
+imageClass: orb
+description: What's reusable and what's not?
+url: rework
 ---
 
 {% extends "layout.html" %}
@@ -15,59 +15,58 @@ url: when-you-realize
   <main class="post">
     <h1 class="title">{{ title }}</h1>
     <h5 class="date">{{ date }}</h5>
----
-layout: post
-title: Rework
-description: What's reusable and what's not?
-tags: [css, conf, oakland]
----
+    <p><a href="https://twitter.com/hazelcough">@hazelcough</a>, Michelle Bu</p>
 
-[@hazelcough](https://twitter.com/hazelcough), Michelle Bu
+    <p><a href="http://michelle.github.io/css-first/#/">Slides</a></p>
 
-[Slides](http://michelle.github.io/css-first/#/)
+    <p>At Stripe, there were a lot of developers who needed that tiny bit of CSS to ship something.</p>
 
-At Stripe, there were a lot of developers who needed that tiny bit of CSS to ship something.
+    <p><em>There was a lot of nesting.</em> Almost arbitarily, causing things to be designed three times over. Meant you could never grep for anything. This problem caused the three levels of CSS degredation:</p>
 
-_There was a lot of nesting._ Almost arbitarily, causing things to be designed three times over. Meant you could never grep for anything. This problem caused the three levels of CSS degredation:
+    <h2 id="determination">Determination</h2>
 
-## Determination
-MVP features. Yay, we brought in Sass and we shipped the thing!
+    <p>MVP features. Yay, we brought in Sass and we shipped the thing!</p>
 
-## Development
-We improve features, introduce a few bugs, and there's some code stink but it's okay! We'll fix it later.
+    <h2 id="development">Development</h2>
 
-## Denial
-Everything still works! Errr monkey no see/no hear/whatever, it's fine. _It's fine._
+    <p>We improve features, introduce a few bugs, and there's some code stink but it's okay! We'll fix it later.</p>
 
-## Despair
-Everything is growing so friggin' fast. CSS is growing at three poops per week.
+    <h2 id="denial">Denial</h2>
 
-_We need to treat CSS like a first-class tool._ We write Javascript with linters and with tests; CSS needs these things too!
+    <p>Everything still works! Errr monkey no see/no hear/whatever, it's fine. <em>It's fine.</em></p>
 
-_We need conventions._ So, at Stripe they started a component library.
+    <h2 id="despair">Despair</h2>
 
-_Developers who didn't know CSS used it in their other internal projects._ It meant that they didn't have to bother designers for it when they just wanted to get something up quickly.
+    <p>Everything is growing so friggin' fast. CSS is growing at three poops per week.</p>
 
-## -No- Conventions
-Coming up with a convention style speed up developers and kept people from arbitarily adding CSS to the bottoms of Sass files.
+    <p><em>We need to treat CSS like a first-class tool.</em> We write Javascript with linters and with tests; CSS needs these things too!</p>
 
-Abstracting away components allows them to easily change things.
+    <p><em>We need conventions.</em> So, at Stripe they started a component library.</p>
 
-Enter the [Rework](https://github.com/reworkcss/rework) framework!
+    <p><em>Developers who didn't know CSS used it in their other internal projects.</em> It meant that they didn't have to bother designers for it when they just wanted to get something up quickly.</p>
 
-## -No- Tests
-Testing is hard because of all of the states CSS has. 
+    <h2 id="noconventions">-No- Conventions</h2>
 
-## So, why care?
-There are already a bajillion component libraries, I thought!
+    <p>Coming up with a convention style speed up developers and kept people from arbitarily adding CSS to the bottoms of Sass files.</p>
 
-With your own component library, you're able to spend 90% of your time building the components and 10% on polish. If we think about CSS first, we can think about CSS _less_.
+    <p>Abstracting away components allows them to easily change things.</p>
 
-  </p>
+    <p>Enter the <a href="https://github.com/reworkcss/rework">Rework</a> framework!</p>
+
+    <h2 id="notests">-No- Tests</h2>
+
+    <p>Testing is hard because of all of the states CSS has. </p>
+
+    <h2 id="sowhycare">So, why care?</h2>
+
+    <p>There are already a bajillion component libraries, I thought!</p>
+
+    <p>With your own component library, you're able to spend 90% of your time building the components and 10% on polish. If we think about CSS first, we can think about CSS <em>less</em>.</p>
+  </main>
 
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@helenvholmes" />
-  <meta name="twitter:title" content="When You Realize" />
-  <meta name="twitter:description" content="You've finally managed to discover the secret to immortality." />
+  <meta name="twitter:title" content="{{ title }}" />
+  <meta name="twitter:description" content="{{ description }}" />
   <meta name="twitter:image" content="http://helenvholmes.com/images/partials/writing/orb.jpg" />
 {% endblock %}

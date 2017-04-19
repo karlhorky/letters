@@ -1,10 +1,10 @@
 ---
-file: 17-03-when-you-realize
-title: When You Realize Living Forever Sucks
-date: March 2017
-imageClass: goya
-description: You've finally managed to discover the secret to immortality.
-url: when-you-realize
+file: 14-10-svn
+title: SVN Thus Far
+date: October 2014
+imageClass: orb
+description: "tl;dr: SVN is fucking the worst"
+url: svn
 ---
 
 {% extends "layout.html" %}
@@ -15,31 +15,23 @@ url: when-you-realize
   <main class="post">
     <h1 class="title">{{ title }}</h1>
     <h5 class="date">{{ date }}</h5>
----
-layout: post
-title: SVN Thus Far
-tags: [thoughts, svn, version-control]
-description: "tl;dr: SVN is fucking the worst"
-image:
-  feature: soft-trees.jpg
----
 
-I have by no means conquered SVN in the way that I normally barge into things, wanting to conqueror anything, everything, breaking shit, and peacing out. (Hey guys, want to hire me?) Anyway, SVN from what I can tell is Git's easier little brother that is terrible if you're a control freak and want intelligent version control. (I'm being disengenous because I obviously have a favorite, but whatever.)
+    <p>I have by no means conquered SVN in the way that I normally barge into things, wanting to conqueror anything, everything, breaking shit, and peacing out. (Hey guys, want to hire me?) Anyway, SVN from what I can tell is Git's easier little brother that is terrible if you're a control freak and want intelligent version control. (I'm being disengenous because I obviously have a favorite, but whatever.)</p>
 
-Learned as of now:
+    <p>Learned as of now:</p>
 
-```git clone  [repo-url]```: ```svn checkout [repo-url]```
+    <p><code>git clone [repo-url]</code> : <code>svn checkout [repo-url]</code></p>
 
-```git pull```: ```svn up```
+    <p><code>git pull</code> : <code>svn up</code></p>
 
-```git commit -m "[message]" && git push```: ```svn commit -m "[message]"```
+    <p><code>git commit -m "[message]" && git push</code>: <code>svn commit -m "[message]"</code></p>
 
-Also learned: old male developers will tell you not to use things unless you're a 'command line wizard' because they don't know how to use the command line. Leaving it at that.
-  </p>
+    <p>Also learned: old male developers will tell you not to use things unless you're a 'command line wizard' because they don't know how to use the command line. Leaving it at that.</p>
+  </main>
 
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@helenvholmes" />
-  <meta name="twitter:title" content="When You Realize" />
-  <meta name="twitter:description" content="You've finally managed to discover the secret to immortality." />
+  <meta name="twitter:title" content="{{ title }}" />
+  <meta name="twitter:description" content="{{ description }}" />
   <meta name="twitter:image" content="http://helenvholmes.com/images/partials/writing/orb.jpg" />
 {% endblock %}

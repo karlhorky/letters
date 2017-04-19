@@ -1,0 +1,33 @@
+---
+file: 15-01-set-status-bar-color-in-swift
+title: Set Status Bar Color in Swift
+date: January 2014
+imageClass: orb
+description: Where you put it
+url: set-status-bar-color-in-swift
+---
+
+{% extends "layout.html" %}
+
+{% block content %}
+  <link rel="stylesheet" property="stylesheet" href="/stylesheets/writing/post.css">
+
+  <main class="post">
+    <h1 class="title">{{ title }}</h1>
+    <h5 class="date">{{ date }}</h5>
+    <p>Within your <code>AppDelegate.swift</code>, in <code>didFinishLaunchingWithOptions</code>:</p>
+
+<pre><code>UINavigationbar.appearance().barTintColor = UIColor.greenColor() language-UINavigationbar.appearance().barTintColor = UIColor.greenColor()></code></pre>
+
+    <p>Optionally, if you need a specific color, how you do it with RGB:</p>
+
+<pre><code>UINavigationBar.appearance().barTintColor = UIColor(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)</pre></code>
+
+  </main>
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@helenvholmes" />
+  <meta name="twitter:title" content="{{ title }}" />
+  <meta name="twitter:description" content="{{ description }}" />
+  <meta name="twitter:image" content="http://helenvholmes.com/images/partials/writing/orb.jpg" />
+{% endblock %}

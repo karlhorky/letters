@@ -5,20 +5,40 @@
 
   <ul class="blog-posts">
     {% for longFormTitle in longFormTitles %}
-      <a href="{{ longFormTitle.url if longFormTitle.outsideLink else '/writing/' + longFormTitle.url }}" class="{{ 'outside-link' if longFormTitle.outsideLink else '' }} post">
-        <li class="article">
-          <div class="post-image {{ longFormTitle.imageClass }}"></div>
+      {% if longFormTitle.featured %}
+        <a href="{{ longFormTitle.url if longFormTitle.outsideLink else '/writing/' + longFormTitle.url }}" class="{{ 'outside-link' if longFormTitle.outsideLink else '' }} post">
+          <li class="article">
+            <div class="post-image {{ longFormTitle.imageClass }}"></div>
 
-          <div class="title-and-date">
-            <h1 class="title">{{ longFormTitle.title }}</h1>
-            <span class="date">{{ longFormTitle.date }}</span>
-          </div>
+            <div class="title-and-date">
+              <h1 class="title">{{ longFormTitle.title }}</h1>
+              <span class="date">{{ longFormTitle.date }}</span>
+            </div>
 
-          <div class="post-description">
-            <p>{{ longFormTitle.description | safe }}</p>
-          </div>
-        </li>
-      </a>
+            <div class="post-description">
+              <p>{{ longFormTitle.description | safe }}</p>
+            </div>
+          </li>
+        </a>
+      {% else %}
+        <ul class="upcoming-engagements">
+          <a href="{{ longFormTitle.url if longFormTitle.outsideLink else '/writing/' + longFormTitle.url }}" target="{{ _self if longFormTitle.outsideLink else _blank }}">
+            <li>
+              <div class="engagement">{{ longFormTitle.title }}</div>
+              {% if longFormTitle.outsideLink %}
+                <div class="outside-link">
+                  <img src="/images/outside-link-red.png" alt="outside link" class="outside-link" />
+                </div>
+              {% else %}
+                <div class="outside-link">
+                  <img src="/images/outside-link.png" alt="outside link" class="outside-link" style="opacity: 0" />
+                </div>
+              {% endif %}
+              <div class="date">{{ longFormTitle.date }}</div>
+            </li>
+          </a>
+        </ul>
+      {% endif %}
     {% endfor %}
-  </
+  </ul>
 {% endblock %}

@@ -1,10 +1,10 @@
 ---
-file: 17-03-when-you-realize
-title: When You Realize Living Forever Sucks
-date: March 2017
-imageClass: goya
-description: You've finally managed to discover the secret to immortality.
-url: when-you-realize
+file: 14-11-header-and-make
+title: Header and Make
+date: November 2014
+imageClass: orb
+description: ".h, .m"
+url: header-and-make
 ---
 
 {% extends "layout.html" %}
@@ -15,26 +15,16 @@ url: when-you-realize
   <main class="post">
     <h1 class="title">{{ title }}</h1>
     <h5 class="date">{{ date }}</h5>
----
-layout: post
-title: Header and Make
-description: .h, .m
-tags: [setup, cms, apache]
-image:
-  feature: soft-trees.jpg
----
+    <p>Since these don't exist separately in web dev:</p>
 
-Since these don't exist separately in web dev:
+    <p><code>App.h</code>: your header file. Where you import dependencies and specify the entry point.</p>
 
-```App.h```: your header file. Where you import dependencies and specify the entry point.
-
-```App.m```: your implementation file. Where your logic actually lives. 
-
-  </p>
+    <p><code>App.m</code>: your implementation file. Where your logic actually lives.</p>
+  </main>
 
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@helenvholmes" />
-  <meta name="twitter:title" content="When You Realize" />
-  <meta name="twitter:description" content="You've finally managed to discover the secret to immortality." />
+  <meta name="twitter:title" content="{{ title }}" />
+  <meta name="twitter:description" content="{{ description }}" />
   <meta name="twitter:image" content="http://helenvholmes.com/images/partials/writing/orb.jpg" />
 {% endblock %}

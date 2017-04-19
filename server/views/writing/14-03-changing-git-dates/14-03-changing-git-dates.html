@@ -1,9 +1,10 @@
 ---
-file: 14-12-fonts-available-in-ios
-title: Fonts Available in iOS
-date: December 2014
+file: 14-03-changing-git-dates
+title: Changing Git Dates
+date: March 2014
 imageClass: orb
-url: fonts-available-in-ios
+description: Or, How to Cheat On Your Github Contribution Graph
+url: changing-git-dates
 ---
 
 {% extends "layout.html" %}
@@ -14,12 +15,13 @@ url: fonts-available-in-ios
   <main class="post">
     <h1 class="title">{{ title }}</h1>
     <h5 class="date">{{ date }}</h5>
-    <p>There are a fair number of fonts installed on iOS7 already:</p>
+    <p>If you'd like to change the date and time of your last commit:</p>
 
-    <p><a href="http://support.apple.com/en-us/HT202771" target="_blank">Fonts</a></p>
+<pre><code>
+git commit --amend --date="Sat, 28 Mar 2015 12:40:00 +0000"
+</code></pre>
 
-    <p>Worth keeping in mind when designing (some of those are pretty bangin' fonts). Not a huge deal as you can include custom fonts, it's just that these are easier.</p>
-
+    <p>Please note that 'commit' shouldn't be a hash, it should just actually be 'commit'.</p>
   </main>
 
   <meta name="twitter:card" content="summary" />

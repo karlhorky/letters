@@ -1,0 +1,68 @@
+---
+file: 14-01-lets-vs-vars
+title: Lets vs Vars
+date: March 2014
+imageClass: orb
+description: Variable types in Javascript
+url: lets-vs-vars
+---
+
+{% extends "layout.html" %}
+
+{% block content %}
+  <link rel="stylesheet" property="stylesheet" href="/stylesheets/writing/post.css">
+
+  <main class="post">
+    <h1 class="title">{{ title }}</h1>
+    <h5 class="date">{{ date }}</h5>
+
+    <p>Recently while trying to figure out the difference between <code>var</code>s and <code>let</code>s in Swift Google autocomplete offered up 'javascript' as a suggestion. Surprisingly, javascript also has lets and vars! The difference between them comes down to <em>scope</em>.</p>
+
+    <p><a href="http://stackoverflow.com/questions/762011/javascript-let-keyword-vs-var-keyword">@ThinkingStiff</a> did a great job of explaining it on Stack Overflow:</p>
+
+    <h2>Globally:</h2>
+
+<pre><code>
+let me = 'go'; //globally scoped
+var i = 'able'; //globally scoped
+</pre></code>
+
+    <h2>Function:</h2>
+
+<pre><code>
+function ingWithinEstablishedParameters() {
+    let terOfRecommendation = 'awesome worker!'; //function block scoped
+    var sityCheerleading = 'go!'; //function block scoped
+};
+</code></pre>
+
+    <h2>Block:</h2>
+
+<pre><code>function allyIlliterate() {
+    //tuce is *not* visible out here
+
+    for( let tuce = 0; tuce &amp;amp;lt; 5; tuce++ ) {
+        //tuce is only visible in here (and in the for() parentheses)
+    };
+
+    //tuce is *not* visible out here
+};
+
+function byE40() {
+    //nish *is* visible out here
+
+    for( var nish = 0; nish &amp;amp;lt; 5; nish++ ) {
+        //nish is visible to the whole function
+    };
+
+    //nish *is* visible out here
+};
+</code></pre>
+  </main>
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@helenvholmes" />
+  <meta name="twitter:title" content="{{ title }}" />
+  <meta name="twitter:description" content="{{ description }}" />
+  <meta name="twitter:image" content="http://helenvholmes.com/images/partials/writing/orb.jpg" />
+{% endblock %}

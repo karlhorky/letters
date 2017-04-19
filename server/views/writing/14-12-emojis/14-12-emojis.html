@@ -1,10 +1,10 @@
 ---
-file: 17-03-when-you-realize
-title: When You Realize Living Forever Sucks
-date: March 2017
-imageClass: goya
-description: You've finally managed to discover the secret to immortality.
-url: when-you-realize
+file: 14-12-emojis
+title: "Emojis!"
+date: December 2014
+imageClass: orb
+description: Using Emojis on a Mac Because
+url: emojis
 ---
 
 {% extends "layout.html" %}
@@ -15,24 +15,17 @@ url: when-you-realize
   <main class="post">
     <h1 class="title">{{ title }}</h1>
     <h5 class="date">{{ date }}</h5>
----
-layout: post
-title: Emojis!
-description: Using Emojis on a Mac Because
-tags: [emojis, mac]
----
 
-I always forget how to bring up the Emoji keyboard, so here's that command: 
+    <p>I always forget how to bring up the Emoji keyboard, so here's that command: </p>
 
-```Command-Control-Space``` [(source)](http://www.macosxtips.co.uk/index_files/secret-shortcut-to-use-emoji-in-mavericks.php)
+    <p><code>Command-Control-Space</code> <a href="http://www.macosxtips.co.uk/index_files/secret-shortcut-to-use-emoji-in-mavericks.php" target="_blank">(source)</a></p>
 
-If you haven't had enough of emojis, though, this article from [@holman](https://twitter.com/holman) is frickin' awesome: [Abusing Emoji in iOS and Your Mac](http://zachholman.com/posts/abusing-emoji/) 
-
-  </p>
+    <p>If you haven't had enough of emojis, though, this article from <a href="https://twitter.com/holman" target="_blank">@holman</a> is frickin' awesome: <a href="http://zachholman.com/posts/abusing-emoji/" target="_blank">Abusing Emoji in iOS and Your Mac</a></p>
+  </main>
 
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@helenvholmes" />
-  <meta name="twitter:title" content="When You Realize" />
-  <meta name="twitter:description" content="You've finally managed to discover the secret to immortality." />
+  <meta name="twitter:title" content="{{ title }}" />
+  <meta name="twitter:description" content="{{ description }}" />
   <meta name="twitter:image" content="http://helenvholmes.com/images/partials/writing/orb.jpg" />
 {% endblock %}

@@ -1,10 +1,10 @@
 ---
-file: 17-03-when-you-realize
-title: When You Realize Living Forever Sucks
-date: March 2017
-imageClass: goya
-description: You've finally managed to discover the secret to immortality.
-url: when-you-realize
+file: 14-12-implementing-a-visual-testing-framework
+title: Implementing a Visual CSS Testing Framework
+date: December 2014
+imageClass: orb
+description: Automatic image capture
+url: implementing-a-visual-testing-framework
 ---
 
 {% extends "layout.html" %}
@@ -15,45 +15,38 @@ url: when-you-realize
   <main class="post">
     <h1 class="title">{{ title }}</h1>
     <h5 class="date">{{ date }}</h5>
----
-layout: post
-title: Implementing a Visual CSS Testing Framework
-description: Automatic image capture
-tags: [css, conf, oakland, testing]
----
+    <p><a href="https://twitter.com/jessicard">@jessicard</a>, Jessica Dillon.</p>
 
-[@jessicard](https://twitter.com/jessicard), Jessica Dillon.
+    <p><a href="http://www.slideshare.net/jessicardillon/implementing-a-visual-css-testing-framework" target="_blank">Slides</a></p>
 
-[Slides](http://www.slideshare.net/jessicardillon/implementing-a-visual-css-testing-framework)
+    <p>We want image diffs to see when pages don't load properly. Why? Because CSS is frickin' hard to refactor! And writing tests to describe something visual is really, really hard.</p>
 
-We want image diffs to see when pages don't load properly. Why? Because CSS is frickin' hard to refactor! And writing tests to describe something visual is really, really hard.
+    <p>They wanted something that took full-page screenshots, not just the fold.</p>
 
-They wanted something that took full-page screenshots, not just the fold.
+    <p>They wanted a place to store these screenshots.</p>
 
-They wanted a place to store these screenshots.
+    <p>They needed a want to view the diff screenshots.</p>
 
-They needed a want to view the diff screenshots.
+    <h2>Building the Framework</h2>
 
-## Building the Framework
+    <p>Testing with <a href="http://rspec.info/" target="_blank">rspec</a></p>
 
-Testing with [rspec](http://rspec.info/)
+    <p><a href="https://buildbox.io/" target="_blank">Buildbox</a></p>
 
-[Buildbox](https://buildbox.io/)
+    <p><a href="http://www.seleniumhq.org/" target="_blank">Selenium</a></p>
 
-[Selenium](http://www.seleniumhq.org/)
+    <p><a href="http://www.browserstack.com/" target="_blank">Browserstack</a></p>
 
-[Browserstack](http://www.browserstack.com/)
+    <p><a href="http://www.imagemagick.org/" target="_blank">Imagemagick</a> (What's up with wizards for web tools, anyway?)</p>
 
-[Imagemagick](http://www.imagemagick.org/) (What's up with wizards for web tools, anyway?)
+    <h2>Update, 12/10/14</h2>
 
-## Update, 12/10/14
-@jessicard wrote a [blog post](https://bugsnag.com/blog/implementing-a-visual-css-testing-framework) outlining this in much better detail than I was able to in my notes. Please check it out!
-
-  </p>
+    <p>@jessicard wrote a <a href="https://bugsnag.com/blog/implementing-a-visual-css-testing-framework">blog post</a> outlining this in much better detail than I was able to in my notes. Please check it out!</p>
+  </main>
 
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@helenvholmes" />
-  <meta name="twitter:title" content="When You Realize" />
-  <meta name="twitter:description" content="You've finally managed to discover the secret to immortality." />
+  <meta name="twitter:title" content="{{ title }}" />
+  <meta name="twitter:description" content="{{ description }}" />
   <meta name="twitter:image" content="http://helenvholmes.com/images/partials/writing/orb.jpg" />
 {% endblock %}

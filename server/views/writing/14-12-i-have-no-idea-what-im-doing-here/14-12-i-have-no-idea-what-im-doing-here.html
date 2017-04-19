@@ -1,10 +1,10 @@
 ---
-file: 17-03-when-you-realize
-title: When You Realize Living Forever Sucks
-date: March 2017
-imageClass: goya
-description: You've finally managed to discover the secret to immortality.
-url: when-you-realize
+file: 14-12-i-have-no-idea-what-im-doing-here
+title: I Have No Idea What I'm Doing
+date: December 2014
+imageClass: orb
+description: How you got there
+url: i-have-no-idea-what-im-doing-here
 ---
 
 {% extends "layout.html" %}
@@ -15,56 +15,52 @@ url: when-you-realize
   <main class="post">
     <h1 class="title">{{ title }}</h1>
     <h5 class="date">{{ date }}</h5>
----
-layout: post
-title: I Have No Idea What I'm Doing
-description: How you got there
-tags: [css, conf, oakland]
----
+    <p><a href="https://twitter.com/elyseholladay" target="_blank">@elyseholladay</a>, Elyse Holladay.</p>
 
-[@elyseholladay](https://twitter.com/elyseholladay), Elyse Holladay.
+    <p><a href="http://elyseholladay.github.io/tigers/" target="_blank">Elyse's notes on her presentation</a></p>
 
-[Elyse's notes on her presentation](http://elyseholladay.github.io/tigers/)
+    <p>How'd you get to where you are?</p>
 
-How'd you get to where you are?
+    <p>Being in the right places at the right times, getting lucky, hard work, allowing teaching to be rewarding.</p>
 
-Being in the right places at the right times, getting lucky, hard work, allowing teaching to be rewarding.
+    <p>We have personal "tigers" that will bog us down. But enjoy what you're currently doing and chip away at what you're doing right now.</p>
 
-We have personal "tigers" that will bog us down. But enjoy what you're currently doing and chip away at what you're doing right now.
+    <h2>The Shit We Don't Know We Don't Know</h2>
 
-## The Shit We Don't Know We Don't Know
-"I'm not good at this." Why do we always say this? We should say instead, "This challenges me." Progress and learning is awesome.
+    <p>"I'm not good at this." Why do we always say this? We should say instead, "This challenges me." Progress and learning is awesome.</p>
 
-There types of knowledge:
+    <p>There types of knowledge:</p>
 
-1. Shit you know.
+    <ol>
+    <li><p>Shit you know.</p></li>
 
-2. Shit you know you don't know.
+    <li><p>Shit you know you don't know.</p></li>
 
-3. Shit you don't know you don't know.
+    <li><p>Shit you don't know you don't know.</p></li>
+    </ol>
 
-Don't put stuff into the shit you know category; take it _out_ of that last category. This is still broadening your horizons and giving you the tools to learn it when you need. It's the only dangerous category.
+    <p>Don't put stuff into the shit you know category; take it <em>out</em> of that last category. This is still broadening your horizons and giving you the tools to learn it when you need. It's the only dangerous category.</p>
 
-## You feel like a fraud because you know there's a ton you don't know about.
-Good news is, it means you're iterating and getting better at stuff. Bad news is you probably feel dumb all the time :(
+    <h2>You feel like a fraud because you know there's a ton you don't know about.</h2>
 
-_We need help!_ Our education is not complete. Don't be scared of being a beginner. Truth: We are all bad programmers.
+    <p>Good news is, it means you're iterating and getting better at stuff. Bad news is you probably feel dumb all the time :(</p>
 
-## We judge others by the end result, and we judge ourselves by the struggle it took us to get there.
+    <p><em>We need help!</em> Our education is not complete. Don't be scared of being a beginner. Truth: We are all bad programmers.</p>
 
-You don't always know what you can do.
+    <h2>We judge others by the end result, and we judge ourselves by the struggle it took us to get there.</h2>
 
-Set goals. Work joyously. Be Lucky. Share your doubts. Celebrate your wins. Help others.
+    <p>You don't always know what you can do.</p>
 
-"Inspiration exists but it has to find you working." -Picasso
+    <p>Set goals. Work joyously. Be Lucky. Share your doubts. Celebrate your wins. Help others.</p>
 
-Henry Miller, [Commandments of the Daily Routine](http://www.brainpickings.org/2012/02/22/henry-miller-on-writing/)
+    <p>"Inspiration exists but it has to find you working." -Picasso</p>
 
-  </p>
+    <p>Henry Miller, <a href="http://www.brainpickings.org/2012/02/22/henry-miller-on-writing/" target="_blank">Commandments of the Daily Routine</a></p>
+  </main>
 
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@helenvholmes" />
-  <meta name="twitter:title" content="When You Realize" />
-  <meta name="twitter:description" content="You've finally managed to discover the secret to immortality." />
+  <meta name="twitter:title" content="{{ title }}" />
+  <meta name="twitter:description" content="{{ description }}" />
   <meta name="twitter:image" content="http://helenvholmes.com/images/partials/writing/orb.jpg" />
 {% endblock %}

@@ -1,10 +1,10 @@
 ---
-file: 17-03-when-you-realize
-title: When You Realize Living Forever Sucks
-date: March 2017
-imageClass: goya
-description: You've finally managed to discover the secret to immortality.
-url: when-you-realize
+file: 14-12-what-makes-something-revolutionary
+title: What Makes Something Revolutionary?
+date: December 2014
+imageClass: orb
+description: CSSConfOakland!
+url: what-makes-something-revolutionary
 ---
 
 {% extends "layout.html" %}
@@ -15,44 +15,42 @@ url: when-you-realize
   <main class="post">
     <h1 class="title">{{ title }}</h1>
     <h5 class="date">{{ date }}</h5>
----
-layout: post
-title: What Makes Something Revolutionary?
-description: CSSConfOakland!
-tags: [css, sass, conf, oakland]
----
+    <p><a href="https://twitter.com/itsmisscs" target="_blank">itsmisscs</a>, Claudina Sarahe.</p>
 
-[itsmisscs](https://twitter.com/itsmisscs), Claudina Sarahe.
+    <p>New tools turn capabilities into new opportunities.</p>
 
-New tools turn capabilities into new opportunities.
+    <p><em>Behavior</em>: in order for a behavior to occur, you need motivation, ability, and you need to be triggered. Motivation is the worst thing to rely on. Ability is just how easy it is to get started. Triggers are where you succeed: tools helped us change our behavior by making things easier.</p>
 
-_Behavior_: in order for a behavior to occur, you need motivation, ability, and you need to be triggered. Motivation is the worst thing to rely on. Ability is just how easy it is to get started. Triggers are where you succeed: tools helped us change our behavior by making things easier.
+    <p><em>Mid Aughts</em>: Rails comes out in 2005, jQuery in 2006. It wasn't the first framework, but it presented a simple solution: did one thing really well. Dom manipulation! Came with great documentation. And lastly: jQuery invited us to participate. On day two, someone released a plugin. jQuery obviously is incredibly successful, but it's those three design decisions: simple solution, great documentation, community - that made it so popular.</p>
 
-_Mid Aughts_: Rails comes out in 2005, jQuery in 2006. It wasn't the first framework, but it presented a simple solution: did one thing really well. Dom manipulation! Came with great documentation. And lastly: jQuery invited us to participate. On day two, someone released a plugin. jQuery obviously is incredibly successful, but it's those three design decisions: simple solution, great documentation, community - that made it so popular.
+    <p><em>CSS</em>: it's frustrating. Queue the gifs. </p>
 
-_CSS_: it's frustrating. Queue the gifs. 
-  - 960px ftw
-  - IE 6, 7, 8, 9, wah
-  - CSS3, hey gurl
+    <ul>
+    <li>960px ftw</li>
 
-_The rise of CSS preprocessors where inevitable._ CSS was hard, and the iPhone was about to come out. So [Sass](http://sass-lang.com/) and [Less](http://lesscss.org/) came into play. Sass was hard, but then [Compass](http://compass-style.org/) came into play: it made Sass _easy_ and it had _great_ documentation. Lastly, it came with, you guessed it: a call for community. Which, in turn, created a larger community:
+    <li>IE 6, 7, 8, 9, wah</li>
 
-[Sache Sass](http://www.sache.in/), [Breakpoint](http://breakpoint-sass.com/), [Bourbon](http://bourbon.io/)
+    <li>CSS3, hey gurl</li>
+    </ul>
 
-_These things allowed us to do things ourselves._ They nutured community and our ability to design.
+    <p><em>The rise of CSS preprocessors where inevitable.</em> CSS was hard, and the iPhone was about to come out. So <a href="http://sass-lang.com/" target="_blank">Sass</a> and <a href="http://lesscss.org/" target="_blank">Less</a> came into play. Sass was hard, but then <a href="http://compass-style.org/" target="_blank">Compass</a> came into play: it made Sass <em>easy</em> and it had <em>great</em> documentation. Lastly, it came with, you guessed it: a call for community. Which, in turn, created a larger community:</p>
 
-## So what's the point?
-"Really, another build tool?" On the contrary: it's all about allowing us to be open and to generate new ideas.
+    <p><a href="http://www.sache.in/" target="_blank">Sache Sass</a>, <a href="http://breakpoint-sass.com/" target="_blank">Breakpoint</a>, <a href="http://bourbon.io/" target="_blank">Bourbon</a></p>
 
-_It's about humanity:_ Eventually we will worry less about technological problems, and more about human problems. By celebrating diversity and differences in our communities, we'll solve bigger problems. (_No cliques!_)
+    <p><em>These things allowed us to do things ourselves.</em> They nutured community and our ability to design.</p>
 
-_We are succeeding!_ We act as amplifiers and filters. We've created a great network, and we have a lot of contribute. If we continue to innovate in the way we've been doing about (simple solutions, good documentation, happy commuity) we can continue to be revolutionary.
+    <h2>So what's the point?</h2>
 
-  </p>
+    <p>"Really, another build tool?" On the contrary: it's all about allowing us to be open and to generate new ideas.</p>
+
+    <p><em>It's about humanity:</em> Eventually we will worry less about technological problems, and more about human problems. By celebrating diversity and differences in our communities, we'll solve bigger problems. (<em>No cliques!</em>)</p>
+
+    <p><em>We are succeeding!</em> We act as amplifiers and filters. We've created a great network, and we have a lot of contribute. If we continue to innovate in the way we've been doing about (simple solutions, good documentation, happy commuity) we can continue to be revolutionary.</p>
+  </main>
 
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@helenvholmes" />
-  <meta name="twitter:title" content="When You Realize" />
-  <meta name="twitter:description" content="You've finally managed to discover the secret to immortality." />
+  <meta name="twitter:title" content="{{ title }}" />
+  <meta name="twitter:description" content="{{ description }}" />
   <meta name="twitter:image" content="http://helenvholmes.com/images/partials/writing/orb.jpg" />
 {% endblock %}

@@ -20,45 +20,37 @@ url: intro-to-the-command-line
 
     <p>The command line is fastest way to get around your computer and the secret portal to tools that will level-up your web-design coding skills: <a href="http://git-scm.com" target="_blank">git</a>, <a href="http://sass-lang.com" target="_blank">sass</a>, <a href="http://gruntjs.com" target="_blank">grunt</a>, <a href="http://yeoman.io">yeoman</a>, <a href="http://jekyllrb.com" target="_blank">jekyll</a>, just to name a few. I’m no Unix-expert but the terminal is now the first thing I open when my computer opens because once you’ve learned the commands you need you’ll get around <em>so much faster</em> when coding. Trust me.</p>
 
-    <p>Hit CMD+Space and type ’Terminal’. Let’s get started:</p>
+    <p>Hit CMD+Space and type <code>Terminal</code>. Let’s get started:</p>
 
-    <p>![]({{ site.url }}/images/terminal.jpg)</p>
+    <p>When you open your terminal, you see a few things: the name of your computer, the folder you’re in, and possibly the date. You always start out in the <em>Home</em> directory, which is equivalent to the "home" directory in Finder.</p>
 
-    <p>When you open your terminal, you see a few things: the name of your computer, the folder you’re in, and possibly the date. You always start out in the <em>Home</em> directory, which is equivalent to this directory in Finder:</p>
-
-    <p>![]({{ site.url }}/images/home-directory.jpg)</p>
-
-    <p>To see the contents of a directory, type <code>ls -l</code>:</p>
-
-    <p>![]({{ site.url }}/images/home-contents.jpg)</p>
+    <p>To see the contents of a directory, type <code>ls -l</code>.</p>
 
     <p>I have a ton of stuff in mine, and you probably do too. Often times there are a lot of hidden files and folders in this directory, which you can see in the terminal (but cannot in Finder).</p>
 
-    <p>You can make folders (directories) and files from the terminal pretty easily. Let’s make one now called <code>code</code>:</p>
+    <p>You can make folders (directories) and files from the terminal pretty easily. Let’s make one now called <code>code</code>.</p>
 
     <code>
       mkdir code
     </code>
 
-    <p>This is just a short way of saying ’make directory’. If you do another `ls -l`, you’ll see that we now have a directory called `code`:</p>
+    <p>This is just a short way of saying ’make directory’. If you do another <code>ls -l</code>, you’ll see that we now have a directory called <code>code</code>.</p>
 
-    <p>![]({{ site.url }}/images/home-contents-code.jpg)</p>
-
-    <p>To change folders, you type `cd` - short for change directories. Let’s move into the `code` directory:</p>
+    <p>To change folders, you type <code>cd</code> - short for change directories. Let’s move into the <code>code</code> directory:</p>
 
     <code>
       cd code
     </code>
 
-    <p>The terminal is intelligent. If you type `cd c` and then hit `TAB`, it will move you into the directory that starts with `c` or give you a few options for you to pick from. When I open my terminal, I always type `cd c` + `TAB` + `<name of project>` and get to the folder I want to be really quickly.</p>
+    <p>The terminal is intelligent. If you type `cd c` and then hit <code>TAB</code>, it will move you into the directory that starts with <code>c</code> or give you a few options for you to pick from. When I open my terminal, I always type <code>cd code</code> + <code>TAB</code> + <code><name of project></code> and get to the folder I want to be really quickly.</p>
 
-    <p>Now that we’re in `code` let’s make a file. Let's set up some files for a web project:</p>
+    <p>Now that we’re in <code>code</code> let’s make a file. Let's set up some files for a web project:</p>
 
     <code>
       touch index.html
     </code>
 
-    <p>This will make a new, empty file called `index.html`. Nice! Let's make folders and such like we just learned:</p>
+    <p>This will make a new, empty file called <code>index.html</code>. Nice! Let's make folders and such like we just learned:</p>
 
     <code>
       mkdir css
@@ -67,11 +59,9 @@ url: intro-to-the-command-line
       touch post.html
     </code>
 
-    <p>You can see all of these things with the `ls -l` command from before:</p>
+    <p>You can see all of these things with the <code>ls -l</code> command from before.</p>
 
-    <p>![]({{ site.url }}/images/blog-contents.jpg)</p>
-
-    <p>Awesome, but having all of our files in our ’code’ folder isn't very helpful. They need a project folder. Let's put them in a folder called ’blog’:</p>
+    <p>Awesome, but having all of our files in our <code>code</code> folder isn't very helpful. They need a project folder. Let's put them in a folder called <code>blog</code>:</p>
 
     <code>
       mkdir blog && mv * blog
@@ -79,76 +69,74 @@ url: intro-to-the-command-line
 
     <p>There were three things in that line of code you haven't seen before, so let’s break it down:</p>
 
-    <p>`mkdir blog`: this you’ve done before. We’re making a directory called `blog`.</p>
+    <p><code>mkdir blog</code>: this you’ve done before. We’re making a directory called <code>blog</code>.</p>
 
-    <p>`&&`: this is command-line-speak for ’and’. So, ’do this and then do this’.</p>
+    <p><code>&&</code>: this is command-line-speak for ’and’. So, ’do this and then do this’.</p>
 
-    <p>`mv`: this is short for _move_. Move the files.</p>
+    <p><code>mv</code>: this is short for <em>move</em>. Move the files.</p>
 
-    <p>`*`: this is a selector that means ’everything’. We could have moved every item one-by-one, but that would have been annoying.</p>
+    <p><code>*</code>: this is a selector that means ’everything’. We could have moved every item one-by-one, but that would have been annoying.</p>
 
-    <p>`blog`: this is the target directory where we're moving everything, i.e. the folder we just made.</p>
+    <p><code>blog</code>: this is the target directory where we're moving everything, i.e. the folder we just made.</p>
 
-    <p>Now, when you do `ls -l` you should just see one folder:</p>
-
-    <p>![]({{ site.url }}/images/blog.jpg)</p>
+    <p>Now, when you do <code>ls -l</code> you should just see one folder.</p>
 
     <p>Let's change into the blog directory:</p>
 
     <code>
-      `cd blog`
+      cd blog
     </code>
 
-    <p>We just learned the `mv` command. You can use the `mv` command to rename files too. Let’s do it now:</p>
+    <p>We just learned the <code>mv</code> command. You can use the <code>mv</code> command to rename files too. Let’s do it now:</p>
 
     <code>
       mv page.html about.html
     </code>
 
-    <p>If yo do another `ls -l`, you’ll see we now have an `about.html` file instead of `page.html`.</p>
+    <p>If yo do another <code>ls -l</code>, you’ll see we now have an <code>about.html</code> file instead of <code>page.html</code>.</p>
 
-    <p>We’ve decided that we don't want `about.html` at all. Let’s delete it. However, before we do, we should probably really analyze whether or not we want to: deleting something from the command line is like sending it to the Trash Can and emptying it in one fell swoop.</p>
+    <p>We’ve decided that we don't want <code>about.html</code> at all. Let’s delete it. However, before we do, we should probably really analyze whether or not we want to: deleting something from the command line is like sending it to the Trash Can and emptying it in one fell swoop.</p>
 
     <code>
         rm about.html
     </code>
 
-    <p>`rm` is short fo</p>r _remove_. Let’s go up a directory and delete the entire folder:
+    <p><code>rm</code> is short fo</p>r <em>remove</em>. Let’s go up a directory and delete the entire folder:
 
     <code>
         cd ..
         rm -rf blog/
     </code>
 
-    <p>`..` is how you go up one directory. The `-rf` is necessary for doing anything to a folder (copying, deleting, moving) from the command line. If you’re familiar with programming basics, it means that we’re doing the action _recursively_.</p>
+    <p><code>..</code> is how you go up one directory. The <code>-rf</code> is necessary for doing anything to a folder (copying, deleting, moving) from the command line. If you’re familiar with programming basics, it means that we’re doing the action <em>recursively</em>.</p>
 
-    <p>Now that we’re in `code`, let’s make a new directory called `webapp`. We’re going to copy to our Desktop next:</p>
+    <p>Now that we’re in <code>code</code>, let’s make a new directory called <code>webapp</code>. We’re going to copy to our Desktop next:</p>
 
     <code>
         mkdir webapp
     </code>
 
-    <p>You can get to the Desktop (and anywhere else) from the ’code’ directory like this:</p>
+    <p>You can get to the Desktop (and anywhere else) from the <code>code</code> directory like this:</p>
 
     <code>
         cd ~/Desktop
     </code>
 
-    <p>Remember our _home_ directory from the very beginning? You can access that directory from any folder anywhere by `cd ~`.</p>
+    <p>Remember our <em>home</em> directory from the very beginning? You can access that directory from any folder anywhere by <code>cd ~</code>.</p>
 
     <code>
-        cp -rf /code/webapp /Desktop/webapp
-      </code>
+      cp -rf /code/webapp /Desktop/webapp
+    </code>
 
-    <p>`cp` stands for _copy_. Since we're copying a folder, we need to put the `-rf`.</p>
+    <p><code>cp</code> stands for <em>copy</em>. Since we're copying a folder, we need to put the <code>-rf</code>.</p>
 
     <hr>
 
-    <p>That's it for _Intro to the Command Line_. None of it is particularly complicated, it's just a matter of learning the commands and using them regularly. Learning the command line for me was how I started learning sass, git, grunt, and lots of other tools that took my web design to the next level. The next up in our series is _Intro to Git_, an essential if you write code... _ever_. Not exaggerating.</p>
+    <p>That's it for <em>Intro to the Command Line</em>. None of it is particularly complicated, it's just a matter of learning the commands and using them regularly. Learning the command line for me was how I started learning sass, git, grunt, and lots of other tools that took my web design to the next level.</p>
 
-    <p>[Joni Trythall](http://jonibologna.com/command-line-primer-primer/) did a write-up on this too that I like and is worth looking over if you high-level reasoning for why the command line's great.</p>
+    <p><a href="http://jonibologna.com/command-line-primer-primer/" target="_blank">Joni Trythall</a> did a write-up on this too that I like and is worth looking over if you high-level reasoning for why the command line's great.</p>
 
-    <p>If you've been working with the command line and are annoying that you can click and type, there are [commands for that](http://cmd.club/)! I have these [bash stickers](http://cmd.club/) that are pretty rad.</p>
+    <p>If you've been working with the command line and are annoying that you can click and type, there are <a href="http://cmd.club/" target="_blank">commands for that</a>! I have these <a href="http://cmd.club/" target="_blank">bash stickers</a> that are pretty rad.</p>
   </main>
 
   <p class="center">
@@ -157,7 +145,7 @@ url: intro-to-the-command-line
 
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@helenvholmes" />
-  <meta name="twitter:title" content="When You Realize" />
-  <meta name="twitter:description" content="You've finally managed to discover the secret to immortality." />
+  <meta name="twitter:title" content="{{ title }}" />
+  <meta name="twitter:description" content="{{ description }}" />
   <meta name="twitter:image" content="http://helenvholmes.com/images/partials/writing/orb.jpg" />
 {% endblock %}

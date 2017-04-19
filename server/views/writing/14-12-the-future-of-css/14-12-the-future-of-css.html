@@ -1,10 +1,10 @@
 ---
-file: 17-03-when-you-realize
-title: When You Realize Living Forever Sucks
-date: March 2017
-imageClass: goya
-description: You've finally managed to discover the secret to immortality.
-url: when-you-realize
+file: 14-12-the-future-of-css
+title: The Future of CSS
+date: December 2014
+imageClass: orb
+description: Tab Atkins
+url: the-future-of-css
 ---
 
 {% extends "layout.html" %}
@@ -15,70 +15,60 @@ url: when-you-realize
   <main class="post">
     <h1 class="title">{{ title }}</h1>
     <h5 class="date">{{ date }}</h5>
----
-layout: post
-title: The Future of CSS
-description: Tab Atkins
-tags: [css, conf, oakland]
----
+    <p><a href="https://twitter.com/tabatkins" target="_blank">@tabatkins</a>, Tab Atkins. </p>
 
-[@tabatkins](https://twitter.com/tabatkins), Tab Atkins. 
+    <p><a href="http://www.xanthir.com/talks/2014-12-09/" target="_blank">Link to slides</a></p>
 
-[Link to slides](http://www.xanthir.com/talks/2014-12-09/)
+    <p><code>image()<code>: fallbacks to color and a <a href="http://dev.w3.org/csswg/css-images-3/" target="_blank">bunch of other things</a></p>
 
-```image()```: fallbacks to color and a [bunch of other things](http://dev.w3.org/csswg/css-images-3/)
+    <p><code>image-set()</code>: Lets you specify multiple resolutions of an image, i.e. for retina</p>
 
-```image-set()```: Lets you specify multiple resolutions of an image, i.e. for retina
+    <p><code>cross-fade</code>: smoothly tweet between two images.</p>
 
-```cross-fade```: smoothly tweet between two images.
+    <p><code>image-rendering</code>: Lets browser understand how it should scale up images. Crisp edges! Oh baby!</p>
 
-``image-rendering```: Lets browser understand how it should scale up images. Crisp edges! Oh baby!
+    <p><code>flex-box()</code>: Hey, you should be <a href="http://dev.w3.org/csswg/css-flexbox/" target="_blank">using it already!</a> Basically, it destroys grids with all their terrible math. Yay!</p>
 
-```flex-box()```: Hey, you should be [using it already!](http://dev.w3.org/csswg/css-flexbox/) Basically, it destroys grids with all their terrible math. Yay!
+    <p><a href="http://gridbyexample.com/" target="_blank">Grid by Example</a>, Rachel Andrew
+    <a href="http://css-tricks.com/snippets/css/complete-guide-grid/" target="_blank">Grid</a>, CSS-Tricks 
+    <a href="https://philipwalton.github.io/solved-by-flexbox/" target="_blank">Solved by Flexbox</a>, Philip Walton
+    <a href="http://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank">Flexbox</a>, CSS-Tricks</p>
 
-[Grid by Example](http://gridbyexample.com/), Rachel Andrew
-[Grid](http://css-tricks.com/snippets/css/complete-guide-grid/), CSS-Tricks 
-[Solved by Flexbox](https://philipwalton.github.io/solved-by-flexbox/), Philip Walton
-[Flexbox](http://css-tricks.com/snippets/css/a-guide-to-flexbox/), CSS-Tricks
+    <p><code>:nth-child()</code>, <code>:matches()</code>: Selecting children is <a href="http://dev.w3.org/csswg/selectors/" target="_blank">getting smarter</a>.
 
-```:nth-child()```, ```:matches()```: Selecting children is [getting smarter](http://dev.w3.org/csswg/selectors/).
+    <p><em>Variables</em>: CSS will have them! They currently <a href="http://dev.w3.org/csswg/css-variables/" target="_blank">work in Firefox</a>.</p>
 
-_Variables_: CSS will have them! They currently [work in Firefox](http://dev.w3.org/csswg/css-variables/).
+    <p><em>Colors</em>: <a href="http://dev.w3.org/csswg/css-color/">Spec</a> There will be 4/8 fihiy hex colors for alpha instead of converting to <code>rgba</code>, and other fun stuff. </p>
 
-_Colors_: [Spec](http://dev.w3.org/csswg/css-color/) There will be 4/8 fihiy hex colors for alpha instead of converting to ```rgba```, and other fun stuff. 
+    <p><code>hwb()</code>: hue-whiteness-blackness</p>
 
-```hwb()```: hue-whiteness-blackness
-```gray()```: grays without repeating yourself. Nice! No more bajillion ```$brand-gray-light```s or whatever.
-```color()```: lets you adjust colors but without a preprocessor. Nice.
+    <p><code>gray()</code>: <p>grays without repeating yourself. Nice! No more bajillion <code>$brand-gray-light</code>s or whatever. language-gray()<code>: grays without repeating yourself. Nice.</p>
 
-_Media Queries_: They're [getting smarter!](http://dev.w3.org/csswg/mediaqueries/) Ability to target phones used as night, or in bright light, or on e-ink screens. ```bada$$```, amirite???
+    <p><em>Media Queries</em>: They're <a href="http://dev.w3.org/csswg/mediaqueries/" target="_blank">getting smarter!</a> Ability to target phones used as night, or in bright light, or on e-ink screens. <code>bada$$</code>, amirite???</p>
 
-_Animation!_: [Web Animations spec](https://w3c.github.io/web-animations/), [Motion Path](http://dev.w3.org/FXTF/motion-1/). Exposing CSS animations to JS in a more direct + easy way, and animations an element around the page in 2D with the ```motion``` property.
+    <p><em>Animation!</em>: <a href="https://w3c.github.io/web-animations/" target="_blank">Web Animations spec</a>, <a href="http://dev.w3.org/FXTF/motion-1/" target="_blank">Motion Path</a>. Exposing CSS animations to JS in a more direct + easy way, and animations an element around the page in 2D with the <code>motion</code> property.</p>
 
-_Polyfilling CSS_: No language can grow forever. CSS is huge, and getting larger and larger. Cycle times to get new things into spec is really long (~5 years, yikes!). Doesn't mean we can't polyfill our solutions, though, such as with Media Queries, such as variables for media queries:
+    <p><em>Polyfilling CSS</em>: No language can grow forever. CSS is huge, and getting larger and larger. Cycle times to get new things into spec is really long (~5 years, yikes!). Doesn't mean we can't polyfill our solutions, though, such as with Media Queries, such as variables for media queries:</p>
+    </code></pre>
 
-```
-  @custom-media foo (500px <= width <= 1200px);
-  @media ("foo") { ... }
-  CSS.customMedia.set("bar", true);
-  CSS.customMedia.set("baz", 500);
-  CSS.customMedia.set(
-        "qux",
-        MediaQueryList("(min-width: 500px)"))
-  @media ("bar") { ... }
-  @media ("baz" < 600) { ... }
-  @media ("qux") { ... }
-```
+    <pre><code>@custom-media foo (500px &lt;= width &lt;= 1200px);
+      @media ("foo") { ... }
+      CSS.customMedia.set("bar", true);
+      CSS.customMedia.set("baz", 500);
+      CSS.customMedia.set(
+            "qux",
+            MediaQueryList("(min-width: 500px)"))
+      @media ("bar") { ... }
+      @media ("baz" &lt; 600) { ... }
+      @media ("qux") { ... }
+    </code></pre>
 
-_More Polyfilling_: Custom psuedo-classes, custom functions, mix-ins (functions on the block level, rather than value level), custom at-rules, custom layout???
-
-
-
-  </p>
+    <p><em>More Polyfilling</em>: Custom psuedo-classes, custom functions, mix-ins (functions on the block level, rather than value level), custom at-rules, custom layout???</p>
+  </main>
 
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@helenvholmes" />
-  <meta name="twitter:title" content="When You Realize" />
-  <meta name="twitter:description" content="You've finally managed to discover the secret to immortality." />
+  <meta name="twitter:title" content="{{ title }}" />
+  <meta name="twitter:description" content="{{ description }}" />
   <meta name="twitter:image" content="http://helenvholmes.com/images/partials/writing/orb.jpg" />
 {% endblock %}

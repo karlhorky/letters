@@ -1,10 +1,10 @@
 ---
-file: 17-03-when-you-realize
-title: When You Realize Living Forever Sucks
-date: March 2017
-imageClass: goya
-description: You've finally managed to discover the secret to immortality.
-url: when-you-realize
+file: 14-02-reset-ssh-keys-for-github
+title: Reset SSH Keys for Github
+date: February 2014
+imageClass: orb
+description: When you reset your password, do this
+url: reset-ssh-keys-for-github
 ---
 
 {% extends "layout.html" %}
@@ -15,30 +15,18 @@ url: when-you-realize
   <main class="post">
     <h1 class="title">{{ title }}</h1>
     <h5 class="date">{{ date }}</h5>
----
-layout: post
-title: Reset SSH Keys for Github
-description: When you reset your password, do this
-tags: [github, git, ssh]
----
+    <p>To access stuff within our VPN at work we have to reset our passwords every 90 days, which often messes me up for a few hours. One such instance is with Github.</p>
 
-To access stuff within our VPN at work we have to reset our passwords every 90 days, which often messes me up for a few hours. One such instance is with Github:
+    <p>Ugh, god damn it.</p>
 
-![ugh]({{ site.url }}/images/access-denied.png)
+    <p>Easiest way to deal with this is by just deleting your old SSH keys instead of doing anything fancy. You can do this with Mac's Keychain Access.</p>
 
-Ugh, god damn it.
-
-Easiest way to deal with this is by just deleting your old SSH keys instead of doing anything fancy. You can do this with Mac's Keychain Access:
-
-![Keychain Access]({{ site.url }}/images/delete-keys.png)
-
-Delete the appropriate key, and then next you try to push it will ask you for your username and password, and generate a new key for you until you have to reset your password again.
-
-  </p>
+    <p>Delete the appropriate key, and then next you try to push it will ask you for your username and password, and generate a new key for you until you have to reset your password again.</p>
+  </main>
 
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@helenvholmes" />
-  <meta name="twitter:title" content="When You Realize" />
-  <meta name="twitter:description" content="You've finally managed to discover the secret to immortality." />
+  <meta name="twitter:title" content="{{ title }}" />
+  <meta name="twitter:description" content="{{ description }}" />
   <meta name="twitter:image" content="http://helenvholmes.com/images/partials/writing/orb.jpg" />
 {% endblock %}

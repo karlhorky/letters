@@ -1,10 +1,10 @@
 ---
-file: 17-03-when-you-realize
-title: When You Realize Living Forever Sucks
-date: March 2017
-imageClass: goya
-description: You've finally managed to discover the secret to immortality.
-url: when-you-realize
+file: 14-12-performance-stuff-in-general
+title: Performance Stuff in General
+date: December 2014
+imageClass: orb
+description: What can we do to make pages fast?
+url: performance-stuff-in-general
 ---
 
 {% extends "layout.html" %}
@@ -15,72 +15,66 @@ url: when-you-realize
   <main class="post">
     <h1 class="title">{{ title }}</h1>
     <h5 class="date">{{ date }}</h5>
----
-layout: post
-title: Performance Stuff in General
-description: What can we do to make pages fast?
-tags: [css, conf, oakland, performance]
----
+    <p><a href="https://twitter.com/benschwarz">@benschwarz</a>, Ben Schwarz.</p>
 
-[@benschwarz](https://twitter.com/benschwarz), Ben Schwarz.
+    <p><a href="https://speakerdeck.com/benschwarz/useful-performance-metrics" target="_blank">Slides</a></p>
 
-[Slides](https://speakerdeck.com/benschwarz/useful-performance-metrics)
+    <p>On the internet, time is money. Queue the stats!</p>
 
-On the internet, time is money. Queue the stats!
+    <p>47% of consumers expect a web page to load in two seconds or less.</p>
 
-47% of consumers expect a web page to load in two seconds or less.
+    <p>"After a second of so, the user's flow and engagement with the initiated task is broken." -Ilya Grigorik.</p>
 
-"After a second of so, the user's flow and engagement with the initiated task is broken." -Ilya Grigorik.
+    <h2>Everyone on your team is responsible for the speed of your site.</h2>
 
-## Everyone on your team is responsible for the speed of your site.
-Perceived speed is on the front-end. _Speed is perceived._ 
+    <p>Perceived speed is on the front-end. <em>Speed is perceived.</em> </p>
 
-So what can we do to make pages fast?
+    <p>So what can we do to make pages fast?</p>
 
-Minify.
+    <p>Minify.</p>
 
-Use AJAX.
+    <p>Use AJAX.</p>
 
-Base-64 things.
+    <p>Base-64 things.</p>
 
-Animate using CSS.
+    <p>Animate using CSS.</p>
 
-Use requestAnimationFrame for JS-based animation.
+    <p>Use requestAnimationFrame for JS-based animation.</p>
 
-Use video rather than gifs. :(
+    <p>Use video rather than gifs. :(</p>
 
-```position:fixed``` can cause uncessary paints while scrolling. (So can a lot of other things.)
+    <p><code>position:fixed</code> can cause uncessary paints while scrolling. (So can a lot of other things.)</p>
 
-```box-shadow``` can be kiiiinnnd of evil.
+    <p><code>box-shadow</code> can be kiiiinnnd of evil.</p>
 
-Make animations small.
+    <p>Make animations small.</p>
 
-tl;dr:
+    <p>tl;dr:</p>
 
-## Only load what you need.
-Inlining critical styles will give you big boosts in speed.
+    <h2>Only load what you need.</h2>
 
-_So what else do I need to know?_
+    <p>Inlining critical styles will give you big boosts in speed.</p>
 
-1. *Set a budget.* How much is too much? If you set budgets for images, you can have interesting talks with your designers. (Designers like constraints.)
+    <p><em>So what else do I need to know?</em></p>
 
-2. *Use real-time analytics.* GA has the average page load time: this is what will give you data on using CDNs, etc.
+    <ol>
+      <li><p><em>Set a budget.</em> How much is too much? If you set budgets for images, you can have interesting talks with your designers. (Designers like constraints.)</p></li>
 
-3. *Do your own metrics.* ```window.performance.timing``` is a thing you can use in browsers and show you how long it took everything to load. If your site goes beyond a certain number, you can get alerts. You don't even need to fight to use GA or anything else; you have access to these metrics yourself.
+      <li><p><em>Use real-time analytics.</em> GA has the average page load time: this is what will give you data on using CDNs, etc.</p></li>
 
-```window.performance.getEntries()```
+      <li><p><em>Do your own metrics.</em> <code>window.performance.timing</code> is a thing you can use in browsers and show you how long it took everything to load. If your site goes beyond a certain number, you can get alerts. You don't even need to fight to use GA or anything else; you have access to these metrics yourself.</p></li>
+    </ol>
 
-```window.performance.mark("foo")``` set marks and get them and see how long they took to load. (Realize how slow Disqus is on your site!)
+    <p><code>window.performance.mark("foo")</code>: set marks and get them and see how long they took to load. (Realize how slow Disqus is on your site!)</p>
 
-[Pingdom](https://www.pingdom.com/), [New Relic](http://newrelic.com/), [CSSStats](http://cssstats.com/), [CalibreApp](http://calibreapp.com/)
+    <p><a href="https://www.pingdom.com/" target="_blank">Pingdom</a>, <a href="http://newrelic.com/" target="_blank">New Relic</a>, <a href="http://cssstats.com/" target="_blank">CSSStats</a>, <a href="http://calibreapp.com/" target="_blank">CalibreApp</a></p>
 
-_Don't rely on what you think you know. Prove it._
-
-  </p>
+    <p><em>Don't rely on what you think you know. Prove it.</em></p>
+  </main>
 
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@helenvholmes" />
-  <meta name="twitter:title" content="When You Realize" />
-  <meta name="twitter:description" content="You've finally managed to discover the secret to immortality." />
+  <meta name="twitter:title" content="{{ title }}" />
+  <meta name="twitter:description" content="{{ description }}" />
   <meta name="twitter:image" content="http://helenvholmes.com/images/partials/writing/orb.jpg" />
 {% endblock %}
