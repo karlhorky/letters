@@ -215,6 +215,36 @@
   }
 }
 
+@keyframes spin-color-stroke {
+  0% {
+    stroke: adjust-hue($brand-primary, 0);
+  }
+
+  20% {
+    stroke: adjust-hue($brand-primary, 60);
+  }
+
+  40% {
+    stroke: adjust-hue($brand-primary, 120);
+  }
+
+  55% {
+    stroke: adjust-hue($brand-primary, 180);
+  }
+
+  75% {
+    stroke: adjust-hue($brand-primary, 240);
+  }
+
+  90 {
+    stroke: adjust-hue($brand-primary, 300);
+  }
+
+  100% {
+    stroke: adjust-hue($brand-primary, 360);
+  }
+}
+
 @include keyframe(red-to-blue) {
   0% {
     fill: $brand-primary;

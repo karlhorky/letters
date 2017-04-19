@@ -322,6 +322,22 @@ html {
   100% {
     background-color: indianred; } }
 
+@keyframes spin-color-stroke {
+  0% {
+    stroke: indianred; }
+  20% {
+    stroke: #cdcd5c; }
+  40% {
+    stroke: #5ccd5c; }
+  55% {
+    stroke: #5ccdcd; }
+  75% {
+    stroke: #5c5ccd; }
+  90 {
+    stroke: #cd5ccd; }
+  100% {
+    stroke: indianred; } }
+
 @-webkit-keyframes red-to-blue {
   0% {
     fill: indianred; }

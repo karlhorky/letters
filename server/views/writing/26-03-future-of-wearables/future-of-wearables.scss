@@ -1,7 +1,6 @@
 @import 'bourbon';
 @import '../../../styles/grid-settings';
 @import 'neat';
-@import '../../../styles/font-face';
 @import '../../../styles/typography';
 @import '../../../styles/colors';
 @import '../../../styles/modules/posts';
@@ -90,7 +89,7 @@
 
 h1.future-of-wearables {
   color: black;
-  font-family: $neue-haas-unica, sans-serif;
+  font-family: $neue-haas-unica;
   font-size: $h1-font-size * 1.15;
   font-weight: 900;
   line-height: $h6-font-size;
@@ -108,12 +107,13 @@ h1.future-of-wearables {
 
 .title-aside {
   position: absolute;
-  margin-left: 40%;
+  margin-left: 50%;
+  top: 70%;
 }
 
 blockquote.future-of-wearables {
   color: $brand-primary;
-  font-family: 'Didot 96 A', 'Didot 96 B', serif;
+  font-family: $didot;
   font-size: $blockquote-size;
   font-style: italic;
   line-height: 1em;

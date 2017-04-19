@@ -1,0 +1,325 @@
+/* Grid
+   Grid settings through Bourbon Neat.
+   https://github.com/thoughtbot/neat#using-neat
+
+   Color variables are stored in _color.scss.
+
+   Typography variables are stored in _typography.scss.
+*/
+html {
+  box-sizing: border-box; }
+
+*, *::after, *::before {
+  box-sizing: inherit; }
+
+/* Color
+
+   Grid/breakpoints variables are stored in _grid_settings.scss.
+
+   Typography variables are stored in _typography.scss.
+*/
+/* Typography
+
+   Grid/breakpoints variables are stored in _grid_settings.scss.
+
+   Color variables are stored in _color.scss.
+*/
+/* Sizes
+
+*/
+.underline {
+  text-decoration: underline; }
+
+img {
+  width: 100%; }
+
+.baas {
+  align-items: center;
+  clear: both;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%; }
+
+.baas img {
+  max-width: 100%;
+  width: 100%; }
+
+.baas figcaption {
+  font-style: italic; }
+
+.baas-entry {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex: 0 1 70%;
+  justify-content: center;
+  margin: 4em auto 0 auto;
+  width: 70%; }
+
+.baas-entry figcaption {
+  padding: 5%; }
+
+.baas-entry .portrait-50 {
+  flex: 0 1 100%; }
+
+@media screen and (min-width: 850px) {
+  .baas-entry .portrait-50 {
+    flex: 0 1 50%; } }
+
+.baas-stories {
+  align-self: center;
+  flex: 0 1 100%;
+  margin: 6em 0;
+  padding: 0 10%;
+  text-align: justify; }
+
+@media screen and (min-width: 850px) {
+  .baas-stories {
+    padding: 0 33%; } }
+
+.huge {
+  align-items: center;
+  display: flex;
+  height: 100vh; }
+
+.baas-cluster {
+  text-align: center; }
+
+.baas-cluster-prince {
+  display: flex;
+  flex: 0 1 80%; }
+
+@media screen and (min-width: 850px) {
+  .baas-cluster-prince {
+    flex: 0 1 50%; } }
+
+.baas-cluster-prince figure {
+  flex: 0 1 50%; }
+
+.baas-cluster-communion {
+  display: flex;
+  flex: 0 1 80%;
+  justify-content: flex-end;
+  margin-left: 20%; }
+
+@media screen and (min-width: 850px) {
+  .baas-cluster-communion {
+    flex: 0 1 50%;
+    margin-left: 0; } }
+
+.baas-cluster-communion img {
+  padding-left: 50%; }
+
+.baas-cluster-communion figcaption {
+  padding: 0 0 20% 30%; }
+
+@media screen and (min-width: 850px) {
+  .baas-cluster-communion figcaption {
+    padding: 0 30% 0 35%; } }
+
+.baas-cluster-young {
+  align-items: center;
+  display: flex;
+  flex: 0 1 100%;
+  justify-content: flex-start;
+  padding-left: 5%; }
+
+@media screen and (min-width: 850px) {
+  .baas-cluster-young {
+    flex: 0 1 70%; } }
+
+.baas-cluster-young .fridge {
+  align-items: center;
+  display: flex;
+  justify-content: flex-start; }
+
+.baas-cluster-young .fridge .fridge-image {
+  flex: 0 1 50%; }
+
+.baas-cluster-young .fridge .fridge-caption {
+  align-self: flex-end;
+  flex: 0 1 50%;
+  padding-bottom: 5%; }
+
+.baas-cluster-smoking {
+  display: flex;
+  flex: 0 1 100%;
+  justify-content: flex-end;
+  margin-top: 10%; }
+
+.baas-cluster-smoking .smoking-image {
+  flex: 0 1 70%; }
+
+@media screen and (min-width: 850px) {
+  .baas-cluster-smoking .smoking-image {
+    flex: 0 1 30%;
+    margin-top: 5%; } }
+
+.baas-cluster-smoking .smoking-caption {
+  align-self: flex-end;
+  flex: 0 1 50%;
+  margin-top: 20%;
+  padding: 5%; }
+
+@media screen and (min-width: 850px) {
+  .baas-cluster-smoking .smoking-caption {
+    flex: 0 1 20%;
+    margin-top: 10%; } }
+
+.baas-cluster-center {
+  align-self: center; }
+
+.baas-cluster .offset {
+  padding-bottom: 20%; }
+
+.howls {
+  display: flex;
+  flex-wrap: wrap;
+  height: 200vh;
+  justify-content: center; }
+
+.howl {
+  color: indianred;
+  flex: 0 1 100%;
+  font-family: NeueHaasUnica, Arial, sans-serif;
+  margin: 0;
+  text-align: center; }
+
+.neuehaasunica-loaded h1.howl {
+  font-family: NeueHaasUnica, Arial, sans-serif;
+  font-weight: 700; }
+
+.tanta {
+  align-items: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  flex: 0 1 80%;
+  padding: 0 10% 0 5%;
+  text-align: justify; }
+
+@media screen and (min-width: 850px) {
+  .tanta {
+    flex: 0 1 65%; } }
+
+.tanta p {
+  flex: 0 1 100%;
+  margin-bottom: 4em; }
+
+.tanta-images {
+  align-items: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  flex: 0 1 100%;
+  padding: 0 10%;
+  text-align: center; }
+
+@media screen and (min-width: 850px) {
+  .tanta-images {
+    flex: 0 1 35%; } }
+
+.tanta-images .tanta-image {
+  margin-bottom: 10%;
+  max-width: 100%;
+  width: 100%; }
+
+.tanta-images .tanta-image.quote {
+  margin-bottom: 0; }
+
+.really-lived {
+  align-items: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  flex: 0 1 100%;
+  justify-content: center;
+  margin: 15% 0 15% 0; }
+
+@media screen and (min-width: 850px) {
+  .really-lived {
+    flex: 0 1 80%;
+    margin-top: 0; } }
+
+.beanpole, .posey, .navy-federal, .smize {
+  font-style: italic;
+  text-align: center; }
+
+.posey {
+  align-self: center;
+  flex: 0 1 30%; }
+
+@media screen and (min-width: 850px) {
+  .posey {
+    flex: 0 1 20%; } }
+
+.baby-me {
+  flex: 0 1 45%; }
+
+.navy-federal {
+  align-self: flex-end;
+  flex: 0 1 25%;
+  margin-top: 12.85%; }
+
+.smize {
+  flex: 0 1 25%;
+  margin-top: -3.2%; }
+
+.baby-nathaniel {
+  flex: 0 1 40%;
+  margin-top: -3.2%; }
+
+.memories {
+  align-items: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  flex: 0 1 70%;
+  justify-content: center;
+  margin-top: 15%;
+  padding: 0 10%; }
+
+.green-things {
+  flex: 0 1 100%;
+  order: 2; }
+
+@media screen and (min-width: 850px) {
+  .green-things {
+    flex: 0 1 50%;
+    order: 1; } }
+
+.green-things p {
+  margin: 0 0 4em 0;
+  text-align: justify; }
+
+@media screen and (min-width: 850px) {
+  .green-things p {
+    padding-left: 15%;
+    padding-right: 5%; } }
+
+.memory-images {
+  align-items: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  flex: 0 1 100%;
+  font-style: italic;
+  justify-content: center;
+  margin-bottom: 15%;
+  order: 1;
+  padding: 0 10%;
+  text-align: center; }
+
+@media screen and (min-width: 850px) {
+  .memory-images {
+    flex: 0 1 40%;
+    margin-bottom: 0%;
+    order: 2; } }
+
+.christmas-tree, .hairdresser, .bunny-ears {
+  flex: 0 1 100%; }
+
+.hairdresser, .bunny-ears {
+  padding-top: 20%; }
+
+.em {
+  margin: 15% 0 5% 0; }
+
+.go-back {
+  margin-bottom: 5%;
+  text-align: center; }

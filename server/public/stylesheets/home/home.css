@@ -163,7 +163,7 @@ html {
 @media screen and (min-width: 850px) {
   .mad-men h1 {
     font-size: 14em;
-    padding: 0 5%;
+    padding: 7% 5% 0 5%;
     line-height: 1.25; } }
 
 .mad-men h1 a {
@@ -194,7 +194,7 @@ html {
   margin: auto;
   width: 150px; }
 
-.the-future {
+.the-future, .twenty-sixteen {
   align-self: center;
   background-color: white;
   clear: both;
@@ -205,14 +205,14 @@ html {
   position: relative; }
 
 @media screen and (min-width: 850px) {
-  .the-future {
+  .the-future, .twenty-sixteen {
     flex: 0 1 40%;
     margin-top: 10%; } }
 
-.the-future:hover::before {
+.the-future:hover::before, .twenty-sixteen:hover::before {
   animation: spin-color 8s linear forwards; }
 
-.the-future::before {
+.the-future::before, .twenty-sixteen::before {
   background-color: indianred;
   content: '';
   display: block;
@@ -220,11 +220,11 @@ html {
   width: 200px; }
 
 @media screen and (min-width: 850px) {
-  .the-future::before {
+  .the-future::before, .twenty-sixteen::before {
     height: 200px;
     width: 200px; } }
 
-.the-future h1 {
+.the-future h1, .twenty-sixteen h1 {
   font-family: NeueHaasUnica, Arial, sans-serif, sans-serif;
   font-size: 2.925em;
   font-style: normal;
@@ -237,19 +237,19 @@ html {
   text-transform: capitalize; }
 
 @media screen and (min-width: 850px) {
-  .the-future h1 {
+  .the-future h1, .twenty-sixteen h1 {
     margin-left: 100px;
-    margin-top: -13.5%;
+    margin-top: -27.5%;
     text-align: left; } }
 
-.the-future h1 a {
+.the-future h1 a, .twenty-sixteen h1 a {
   background-image: linear-gradient(transparent, transparent);
   color: #2d2d2d; }
 
-.the-future h1 a:hover {
+.the-future h1 a:hover, .twenty-sixteen h1 a:hover {
   color: #2d2d2d; }
 
-.the-future em {
+.the-future em, .twenty-sixteen em {
   position: relative;
   font-family: CalendasPlus, Georgia, "Times New Roman", Times, serif;
   display: inline-block;
@@ -258,10 +258,34 @@ html {
   top: -25px; }
 
 @media screen and (min-width: 850px) {
-  .the-future em {
+  .the-future em, .twenty-sixteen em {
     margin-left: 120px;
     text-align: left;
     top: -110px; } }
+
+.twenty-sixteen {
+  text-align: center;
+  margin-top: 0; }
+
+.twenty-sixteen::before {
+  display: none; }
+
+.twenty-sixteen h1 {
+  background-color: white;
+  display: block;
+  font-family: AvenirNext, -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 2em;
+  margin-left: 0;
+  text-align: center;
+  width: 100%;
+  padding: 5px 0; }
+
+.twenty-sixteen svg {
+  stroke: indianred;
+  width: 70%; }
+
+.twenty-sixteen:hover svg {
+  animation: spin-color-stroke 8s linear forwards; }
 
 .hobbies {
   margin-bottom: 60%;

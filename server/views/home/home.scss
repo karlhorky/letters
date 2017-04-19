@@ -153,7 +153,7 @@
     
     @include media($nine-col) {
       font-size: 14em;
-      padding: 0 5%;
+      padding: 7% 5% 0 5%;
       line-height: 1.25;
     }
 
@@ -191,7 +191,7 @@
   }
 }
 
-.the-future {
+.the-future, .twenty-sixteen {
   align-self: center;
   background-color: white;
   clear: both;
@@ -239,7 +239,7 @@
 
     @include media($nine-col) {
       margin-left: 100px;
-      margin-top: -13.5%;
+      margin-top: -27.5%;
       text-align: left;
     }
 
@@ -265,6 +265,37 @@
       margin-left: 120px;
       text-align: left;
       top: -110px;
+    }
+  }
+}
+
+.twenty-sixteen {
+  text-align: center;
+  margin-top: 0;
+
+  &::before {
+    display: none;
+  }
+
+  h1 {
+    background-color: white;
+    display: block;
+    font-family: $avenir-next;
+    font-size: 2em;
+    margin-left: 0; 
+    text-align: center;
+    width: 100%;
+    padding: 5px 0;
+  }
+
+  svg {
+    stroke: $brand-primary;
+    width: 70%;
+  }
+
+  &:hover {
+    svg {
+      animation: spin-color-stroke 8s linear forwards;
     }
   }
 }
