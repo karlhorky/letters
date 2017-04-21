@@ -156,7 +156,11 @@
     outline-offset: 15px;
     padding-bottom: 3px;
     position: relative;
-    width: 80%;
+    width: 100%;
+
+    @include media($nine-col) {
+      width: 80%;
+    }
 
     &::before {
       bottom: 0;
@@ -204,22 +208,32 @@
   }
 
   .outside-link {
-    opacity: 0;
+    display: none;
     float: right;
-    margin-top: 8px;
     margin-right: 2%;
-    width: 16px;
+    margin-top: 8px;
+    opacity: 0;
     transition: opacity 0.15s ease-in-out;
+    width: 16px;
+
+    @include media($nine-col) {
+      display: block;
+    }
   }
 
   .date {
     color: $brand-gray-dark;
+    display: none;
     float: right;
     font-family: $pre-avenir-next;
     font-size: $base-font-size;
     font-weight: bold;
     margin-right: 5%;
     margin-top: 15px;
+
+    @include media($nine-col) {
+      display: block;
+    }
   }
 }
 

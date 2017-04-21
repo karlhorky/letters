@@ -1,0 +1,28 @@
+---
+file: 16-03-i-heart-storyboards
+title: "I 💖 Storyboards and Nibs"
+date: March 2016
+imageClass: orb
+description: "Elsewhere on the web!"
+url: i-heart-storyboards-and-nibs
+---
+
+{% extends "layout.html" %}
+
+{% block content %}
+  <link rel="stylesheet" property="stylesheet" href="/stylesheets/writing/post.css">
+
+  <main class="post">
+    <h1 class="title">{{ title }}</h1>
+    <h5 class="date">{{ date }}</h5>
+    <p>Helen elsewhere on the web: <a href="https://twitter.com/natashatherobot" target="_blank">Natasha</a> wrote a follow-up to my <em><a href="https://news.realm.io/news/tryswift-helen-holmes-10-ways-designers-swift-codebase/" target="_blank">10 Ways to Get Designers Into Your Swift Codebase</a></em> talk I gave at <a href="https://www.tryswift.co/tokyo/en" target="_blank">try!Swift</a> in Japan. Read it here:</p>
+
+    <p><a href="https://www.natashatherobot.com/i-heart-storyboards-nibs/" target="_blank">I 💖 Storyboards & Nibs</a></p>
+  </main>
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@helenvholmes" />
+  <meta name="twitter:title" content="{{ title }}" />
+  <meta name="twitter:description" content="{{ description }}" />
+  <meta name="twitter:image" content="http://helenvholmes.com/images/partials/writing/orb.jpg" />
+{% endblock %}

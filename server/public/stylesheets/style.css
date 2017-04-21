@@ -1509,17 +1509,24 @@ a:visited {
     fill: #4a90e2; } }
 
 .header {
-  align-items: flex-end;
+  align-items: center;
   display: flex;
   flex-direction: column;
+  font-weight: 300;
   padding-right: 4%;
   padding-top: 2%;
-  top: 0;
-  position: fixed;
-  font-weight: 300;
-  right: 0;
   width: 300px;
-  z-index: 2; }
+  z-index: 2;
+  margin: auto; }
+
+@media screen and (min-width: 850px) {
+  .header {
+    position: fixed;
+    align-items: flex-end;
+    justify-content: unset;
+    right: 0;
+    top: 0;
+    margin: unset; } }
 
 .name a:hover {
   animation: blinds 0.75s linear forwards;
@@ -1536,13 +1543,17 @@ a:visited {
   display: flex; }
 
 .collapsed-nav {
+  align-self: center;
   cursor: pointer;
   height: auto;
-  position: relative;
-  margin-left: 74%;
   opacity: 0;
+  position: relative;
   transition: opacity 0.25s ease;
   width: 30px; }
+
+@media screen and (min-width: 850px) {
+  .collapsed-nav {
+    margin-left: 74%; } }
 
 .collapsed-nav::before {
   content: "";
@@ -1560,6 +1571,69 @@ a:visited {
   width: 30px;
   background-color: transparent;
   border-bottom: 1px solid indianred; }
+
+body.mobile-nav-open {
+  overflow: hidden;
+  position: fixed; }
+
+.big-nav {
+  align-items: space-around;
+  background-color: indianred;
+  height: 100%;
+  justify-content: center;
+  left: 0;
+  padding-top: 20%;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2; }
+
+.big-nav .close {
+  cursor: pointer;
+  height: 20px;
+  position: absolute;
+  right: 10%;
+  top: 5%;
+  width: 20px; }
+
+.big-nav .close::before, .big-nav .close::after {
+  background-color: white;
+  content: '';
+  display: block;
+  height: 1px;
+  width: 100%; }
+
+.big-nav .close::before {
+  transform: rotate(45deg); }
+
+.big-nav .close::after {
+  margin-top: -1px;
+  position: absolute;
+  transform: rotate(-45deg); }
+
+@media screen and (min-width: 850px) {
+  .big-nav .close {
+    display: none; } }
+
+.big-nav a {
+  color: white; }
+
+@media screen and (min-width: 850px) {
+  .big-nav a {
+    color: indianred; } }
+
+@media screen and (min-width: 850px) {
+  .big-nav {
+    align-items: unset;
+    background-color: unset;
+    height: unset;
+    justify-content: unset;
+    left: unset;
+    padding-top: unset;
+    position: unset;
+    top: unset;
+    width: unset;
+    z-index: unset; } }
 
 .nav-item-1 {
   opacity: 0; }
@@ -1797,10 +1871,15 @@ a:visited {
   opacity: 0; }
 
 .nav-items {
+  align-items: center;
   display: flex;
-  padding: 0;
+  flex-direction: column;
   margin: 0;
-  flex-direction: column; }
+  padding: 0; }
+
+@media screen and (min-width: 850px) {
+  .nav-items {
+    align-items: unset; } }
 
 .nav-item {
   flex: 0 1 100%;

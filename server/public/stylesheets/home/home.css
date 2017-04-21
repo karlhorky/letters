@@ -71,8 +71,12 @@ html {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 20%;
+  margin-top: 45%;
   position: relative; }
+
+@media screen and (min-width: 850px) {
+  .writing, .speaking {
+    margin-top: 20%; } }
 
 .writing p, .speaking p {
   width: 65%;
@@ -265,7 +269,11 @@ html {
 
 .twenty-sixteen {
   text-align: center;
-  margin-top: 0; }
+  margin-top: 10%; }
+
+@media screen and (min-width: 850px) {
+  .twenty-sixteen {
+    margin-top: 0; } }
 
 .twenty-sixteen::before {
   display: none; }
@@ -276,13 +284,24 @@ html {
   font-family: AvenirNext, -apple-system, BlinkMacSystemFont, sans-serif;
   font-size: 2em;
   margin-left: 0;
+  margin-top: -35%;
   text-align: center;
   width: 100%;
   padding: 5px 0; }
 
+@media screen and (min-width: 850px) {
+  .twenty-sixteen h1 {
+    margin-top: 0; } }
+
 .twenty-sixteen svg {
+  height: 260px;
   stroke: indianred;
-  width: 70%; }
+  width: 300px; }
+
+@media screen and (min-width: 850px) {
+  .twenty-sixteen svg {
+    height: 260px;
+    width: 300px; } }
 
 .twenty-sixteen:hover svg {
   animation: spin-color-stroke 8s linear forwards; }

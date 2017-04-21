@@ -50,8 +50,12 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 20%;
+  margin-top: 45%;
   position: relative;
+
+  @include media($nine-col) {
+    margin-top: 20%;
+  }
 
   p {
     width: 65%;
@@ -271,7 +275,11 @@
 
 .twenty-sixteen {
   text-align: center;
-  margin-top: 0;
+  margin-top: 10%;
+
+  @include media($nine-col) {
+    margin-top: 0;
+  }
 
   &::before {
     display: none;
@@ -282,15 +290,26 @@
     display: block;
     font-family: $avenir-next;
     font-size: 2em;
-    margin-left: 0; 
+    margin-left: 0;
+    margin-top: -35%;
     text-align: center;
     width: 100%;
     padding: 5px 0;
+
+    @include media($nine-col) {
+      margin-top: 0;
+    }
   }
 
   svg {
+    height: 260px;
     stroke: $brand-primary;
-    width: 70%;
+    width: 300px;
+
+    @include media($nine-col) {
+      height: 260px;
+      width: 300px;
+    }
   }
 
   &:hover {

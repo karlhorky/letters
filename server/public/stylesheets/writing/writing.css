@@ -170,7 +170,11 @@ html {
   outline-offset: 15px;
   padding-bottom: 3px;
   position: relative;
-  width: 80%; }
+  width: 100%; }
+
+@media screen and (min-width: 850px) {
+  .upcoming-engagements li {
+    width: 80%; } }
 
 .upcoming-engagements li::before {
   bottom: 0;
@@ -211,21 +215,31 @@ html {
   width: 100%; }
 
 .upcoming-engagements .outside-link {
-  opacity: 0;
+  display: none;
   float: right;
-  margin-top: 8px;
   margin-right: 2%;
-  width: 16px;
-  transition: opacity 0.15s ease-in-out; }
+  margin-top: 8px;
+  opacity: 0;
+  transition: opacity 0.15s ease-in-out;
+  width: 16px; }
+
+@media screen and (min-width: 850px) {
+  .upcoming-engagements .outside-link {
+    display: block; } }
 
 .upcoming-engagements .date {
   color: #959595;
+  display: none;
   float: right;
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
   font-size: 0.9em;
   font-weight: bold;
   margin-right: 5%;
   margin-top: 15px; }
+
+@media screen and (min-width: 850px) {
+  .upcoming-engagements .date {
+    display: block; } }
 
 .engagement {
   float: left;

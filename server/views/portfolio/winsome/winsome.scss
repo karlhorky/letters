@@ -87,7 +87,7 @@ $illustration-color: rosybrown;
 }
 
 .project-description {
-  padding: 3em;
+  padding: 3em 0;
 
   @include media($nine-col) {
     padding: 6em;

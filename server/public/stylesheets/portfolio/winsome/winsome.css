@@ -97,7 +97,7 @@ html {
     top: 80%; } }
 
 .project-description {
-  padding: 3em; }
+  padding: 3em 0; }
 
 @media screen and (min-width: 850px) {
   .project-description {

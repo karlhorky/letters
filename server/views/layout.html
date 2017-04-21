@@ -43,15 +43,27 @@
     <script type="text/javascript">
       $(window).scroll(function() {
         var scroll = $(window).scrollTop();
-        if (scroll >= 10) {
-          $(".navigation").addClass("small-nav").removeClass("big-nav");
-        } else {
-          $(".navigation").addClass("big-nav").removeClass("small-nav");
+        if ($(window).width() > 850) {
+          if (scroll >= 10) {
+            $(".navigation").addClass("small-nav").removeClass("big-nav");
+          } else {
+            $(".navigation").addClass("big-nav").removeClass("small-nav");
+          }
         }
       });
 
       $(".collapsed-nav").click(function(){
         $(".navigation").addClass("big-nav").removeClass("small-nav");
+
+        if ($(window).width() < 850) {
+          $("body").addClass("mobile-nav-open");
+        }
+      });
+
+      $(".close").click(function() {
+        $(".navigation").addClass("small-nav").removeClass("big-nav");
+
+        $("body").removeClass("mobile-nav-open");
       });
 
       $("#past-currentlys").click(function() {

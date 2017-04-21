@@ -6,7 +6,7 @@
 
 .post {
   line-height: 2.5;
-  margin: 10% auto;
+  margin: 5% auto;
   width: 80%;
 
   @include media($nine-col) {
@@ -36,4 +36,12 @@ blockquote {
   background-color: $brand-gray;
   font-family: $monospace;
   padding: 1% 0 1% 3%;
+}
+
+.center {
+  padding: 0 2em;
+
+  @include media($nine-col) {
+    padding: unset;
+  }
 }

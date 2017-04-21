@@ -78,23 +78,32 @@ svg {
   color: white;
   flex: 0 0 auto;
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-  font-size: 4em !important;
+  font-size: 2em !important;
   position: absolute;
   z-index: 1; }
+
+@media screen and (min-width: 850px) {
+  .canvas-text {
+    font-size: 4em !important; } }
 
 .avenirnext-loaded .canvas-text, .avenirnext-loaded .avenir-headers {
   font-weight: 700;
   font-family: AvenirNext, -apple-system, BlinkMacSystemFont, sans-serif;
   text-align: center;
   font-weight: bold;
-  font-size: 2em;
   text-transform: uppercase; }
 
 .container {
   clear: both;
   margin: auto;
   text-align: justify;
-  width: 35%; }
+  width: 75%;
+  position: relative;
+  background-color: white; }
+
+@media screen and (min-width: 850px) {
+  .container {
+    width: 35%; } }
 
 .container section {
   clear: both;

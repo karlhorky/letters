@@ -59,9 +59,13 @@ svg {
   color: white;
   flex: 0 0 auto;
   font-family: $pre-avenir-next;
-  font-size: 4em !important;
+  font-size: 2em !important;
   position: absolute;
   z-index: 1;
+
+  @include media($nine-col) {
+    font-size: 4em !important;
+  }
 }
 
 .avenirnext-loaded .canvas-text, .avenirnext-loaded .avenir-headers {
@@ -69,7 +73,6 @@ svg {
   font-family: $avenir-next;
   text-align: center;
   font-weight: bold;
-  font-size: 2em;
   text-transform: uppercase;
 }
 
@@ -77,7 +80,13 @@ svg {
   clear: both;
   margin: auto;
   text-align: justify;
-  width: 35%;
+  width: 75%;
+  position: relative;
+  background-color: white; 
+
+  @include media($nine-col) {
+    width: 35%;
+  }
 
   section {
     clear: both;
