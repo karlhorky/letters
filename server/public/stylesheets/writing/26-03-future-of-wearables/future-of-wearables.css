@@ -192,7 +192,8 @@ aside {
   margin-left: 0.5em; }
 
 .post.future-of-wearables {
-  margin: 10em auto 0 auto; }
+  margin: 10em auto 0 auto;
+  overflow-x: hidden; }
 
 @media screen and (min-width: 850px) {
   .post.future-of-wearables {
@@ -205,7 +206,7 @@ aside {
   height: 200px;
   margin: 0 5%;
   position: absolute;
-  top: 195px;
+  top: 300px;
   width: 200px;
   z-index: 0; }
 
@@ -291,12 +292,12 @@ blockquote.future-of-wearables {
   line-height: 1em;
   margin: 0;
   text-align: center;
-  text-transform: uppercase;
-  padding: 1% 15%; }
+  text-transform: uppercase; }
 
 @media screen and (min-width: 850px) {
   blockquote.future-of-wearables {
-    font-size: 5.85em; } }
+    font-size: 5.85em;
+    padding: 1% 15%; } }
 
 .twitter {
   text-align: center; }

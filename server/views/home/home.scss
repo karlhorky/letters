@@ -13,6 +13,7 @@
   background-size: contain;
   height: 300px;
   width: 100%;
+  margin-top: 5%;
 
   @include media($nine-col) {
     background-size: auto 77%;

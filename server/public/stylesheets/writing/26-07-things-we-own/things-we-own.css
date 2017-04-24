@@ -53,15 +53,23 @@ img {
 .intro, .basement {
   display: block;
   margin: 19% auto 0 auto;
-  width: 35%; }
+  width: 85%; }
+
+@media screen and (min-width: 850px) {
+  .intro, .basement {
+    width: 35%; } }
 
 .title {
   font-family: "Didot 96 A", "Didot 96 B", serif !important;
-  font-size: 24em;
+  font-size: 6.5rem;
   font-style: italic;
   line-height: 1;
   margin-left: -5%;
   text-transform: uppercase; }
+
+@media screen and (min-width: 850px) {
+  .title {
+    font-size: 23rem; } }
 
 .basement {
   margin-bottom: 30%; }
@@ -76,14 +84,25 @@ img {
   margin-top: 15%; }
 
 .clarification {
-  float: left;
-  width: 30%; }
+  margin: auto;
+  width: 85%; }
+
+@media screen and (min-width: 850px) {
+  .clarification {
+    float: left;
+    margin: unset;
+    width: 30%; } }
 
 .mental-illness {
-  clear: both;
-  float: left;
-  margin: 20% 10% 30% 10%;
-  width: 25%; }
+  margin: auto;
+  width: 85%; }
+
+@media screen and (min-width: 850px) {
+  .mental-illness {
+    clear: both;
+    float: left;
+    margin: 5% 10% 30% 10%;
+    width: 25%; } }
 
 .darkest-hallway {
   float: right;
@@ -99,8 +118,12 @@ img {
   clear: both;
   display: block;
   margin: auto;
-  text-align: justify;
-  width: 25%; }
+  width: 85%; }
+
+@media screen and (min-width: 850px) {
+  .demons {
+    text-align: justify;
+    width: 25%; } }
 
 .tv-setup, .the-queens-mugs, .good-housekeeping {
   margin: 20% auto 0 auto;
@@ -109,23 +132,42 @@ img {
 
 .sorted {
   clear: both;
-  float: left;
-  margin: 20% 10% 30% 20%;
-  width: 25%; }
+  margin: auto;
+  width: 85%; }
+
+@media screen and (min-width: 850px) {
+  .sorted {
+    float: left;
+    margin: 20% 10% 30% 20%;
+    width: 25%; } }
 
 .queens-of-england, .parrot {
   float: right;
-  margin: 20% 20% 0 0;
+  margin: auto;
   text-align: center;
-  width: 20%; }
+  width: 60%; }
+
+@media screen and (min-width: 850px) {
+  .queens-of-england, .parrot {
+    margin: 20% 20% 0 0;
+    width: 20%; } }
 
 .parrot {
   margin-top: 5%; }
 
 .get-rid-of-it {
   clear: both;
-  margin: 100% auto 45% auto;
-  width: 25%; }
+  margin: auto;
+  padding-top: 5em;
+  padding-bottom: 5em;
+  width: 85%; }
+
+@media screen and (min-width: 850px) {
+  .get-rid-of-it {
+    padding-top: unset;
+    padding-bottom: unset;
+    margin: 100% auto 45% auto;
+    width: 25%; } }
 
 .enchanted-us {
   float: left;
@@ -133,14 +175,26 @@ img {
   width: 30%; }
 
 .tired {
-  float: left;
-  width: 25%; }
+  margin: auto;
+  width: 85%; }
+
+@media screen and (min-width: 850px) {
+  .tired {
+    float: left;
+    margin: unset;
+    width: 25%; } }
 
 .advice {
   clear: both;
   margin: auto;
+  margin-left: 0;
   padding-top: 10%;
-  width: 40%; }
+  width: 85%; }
+
+@media screen and (min-width: 850px) {
+  .advice {
+    margin: auto;
+    width: 40%; } }
 
 .advice .advice-point {
   font-family: "Knockout", NeueHaasUnica, Arial, sans-serif;
@@ -149,7 +203,11 @@ img {
 
 .ending {
   margin: 20% auto 20% auto;
-  width: 25%; }
+  width: 85%; }
+
+@media screen and (min-width: 850px) {
+  .ending {
+    width: 25%; } }
 
 .center {
   text-align: center; }

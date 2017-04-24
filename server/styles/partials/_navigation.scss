@@ -94,10 +94,11 @@ body.mobile-nav-open {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 2;
+  z-index: 4;
 
   .close {
     cursor: pointer;
+    display: block;
     height: 20px;
     position: absolute;
     right: 10%;

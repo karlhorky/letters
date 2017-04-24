@@ -6,7 +6,7 @@
 
 // Callouts on the portfolio page (huge images)
 
-$illustration-color: rosybrown;
+$illustration-color: $brand-tertiary;
 
 .container { // global container for app
   align-items: center;
@@ -66,6 +66,11 @@ $illustration-color: rosybrown;
 .callout {
   flex: 0 1 100%;
   position: relative;
+  margin-top: 5%;
+
+  @include media($nine-col) {
+    margin-top: 0;
+  }
 
   img, video {
     max-width: 100%;
@@ -377,7 +382,7 @@ $illustration-color: rosybrown;
   }
 }
 
-.close {
+.winsome-close {
   border-radius: 50%;
   border: 3px solid white;
   width: 5px;
@@ -387,11 +392,11 @@ $illustration-color: rosybrown;
 }
 
 .minimize {
-  @extend .close;
+  @extend .winsome-close;
 }
 
 .maximize {
-  @extend .close;
+  @extend .winsome-close;
 }
 
 .address-bar {
