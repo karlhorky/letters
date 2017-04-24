@@ -15,6 +15,11 @@
   background: linear-gradient(rgba(36, 14, 186, 0.25), white); /* Standard syntax */
   display: flex;
   justify-content: center;
+  margin-top: 5%;
+
+  @include media($nine-col) {
+    margin-top: 0;
+  }
 }
 
 // color resets for this page ONLY
